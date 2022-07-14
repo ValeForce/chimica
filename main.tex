@@ -1,0 +1,86 @@
+\documentclass[openany,12pt]{book}%openany toglie la pagine bianche tra i capitoli
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[italian]{babel}
+\usepackage{import}
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}% only needed for injecting commands at the beginning of columns in the tabular below
+\usepackage{electrons}
+%\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\let\ce\ch
+\newcommand{\comment}[1]{}
+
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{chemfig}
+\usepackage{amsmath}
+\usepackage{array}
+\setlength\parindent{0pt}%e si gode, toglie lo spostmento a destra di una nuova riga
+
+
+\makeatletter
+\newcommand\mathcircled[1]{%
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,ellipse,inner sep=1pt] (math) {$\m@th#1#2$};%
+}
+
+\newcommand\circleanswer[1]{%%
+  \begin{tikzpicture}[baseline=(word.base)]
+    \node[inner sep=0pt]  (word) {#1};
+    \begin{pgfinterruptboundingbox}
+    \node[draw] at (word) {\phantom{#1}};
+    \end{pgfinterruptboundingbox}
+  \end{tikzpicture}}
+
+\makeatother
+
+\title{Chimica Nino}
+\author{V. Favitta \& S. Arena}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Composizione materia e reazioni chimiche}
+
+\section{Prime nozioni base}%roba a cazzo
+\import{./Chapter/1-Sections/}{1-primo}
+
+\section{Nomenclatura}
+\import{./Chapter/1-Sections/}{2-secondo}
+
+\section{Differenza tra acido e base}
+\import{./Chapter/1-Sections/}{3-terzo}
+
+\section{Base (o dovrei dire idrossido perché si)}
+\import{./Chapter/1-Sections/}{4-quarto}
+
+\section{Ossido acido (o dovrei dire anidride)}
+\import{./Chapter/1-Sections/}{5-quinto}
+
+\section{Idracidi (no ossigeno)}
+\import{./Chapter/1-Sections/}{6-sesta}
+
+\section{Reazioni di salificazione}
+\import{./Chapter/1-Sections/}{7-settima}
+
+\section{Reazioni varie}
+\import{./Chapter/1-Sections/}{8-ottava}
+
+\section{Ossidoriduzioni}
+\import{./Chapter/1-Sections/}{9-nona}
+
+\end{document}

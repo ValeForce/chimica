@@ -1,0 +1,76 @@
+\RequirePackage{amssymb}
+
+\newcommand\spinup{$\upharpoonleft$}
+\newcommand\spindown{$\downharpoonright$}
+
+% Looping over a list of tokens with separator
+% \electronLoop{processor}{separator}{list}
+\newcommand\electronLoop[3]{%
+  \bgroup
+  \def\electronLoopProcessor{#1}%
+  \def\electronLoopSeparator{\def\electronLoopSeparator{#2}}%
+  \electronLoopDo#3\relax
+  \egroup
+}
+\newcommand\electronLoopDo[1]{%
+  \ifx\relax#1\else
+    \electronLoopSeparator
+    \electronLoopProcessor{#1}%
+    \expandafter
+    \electronLoopDo
+  \fi
+}
+
+% \orbital{#electrons: 0,1,2}
+\newcommand\orbital[1]{%
+  \fbox{%
+    \ifcase#1
+      \phantom\spinup\!\phantom\spindown
+    \or
+      \spinup\!\phantom\spindown
+    \or
+      \spinup\!\spindown
+    \else
+      \bfseries**\strut
+    \fi
+  }%
+}
+
+% \orbitals{list of #electrons}
+\newcommand\orbitals[1]{\electronLoop\orbital{\hspace{-\fboxrule}}{#1}}
+
+% \subshell{name:list of #electrons}
+\newcommand\subshell[1]{%
+  \subshellX#1\endOfShell
+}
+\newcommand\subshellX{}
+\def\subshellX#1:#2\endOfShell{\doSubShell{#1}{#2}}
+
+\newcommand\subshellBox[2]{%
+  \begin{tabular}[t]{@{}c@{}}
+    \orbitals{#2}\\[-2pt]
+    \scriptsize#1%
+  \end{tabular}%
+}
+
+\newcounter{electrons}
+\newcommand\subshellText[2]{%
+  \setcounter{electrons}{0}%
+  \electronLoop{\addtocounter{electrons}}{}{#2}%
+  #1$^\arabic{electrons}$%
+}
+
+% \subshells{list of shells}
+\newcommand\subshells[1]{\electronLoop\subshell\SubShellSep{#1}}
+
+\newcommand\BoxedShells{%
+  \def\SubShellSep{ }%
+  \let\doSubShell\subshellBox
+}
+
+\newcommand\TextShells{%
+  \def\SubShellSep{}%
+  \let\doSubShell\subshellText
+}
+
+\BoxedShells

@@ -1,0 +1,11 @@
+*.aux
+*.auxlock
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.toc
+*.out
+*.bbl
+*.blg
+*.lof
