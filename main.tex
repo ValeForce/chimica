@@ -20,6 +20,7 @@
 
 \usepackage{mathtools}
 \usepackage{tikz}
+\usetikzlibrary {shapes.geometric}
 \usepackage{lipsum}
 \usepackage{chemfig}
 \usepackage{amsmath}
@@ -34,15 +35,6 @@
 \newcommand\@mathcircled[2]{%
   \tikz[baseline=(math.base)] \node[draw,ellipse,inner sep=1pt] (math) {$\m@th#1#2$};%
 }
-
-\newcommand\circleanswer[1]{%%
-  \begin{tikzpicture}[baseline=(word.base)]
-    \node[inner sep=0pt]  (word) {#1};
-    \begin{pgfinterruptboundingbox}
-    \node[draw] at (word) {\phantom{#1}};
-    \end{pgfinterruptboundingbox}
-  \end{tikzpicture}}
-
 \makeatother
 
 \title{Chimica Nino}
