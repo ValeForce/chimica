@@ -40,9 +40,9 @@ Rafforza la teoria di Huygens. Si pone una sorgente luminosa dietro una superfic
 \subsection{Conseguenze della luce come onda}
 Se la luce è un'onda, allora la sua energia è proporzionale a $E^2$ ed $H^2$, cioè dipende dalla ampiezza e non dalla sua frequenza. 
 
-Ciò fu messo in crisi dalle evidenze sperimentali sulla radiazione emessa da un corpo caldo: quando si riscalda un corpo, esso emetterà radiazione \comment{(per raffreddarsi) mi pare inutile scriverlo fai te pd negridimerda} con frequenza che \textbf{dipende} dalla sua temperatura e dalla sua composizione chimica. Ma ciò non dovrebbe accadere se l'energia non dipende dalla frequenza! Dunque la temperatura del corpo (e quindi la sua energia) è legata alla frequenza della radiazione che emette. 
+Ciò fu messo in crisi dalle evidenze sperimentali sulla radiazione emessa da un corpo caldo: quando si riscalda un corpo, esso riemetterà tale energia sotto forma di radiazione \comment{(per raffreddarsi) mi pare inutile scriverlo fai te pd negridimerda} con frequenza che \textbf{dipende} dalla sua temperatura e dalla sua composizione chimica. Ma ciò non dovrebbe accadere se l'energia non dipende dalla frequenza! Dunque la temperatura del corpo (e quindi la sua energia) è legata alla frequenza della radiazione che emette. 
 
-Un corpo nero è un oggetto ideale capace di assorbire radiazione incidente di qualunque frequenza\footnote{Per conservazione dell'energia emette anche radiazione a tutte le frequenze.}. La migliore approssimazione reale di corpo nero è una sfera di nerofumo con un piccolo foro in cui inviamo radiazione. Essa verrà riflessa varie volte all'interno riscaldando la sfera. Aumentando la temperatura, gli atomi si eccitano ed emettono radiazione diseccitandosi. Classicamente avremmo dovuto osservare uno spettro di emissione su tutte le frequenze fino all'UV, invece ci sono delle frequenze in cui l'intensità è maggiore: maggiore è la temperatura, più il picco di emissione si sposta a frequenze maggiori. Inoltre secondo la teoria classica l'energia della radiazione elettromagnetica doveva dipendere soltanto dalla sua ampiezza e non dalla frequenza. %forse quest'ultima frase è una ripetizione? Dio porco? scemo chi legge
+Un corpo nero è un oggetto ideale capace di assorbire radiazione incidente di qualunque frequenza\footnote{Per conservazione dell'energia emette anche radiazione a tutte le frequenze.}. La migliore approssimazione reale di corpo nero è una sfera di nerofumo con un piccolo foro in cui inviamo radiazione. Essa verrà riflessa varie volte all'interno riscaldando la sfera. Aumentando la temperatura, gli atomi si eccitano ed emettono radiazione diseccitandosi. Classicamente avremmo dovuto osservare uno spettro di emissione su tutte le frequenze fino all'UV, invece ci sono delle frequenze in cui l'intensità è maggiore: maggiore è la temperatura, più il picco di emissione si sposta a frequenze maggiori. 
 
 Il massimo dello spettro è legato alla temperatura dalla legge di Wien 
 $$T\cdot\lambda_{max}= \text{cost}= 2.8977\cdot 10^{-3} \text{m K}$$
@@ -50,3 +50,63 @@ $$T\cdot\lambda_{max}= \text{cost}= 2.8977\cdot 10^{-3} \text{m K}$$
 %oh merda a fine pagina 59 pure tu non chiudi una parentesi, tutto il resto del corso di chimica è solo una parentesi
 
 \subsection{Quantizzazione dell'energia}%devo andare mi sto pisciando addosso
+Max Planck fu il primo a parlare di energie "discrete": per un corpo non sono permesse tutte le energie, ma solo alcune (quindi non si può osservare una emissione in tutto il visibile).
+L'intuizione di Planck fu che gli atomi che compongono un corpo possono mostrare energie che soddisfano l'equazione
+$$E=nh\nu \qquad n\in\mathbb{N},n \neq 0 $$
+In essa $\nu$ è la frequenza della radiazione e h la costante di Planck.
+
+Per la prima volta si parla di quantizzazione: etichettato $h\nu$ un pacchetto di energia, l'energia varrà 1, 2, ..., n volte questa quantità con n numero intero. Si dice quindi che n quantizza la quantità di energia.
+Dunque mentre prima tutte le energie erano permesse, ora si parla di energie permesse: un atomo o i suoi elettroni non possono possedere qualunque valore di energia, ma solo alcuni. L'energia quindi non è più continua ma quantizzata.
+
+Quando osservo un oggetto di un certo colore, ciò che succede nei suoi atomi è che i loro elettroni si erano eccitati passando ad un valore più alto di energia e diseccitandosi emettono proprio la differenza di energia tra quel livello e lo stato fondamentale, a cui dall'eq. di Planck corrisponde una certa frequenza e quindi un certo colore. In altre parole, i livelli energetici degli atomi sono quantizzati, per cui i loro elettroni non possono avere qualsiasi valore energetico ma solo alcuni detti "stati permessi".
+
+In questo modo Planck spiega la radiazione del corpo nero.
+
+Le energie delle radiazioni elettromagnetiche si distribuiscono secondo la legge di distribuzione di Boltzmann:
+$$P=e^{{-\frac{nh\nu}{KT}}}$$
+\subsection{Effetto fotoelettrico}
+Altro fenomeno che non si riusciva a spiegare con la teoria classica.
+
+Esso consiste nell'emissione di elettroni da parte di una superficie metallica quando questa viene colpita da una radiazione elettromagnetica avente opportuna energia. Gli elettroni emessi si chiamano fotoelettroni
+Se la radiazione ha bassa energia non osserviamo fotoemissione, ma facendo crescere l'energia ci accorgiamo che a un certo punto tale fenomeno inizia a verificarsi. Da ciò si deduce che c'è una soglia minima da superare affinché si emettano elettroni. Inoltre se aumenta l'intensità della radiazione incidente l'energia degli elettroni emessi non cambia, aumenta solo il loro numero. Se invece aumenta la frequenza della radiazione l'energia cinetica dei fotoelettroni emessi aumenta
+
+Einstein ebbe l'intuizione di usare l'espressione di Planck e di applicare il principio di conservazione dell'energia: se invio una certa quantità di energia al materiale, affinché avvenga fotoemissione essa deve essere almeno uguale alla quantità necessaria per vincere la forza di attrazione elettrone-nucleo (energia di legame), che costituisce la soglia di emissione. Dopodiché, usando l'espressione di Planck fu chiaro che, essendo l'energia funzione della frequenza, se cambia la frequenza della radiazione incidente cambia anche l'energia. Usata una parte dell'energia per vincere l'energia di legame, il resto si trasforma in energia cinetica del fotoelettrone emesso.
+Pertanto all'aumentare della frequenza aumenta l'energia cinetica dell'elettrone.
+
+In generale quindi il pacchetto di energia dovrà essere uguale a un valore costante $\Phi$ detto potenziale di estrazione più un termine dato dall'energia cinetica dei fotoelettroni emessi:
+$$h\nu=\Phi+\frac{1}{2}mv^2$$.
+A questo punto Einstein affermò che la radiazione che arriva su una superficie deve essere composta da particelle, le quali arrivano sulla superficie e ad essa trasferiscono energia: ecco l'idea dei fotoni.
+
+Si torna quindi all'ipotesi di Newton.
+
+L'energia è allora portata dal fotone, che la trasferisce alla superficie nella quale l'elettrone usa parte di questa per sfuggire all'attrazione del nucleo e conserva il resto come energia cinetica:
+$$E_k=h\nu-h\nu_0$$
+$\nu_0$ è detta frequenza di soglia.
+
+Ma se la luce è fatta di particelle, come mai osservo fenomeni ondulatori?
+\subsection{Spettro di emissione}
+Supponimao di eccitare singoli atomi, inviando varie energie. Questi ne assorbiranno alcune soltanto, e nella fase di diseccitazione le riemetteranno. Si osserva che emettono righe ben precise, a lunghezze d'onda ben precise. L'insieme di queste righe costituisce lo spettro di emissione di un atomo.
+
+Il fatto che ci siano più righe implica che ci siano più stati permessi per l'elettrone.
+\subsection{Esperimento di Rutherford}
+Che tipo di modello atomico (struttura atomica) dobbiamo allora considerare per razionalizzare le emissioni?
+
+Inizialmente si pensava al modello a panettone di Thompsone, poi si passò a quello di Rutherford.
+
+Rutherford bombardò una lamina d'oro dello spesso di un migliaio di atomi con raggi $\alpha$ (ioni \ce{He^2+}). Egli osservò che la maggior parte di queste particelle attraversava indisturbata la lamina, come se non avessero incontrato ostacoli.
+Qualche particella invece subiva deviazioni molto grandi, e in qualche caso tornava persino indietro. Allora suppose che la maggior parte della materia fosse costituita da spazio vuoto e che la maggior parte della massa \comment{c'è scritto materia ma non ha un cazzo di senso usare due volte la stessa parola} fosse concentrataa in una piccolissima porzione dello spazio, quindi nella maggior parte dei casi le particelle passano indisturbate, ma nel caso in cui colpiscano la materia subiscono grandi deviazioni. Ecco l'idea della materia come spazio vuoto.
+
+Rutherford propose per primo che l'atomo fosse costituito da un nucleo localizzato al centro , dove era concentrata tutta la massa, mentre gli elettroni dovevano essere a grande distanza dal nucleo stesso.
+\subsection{L'atomo di Bohr (modello ragionevole)}
+Bohr fece una prima ipotesi, con cui riuscì a spiegare lo spettro di emissione dell'atomo di idrogeno.
+
+Egli pensò che l'atomo avesse una struttura simile a quella del sistema planetario, con un nucleo centrale dove c'è la massa e gli elettroni che ruotano a grande distanza dal nucleo.
+
+Il nucleo è fatto da protoni (le cariche positive) e un certo numero di neutroni che schermano i protoni fra di loro (se questi non ci fossero i protoni sarebbero instabili perché hanno la stessa carica e si respongerebbero). Gli elettroni infine rendono neutro l'atomo.
+
+Tuttavia, se l'elettrone ruota attorno al nucleo secondo la fisica classica deve compiere un moto a spirale fino a cadere sul nucleo perdendo energia, ovvero secondo il modello classico il modello degli elettroni che ruotano attorno al nucleo non era stabile.
+
+Bohr allora ipotizzò una condizione di equilibrio: un elettrone che ruota a una certa distanza dal nucleo subisce una forza centrifuga che tende ad allontanarlo dal nucleo, ma siccome sull'elettrone agisce anche la forza di attrazione nucleo-elettrone affinché il sistema sia stabile queste due quantità devono essere uguali.
+$$F_c=\frac{m_ev^2}{r} \quad \text{(Forza centrifuga)} \qquad F_el=-\frac{e^2}{r^2} \quad \text{(Forza elettrica)}$$
+$$\text{Condizione di equilibrio} \quad F_c=-F_el$$
+$$\implies \frac{}{}=\frac{}{}$$
