@@ -9,7 +9,6 @@
 *.bbl
 *.blg
 *.lof
-*.pdf
 *.fdb_latexmk
 *.synctex
 *.synctex(busy)
