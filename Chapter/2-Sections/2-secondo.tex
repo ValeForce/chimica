@@ -45,13 +45,12 @@ $$H\Psi=E\Psi \qquad \textbf{Equazione di Schrödinger}$$
 Questa è l'equazione d'onda per l'elettrone. Essa mette in relazione la funzione d'onda con la sue energia, ed essa prende il nome di "equazione agli autovalori", nel senso che possiamo immaginare l'energia dell'elettrone come data dalla combinazione lineare delle varie funzioni d'onda (che costituiscono le autofunzioni) moltiplicate per le rispettive energie (che costituiscono gli autovalori).
 
 Tuttavia questa equazione ammette un numero infinito di soluzioni, ma noi consideriamo solo quelle che hanno significato fisico e pertanto imponiamo due condizioni a contorno affinché restringiamo l'insieme delle soluzioni:
-
-$\bullet$ Le funzioni e le loro derivate prime devono essere finite, continue e ad un solo valore in ogni punto dello spazio;
-
-$\bullet$ Condizione di normalizzazione: mentre la funzione d'onda $\Psi$ non ha significato, il suo quadrato $\Psi^2$ rappresenta la probabilità di trovare l'elettrone attorno al nucleo. Essa deve corrispondere al 100\%, cioè devo avere certezza di ragionare su un volume dello spazio in cui la probabilità di trovare l'elettrone è totale. Questa condizione si scrive integrando su tutto lo spazio:
-$$\iiint \Psi^2dV=1$$
-Il significato di tale integrale è che per avere il 100\% di probabilità di trovare l'elettrone dovremmo considerare volumi infiniti. Nella pratica si scende al 95\% di probabilità, che è ragionevole in quanto per tale valore i raggi diventano di qualche Angstrom.\\
-
+\begin{itemize}
+  \item  Le funzioni e le loro derivate prime devono essere finite, continue e ad un solo valore in ogni punto dello spazio;
+  \item Condizione di normalizzazione: mentre la funzione d'onda $\Psi$ non ha significato, il suo quadrato $\Psi^2$ rappresenta la probabilità di trovare l'elettrone attorno al nucleo. Essa deve corrispondere al 100\%, cioè devo avere certezza di ragionare su un volume dello spazio in cui la probabilità di trovare l'elettrone è totale. Questa condizione si scrive integrando su tutto lo spazio:
+  $$\iiint \Psi^2dV=1$$
+  Il significato di tale integrale è che per avere il 100\% di probabilità di trovare l'elettrone dovremmo considerare volumi infiniti. Nella pratica si scende al 95\% di probabilità, che è ragionevole in quanto per tale valore il volume diventa piccolissimo. Ciò significa che l'elettrone ha un'alta probabilità di trovarsi vicino al nucleo, e man mano che ci sia allontana da esso la probabilità crolla drasticamente, per cui l'errore commesso nel considerare solo un volume piccolo attorno al nucleo è accettabile. Attenzione pero: l'elettrone occupa interamente il volume considerato e in ogni punto la probabilità di trovarlo è la stessa.
+\end{itemize}
 La funzione d'onda viene chiamata \textbf{orbitale}. Esso è come la casa di una persona: se una persona esiste potrebbe avere una casa, ma se non esiste sicuramente non esiste nemmeno casa sua. L'orbitale è una regione dello spazio dove può esserci l'elettrone: se c'è riempie tutto quello spazio, non è in un punto solo. Ecco perché era sbagliata l'orbita di Bohr in cui si muovevano gli elettroni. 
 
 In un atomo si hanno tante funzioni d'onda quanti sono gli elettroni (infatti più che di orbitali si parla di spin-orbitali).
@@ -86,15 +85,49 @@ I numeri quantici permettono di classificare le diverse funzioni d'onda. Essi so
   $$s=-\frac{1}{2}\implies \text{rotazione antioraria}$$
 \end{itemize}
 
-\textbf{Principio di esclusione di Pauli}: in un orbitale non possono stare più di due elettroni, e se ce ne sono due devono avere spin opposto.
+Per un atomo vale poi il \textbf{Principio di esclusione di Pauli}: in un orbitale non possono stare più di due elettroni, e se ce ne sono due devono avere spin opposto.
 
 Un modo più completo per enunciarlo è il seguente:
 
 "In un atomo non possono esistere due elettroni che abbiano la stessa sequenza di numeri quantici."
 
-In realtà stiamo dicendo la stessa cosa perché elettroni che stanno su orbitali diversi hanno i primi tre numeri quantici diversi, mentre elettroni che stanno nello stesso orbitale hanno i primi tre numeri quantici uguali ma spin opposto.
+In realtà stiamo dicendo la stessa cosa perché elettroni che stanno su orbitali diversi hanno i primi tre numeri quantici diversi, mentre elettroni che stanno nello stesso orbitale hanno i primi tre numeri quantici uguali ma spin opposto.\\
+
+Poiché tali numeri nascono da esigenze matematiche e non sono imposti, è chiaro che la funzione d'onda dipende da essi: $\Psi\rightarrow\Psi(n,l,m,s)$.
+
+\subsection{Il simbolismo degli orbitali}
+Al posto dei numeri quantici si usa un simbolismo che li riassume:
+\begin{itemize}
+\item Se l=0 si parla di orbitale s.
+
+In questo caso può essere solo m=0 e quindi si ha un solo tipo di orbitale s;
+\item Se l=1 si parla di orbitale p
+
+In questo caso m=-1, 0, 1 per cui ci sono tre tipi di orbitali p: $p_x, \; p_y \; \text{e} \; p_z$;
+\item Se l=2 si parla di orbitale d
+
+In questo caso m=-2, -1, 0, 1, 2 per cui ci sono cinque tipi di orbitali d:
+
+$d_{z^2}, \; d_{x^2-y^2}, \; d_{xy}, \; d_{xz} \; \text{e} \; d_{yz}$
+\end{itemize}  
+Tale classificazione vale $\forall n$, quindi avremo orbitale 1s, 2s, 3s ecc; orbitali 2p,3p ecc.; orbitali 3d ecc. 
+
 \subsection{Il principio di indeterminazione di Heisenberg}
-Esso è enunciato così:
+Il concetto di orbita quindi si perde, perché si è intuito che l'elettrone è interamente diffuso in una regione dello spazio. Da ciò segue che non abbiamo modo di conoscere con esattezza la sua posizione, e dunque si parla di probabilità (analogamente avviene per la velocità).
+Si introduce quindi il principio\footnote{È un principio perché non può essere dimostrato, ma che viene assunto vero in quanto non si è mai osservato un fenomeno che lo contraddicesse.} di indeterminazione di Heisenberg. Esso è legato alla conoscenza probabilistica di alcune grandezze ed è enunciato così:
 
 "Il prodotto tra l'indeterminazione sulla posizione $\Delta x$ e quella sulla quantità di moto $\Delta p$ deve sempre essere maggiore o uguale di $h/4\pi$"
-$$\Delta x \Delta p \geq \frac{h}{4\pi}$$
+$$\Delta x \Delta p \geq \frac{h}{4\pi}$$.
+Tale principio ci dice che se riusciamo a determinare la posizione con precisione elevata (il che significa commettere un errore piccolo), inevitabilmente crescerà l'errore che commetteremo sulla quantità di moto. Chiaramente vale anche il viceversa.
+
+Può essere riscritto anche come
+$$\Delta x \Delta v \geq \frac{\hbar}{2m} \qquad \hbar=\frac{h}{2\pi}$$
+\begin{itemize}
+  \item Per particelle macroscopiche la massa è grande, perciò $\hbar/2m$ è piccolo e di conseguenza possiamo conoscere con buona precisione la loro velocità e posizione;
+  \item Per particelle microscopiche la massa è piccola, perciò $\hbar/2m$ è molto grande e di conseguenza il prodotto tra le indeterminazioni d velocità e posizione, il che significa che se tentiamo di minimizzare uno dei due l'altro cresce di molto.
+\end{itemize}
+\newpage
+\subsection{La geometria degli orbitali}
+I numeri quantici ci danno energia e forma dell'orbitale (nel senso che ci dicono come varia la probabilità di trovare l'elettrone attorno al nucleo).
+
+Per l'atomo di idrogeno vale quanto aveva già affermato, cioè che l'energia è quantizzata da $n$. Egli infatti affermava, coi suoi raggi di Bohr, che all'aumentare di $n$ aumenta anche la distanza media elettrone-nucleo, cioè il limite esterno dell'orbitale.
