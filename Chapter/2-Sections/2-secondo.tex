@@ -263,5 +263,26 @@ La carica nucleare fa aumentare drasticamente il potenziale di ionizzazione.
 I valori energetici possono essere ottenuti dalla equazione di Schrödinger, correggendola:
 $$E=\frac{-313,6(Z^2)}{n^2}=-\frac{RZ^2}{n^2}$$
 dove 313,6 è l'energia dello stato fondamentale dell'atomo di idrogeno, che viene indicata anche con la costante di Rydberg $R$. Z è la carica nucleare.
-\subsection{Livelli dell'atomo di idrogeno}
+
+A partire dall'elio ciò non vale più: i valori sperimentali dell'energia non coincidono e gli orbitali 2s e 2p non sono degeneri. Non si hanno quindi soluzioni analitiche.
+
+Supponiamo per assurdo che non ci sia repulsione tra gli elettroni che occupano lo stesso orbitale, in questo caso il valore sperimentale dovrebbe coincidere con quello dato dall'equazione. Ciò che succede nella realtà è che gli elettroni si respingono l'un l'altro, destabilizzando il sistema (più è negativa l'energia, più stabile sarà il sistema) e pertanto è più facile strappare un elettrone(ricorda: l'energia di un elettrone in un dato orbitale è misurabile dal potenziale di ionizzazione di quell'orbitale). Ciò dipende dal fatto che gli elettroni non amano stare nello stesso orbitale, si respingono l'un l'altro in quanto aventi cariche dello stesso segno e per questo motivo il sistema è destabilizzato.
+\subsection{Sequenza energetica dell'atomo di idrogeno}
+\begin{itemize}
+  \item 1s più vicini al nucleo e energia più negativa.
+  \item 2s e 2p degeneri (4 totali).
+  \item 3s, 3p e 3d degeneri (1s+3p+5d=9 livelli).
+\end{itemize}
+Quando abbiamo a che fare con più elettroni questi livelli si separeranno in energia. Tant'è vero che riempiendo di elettroni gli orbitali a disposizione degli atomi, quando si arriva al potassio si trovano elettroni in orbitali 4s e i 3d ancora vuoti, fatto in disaccordo con la dipendenza dell'energia solo da n. La giustificazione sta nel fatto che ci sono orbitali, cioè funzioni d'onda, che penetrano fin dentro il nucleo quindi gli elettroni che li occupano sentiranno l'intera carica nucleare, mentre orbitali più esterni, che penetrano meno nel nucleo, se occupati vedranno elettroni che sentono una carica nucleare inferiore, perché c'è un'azione di schermaggio da parte degli elettroni interni. Ossia: gli elettroni interni schermeranno gli elettroni esterni dalla carica nucleare, che quindi non la sentiranno totalmente.
+Il motivo per cui si riempie prima il livello 4s lasciando vuoti i 5 orbitali 3d è quindi questo: la sua densità di probabilità radiale ha un massimo principale più esterno rispetto al 3d, ma gli ulteriori massimi sono a distanze prossime a quelle del nucleo, pertanto gli elettroni 4s sentiranno l'intera carica nucleare molto di più di quanto la sentano gli elettroni 3d, e in conseguenza a ciò i 4s si riempiono prima dei 3d.
 \subsection{La carica efficace}
+Con atomi polielettronici non c'è più la degenerazione dei livelli a parità di numero quantico principale, ma l'energia oltre che da n dipenderà anche da l.\\
+
+Ricorda: l'energia di un elettrone in un dato orbitale  equivale all'energia necessaria per strappare questi elettroni e ionizzare l'atomo usando l'equazione di Einstein per interpretare l'effetto fotoelettrico (inviamo una certa energia, misuriamo l'energia cinetica degli elettroni emessi e la differenza sarà il potenziale di ionizzazione. (Approssimazione di Koopmans: l'energia dell'elettrone di un orbitale è pari all'energia richiesta per ionizzare quegli elettroni))\\
+
+Per l'atomo di elio si ottiene, dall'equazione corretta, un potenziale di ionizzazione di -1254,4 Kcal/mol per l'orbitale 1s, mentre sperimentalmente si trova un valore di -567 Kcal/mol. Com'è possibile?
+
+Si pensa subito al fatto che a causa della presenza di due elettroni nello stesso orbitale ci sia una forte energia repulsiva che destabilizza il sistema. Tale termine repulsivo non permette di risolvere l'equazione di Schrödinger.
+
+Cerchiamo quindi di correggere ulteriormente l'equazione mettendo al posto della carica Z la carica effettica o efficae Z*. Ciò in pratica corrisponde al partiredal valore sperimentale osservato per valutare Z*:
+$$E=\frac{-313,6(Z*^2)}{n^2} \implies -567,7=-313,6\frac{RZ^2}{1} \implies Z*=1,34$$
