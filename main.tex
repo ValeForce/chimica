@@ -27,6 +27,9 @@
 \usepackage{array}
 \setlength\parindent{0pt}%e si gode, toglie lo spostmento a destra di una nuova riga
 
+% #ilchinonlaavràvintaesonoioadecideredovecazzodevestare
+\DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
+\newcommand{\irchi}[2]{\raisebox{\depth}{$#1\chi$}} % inner command, used by \rchi
 
 \makeatletter
 \newcommand\mathcircled[1]{%
