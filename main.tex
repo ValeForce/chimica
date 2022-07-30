@@ -8,6 +8,15 @@
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
+\usepackage{amssymb} % for harpoons
+\newcommand{\electron}[2]{{%
+        \newcommand*\up{\fbox{$\mathord\upharpoonleft\phantom{\downharpoonright}$}}%
+        \newcommand*\dwn{\fbox{$\mathord\downharpoonleft\phantom{\upharpoonright}$}}%
+        \newcommand*\updwn{\fbox{$\upharpoonleft\downharpoonright$}}%
+        \newcommand*\emp{\fbox{$\phantom{\downharpoonright}\phantom{\downharpoonright}$}}%
+        \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+        \begin{tabular}{c}#2\\[2pt]#1\end{tabular}%
+}}
 % Useful packages
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -48,7 +57,6 @@
 \begin{document}
 \maketitle
 \tableofcontents
-\comment{
 \chapter{Composizione materia e reazioni chimiche}
 
 \section{Prime nozioni base}%roba a cazzo
@@ -78,7 +86,7 @@
 \section{Ossidoriduzioni}
 \import{./Chapter/1-Sections/}{9-nona}
 
-}\chapter{Teoria atomica}
+\chapter{Teoria atomica}
 
 \section{Idee bizzarre di fisici bizzarri}
 \import{./Chapter/2-Sections}{1-primo}
