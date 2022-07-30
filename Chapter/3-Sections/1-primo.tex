@@ -10,7 +10,8 @@ Es:
     2° gruppo & $\chemfig{\charge{[circle]0=\.,180=\.}{Be}} \quad \chemfig{\charge{[circle]0=\.,180=\.}{Mg}} \quad \chemfig{\charge{[circle]0=\.,180=\.}{Ca}} \quad \chemfig{\charge{[circle]0=\.,180=\.}{Sr}} \quad \chemfig{\charge{[circle]0=\.,180=\.}{Ba}}$ & 6° gruppo & $\chemfig{\charge{[circle]0=\.,90=\.,180=\.,270=\:}{O}} \quad \chemfig{\charge{[circle]0=\.,90=\.,180=\.,270=\:}{S}}$\\
     3° gruppo & $\chemfig{\charge{[circle]0=\.,90=\.,180=\.}{B}} \quad \chemfig{\charge{[circle]0=\.,90=\.,180=\.}{Al}} \quad \chemfig{\charge{[circle]0=\.,90=\.,180=\.}{Ga}} \quad \chemfig{\charge{[circle]0=\.,90=\.,180=\.}{In}} \quad \chemfig{\charge{[circle]0=\.,90=\.,180=\.}{Tl}}$ & 7° gruppo & $\chemfig{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{F}} \quad \chemfig{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{Cl}}$\\
     4° gruppo & $\chemfig{\charge{[circle]0=\.,90=\.,180=\.,270=\.}{C}} \quad \chemfig{\charge{[circle]0=\.,90=\.,180=\.,270=\.}{Si}}$ & 8° gruppo & $\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{Ne}} \quad \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{Ar}}$\\
-\end{tabular}\\
+\end{tabular}
+\setlength\extrarowheight{0cm}\\
 
 Facciamo attenzione alla disposizione dei puntini successivamente al carbonio: il carbonio ha 4 elettroni esterni, quindi abbiamo 4 punti a 90° l'uno dall'altro. Nell'istante in cui il numero di elettroni è superiore a 4 gli elettroni iniziano ad accoppiarsi, quindi l'azoto avrà una coppia di elettroni e tre elettroni liberi, l'ossigeno due coppie di elettroni e due elettroni liberi, il fluoro tre coppie di elettroni e un elettrone libero, il neon quattro coppie di elettroni.
 
@@ -30,12 +31,81 @@ Immaginiamo che la molecola LiF sia rappresentabile come un sistema puramente io
 \\
 
 
-\schemestart
+$$\schemestart
 \chemfig{Li[He]@{x1}{2s^1}}
 \+
 \chemfig{F[He]2s^2@{x2}{2p^5}}
+\arrow
+\chemfig{Li+1s^2 \text{(o[He])}}
+\+
+\chemfig{F^{-}[He]2s^22p^6 \text{(o [Ne])}}
 \schemestop
 \chemmove[shorten <=2pt]{
-\draw(x1)..controls +(90:0.8cm)and+(north:0.8cm)..(x2);}
+\draw(x1)..controls +(60:1cm)and+(120:1cm)..(x2);}$$
 
-Dopo la freccia il litio non ha più l'elettrone 2s (quindi gli orbitali 2s e 2p sono tutti vuoti). Il fluoro invexe ha acquistato questo elettrone ceduto dal litio e adesso ha i livelli 2p pieni 
+$$\ce{Li \subshells{{1s:2}{2s:1}{2p:000}} + F \subshells{{1s:2}{2s:2}{2p:221}} -> Li^+ \subshells{{1s:2}{2s:0}{2p:000}} + F- \subshells{{1s:2}{2s:2}{2p:222}}}$$
+
+$$\schemestart
+\chemfig{@{x1}{\charge{[circle]180=\.}{Li}}}
+\+
+\chemfig{@{x2}{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{F}}}
+\arrow
+\chemfig{Li^+}
+\+
+\chemfig{\charge{[circle]0=\:, 45=$\scriptstyle-$, 90=\:,180=\:,270=\:}{F}}
+\schemestop
+\chemmove[shorten >=4pt]{
+\draw(x1.155)..controls +(60:0.6cm)and+(120:0.6cm)..(x2.190);}$$
+
+Dopo la freccia il litio non ha più l'elettrone 2s (quindi gli orbitali 2s e 2p sono tutti vuoti). Il fluoro invece ha acquistato questo elettrone ceduto dal litio e adesso ha i livelli 2p pieni, quindi su di esso abbiamo 8 elettroni di valenza, cioè esterni: 2 nel livello 2s e 6 nei tre livelli 2p. In questo modo raggiunge quindi l'ottetto. Il litio, avendo perso l'unico suo elettrone esterno 2s, ha assunto la configurazione elettronica esterna del gas nobile che lo precede, cioè l'elio.
+
+Quindi nel sistema LiF sia il litio, rappresentato in forma cationica, che il litio, rappresentato in forma anionica, si trovano ad avere la configurazione elettronica del gas nobile che lo precede (litio) o che che lo segue (fluoro). Utilizzando il formalismo di Lewis si vede come il litio abbia formalmente ceduto un elettrone al fluoro e su quest'ultimo si abbiano 4 coppie, ossia 8 elettroni esterni.
+
+Questo esempio ci indica il modo di ragionare per ottenere le strutture di Lewis.
+
+Attenzione! il formalismo di Lewis non ci permette di ragionare sulle geometrie delle molecole: non ci sono dati che ci permettono di dire nulla sulle geometrie, anche se scriveremo delle molecole tutte su un piano, ma questo approccio non rappresenta una disposizione spaziale della molecola che andremo a scrivere/disegnare.
+
+Es2 \ce{MgCl_2}
+
+Il magnesio è un elemento del secondo gruppo, ed ha 2 elettroni di tipo s. I suoi orbitali di tipo p sono totalmente vuoti. Il cloro invece è un alogeno, cioè appartiene al 7° gruppo e ha quindi sette elettroni esterni: due nel livello 2s e cinque nel livello 2p.
+
+Immaginiamo che il sistema sia puramente ionico. Sotto questa ipotesi ciò che avviene è che i due elettroni del magnesio vengono ceduti a due diversi atomi di cloro, i quali hanno ciascuno sette elettroni esterni, e in questo modo raggiungono l'ottetto:
+$$\ce{Mg \subshells{{1s:2}{2s:2}{2p:000}} + 2Cl \subshells{{1s:2}{2s:2}{2p:221}} -> Mg^{2+} \subshells{{1s:2}{2s:0}} + 2Cl- \subshells{{1s:2}{2s:2}{2p:222}}}$$
+
+$$\schemestart
+\chemfig{@{x1}{\charge{[circle]180=\:}{Mg \; +}}(-[1,,,,draw=none]@{x2}{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{Cl}})(-[7,,,,draw=none]@{x3}{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{Cl}})}
+\arrow
+\chemfig{Mg^{2+}}
+\+
+2 \chemleft(\chemfig{\charge{[circle]0=\:, 90=\:,180=\:,270=\:}{Cl}}\chemright)$^-$
+\schemestop
+\chemmove[shorten <=6pt, shorten >=4pt]{
+\draw(x1.180)..controls +(110:0.8cm)and+(0:0cm)..(x2.200);
+\draw(x1.180)..controls +(70:-0.8cm)and+(0:0cm)..(x3.150);
+}$$
+
+Ciò significa che stiamo immaginando che il magnesio perda totalmente due elettroni di tipo s, per cui avrà una carica due volte positiva, e il cloro acquisti un elettrone donato dal magnesio per completare il riempimento dei suoi livelli p. Ovviamente, se il magnesio cede due elettroni e il cloro può acquistarne solo uno, serviranno due atomi di cloro, i quali diventeranno due anioni cloruro.
+\subsection{Eccezioni alla regola dell'ottetto}
+La regola dell'ottetto parte dall'idea che riempire totalmente i livelli di valenza conferisce elevata stabilità al sistema. Quindi, ragionando in termini di blocco s e p, questo significa avere otto elettroni esterni al massimo, perché nei livelli s e p in totale riusciamo a mettere 8 elettroni. Tuttavia per alcuni composti essa non vale più:
+\begin{itemize}
+    \item Per gli elementi di transizione e i loro sistemi molecolari si parla di "\textbf{regola dei 18 elettroni}". Tali elementi presentano orbitali 4s, 3d e 4p. Ciò significa che possono ospitare 2 elettroni sui 4s, 10 elettroni sui 3d e 6 elettroni sui 4p, per un totale di 18 elettroni.
+    \item Ci sono molecole che non hanno la struttura tale da raggiungere la somma degli elettroni pari a 8. Ad esempio la molecola \ce{H_2}, due atomi di idrogeno che danno luogo alla sua forma molecolare, avrà un totale di due elettroni, in quanto l'atomo di idrogeno ne possiede solo uno. Altri esempi sono gli idruri: \ce{LiH, \; BeH_2}.
+    \item Ci sono molecole che presentano un numero di elettroni superiore a 8. In questi casi si parla di "\textbf{valenza espansa}".
+    \item Ci sono infine vari casi in cui il numero di elettroni è dispari, per cui ovviamente non può essere 8.
+\end{itemize}
+\subsection{Criteri per scrivere le strutture di Lewis}
+\begin{itemize}
+    \item L'atomo di idrogeno è sempre un atomo terminale, quindi in molecole con più atomi sappiamo per certo che l'atomo di idrogeno non andrà al centro;
+    \item L'atomo che presenta la più bassa elettronegatività (esclusi H e ioni metallici) è quello centrale e gli altri vanno disposti attorno ad esso. Se quindi ad esempio in una molecola avessi carbonio e ossigeno al centro ci starebbe il carbonio, perché l'ossigeno è più elettronegativo del carbonio e quindi non si mette al centro. Se avessi zolfo e ossigeno, metterei lo zolfo al centro e l'ossigeno ai lati;
+    \item Si considera il numero totale di elettroni di valenza, tenendo conto di eventuali cariche formali (ioni). Cioè: contiamo tutti gli elettroni di valenza di tutti gli atomi e li sommiamo, in modo tale da sapere quanti siamo gli elettroni totali di valenza della molecola. Se poi il sistema molecolare fosse carico ne dovremmo tenere conto, ossia se ha una carica n volte negativa dovremo aggiungere n elettroni al conteggio, se avesse carica m volte positiva dovremo sottrarre m elettroni;
+    \item Si pone un legame singolo (detto legame $\sigma$), ovvero una coppia di elettroni tra ciascuna coppia di atomi
+    
+    Cioè: avendo messo un atomo al centro, metto gli altri attorno (tenendo presente che non c'è una regola su come metterli attorno, perché non sto ragionando sulla reale geometria, che questa teoria non mi permette di vedere) e li unisco a quello centrae con un legame singolo, che immagino essere la rappresentazione di una coppia di elettroni di legame. Se immagino che ogni legame consumi due elettroni, avendo già fatto la somma totale degli elettroni, sottraggo gli elettroni che ho usato per i legami semplici al conto totale. Se restano elettroni, questi vanno assegnati a coppie agli atomi esterni (che sono quelli più elettronegativi) tentando di far raggiungere ad ognuno di questi l'ottetto. Se continuano ad avanzarne anche dopo che tutti gli elettroni esterni hanno raggiunto l'ottetto, li assegno all'atomo centrale.
+    \item Si sottrae dal numero di elettroni totali quelli usati per i legami $\sigma$;
+    \item Le coppie di elettroni restanti vanno assegnate agli atomi esterni, cercando di soddisfare la regola dell'ottetto; gli elettroni che dovessero ancora risultare in eccesso vanno assegnati all'atomo centrale;
+    \item Se dopo quest'ultima operazione l'atomo centrale non risulta ancora circondato da quattro coppie elettroniche, si trasformano alcuni doppietti degli atomi periferici in ulteriore legami con l'atomo centrale. Questi saranno detti legami $\pi$ (presenti in genere con atomi quali C, N, O e S)
+\end{itemize}
+\subsection{Esempi}
+\begin{itemize}
+    \item ES1 \ce{N_2} \quad n.e.=10
+\end{itemize}
