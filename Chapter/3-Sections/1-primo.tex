@@ -1,4 +1,4 @@
-Utilizzeremo il formalismo di Lewis per descrivere il legame in molecole semplici percHè i risultati spesso sono confrontabili con quelli delle teorie più sofisticate, cioè in molti casi il formalismo di Lewis descrive bene il legame chimico.
+Utilizzeremo il formalismo di Lewis per descrivere il legame in molecole semplici perché i risultati spesso sono confrontabili con quelli delle teorie più sofisticate, cioè in molti casi il formalismo di Lewis descrive bene il legame chimico.
 \subsection{Rappresentazione grafica}
 Immaginiamo di avere due atomi A e B legati tra loro con un legame semplice. Questo legame si rappresenta con una lineetta che unisce A e B, e immaginiamo che sia dovuto a una coppia di elettroni. Gli elettroni esterni che invece non partecipano ai legami vengono raffigurati con dei puntini.
 
@@ -21,7 +21,7 @@ Quindi, dopo aver messo un puntino su ogni "lato" a 90° l'uno dall'altro (e ci 
 
 "\textit{Gli atomi, nel legarsi tra loro, perdono, acquistano o cedono elettroni per raggiungere uno strato esterno di 8 elettroni. Gli atomi tendono a fare ciò per assumere la configurazione del gas nobile più vicino}". 
 
-Tale regola vale per elementi del secondo periodo e per una gran parte degli altri in composti semplici.
+Tale regola vale per elementi del secondo e del terzo periodo e per una gran parte degli altri in composti semplici.
 
 ES1
 
@@ -77,7 +77,7 @@ $$\schemestart
 \arrow
 \chemfig{Mg^{2+}}
 \+
-2 \chemleft(\chemfig{\charge{[circle]0=\:, 90=\:,180=\:,270=\:}{Cl}}\chemright)$^-$
+2 \chemleft(\chemfig{\charge{[circle]0=\:, 90=\:,180=\:,270=\:}{Cl}}\chemright{)^{-}}
 \schemestop
 \chemmove[shorten <=6pt, shorten >=4pt]{
 \draw(x1.180)..controls +(110:0.8cm)and+(0:0cm)..(x2.200);
@@ -93,6 +93,7 @@ La regola dell'ottetto parte dall'idea che riempire totalmente i livelli di vale
     \item Ci sono molecole che presentano un numero di elettroni superiore a 8. In questi casi si parla di "\textbf{valenza espansa}".
     \item Ci sono infine vari casi in cui il numero di elettroni è dispari, per cui ovviamente non può essere 8.
 \end{itemize}
+\newpage
 \subsection{Criteri per scrivere le strutture di Lewis}
 \begin{itemize}
     \item L'atomo di idrogeno è sempre un atomo terminale, quindi in molecole con più atomi sappiamo per certo che l'atomo di idrogeno non andrà al centro;
@@ -105,7 +106,346 @@ La regola dell'ottetto parte dall'idea che riempire totalmente i livelli di vale
     \item Le coppie di elettroni restanti vanno assegnate agli atomi esterni, cercando di soddisfare la regola dell'ottetto; gli elettroni che dovessero ancora risultare in eccesso vanno assegnati all'atomo centrale;
     \item Se dopo quest'ultima operazione l'atomo centrale non risulta ancora circondato da quattro coppie elettroniche, si trasformano alcuni doppietti degli atomi periferici in ulteriore legami con l'atomo centrale. Questi saranno detti legami $\pi$ (presenti in genere con atomi quali C, N, O e S)
 \end{itemize}
+
+A questo punto devo verificare se tutti gli atomi hanno raggiunto l'ottetto. Se si ho finito, se no inizio a trasformare alcuni doppietti cioè alcune coppie di elettroni degli atomi esterni in doppi legami, con l'obiettivo di far raggiungere anche all'atomo centrale l'ottetto elettronico. Secondo questa teoria, se i  legami iniziali erano etichettati legami semplici di tipo $\sigma$, i successivi (cioè laddove avremo per esempio un doppio legame) verranno etichettati legami $\pi$.
+
+Per quanto riguarda gli orbitali: orbitale di natura $\sigma$ signidica che c'è densità di carica lungo l'asse di legame, cioè lungo la congiungente dei due nuclei; orbitale di natura $\pi$ signfica che lungo l'asse di legame ci sarà un piano nodale
+
+Attenzione! La regola di Lewis per cui il secondo legame che si forma è di tipo $\pi$ non è sempre vera, infatti ci sono alcune molecole in cui sono presenti due legami, nma non è vero che sono uno $\sigma$ e uno $\pi$. Una di queste è la molecola \ce{C_2}, in cui i due atomi di carbonio sono legati da un doppio legame ed entrambi i legami hanno natura $\pi$.
+
+Come abbiamo visto si lavora solo con gli elettroni di valenza. Va da ricordare:
+\begin{itemize}
+    \item Gli elementi del 1° gruppo hanno un solo elettrone di valenza;
+    \item Quelli del 2° gruppo ne hanno due;
+    \item Quelli del 3° gruppo ne hanno tre;
+    \item Quelli del 4° gruppo ne hanno quattro;
+    \item Così via
+\end{itemize}
+
+Se quindi volessi sapere ad esempio quanti elettroni di valenza ha il silicio, come scrivo la configurazione elettronica?
+
+Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i 3s e i 3p. In particolare il silicio sta sotto l'ossigeno\footnote{La sequenza è: ossigeno, silicio, germanio, stagno e piombo}, quindi esso avrà due elettroni nei livelli 3s e due elettroni sui 3p (come l'ossigeno, che ha configurazione $2s^22p^2$). Inoltre la configurazione $1s^22s^22p^63s^23p^2$ può essere scritta come configurazione del neon (che è il gas nobile che precede il silicio) più i suoi elettroni di valenza: $\text{[Ne]}3s^23p^2$.
 \subsection{Esempi}
 \begin{itemize}
     \item ES1 \ce{N_2} \quad n.e.=10
+    
+    L'azoto appartiene al quinto gruppo (azoto, fosforo, arsenico, antimonio e bismuto), quindi i suoi elettroni di valenza sono 5: due di tipo s e tre di tipo p. Avendone due atomi, in totale avremo 10 elettroni.
+
+    Avendo solo due atomi dello stesso tipo, non si pone il problema di chi porre al centro, si possono considerare come due punti uniti da una linea, quindi li mettiamo accanto e li uniamo con un segmento che rappresenta un legame, il quale è costituito da una coppia di elettroni:
+    $$\schemestart
+    \chemfig{N-N}
+    \schemestop 
+    \quad 
+    \text{n.e. restanti=8}$$
+    Ciò significa che adesso restano 8 elettroni, che dovrò distribuire a coppie sui due atomi. Riusciamo a mettere due coppie su un azoto e due coppie sull'altro.
+
+    A questo punto contiamo gli elettroni su ogni atomo. Va da notare che i due elettroni impiegati nel legame contano come 2 elettroni per ciascun atomo, per cui per entrambi avremo 4 elettroni dati da due coppie più due elettroni di legame, per un totale di 6. Entrambi gli atomi di azoto quindi non raggiungono l'ottetto. Siccome la formula di Lewis prevede che ci siano 8 elettroni attorno a tutti gli atomi andiamo avanti: per ognuno dei due atomi, trasformiamo un doppietto in un doppio legame:
+    $$\schemestart
+    \chemfig{@{x1}{\charge{[circle]90=\:,270=\:}{N}}-[@{x2}]@{x3}{\charge{[circle]90=\:,270=\:}{N}}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x3.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x2.90);
+    \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
+    }$$
+    Se trasformassi un solo doppietto in doppio legame (ad esempio uno dell'azoto a sinistra), sull'atomo a sinistra avrei 2 elettroni dati dai doppietti più 4 elettroni di legame, quindi il totale è ancora 6; sull'atomo a destra invece avrei 
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:}{N}~\charge{[circle]0=\:}{N}}
+    \schemestop$$
+    \item ES2 \ce{O_2}
+    $$\schemestart
+    \chemfig{O-O}
+    \schemestop 
+    \quad
+    \text{n.e. restanti=10}$$
+    paperino
+    $$\schemestart
+    \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:,270=\:}{O}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);}$$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]90=\:,270=\:}{O} = \charge{[circle]90=\:,270=\:}{O}}
+    \schemestop$$
+    \item ES3 CO
+    $$\schemestart
+    \chemfig{C-O}
+    \schemestop 
+    \quad
+    \text{n.e. restanti=8}$$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:}{C}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
+    \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
+    }$$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:}{C}~\charge{[circle]0=\:}{O}}
+    \schemestop$$
+    \item ES4 NO
+    
+    $$\schemestart
+    \chemfig{N-O}
+    \schemestop
+    \quad
+    \text{n.e. restanti=9}
+    $$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]90=\.,180=\:}{N}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);}
+    $$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]90=\.,180=\:}{N}=\charge{[circle]0=\:,90=\:}{O}}
+    \schemestop$$
+    \item ES5 NO$^+$
+    $$\schemestart
+    \chemleft[\chemfig{N-O}\chemright{]^{+}}
+    \schemestop
+    \quad
+    \text{n.e. restanti=8}
+    $$
+    paperino
+    $$\schemestart
+    \chemleft[\chemfig{\charge{[circle]90=\:}{N}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}} \,\chemright{]^{+}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
+    \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
+    }$$
+    paperino
+    $$\schemestart
+    \chemleft[\chemfig{\charge{[circle]90=\:}{N}~\charge{[circle]90=\:}{O}}\chemright{]^{+}}
+    \schemestop$$
+    \item ES6 HCl
+    $$\schemestart
+    \chemfig{H-Cl}
+    \schemestop
+    \quad
+    \text{n.e. restanti=6}
+    $$
+    paperinp
+    $$\schemestart
+    \chemfig{H-\charge{[circle]0=\:,90=\:,270=\:}{Cl}}
+    \schemestop$$
+    \item ES7 \ce{CO_2}
+    $$\schemestart
+    \chemfig{O-C-O}
+    \schemestop
+    \quad
+    \text{n.e. restanti=12}
+    $$
+    paperino
+    $$\schemestart
+    \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]C-[@{x3}]@{x4}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
+    \draw(x4.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x3.90);
+    }$$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:,270=\:}{O}=C=\charge{[circle]0=\:,270=\:}{O}}
+    \schemestop
+    $$
+    \item ES8 \ce{NO_2}
+    $$\schemestart
+    \chemfig{O-N-O}
+    \schemestop
+    \quad
+    \text{n.e. restanti=13}
+    $$
+    paperino
+    $$\schemestart
+    \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\.}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
+    }$$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\.}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
+    \schemestop
+    $$
+    \item ES9 \ce{O_3}
+    $$\schemestart
+    \chemfig{O-O-O}
+    \schemestop
+    \quad
+    \text{n.e. restanti=14}
+    $$
+    paperino
+    $$\schemestart
+    \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
+    }$$
+    paperino
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
+    \schemestop
+    $$
+    \item ES10 \ce{NO_2^-}
+    $$\schemestart
+    \chemleft[\chemfig{O-N-O}\chemright{]^{-}}
+    \schemestop
+    \quad
+    \text{n.e. restanti=14}
+    $$
+    paperino
+    $$\schemestart
+    \chemleft[ \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
+    }$$
+    paperino
+    $$\schemestart
+    \chemleft[ \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\:}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}
+    \schemestop
+    $$
+    \item ES11 HCN
+    $$\schemestart
+    \chemfig{H-C-N}
+    \schemestop 
+    \quad
+    \text{n.e. restanti=6}$$
+    paperino
+    $$\schemestart
+    \chemfig{H-C-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{N}}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
+    \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
+    }$$
+    paperino
+    $$\schemestart
+    \chemfig{H-C~\charge{[circle]90=\:}{N}}
+    \schemestop$$
+    \item ES12 \ce{CH_2O}
+    $$
+    \schemestart
+    \chemfig{H-C(-[6]O)(-H)}
+    \schemestop
+    \quad
+    \text{n.e. restanti=6}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemfig{H-C([6]-[@{x1}]@{x2}{\charge{[circle]0=\:,180=\:,270=\:}{O}})(-H)}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.180)..controls +(180:0.5cm)and+(180:0.8cm)..(x1.60);}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemfig{H-C(=[6]\charge{[circle]0=\:,270=\:}{O})(-H)}
+    \schemestop
+    $$
+    \item ES13 \ce{CO_3^{2-}}
+    $$
+    \schemestart
+    \chemleft[\chemfig{O-C(-[6]O)(-O)}\chemright{]^{2-}}
+    \schemestop
+    \quad
+    \text{n.e. restanti=6}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-C([6]-[@{x1}]@{x2}{\charge{[circle]0=\:,180=\:,270=\:}{O}})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.180)..controls +(180:0.5cm)and+(180:0.8cm)..(x1.60);}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-C(=[6]\charge{[circle]0=\:,270=\:}{O})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \schemestop
+    $$
+    \item ES14 \ce{NO_3^-}
+    $$
+    \schemestart
+    \chemleft[\chemfig{O-N(-[6]O)(-O)}\chemright{]^{-}}
+    \schemestop
+    \quad
+    \text{n.e. restanti=6}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N([6]-[@{x1}]@{x2}{\charge{[circle]0=\:,180=\:,270=\:}{O}})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{-}}
+    \schemestop
+    \chemmove[shorten <=4pt, shorten >=4pt]{
+    \draw(x2.180)..controls +(180:0.5cm)and+(180:0.8cm)..(x1.60);}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N(=[6]\charge{[circle]0=\:,270=\:}{O})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{-}}
+    \schemestop
+    $$
 \end{itemize}
+\subsection{Strutture molecolari pi sbaddu}
+\begin{itemize}
+    \item Gruppo 4A
+    
+    
+    \chemname{\footnotesize\chemfig{H-C(-[2]H)(-[6]H)(-H)}}{metano \ce{CH_4}}
+    \qquad
+    \chemname{\footnotesize\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}}{etano \ce{C_2H_6}}
+    \qquad
+    \chemname{\footnotesize\chemfig{H-C(-[6]H)=C(-[6]H)-H}}{etilene \ce{C_2H_4}}
+    \qquad
+    \chemname{\footnotesize\chemfig{H-C~C-H}}{acetilene \ce{C_2H_2}}
+    
+    \item Gruppo 5A
+    
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-H}}{ammoniaca \ce{NH_3}}
+    \qquad
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-\charge{[circle]90=\:}{N}(-[6]H)-H}}{idrazina \ce{N_2H_4}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{H-N(-[6]H)(-[2]H)-H} \chemright{]^{+}}}{ione ammonio \ce{NH_4^+}}
+    \qquad 
+    \chemname{\footnotesize\chemleft[ \chemfig{H-\charge{[circle]90=\:,270=\:}{N}-H} \chemright{]^{-}}}{ione ammide \ce{NH_2^-}} 
+    \item Gruppo 6A
+    
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-H}}{acqua \ce{H_2O}}
+    \qquad
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-\charge{[circle]90=\:,270=\:}{O}-H}}{perossido di\\diidrogeno \ce{H_2O_2}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{H-\charge{[circle]90=\:}{O}(-[6]H)-H} \chemright{]^{+}}}{ione idronio \ce{H_3O^+}} 
+    \qquad \,
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-H} \chemright{]^{-}}}{ione idrossido \ce{OH^-}}
+    \item Gruppo 7A
+    
+    \chemname{\footnotesize\chemfig{H-\charge{[charge]0=\:,90=\:,270=\:}{F}}}{fluoruro di idrogeno \ce{HF}}
+    \item Ossiacidi comuni e i loro anioni
+    
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}}}{acido nitrico \ce{HNO_3}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}} \chemright{]^{-}}}{ione nitrato \ce{NO_3^-}}
+    \qquad
+    \chemname{\footnotesize\chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-Cl(-[2]\charge{[circle]90=\:,180=\:}{O}-H)(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}}}{acido perclorico\\\ce{HClO_4}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-Cl(-[2]\charge{[circle]90=\:,180=\:}{O})(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}}{ione perclorato\\\ce{ClO_4^-}}
+
+    \chemname{\footnotesize\chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-P(-[2]\charge{[circle]90=\:,180=\:}{O}-H)(-[6]\charge{[circle]0=\:,270=\:}{O}-[4]H)(-\charge{[circle]0=\:,90=\:}{O}-[6]H)}}{acido fosforico\\\ce{H_3PO_4}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-P(-[2]\charge{[circle]0=\:,90=\:,180=\:}{O})(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{3-}}}{ione fosfato\\\ce{PO_4^{3-}}
+    \qquad
+    \chemname{\footnotesize\chemfig{H-\charge{90=\:,270=\:}{Cl}-O}}{acido ipocloroso \ce{HOCl}}
+    %\chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{Cl}}}{acido ipocloroso \ce{HOCl}}
+    %\chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,270=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{Cl}} \chemright{]^{-}}}}{ione ipoclorito \ce{OCl^-}}
+\end{itemize}
+\subsection{Il concetto di risonanza}
