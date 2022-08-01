@@ -98,16 +98,14 @@ La regola dell'ottetto parte dall'idea che riempire totalmente i livelli di vale
 \begin{itemize}
     \item L'atomo di idrogeno è sempre un atomo terminale, quindi in molecole con più atomi sappiamo per certo che l'atomo di idrogeno non andrà al centro;
     \item L'atomo che presenta la più bassa elettronegatività (esclusi H e ioni metallici) è quello centrale e gli altri vanno disposti attorno ad esso. Se quindi ad esempio in una molecola avessi carbonio e ossigeno al centro ci starebbe il carbonio, perché l'ossigeno è più elettronegativo del carbonio e quindi non si mette al centro. Se avessi zolfo e ossigeno, metterei lo zolfo al centro e l'ossigeno ai lati;
+    \item Si dispongono gli atomi restanti attorno (tenendo presente che non c'è una regola su come metterli attorno, perché non sto ragionando sulla reale geometria, che questa teoria non mi permette di vedere)
     \item Si considera il numero totale di elettroni di valenza, tenendo conto di eventuali cariche formali (ioni). Cioè: contiamo tutti gli elettroni di valenza di tutti gli atomi e li sommiamo, in modo tale da sapere quanti siamo gli elettroni totali di valenza della molecola. Se poi il sistema molecolare fosse carico ne dovremmo tenere conto, ossia se ha una carica n volte negativa dovremo aggiungere n elettroni al conteggio, se avesse carica m volte positiva dovremo sottrarre m elettroni;
-    \item Si pone un legame singolo (detto legame $\sigma$), ovvero una coppia di elettroni tra ciascuna coppia di atomi
+    \item Si uniscono gli atomi attorno a quello centrale con un legame singolo (detto legame $\sigma$), formato una coppia di elettroni, che immagino essere la rappresentazione di una coppia di elettroni di legame. 
     
-    Cioè: avendo messo un atomo al centro, metto gli altri attorno (tenendo presente che non c'è una regola su come metterli attorno, perché non sto ragionando sulla reale geometria, che questa teoria non mi permette di vedere) e li unisco a quello centrae con un legame singolo, che immagino essere la rappresentazione di una coppia di elettroni di legame. Se immagino che ogni legame consumi due elettroni, avendo già fatto la somma totale degli elettroni, sottraggo gli elettroni che ho usato per i legami semplici al conto totale. Se restano elettroni, questi vanno assegnati a coppie agli atomi esterni (che sono quelli più elettronegativi) tentando di far raggiungere ad ognuno di questi l'ottetto. Se continuano ad avanzarne anche dopo che tutti gli elettroni esterni hanno raggiunto l'ottetto, li assegno all'atomo centrale.
-    \item Si sottrae dal numero di elettroni totali quelli usati per i legami $\sigma$;
-    \item Le coppie di elettroni restanti vanno assegnate agli atomi esterni, cercando di soddisfare la regola dell'ottetto; gli elettroni che dovessero ancora risultare in eccesso vanno assegnati all'atomo centrale;
-    \item Se dopo quest'ultima operazione l'atomo centrale non risulta ancora circondato da quattro coppie elettroniche, si trasformano alcuni doppietti degli atomi periferici in ulteriore legami con l'atomo centrale. Questi saranno detti legami $\pi$ (presenti in genere con atomi quali C, N, O e S)
+    \item Si sottrae dal numero di elettroni totali quelli usati per i legami semplici $\sigma$;
+    \item Le coppie di elettroni restanti vanno assegnate agli atomi esterni, tentando di far raggiungere ad ognuno di questi l'ottetto elettronico. Se continuano ad avanzarne anche dopo che tutti gli elettroni esterni hanno raggiunto l'ottetto, li assegno all'atomo centrale.
+    \item Se dopo quest'ultima operazione l'atomo centrale non risulta ancora circondato da quattro coppie elettroniche, si trasformano alcuni doppietti degli atomi periferici, cioè alcune coppie di elettroni degli atomi esterni, in doppi legami, con l'obiettivo di far raggiungere anche all'atomo centrale l'ottetto elettronico. Secondo questa teoria, se i  legami iniziali erano etichettati legami semplici di tipo $\sigma$, i successivi (cioè laddove avremo per esempio un doppio legame) verranno etichettati legami $\pi$ (presenti in genere con atomi quali C, N, O e S).
 \end{itemize}
-
-A questo punto devo verificare se tutti gli atomi hanno raggiunto l'ottetto. Se si ho finito, se no inizio a trasformare alcuni doppietti cioè alcune coppie di elettroni degli atomi esterni in doppi legami, con l'obiettivo di far raggiungere anche all'atomo centrale l'ottetto elettronico. Secondo questa teoria, se i  legami iniziali erano etichettati legami semplici di tipo $\sigma$, i successivi (cioè laddove avremo per esempio un doppio legame) verranno etichettati legami $\pi$.
 
 Per quanto riguarda gli orbitali: orbitale di natura $\sigma$ signidica che c'è densità di carica lungo l'asse di legame, cioè lungo la congiungente dei due nuclei; orbitale di natura $\pi$ signfica che lungo l'asse di legame ci sarà un piano nodale
 
@@ -147,27 +145,38 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \draw(x3.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x2.90);
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
     }$$
-    Se trasformassi un solo doppietto in doppio legame (ad esempio uno dell'azoto a sinistra), sull'atomo a sinistra avrei 2 elettroni dati dai doppietti più 4 elettroni di legame, quindi il totale è ancora 6; sull'atomo a destra invece avrei 
+    Se trasformassi un solo doppietto in doppio legame (ad esempio uno dell'azoto a sinistra), sull'atomo a sinistra avrei 2 elettroni dati dai doppietti più 4 elettroni di legame, quindi il totale è ancora 6 e l'ottetto non è stato raggiunto; sull'atomo a destra invece avremmo 4 elettroni dai dippietti più 4 di legame, dunque totale è 8: l'ottetto è stato raggiunto.
+    
+    Per far raggiungere l'ottetto anche all'azoto a sinistra, trasformo un doppietto dell'atomo a destra in un legame. Così facendo avremo un triplo legame tra i due atomi di azoto e un solo doppietto su ciascuno di esso:
     $$\schemestart
     \chemfig{\charge{[circle]180=\:}{N}~\charge{[circle]0=\:}{N}}
     \schemestop$$
-    \item ES2 \ce{O_2}
+
+    A questo punto entrambi gli atomi hanno raggiunto l'ottetto, perché ambedue avranno 6 elettroni dai legami e 2 dai doppietti, per un totale di 8.
+    \item ES2 \ce{O_2} n.e.=12
+    
+    L'ossigeno è al sesto gruppo quindi ha 6 elettroni esterni, avendone due atomi in totale ci sono 12 elettroni. Mettiamo accanto i due atomi e li uniamo con un legame che consuma 2 elettroni:
     $$\schemestart
     \chemfig{O-O}
     \schemestop 
     \quad
     \text{n.e. restanti=10}$$
-    paperino
+    I 10 elettroni restanti vanno distribuiti a coppie tra i due atomi. Mettiamo una coppia su un ossigeno e una sull'altro. Restano 6 elettroni. Se diamo ancora una coppia ciascuno resta una coppia, che assegniamo in modo arbitrario ad uno dei due, ad esempio a quello sinistro. In questo modo un atomo di ossigeno avrà 8 elettroni (3 coppie più 2 di legame) e raggiunge l'ottetto, l'altro ha 6 elettroni (2 coppie più 2 di legame) e non lo raggiunge.
     $$\schemestart
     \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:,270=\:}{O}}
     \schemestop
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);}$$
-    paperino
+    Trasformiamo allora uno dei doppietti dell'ossigeno che ne ha 3 in doppio legame:
     $$\schemestart
     \chemfig{\charge{[circle]90=\:,270=\:}{O} = \charge{[circle]90=\:,270=\:}{O}}
     \schemestop$$
-    \item ES3 CO
+    Contando adesso gli elettroni, sia a sinistra che a destra avremo attorno 8 elettroni (2 coppie più 4 di legame)\\
+
+    Va da notare che non potevamo prevedere che un sistema a 10 elettroni quale \ce{N_2}, propone un triplo legame, mentre un sistema a 12 elettroni quale \ce{O_2}  è formato da un doppio legame. Questa regola quindi ci permette di scrivere le formule di struttura delle molecole
+    \item ES3 CO n.e.=10
+    
+    Il monossido di carbonio è formato da un atomo di carbonio, che è del quarto gruppo e ha 4 elettroni di valenza, e da un atomo di ossigeno, che è del sesto gruppo e ha 6 elettroni di valenza, per un totale di 10 come nel caso di \ce{N_2}, quindi ci troveremo in una situazione analoga.
     $$\schemestart
     \chemfig{C-O}
     \schemestop 
@@ -401,40 +410,40 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \item Gruppo 4A
     
     
-    \chemname{\footnotesize\chemfig{H-C(-[2]H)(-[6]H)(-H)}}{metano \ce{CH_4}}
+    \chemname{\footnotesize\chemfig{H-C(-[2]H)(-[6]H)(-H)}}{metano\\\ce{CH_4}}
     \qquad
-    \chemname{\footnotesize\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}}{etano \ce{C_2H_6}}
+    \chemname{\footnotesize\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}}{etano\\\ce{C_2H_6}}
     \qquad
-    \chemname{\footnotesize\chemfig{H-C(-[6]H)=C(-[6]H)-H}}{etilene \ce{C_2H_4}}
+    \chemname{\footnotesize\chemfig{H-C(-[6]H)=C(-[6]H)-H}}{etilene\\\ce{C_2H_4}}
     \qquad
-    \chemname{\footnotesize\chemfig{H-C~C-H}}{acetilene \ce{C_2H_2}}
+    \chemname{\footnotesize\chemfig{H-C~C-H}}{acetilene\\\ce{C_2H_2}}
     
     \item Gruppo 5A
     
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-H}}{ammoniaca \ce{NH_3}}
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-H}}{ammoniaca\\\ce{NH_3}}
     \qquad
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-\charge{[circle]90=\:}{N}(-[6]H)-H}}{idrazina \ce{N_2H_4}}
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-\charge{[circle]90=\:}{N}(-[6]H)-H}}{idrazina\\\ce{N_2H_4}}
     \qquad
-    \chemname{\footnotesize\chemleft[ \chemfig{H-N(-[6]H)(-[2]H)-H} \chemright{]^{+}}}{ione ammonio \ce{NH_4^+}}
+    \chemname{\footnotesize\chemleft[ \chemfig{H-N(-[6]H)(-[2]H)-H} \chemright{]^{+}}}{ione ammonio\\\ce{NH_4^+}}
     \qquad 
-    \chemname{\footnotesize\chemleft[ \chemfig{H-\charge{[circle]90=\:,270=\:}{N}-H} \chemright{]^{-}}}{ione ammide \ce{NH_2^-}} 
+    \chemname{\footnotesize\chemleft[ \chemfig{H-\charge{[circle]90=\:,270=\:}{N}-H} \chemright{]^{-}}}{ione ammide\\\ce{NH_2^-}} 
     \item Gruppo 6A
     
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-H}}{acqua \ce{H_2O}}
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-H}}{acqua\\\ce{H_2O}}
     \qquad
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-\charge{[circle]90=\:,270=\:}{O}-H}}{perossido di\\diidrogeno \ce{H_2O_2}}
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-\charge{[circle]90=\:,270=\:}{O}-H}}{perossido di\\diidrogeno\\\ce{H_2O_2}}
     \qquad
-    \chemname{\footnotesize\chemleft[ \chemfig{H-\charge{[circle]90=\:}{O}(-[6]H)-H} \chemright{]^{+}}}{ione idronio \ce{H_3O^+}} 
+    \chemname{\footnotesize\chemleft[ \chemfig{H-\charge{[circle]90=\:}{O}(-[6]H)-H} \chemright{]^{+}}}{ione idronio\\\ce{H_3O^+}} 
     \qquad \,
-    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-H} \chemright{]^{-}}}{ione idrossido \ce{OH^-}}
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-H} \chemright{]^{-}}}{ione idrossido\\\ce{OH^-}}
     \item Gruppo 7A
     
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]0=\:,90=\:,270=\:}{F}}}{fluoruro di idrogeno \ce{HF}}
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]0=\:,90=\:,270=\:}{F}}}{fluoruro di idrogeno\\\ce{HF}}
     \item Ossiacidi comuni e i loro anioni
     
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}}}{acido nitrico \ce{HNO_3}}
+    \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}}}{acido nitrico\\\ce{HNO_3}}
     \qquad
-    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}} \chemright{]^{-}}}{ione nitrato \ce{NO_3^-}}
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}} \chemright{]^{-}}}{ione nitrato\\\ce{NO_3^-}}
     \qquad
     \chemname{\footnotesize\chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-Cl(-[2]\charge{[circle]90=\:,180=\:}{O}-H)(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}}}{acido perclorico\\\ce{HClO_4}}
     \qquad
@@ -447,7 +456,14 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{Cl}}}{acido ipocloroso\\\ce{HOCl}}
     \qquad
     \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{Cl}} \chemright{]^{-}}}{ione ipoclorito\\\ce{ClO^-}}
-
+\begin{center}
     \chemname{\footnotesize\chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-S(-[2]\charge{[circle]90=\:,180=\:}{O}-H)(-[6]\charge{[circle]180=\:,270=\:}{O}-H)-\charge{[circle]0=\:,90=\:,270=\:}{O}}}{acido solforico\\\ce{H_2SO_4}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-S(-[2]\charge{[circle]90=\:,180=\:}{O}-H)(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}}{ione idrogeno-\\solfato \ce{HSO_4^-}}
+    \qquad
+    \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-S(-[2]\charge{[circle]0=\:,90=\:,180=\:}{O})(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{2-}}}{ione solfato\\\ce{HSO_4^{2-}}}
+\end{center}
+
+
 \end{itemize}
 \subsection{Il concetto di risonanza}
