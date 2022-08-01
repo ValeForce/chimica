@@ -177,12 +177,15 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \item ES3 CO n.e.=10
     
     Il monossido di carbonio è formato da un atomo di carbonio, che è del quarto gruppo e ha 4 elettroni di valenza, e da un atomo di ossigeno, che è del sesto gruppo e ha 6 elettroni di valenza, per un totale di 10 come nel caso di \ce{N_2}, quindi ci troveremo in una situazione analoga.
+
+    Per prima cosa scriviamo il carbonio e l'ossigeno e li leghiamo con un legame semplice
     $$\schemestart
     \chemfig{C-O}
     \schemestop 
     \quad
     \text{n.e. restanti=8}$$
-    paperino
+    Abbiamo consumato due elettroni, quindi ne restano 8.
+    Essendoci atomi diversi, si inizia ad assegnare doppietti all'atomo più elettronegativo fin quando non raggiunge l'ottetto. In questo caso l'ossigeno è più elettronegativo, quindi ad esso assegno 3 coppie e solo dopo la coppia che resta la metto sul carbonio
     $$\schemestart
     \chemfig{\charge{[circle]180=\:}{C}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
     \schemestop
@@ -190,37 +193,54 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
     \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
     }$$
-    paperino
+    L'ossigeno qui ha già raggiunto l'ottetto (3 coppie +un legame semplice), mentre il carbonio ha solo 4 elettroni (un doppietto e un legame semplice).
+
+    Allora trasformiamo prima un doppietto dell'ossigeno in legame, ma così facendo il carbonio non raggiunge ancora l'ottetto, dunque trasformiamo anche un secondo doppietto in legame. In questo modo otterremo un triplo legame e ci sarà un doppietto sul carbonio e uno sull'ossigeno:
     $$\schemestart
     \chemfig{\charge{[circle]180=\:}{C}~\charge{[circle]0=\:}{O}}
     \schemestop$$
-    \item ES4 NO
+    L'ottetto è così raggiunto per entrambi gli atomi (un doppietto e 6 elettroni di legame)
+    \item ES4 NO n.e.=11
     
+    L'azoto ha 5 elettroni di valenza, mentre l'ossigeno ne ha 6. In totale abbiamo 11 elettroni, ed è il primo esempio con numero di elettroni dispari.
+    Mettiamo i due atomi accanto e li leghiamo con un legame semplice:
     $$\schemestart
     \chemfig{N-O}
     \schemestop
     \quad
     \text{n.e. restanti=9}
     $$
-    paperino
+    Restano 9 elettroni. Essendo dispari non possiamo ottenere solo doppietti: avremo 4 doppietti e un elettrone.
+
+    Iniziamo ad assegnare a coppie questi elettroni all'atomo più elettronegativo fino a fargli raggiungere l'ottetto. In questo caso è l'ossigeno, a cui diamo 3 doppietti. Restano 3 elettroni, che diventano un doppietto e un elettrone dispari posti sull'azoto.
+
+    Mentre l'ossigeno ha raggiunto l'ottetto, l'azoto no ed è anche lontano dal raggiungerlo, perché intorno ha 5 elettroni (due dal legame, una coppia e un elettrone spaiato). Trasformiamo allora un doppietto dell'ossigeno in doppio legame:
     $$\schemestart
     \chemfig{\charge{[circle]90=\.,180=\:}{N}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
     \schemestop
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);}
     $$
-    paperino
+    L'ossigeno continua ad aver raggiunto l'ottetto (4 dai legami più 4 dai doppietti), l'azoto avrà 7 elettroni (4 dai legami più 2 dai doppietti più 1 spaiato). Dobbiamo fermarci, non abbiamo cos'altro fare: l'ottetto, per l'azoto, non può essere raggiunto. Se trasformassimo un ulteriore doppietto dell'ossigeno in legame, sull'azoto ci sarebbero 9 elettroni, cosa impossibile perché al massimo attorno ad un atomo possono stare 8 elettroni.
+
+    Secondo la descrizione di Lewis avremo un elettrone spaiato su questa molecola, cosa che comporta l'avere proprietà paramagnetiche. Infatti i fenomeni magnetici sono dovuti all'esistenza di elettroni spaiati sulla molecola 
     $$\schemestart
     \chemfig{\charge{[circle]90=\.,180=\:}{N}=\charge{[circle]0=\:,90=\:}{O}}
     \schemestop$$
     \item ES5 NO$^+$
+    
+    Consideriamo il catione della molecola precedente. Abbiamo strappato un elettrone, per cui nel conteggio finale dovremo togliere un elettrone. L'azoto dà 5 elettroni, l'ossigeno 6, meno uno in totale 10.
+
+    Uniamo i due atomi con un legame:
     $$\schemestart
     \chemleft[\chemfig{N-O}\chemright{]^{+}}
     \schemestop
     \quad
     \text{n.e. restanti=8}
     $$
-    paperino
+    Consumiamo due elettroni, ne restano 8. Inizio a completare l'ottetto dell'elemento più elettronegativo che è l'ossigeno: ad esso diamo 3 doppietti. Resta un doppietto che diamo all'azoto.
+
+    L'ossigeno ha raggiunto l'ottetto, l'azoto ha solo 4 elettroni (un doppietto e due dal legame). Trasformiamo allora due diversi doppietti dell'ossigeno in ulteriori legami:
     $$\schemestart
     \chemleft[\chemfig{\charge{[circle]90=\:}{N}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}} \,\chemright{]^{+}}
     \schemestop
@@ -228,29 +248,37 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
     \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
     }$$
-    paperino
+    In questo modo si ottiene un triplo legame che contiamo come 6 elettroni, in più su ciascun atomo c'è un doppietto per cui entrambi hanno 8 elettroni intorno.
+    Quindi quello che succede togliendo un elettrone a questa molecola è che il numero di legami aumenta: da 2 nella molecola \ce{NO} a 3 nella molecola \ce{NO^+}
     $$\schemestart
     \chemleft[\chemfig{\charge{[circle]90=\:}{N}~\charge{[circle]90=\:}{O}}\chemright{]^{+}}
     \schemestop$$
-    \item ES6 HCl
+    \item ES6 HCl n.e.=8
+    
+    L'acido cloridrico è formato da idrogeno, che ha un solo elettrone e cloro, che ne ha 7, per un totale di 8.
+
+    Leghiamo i due atomi usando due elettroni per formare un legame semplice:
     $$\schemestart
     \chemfig{H-Cl}
     \schemestop
     \quad
     \text{n.e. restanti=6}
     $$
-    paperinp
+    Restano 6 elettroni da assegnare all'atomo più elettronegativo, ossia al cloro:
     $$\schemestart
     \chemfig{H-\charge{[circle]0=\:,90=\:,270=\:}{Cl}}
     \schemestop$$
+    Il cloro ha raggiunto l'ottetto. Ovviamente non ci poniamo il problema per l'idrogeno perché esso ha solo un orbitale 1s e al massimo può avere attorno a sé 2 elettroni, che sono quelli del legame.
     \item ES7 \ce{CO_2}
+    
+    Nell'anidride carbonica l'elemento meno elettronegativo è il carbonio, che quindi va al centro, mentre ai lati opposti vanno i due atomi di ossigeno:
     $$\schemestart
     \chemfig{O-C-O}
     \schemestop
     \quad
     \text{n.e. restanti=12}
     $$
-    paperino
+    I due atomi di ossigeno danno 12 elettroni, il carbonio ne dà 4. In totale sono 16, ma ne abbiamo usati 4 per formare i legami e quindi ne restano 12, che distribuiamo agli atomi esterni più elettronegativi. Essendoci 2 ossigeni, assegnamo a ciascuno una coppia alla volta:
     $$\schemestart
     \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]C-[@{x3}]@{x4}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
     \schemestop
@@ -258,75 +286,98 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
     \draw(x4.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x3.90);
     }$$
-    paperino
+    Riusciamo a distribuire tutti gli elettroni mettendo 3 coppie su ciascun ossigeno, senza che ne rimangano.
+    Questi avranno così raggiunto l'ottetto (6 elettroni dalle coppie e due dal legame), a differenza del carbonio che attorno a sé solo 4 elettroni dovuti ai due legami semplici. Pertanto trasformiamo un doppietto dell'ossigeno a sinistra in doppio legame e altrettanto facciamo con l'ossigeno a destra:
     $$\schemestart
     \chemfig{\charge{[circle]180=\:,270=\:}{O}=C=\charge{[circle]0=\:,270=\:}{O}}
     \schemestop
     $$
-    \item ES8 \ce{NO_2}
+    In questo modo sia gli ossigeni (con due doppietti e 4 elettroni di legame) che il carbonio (con 8 elettroni di legame) hanno completato l'ottetto.
+
+    Il formalismo di Lewis quindi ci dice che l'anidride carbonica va scritta con doppi legami carbonio-ossigeno. Ribadiamp poi che tale formalismo non entra nel merito della vera geometria della molecola, cionostante l'abitudine è quella di scrivere gli atomi che stanno attorno a quello centrale in modo tale che siano più distanti possibile.
+    \item ES8 \ce{NO_2} n.e.=17
+    
+    Nel diossido di azoto i due ossigeni danno 12 elettroni, l'azoto 5, per un totale di 17 elettroni.
+    L'azoto è l'atomo più elettronegativo tra i due, quindi lo mettiamo al centro e ai suoi lati poniamo gli ossigeni, che leghiamo all'azoto con due legami semplici:
     $$\schemestart
     \chemfig{O-N-O}
     \schemestop
     \quad
     \text{n.e. restanti=13}
     $$
-    paperino
+    Abbiamo consumato 4 elettroni, ne restano 13 che distribuiamo attorno agli atomi esterni, perché più elettronegativi. Assegnando una coppia per volta alternando gli ossigeni fino a che questi raggiungano l'ottetto, consumiamo 12 elettroni (3 coppie per atomo). L'elettrone restante viene assegnato all'azoto centrale:
     $$\schemestart
     \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\.}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
     \schemestop
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
     }$$
-    paperino
+    In questo modo l'azoto ha 5 elettroni. Avendo attorno a sé un numero dispari di elettroni possiamo già prevedere che non raggiungerà l'ottetto. L'unica cosa che si può fare è prendere un doppietto qualunque di uno dei due ossigeni e trasformalo in doppio legame:
     $$\schemestart
     \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\.}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
     \schemestop
     $$
-    \item ES9 \ce{O_3}
+    In questo modo l'ossigeno di sinistra ha raggiunto l'ottetto (4 dai doppietti più 4 dai legami), quello di destra pure (6 dai doppietti e 2 dal legame), ma l'azoto ha solo 7 elettroni (4 dal doppio legame, 2 dal legame singolo e 1 spaiato). Non possiamo fare altro.
+
+    Tuttavia questo formalismo ci suggerisce che questa molecola, avendo un elettrone spaiato, mostrerà proprietà paramagnetiche.
+    \newpage
+    \item ES9 \ce{O_3}\footnote{L'ozono è un allotropo dell'ossigeno. Se ne sente l'odore quando durante un temporale  vi sono forti fulimini e l'ossigeno dell'aria viene in parte trasformato in ozono. L'odore è simile a quello della pioggia. Inoltre esso è molto ossidante, tant'è che in alcuni posti viene utilizzato per rendere potabili le acque} n.e.=18
+    
+    Essendo composto da 3 atomi di ossigeno, ne mettiamo uno qualunque al centro e gli altri due ai lati e leghiamo i tre atomi con due legami semplici
     $$\schemestart
     \chemfig{O-O-O}
     \schemestop
     \quad
     \text{n.e. restanti=14}
     $$
-    paperino
+    In totale abbiamo 18 elettroni, meno 4 usati per i legami ne restano 14, che dobbiamo distribuire col criterio finora usato. Infatti, sebbene abbiano la stessa elettronegatività perché sono tutti identici, gli elettroni vanno comunque assegnati prima agli atomi periferici e se restano a quello centrale.
+    
+    14 elettroni significa 7 coppie. Assegnamo 3 coppie all'atomo a sinistra e 3 coppie all'atomo di destra così che raggiungano l'ottetto, e la coppia che resta la assegnamo all'atomo centrale:
     $$\schemestart
     \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
     \schemestop
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
     }$$
-    paperino
+    A differenza di quelli periferici, l'ossigeno centrale non ha raggiunto l'ottetto. Prendiamo allora uno qualunque dei 6 doppietti degli atomi periferici e lo trasformiamo in un ulteriore legame:
     $$\schemestart
     \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
     \schemestop
     $$
-    \item ES10 \ce{NO_2^-}
+    In questo modo l'atomo di sinistra (con 4 elettroni dai doppietti e 4 dai legami), che quello centrale (con 2 elettroni dai doppietti e 6 dai legami), che quello di destra (con 6 elettroni dai doppietti e 2 dai legami) hanno raggiunto l'ottetto  
+    \item ES10 \ce{NO_2^-} n.e.=18
+    
+    Nell'anione nitrato i due ossigeni forniscono 12 elettroni, l'azoto 5 per un totale di 17, più una carica negativa si arriva a 18. Mettiamo al centro l'azoto perché meno elettronegativo, ai lati i due ossigeni e li leghiamo all'azoto con due legami seplici:
     $$\schemestart
     \chemleft[\chemfig{O-N-O}\chemright{]^{-}}
     \schemestop
     \quad
     \text{n.e. restanti=14}
     $$
-    paperino
+    Consumiamo 4 elettroni coi legami, ne restano 14, ovvero 7 coppie. Assegnamo 6 di queste ai due ossigeni laterali che così raggiungono l'ottetto, e quella restante all'azoto:
     $$\schemestart
     \chemleft[ \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}
     \schemestop
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
     }$$
-    paperino
+    L'azoto avrà solo 6 elettroni introno, quindi prendiamo un doppietto qualunque da uno dei due atomi e lo trasformiamo in un ulteriore legame: 
     $$\schemestart
     \chemleft[ \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\:}{N}-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}
     \schemestop
     $$
-    \item ES11 HCN
+    Si ottiene una formula in cui l'ossigeno a sinistra (con 4 elettroni dai doppietti e 4 dai legami), quello a destra (con 6 elettroni dai doppietti e 2 dal legame) e l'azoto (con 2 elettroni dal doppietto e 6 dai legami) hanno raggiunto l'ottetto.
+
+    Non avendo elettroni spaiati, questo anione non presenta proprietà paramagnetiche ma solo diamagnetiche, che sono una proprietà intrinseca di tutti i sistemi (anche di quelli che hanno elettroni spaiati, in quel caso si sommano proprietà paramagnetiche e diamagnetiche), dovuta a livelli elettronici pieni, e gli elementi, anche quando hanno elettroni spaiati, hanno i livelli interni pieni. Fa eccezione solo l'idrogeno, perché non ha livelli interni.
+    \item ES11 HCN n.e.=10
+    
+    Per disegnare l'acido cianidrico ricordiamo che l'idrogeno è sempre un atomo terminale, per cui per quale atomo mettere al centro confrontiamo solo l'elettronegatività di carbonio e azoto. Il carbonio è meno elettronegativo, quindi va al centro:
     $$\schemestart
     \chemfig{H-C-N}
     \schemestop 
     \quad
     \text{n.e. restanti=6}$$
-    paperino
+    L'idrogeno contribuisce con un elettrone, il carbonio con 4 e l'azoto con 5 per un totale di 10. Legando idrogeno e azoto consumiamo 4 elettroni, quindi ne restano 6 ossia 3 doppietti che assegnamo all'atomo esterno più elettronegativo, cioè l'azoto
     $$\schemestart
     \chemfig{H-C-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{N}}}
     \schemestop
@@ -334,11 +385,15 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
     \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
     }$$
-    paperino
+    L'azoto raggiunge l'ottetto (6 dai doppietti e 2 dal legame), per l'idrogeno non si pone il problema perché può ospitare solo due elettroni.
+    Il carbonio invece ha solo 4 elettroni dai legami, quindi trasformiamo due doppietti dell'azoto in ulteriori legami (se ne trasformassimo solo uno attorno al carbonio ci sarebbero 6 elettroni):
     $$\schemestart
     \chemfig{H-C~\charge{[circle]90=\:}{N}}
     \schemestop$$
-    \item ES12 \ce{CH_2O}
+    Carbonio e azoto saranno quindi legati da un triplo legame. In questo modo sia carbonio (con 8 elettroni di legame) e l'azoto (con 6 elettroni di legame e 2 dal doppietto) raggiungono l'ottetto
+    \item ES12 \ce{CH_2O} n.e.=12
+    
+    La formaldeide va scritta con carbonio al centro (è il meno elettronegativo) e i due idrogeni e l'ossigeno intorno legati ad esso con un legame semplice:
     $$
     \schemestart
     \chemfig{H-C(-[6]O)(-H)}
@@ -346,7 +401,8 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \quad
     \text{n.e. restanti=6}
     $$
-    paperino
+    N.B.: sebbene in questa formula i legati siano posti a 90° l'uno dall'altro, ciò non è un'indicazione sulla vera geometria della molecola.
+    Due atomi di idrogeno danno 2 elettroni, l'ossigeno 6 e il carbonio 4, per un totale di 12. Consumiamo però 6 elettroni nei legami, quindi ne restano 6, che assegnamo all'ossigeno in quanto più elettronegativo e che raggiunge così l'ottetto (6 elettroni dai doppietti più 2 dal legame). Il carbonio centrale invece non lo ha raggiunto, quindi trasformiamo un doppietto dell'ossigeno in doppio legame:
     $$
     \schemestart
     \chemfig{H-C([6]-[@{x1}]@{x2}{\charge{[circle]0=\:,180=\:,270=\:}{O}})(-H)}
@@ -354,13 +410,15 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.180)..controls +(180:0.5cm)and+(180:0.8cm)..(x1.60);}
     $$
-    paperino
+    Si forma quindi un doppio legame tra carbonio e ossigeno. In questo modo il carbonio (con 8 elettroni di legame) e l'ossigeno (con 4 elettroni dai doppietti e 4 dai legami) raggiungono l'ottetto.
     $$
     \schemestart
     \chemfig{H-C(=[6]\charge{[circle]0=\:,270=\:}{O})(-H)}
     \schemestop
     $$
-    \item ES13 \ce{CO_3^{2-}}
+    \item ES13 \ce{CO_3^{2-}} n.e.=24
+    
+    Nell'anione carbonato il carbonio fornisce 4 elettroni, i tre ossigeni in totale 18, più le due cariche in totale abbiamo 24 elettroni. Al centro mettiamo il carbonio che è meno elettronegativo e mettiamo i tre ossigeni attorno, legandoli ad esso con legami semplici:
     $$
     \schemestart
     \chemleft[\chemfig{O-C(-[6]O)(-O)}\chemright{]^{2-}}
@@ -368,7 +426,7 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \quad
     \text{n.e. restanti=6}
     $$
-    paperino
+    Con i legami consumiamo 6 elettroni, ne restano 18 cioè 9 coppie, che distribuiamo ai 3 ossigeni, esaurendoli tutti:
     $$
     \schemestart
     \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-C([6]-[@{x1}]@{x2}{\charge{[circle]0=\:,180=\:,270=\:}{O}})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
@@ -376,13 +434,22 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.180)..controls +(180:0.5cm)and+(180:0.8cm)..(x1.60);}
     $$
-    paperino
+    Così facendo i 3 ossigeni hanno raggiunto l'ottetto, mentre il carbonio ha 6 elettroni dati da tre legami. Scegliamo allora un qualunque doppietto da uno qualsiasi dei tre ossigeni e lo trasformiamo in doppio legame
     $$
     \schemestart
     \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-C(=[6]\charge{[circle]0=\:,270=\:}{O})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
     \schemestop
     $$
+    In questo modo il carbonio raggiunge l'ottetto (8 elettroni di legame).
+
+    Con quale criterio abbiamo scelto di usare un doppietto di uno dei tre atomi di ossigeno e non degli altri?
+
+    Nessun criterio, in modo arbitrario. Siamo noi a scegliere quale dei tre ossigeni sia legato al carbonio con un doppio legame. Quindi quando abbiamo due o più atomi esterni identici e scegliamo quale debba essere legato all'atomo centrale con un doppio legame quello che stiamo facendo è ipotizzare che ci sia una "formula limite" tra le varie possibili, perché avremmo potuto benissimo scegliere che fosse l'atomo di sinistra a essere legato con un doppio legame, o quello a destra. Tutte e tre le formule sono possibili.
+    
+    Verrà chiarito meglio dopo, per il momento diciamo che stiamo scrivendo una delle possibili formule-limite.
     \item ES14 \ce{NO_3^-}
+    
+    Nell'anione nitrato i tre ossigeni fornisce 18 elettroni,
     $$
     \schemestart
     \chemleft[\chemfig{O-N(-[6]O)(-O)}\chemright{]^{-}}
@@ -438,7 +505,7 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-H} \chemright{]^{-}}}{ione idrossido\\\ce{OH^-}}
     \item Gruppo 7A
     
-    \chemname{\footnotesize\chemfig{H-\charge{[circle]0=\:,90=\:,270=\:}{F}}}{fluoruro di idrogeno\\\ce{HF}}
+    \footnotesize\chemfig{H-\charge{[circle]0=\:,90=\:,270=\:}{F}} \quad fluoruro di idrogeno \ce{HF}
     \item Ossiacidi comuni e i loro anioni
     
     \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:,270=\:}{O}-N(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})=\charge{[circle]0=\:,90=\:}{O}}}{acido nitrico\\\ce{HNO_3}}
