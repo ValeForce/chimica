@@ -13,12 +13,17 @@ ossido basico + acqua = base (idrossido)
 base + acido = sale (neutralizzazione)
 
 Esempi:
-$$\ce{ AO + H2O -> H2OAO2 } \; \text{acido}$$ 
+$$\ce{ AO + H2O -> H2AO2 } \; \text{acido}$$ 
 $$\ce{ AO + H2O -> A(OH)_2 } \;  \text{base}$$
 Infine c'è l'ossido anfotero che può essere base o acido:
 $$\ce{ H_2AO_2 <- AO + H_2O -> A(OH)_2 }$$%era qui ora è fixato in teoria, lo scopriremo quando compileremo (11:11 11/07/2022)
 %Adesso infiniti esempi mi rompo il cazzo oggi 07/07/2022 vedremo domani
 %08/07 tutto ok, normale voglia di bestemmiare
+
+Nelle reazioni che seguono, il ragionamento è il seguente: consideriamo un elemento A, che ha valenza n, e lo facciamo reagire con \ce{O_2}. A destra della reazione, come pedice di A metteremo il 2 dell'ossigeno e come pedice di O la valenza n di A;
+$$\ce{A + O_2 -> A_2O_n}$$
+Questa reazione ci dice che n atomi di ossigeno reagiscono con 2 atomi di A. Tuttavia la reazione non è bilanciata, cioè non ci sono lo stesso numeri atomi sia a destra che a sinistra. Per bilanciare mettiamo il pedice n dell'ossigeno a destra come coefficiente dell'ossigeno a sinistra e il pedice 2 dell'elemento A a destra lo moltiplichiamo per 2 e lo mettiamo come coefficiente di A a sinistra:
+$$\ce{4A + nO_2= A_2O_n }$$
 \subsection{Primo gruppo}
 I metalli del primo gruppo hanno un elettrone che cedono:
 $$\ce{ Li + O_2 -> Li_2O }$$
@@ -36,7 +41,8 @@ $$\ce{ Al + O_2 -> Al_2O_3 }$$
 Bilanciamento:
 $$\ce{ 4 Al + 3O_2 -> 2 (Al_2O_3)} \; \text{ossido di alluminio}$$
 \textbf{Nota} Gallio, indio e tallio hanno valenza 1 o valenza 3. La loro configurazione elettronica infatti ha due elettroni nel s e uno nel p, quindi o gliene strappi uno (quello del p) o tutti e tre.% (e si gode). 
-$$\electron{ns}{\updwn} \quad \electron{np}{\up \emp \emp}$$
+
+$$\subshell{ns:2} \; \subshell{np:100}$$
 Attenzione che se è 4s o 5s ecc dipende all'elemento (per gallio è 4s/4p).
 $$\ce{ Ga + O_2 -> Ga2O }$$
 Bilancio:
@@ -53,7 +59,6 @@ Si usano i suffissi \textbf{-oso} per valenza minore e \textbf{-ico} per valenza
 
 $$\ce{ Ga_2O} \; \text{ossido galloso}$$
 $$\ce{ Ga_2O_3} \; \text{ossido gallico}$$
-$$\electron{ns}{\updwn}\quad \electron{np}{\up \up \emp}$$ 
 Innio
 $$\ce{In + O_2 -> In_2O}$$
 Bilancio
@@ -70,7 +75,8 @@ Bilancio
 $$\ce{4Tl + 3O_2 -> 2(Tl_2O_3)} \; \text{ossido tallico}$$
 \subsection{Quarto gruppo}
 Possono avere sia valenza 2 che valenza 4.
-$$\electron{ns}{\updwn} \quad \electron{np}{\up \up \emp}$$
+$$\subshell{ns:2} \; \subshell{np:110}$$
+
 Silicio
 $$\ce{ Si + O_2 -> Si_2O_4=SiO_2 } \; \text{(bi)ossido di silicio}$$
 
@@ -82,13 +88,29 @@ $$\ce{ 2 Ge + O_2 -> 2 (GeO) } \; \text{ossido germanoso}$$
 $$\ce{ Ge + O_2 -> Ge_2O_4=GeO_2 } \; \text{(valenza 4)}$$
 Bilancio
 $$\ce{ Ge + O_2 -> GeO_2 } \; \text{ossido germanico}$$
+
+Stagno
+$$\ce{Sn + O_2 -> Sn_2O_2=SnO} \; \text{(valenza 2)}$$
+Bilancio
+$$\ce{2Sn + O_2 -> 2Sn_O}$$
+$$\ce{Sn + O_2 -> Sn_2O_4=SnO_2} \; \text{(valenza 4)}$$
+Bilancio
+$$\ce{Sn + 2O_2 -> 2SnO_2}$$
+
+Piombo
+$$\ce{Pb + O_2 -> Pb_2O_2=PbO} \; \text{(valenza 2)}$$
+Bilancio
+$$\ce{2Pb + O_2 -> 2Pb_O}$$
+$$\ce{Pb + O_2 -> Pb_2O_4=PbO_2} \; \text{(valenza 4)}$$
+Bilancio
+$$\ce{Pb + 2O_2 -> 2PbO_2}$$
 \subsection{Quinto gruppo}
 Valenza 3 o 5 (3 elettroni spaiati nel p).
-$$\electron{ns}{\updwn} \quad \electron{np}{\up \up \up}$$
+$$\subshell{ns:2} \; \subshell{np:111}$$
 Se la valenza è 3 viene coinvolto solo il livello p, se è 5 anche quello s\\
 Bismuto
 $$\ce{ Bi + O_2 -> Bi_2O_3} \; \text{valenza 3}$$ Bilancio
-$$\ce{ 2 Bi + 3 O_2 -> 2 (Bi_2O_3)} \; \text{ossido bismutoso}$$
+$$\ce{ 4 Bi + 3 O_2 -> 2 (Bi_2O_3)} \; \text{ossido bismutoso}$$
 $$\ce{ Bi + O_2 -> Bi_2O_5} \; \text{valenza 5}$$Bilancio
 $$\ce{ 4 Bi + 5 O_2 -> 2 (Bi_2O_5)} \; \text{ossido bismutico}$$
 \subsection{Elementi di transizione}
