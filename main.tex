@@ -30,13 +30,26 @@
 \usepackage{mathtools}
 \usepackage{tikz}
 \usetikzlibrary {shapes.geometric}
+\usetikzlibrary{decorations.markings}
 \usepackage{lipsum}
 \usepackage{chemfig}
 \usepackage{amsmath}
 \usepackage{array}
 \setlength\parindent{0pt}%e si gode, toglie lo spostmento a destra di una nuova riga
 
-
+\pgfdeclaredecoration{ddbond}{initial}{
+  \state{initial}[width=4pt]{
+    \pgfpathlineto{\pgfpoint{4pt}{0pt}}
+    \pgfpathmoveto{\pgfpoint{2pt}{2pt}}
+    \pgfpathlineto{\pgfpoint{4pt}{2pt}}
+    \pgfpathmoveto{\pgfpoint{4pt}{0pt}}
+  }
+  \state{final}{
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+\tikzset{lddbond/.style={decorate, decoration=ddbond}}
+\tikzset{rddbond/.style={decorate, decoration={ddbond, mirror}}}
 
 % #ilchinonlaavràvintaesonoioadecideredovecazzodevestare
 \DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
