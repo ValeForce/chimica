@@ -324,9 +324,8 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \item ES9 \ce{O_3}\footnote{L'ozono è un allotropo dell'ossigeno. Se ne sente l'odore quando durante un temporale  vi sono forti fulimini e l'ossigeno dell'aria viene in parte trasformato in ozono. L'odore è simile a quello della pioggia. Inoltre esso è molto ossidante, tant'è che in alcuni posti viene utilizzato per rendere potabili le acque} n.e.=18
     
     Essendo composto da 3 atomi di ossigeno, ne mettiamo uno qualunque al centro e gli altri due ai lati e leghiamo i tre atomi con due legami semplici
-    $$\schemestart
+    $$
     \chemfig{O-O-O}
-    \schemestop
     \quad
     \text{n.e. restanti=14}
     $$
@@ -348,9 +347,8 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \item ES10 \ce{NO_2^-} n.e.=18
     
     Nell'anione nitrato i due ossigeni forniscono 12 elettroni, l'azoto 5 per un totale di 17, più una carica negativa si arriva a 18. Mettiamo al centro l'azoto perché meno elettronegativo, ai lati i due ossigeni e li leghiamo all'azoto con due legami seplici:
-    $$\schemestart
+    $$
     \chemleft[\chemfig{O-N-O}\chemright{]^{-}}
-    \schemestop
     \quad
     \text{n.e. restanti=14}
     $$
@@ -447,9 +445,11 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     Nessun criterio, in modo arbitrario. Siamo noi a scegliere quale dei tre ossigeni sia legato al carbonio con un doppio legame. Quindi quando abbiamo due o più atomi esterni identici e scegliamo quale debba essere legato all'atomo centrale con un doppio legame quello che stiamo facendo è ipotizzare che ci sia una "formula limite" tra le varie possibili, perché avremmo potuto benissimo scegliere che fosse l'atomo di sinistra a essere legato con un doppio legame, o quello a destra. Tutte e tre le formule sono possibili.
     
     Verrà chiarito meglio dopo, per il momento diciamo che stiamo scrivendo una delle possibili formule-limite.
-    \item ES14 \ce{NO_3^-}
+    \item ES14 \ce{NO_3^-} n.e.=24
     
-    Nell'anione nitrato i tre ossigeni fornisce 18 elettroni,
+    Nell'anione nitrato i tre ossigeni forniscono 18 elettroni, l'azoto fornisce 5 elettroni e siamo a 23, avendo una carica negativa abbiamo ul elettrone extra da considerare per cui in totale 24, come nel caso precedente.
+
+    L'azoto va al centro in quanto meno elettronegativo,mentre gli ossigeni vanno messi attorno. Per legarli all'azoto consumiamo 6 elettroni:
     $$
     \schemestart
     \chemleft[\chemfig{O-N(-[6]O)(-O)}\chemright{]^{-}}
@@ -457,7 +457,7 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \quad
     \text{n.e. restanti=6}
     $$
-    paperino
+    Restano 18 elettroni, cioè 9 coppie: ne assegnamo 3 a ciascun ossigeno, esaurendole tutte:
     $$
     \schemestart
     \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N([6]-[@{x1}]@{x2}{\charge{[circle]0=\:,180=\:,270=\:}{O}})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{-}}
@@ -465,12 +465,15 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.180)..controls +(180:0.5cm)and+(180:0.8cm)..(x1.60);}
     $$
-    paperino
+    Gli ossigeni hanno raggiunto l'ottetto, l'azoto no. Allora ancora una volta, in modo del tutto arbitrario, trasformiamo un doppietto di uno qualunque tra i tre ossigeni in doppio legame:
     $$
     \schemestart
     \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-N(=[6]\charge{[circle]0=\:,270=\:}{O})(-\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{-}}
     \schemestop
     $$
+    Adesso anche l'azoto ha raggiunto l'ottetto (8 elettroni di legame).
+
+    Anche in questo caso abbiamo scelto una delle tre possibili formule limite, che corrispondono ad avere un doppio legame con l'ossigeno a sinistra, in basso o a destra. Quello che si dovrebbe fare è scriverle tutte e tre e dire che le formule sono ugualmente probabili.
 \end{itemize}
 \subsection{Strutture molecolari pi sbaddu}
 \begin{itemize}
@@ -485,6 +488,7 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \qquad
     \chemname{\footnotesize\chemfig{H-C~C-H}}{acetilene\\\ce{C_2H_2}}
     
+    Nota: il metano è il gas che arriva nelle tubature. Considerando le regole di Lewis, l'idrogeno è periferico, quindi il carbonio va al centro. In totale la molecola ha 8 elettroni (4 dal carbonio e 4 dai quattro idrogeni), che consumiamo tutti nel legare gli atomo di idrogeno al carbonio, il quale così raggiunge l'ottetto. Analogamente per le altre molecola, che sono simili.
     \item Gruppo 5A
     
     \chemname{\footnotesize\chemfig{H-\charge{[circle]90=\:}{N}(-[6]H)-H}}{ammoniaca\\\ce{NH_3}}
@@ -530,6 +534,91 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \qquad
     \chemname{\footnotesize\chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-S(-[2]\charge{[circle]0=\:,90=\:,180=\:}{O})(-[6]\charge{[circle]0=\:,180=\:,270=\:}{O})-\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{2-}}}{ione solfato\\\ce{HSO_4^{2-}}}
 \end{center}
-
+    Nota: a volte la formula dell'acido solforico viene scritta con dei doppi legami zolfo ossigeno. Il motivo è che inizialmente, partendo dal concetto di valenza, si facevano partire dall'atomo tanti legami quant'era la sua valenza. Nell'acido solforico lo zolfo ha valenza 6, quindi per legarlo a 4 ossigeni due di questi dovranno avere un doppio legame. In questo modo però attorno allo zolfo ci sarebbero 12 elettroni, quindi la regola dell'ottetto sarebbe violata. È quindi più corretto rappresentarlo come abbiamo fatto noi. Analogamente per i due ioni solfati.
 \end{itemize}
 \subsection{Il concetto di risonanza}
+Entriamo nel merito di quei composti che possono presentare più formule-limite, come ad esempio gli ioni nitrato \ce{NO_3-} e carbonato \ce{CO_3^{2-}}. Ci chiediamo quindi perché scriviamo solo una delle varie formule possibili e cosa implica che ci sia più di una possibilità
+
+Per rispondere a queste domanda, dobbiamo introdurre una definizione impropria dell'\text{ordine di legame}(o bond order): per il momento questa sarà sufficiente, in seguito ne daremo una più precisa. 
+
+Per il momento consideriamo l'ordine di legame come il numero di legame. Quindi un legame semplice ha ordine di legame 1, un legame doppio ordine di legame 2, un triplo ordine 3 ecc.\\
+
+Dobbiamo capire quali formule diverse possono essere scritte e come queste contribuiscano alla formula reale, perché è chiaro che se possiamo scrivere più formule queste saranno o tutte vere o tutte false, oppure se è vera solo una di questa dovremmo il perché, dato che l'abbiamo scelta arbitrariamente.
+
+Riprendiamo quindi alcuni esempi delle formule di struttura:
+\begin{itemize}
+    \item ES1 \ce{O_3}
+    $$
+    \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-\charge{[circle]90=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
+    $$
+    Osservando gli elettroni esterni degli ossigeni notavamo che quello centrale non raggiungeva l'ottetto, per cui sceglievamo un doppietto dell'ossigeno o di sinistra o di destra e lo trasformavamo in doppio legame:
+    $$\schemestart
+    \chemfig{\charge{[circle]180=\:,270=\:}{O}=\charge{[circle]90=\:}{O}-\charge{[circle]0=\:,90=\:,270=\:}{O}}
+    \;
+    \arrow{<->}
+    \;
+    \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-\charge{[circle]90=\:}{O}=\charge{[circle]0=\:,270=\:}{O}}
+    \schemestop
+    $$
+    Entrambe le scelte sono valide, perché in entrambi i casi tutti e tre gli atomi hanno raggiunto l'ottetto. Qual è allora quella vera?
+
+    Se non potessimo distinguere i due atomi di ossigeno, potremmo pensare che la formula a destra non sia altro che quella di sinistra ruotata di 180°, quindi sarebbero la stessa formula. Nella realtà invece possiamo distinguere i due ossigeni, ad esempio imponendo che siano due isotopi diversi, per cui le formule-limite sono diverse. Tuttavia esse non sono vere, perché nella realtà l'ozono può essere descritto al 50\% da una formula e al 50\%, dall'altra, ossia la funzione d'onda molecolare sarà data da una combinazione lineare della funzione d'onda che descrive la struttura a sinistra e di quella che descrive la struttura a destra.
+
+    In altre parole, nella molecola dell'ozono non abbiamo un doppio legame e uno semplice: entrambi i legami saranno una via di mezzo tra un legame semplice e uno doppio. Ne segue che l'ordine di legame non è 1 per un legame e 2 per l'altro, ma vale 1.5  per entrambi
+    $$
+    \chemfig{O-[,,,,,rddbond]O-[,,,,,rddbond]O}
+    $$
+    Quindi nella realtà le formule limite non sono vere, ma sono vere le loro combinazioni lineari.
+    \item ES2 \ce{CO_3^{2-}}
+    $$
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:-30]C([:270]-\charge{[circle]0=\:,180=\:,270=\:}{O})(-[:30]\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:}{O}=[:-30]C(-[270]\charge{[circle]0=\:,180=\:,270=\:}{O})(-[:30]\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \arrow{<->}
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:-30]C(-[270]\charge{[circle]0=\:,180=\:,270=\:}{O})(=[:30]\charge{[circle]90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \arrow{<->}
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:-30]C(=[270]\charge{[circle]180=\:,270=\:}{O})(-[:30]\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \schemestop
+    $$
+    paperino
+    $$\chemleft[ \chemfig{
+    O-[:-30,,,,,lddbond]C(-[:30,,,,,lddbond]O)-[:270,,,,rddbond]O} \chemright{]^{2-}}
+    $$
+    \item ES3
+    $$
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:30]\charge{[circle]90=\:}{N}-[:-30]\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,270=\:}{O}=[:30]\charge{[circle]90=\:}{N}-[:-30]\charge{[circle]0=\:,90=\:,270=\:}{O}} \chemright{]^{-}}
+    \arrow{<->}
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:30]\charge{[circle]90=\:}{N}=[:-30]\charge{[circle]90=\:,270=\:}{O}} \chemright{]^{-}}
+    \schemestop
+    $$
+    paperino
+    $$
+    \chemleft[\chemfig{O-[:30,,,,,rddbond]N-[:-30,,,,,rddbond]O}\chemright{]^{-}}
+    $$
+   \item ES4
+   $$
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:-30]N([:270]-\charge{[circle]0=\:,180=\:,270=\:}{O})(-[:30]\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    $$
+    paperino
+    $$
+    \schemestart
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:}{O}=[:-30]N(-[270]\charge{[circle]0=\:,180=\:,270=\:}{O})(-[:30]\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \arrow{<->}
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:-30]N(-[270]\charge{[circle]0=\:,180=\:,270=\:}{O})(=[:30]\charge{[circle]90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \arrow{<->}
+    \chemleft[ \chemfig{\charge{[circle]90=\:,180=\:,270=\:}{O}-[:-30]N(=[270]\charge{[circle]180=\:,270=\:}{O})(-[:30]\charge{[circle]0=\:,90=\:,270=\:}{O})} \chemright{]^{2-}}
+    \schemestop
+    $$
+    paperino
+    $$\chemleft[ \chemfig{
+    O-[:-30,,,,,lddbond]N(-[:30,,,,,lddbond]O)-[:270,,,,rddbond]O} \chemright{]^{2-}}
+    $$
+\end{itemize}
