@@ -136,12 +136,14 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     Ciò significa che adesso restano 8 elettroni, che dovrò distribuire a coppie sui due atomi. Riusciamo a mettere due coppie su un azoto e due coppie sull'altro.
 
     A questo punto contiamo gli elettroni su ogni atomo. Da notare che i due elettroni impiegati nel legame contano come 2 elettroni per ciascun atomo, per cui per entrambi avremo 4 elettroni dati da due coppie più due elettroni di legame, per un totale di 6. Entrambi gli atomi di azoto quindi non raggiungono l'ottetto. Siccome la formula di Lewis prevede che ci siano 8 elettroni attorno a tutti gli atomi andiamo avanti: per ognuno dei due atomi, trasformiamo un doppietto in un doppio legame:
+    
     $$
     \chemfig{@{x1}{\charge{[circle]90=\:,270=\:}{N}}-[@{x2}]@{x3}{\charge{[circle]90=\:,270=\:}{N}}}
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x3.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x2.90);
     \draw(x1.110)..controls +(60:0.5cm)and+(90:0.5cm)..(x2);
     }$$
+
     Se trasformassi un solo doppietto in doppio legame (ad esempio uno dell'azoto a sinistra), sull'atomo a sinistra avrei 2 elettroni dati dai doppietti più 4 elettroni di legame, quindi il totale è ancora 6 e l'ottetto non è stato raggiunto; sull'atomo a destra invece avremmo 4 elettroni dai doppietti più 4 di legame, dunque totale è 8: l'ottetto è stato raggiunto.
     
     Per far raggiungere l'ottetto anche all'azoto a sinistra, trasformo un doppietto dell'atomo a destra in un legame. Così facendo avremo un triplo legame tra i due atomi di azoto e un solo doppietto su ciascuno di esso:
@@ -157,6 +159,7 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemfig{O-O}
     $$
     I 10 elettroni restanti vanno distribuiti a coppie tra i due atomi. Mettiamo una coppia su un ossigeno e una sull'altro. Restano 6 elettroni. Se diamo ancora una coppia ciascuno resta una coppia, che assegniamo in modo arbitrario ad uno dei due, ad esempio a quello sinistro. In questo modo un atomo di ossigeno avrà 8 elettroni (3 coppie più 2 di legame) e raggiunge l'ottetto, l'altro ha 6 elettroni (2 coppie più 2 di legame) e non lo raggiunge.
+    
     $$
     \chemfig{@{x1}{\charge{[circle]90=\:,180=\:,270=\:}{O}}-[@{x2}]\charge{[circle]90=\:,270=\:}{O}}
     \chemmove[shorten <=4pt, shorten >=4pt]{
@@ -178,12 +181,15 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     $$
     Abbiamo consumato due elettroni, quindi ne restano 8.
     Essendoci atomi diversi, si inizia ad assegnare doppietti all'atomo più elettronegativo fin quando non raggiunge l'ottetto. In questo caso l'ossigeno è più elettronegativo, quindi ad esso assegno 3 coppie e solo dopo la coppia che resta la metto sul carbonio
+    
     $$
     \chemfig{\charge{[circle]180=\:}{C}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
     \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
-    }$$
+    }
+    $$
+
     L'ossigeno qui ha già raggiunto l'ottetto (3 coppie +un legame semplice), mentre il carbonio ha solo 4 elettroni (un doppietto e un legame semplice).
 
     Allora trasformiamo prima un doppietto dell'ossigeno in legame, ma così facendo il carbonio non raggiunge ancora l'ottetto, dunque trasformiamo anche un secondo doppietto in legame. In questo modo otterremo un triplo legame e ci sarà un doppietto sul carbonio e uno sull'ossigeno:
@@ -203,11 +209,13 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     Iniziamo ad assegnare a coppie questi elettroni all'atomo più elettronegativo fino a fargli raggiungere l'ottetto. In questo caso è l'ossigeno, a cui diamo 3 doppietti. Restano 3 elettroni, che diventano un doppietto e un elettrone dispari posti sull'azoto.
 
     Mentre l'ossigeno ha raggiunto l'ottetto, l'azoto no ed è anche lontano dal raggiungerlo, perché intorno ha 5 elettroni (due dal legame, una coppia e un elettrone spaiato). Trasformiamo allora un doppietto dell'ossigeno in doppio legame:
+    
     $$
     \chemfig{\charge{[circle]90=\.,180=\:}{N}-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{O}}}
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);}
     $$
+
     L'ossigeno continua ad aver raggiunto l'ottetto (4 dai legami più 4 dai doppietti), l'azoto avrà 7 elettroni (4 dai legami più 2 dai doppietti più 1 spaiato). Dobbiamo fermarci, non abbiamo cos'altro fare: l'ottetto, per l'azoto, non può essere raggiunto. Se trasformassimo un ulteriore doppietto dell'ossigeno in legame, sull'azoto ci sarebbero 9 elettroni, cosa impossibile perché al massimo attorno ad un atomo possono stare 8 elettroni.
 
     Secondo la descrizione di Lewis avremo un elettrone spaiato su questa molecola, cosa che comporta l'avere proprietà paramagnetiche. Infatti i fenomeni magnetici sono dovuti all'esistenza di elettroni spaiati sulla molecola 
