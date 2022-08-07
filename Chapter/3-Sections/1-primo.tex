@@ -344,12 +344,14 @@ Il silicio ha pieni gli orbitali 1s, 2s e 2p. Ha poi come elettroni di valenza i
     \chemfig{H-C-N}
     $$
     L'idrogeno contribuisce con un elettrone, il carbonio con 4 e l'azoto con 5 per un totale di 10. Legando idrogeno e azoto consumiamo 4 elettroni, quindi ne restano 6 ossia 3 doppietti che assegnamo all'atomo esterno più elettronegativo, cioè l'azoto
+    
     $$
     \chemfig{H-C-[@{x1}]@{x2}{\charge{[circle]0=\:,90=\:,270=\:}{N}}}
     \chemmove[shorten <=4pt, shorten >=4pt]{
     \draw(x2.290)..controls +(60:-0.5cm)and+(90:-0.5cm)..(x1.90);
-    \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);
-    }$$
+    \draw(x2.70)..controls +(120:0.5cm)and+(90:0.5cm)..(x1.90);}
+    $$
+
     L'azoto raggiunge l'ottetto (6 dai doppietti e 2 dal legame), per l'idrogeno non si pone il problema perché può ospitare solo due elettroni.
     Il carbonio invece ha solo 4 elettroni dai legami, quindi trasformiamo due doppietti dell'azoto in ulteriori legami (se ne trasformassimo solo uno attorno al carbonio ci sarebbero 6 elettroni):
     $$
