@@ -243,10 +243,39 @@ Il processo che si usa è il seguente:
     \item Si parte dal litio solido e si spende una certa energia $\Delta\text{H}_{atomiz}$ per portarlo in fase gassosa che chiamiamo energia di atomizzazione o evaporazione del litio, facilmente misurabile con un calorimetro.
     \item Si rompe la molecola biatomica del fluoro, passando così da F$_2$ a 2F. L'energia così spesa è quella di dissociazione del fluoro che è detta binding energy (BE). Poiché ci serve solo un atomo di fluoro e da ogni molecola ne otteniamo due, ci basta metà di questa energia.
     
-    A questo punto avremo litio e fluoro 
-    \item 
-    \item $\Delta\text{H}_{}$
+    A questo punto avremo litio e fluoro entrambi allo stato gassoso.
+    \item Si fornisce l'energia di prima ionizzazione $IP_1$ del litio per ottenere il suo catione:
+    
+    \ce{Li_{(g)} -> Li^{+}_{(g)} + 1e}
+    \item L'elettrone ottenuto dalla ionizzazione del litio viene acquistato dal fluoro, il quale diventa F$^-$ e cede un'energia pari alla sua affinità elettronica $EA$.
+    \item Arriviamo così ad avere ioni $Li^+$ e $F^-$ gassosi, che sono i reagenti della reazione considerata inizialmente, la quale ci interessa poiché in essa vi è tutta la stabilità del sistema solido.
+    
+    Essi insieme daranno luogo al fluoruro di litio solido e quindi pur non avendo fatto il percorso diretto siamo arrivati allo stesso prodotto:
 \end{itemize}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=10cm]{immagini/Ciclo-Born-Haber.png}
+\end{figure}
+
+Poiché stato iniziale e stato finale sono gli stessi, la somma di tutti questi calori deve essere uguale al calore scambiato nel percorso diretto.
+
+Il calore di formazione emesso nel processo diretto lo sappiamo calcolare, mentre nel processo complesso non sappiamo misurare solo il calore emesso per passare dagli ioni gassosi al reticolo solido, la quale però può essere calcolata facendo la differenza tra valori sperimentali:
+$$\Delta\rm{H}_{reticolo}=\Delta\rm{H}_{complessivo} - \Delta\rm{H}_{atomiz} - \Delta\rm{H}_{BE} - \Delta\rm{H}_{IP_1} + \Delta\rm{H}_{EA}$$
+Si trova che, alla temperatura di 25° C e alla pressione di 1 bar, il $\Delta\rm{H}$ complessivo è pari a -617 kJ/mol. È negativo perché quando mettiamo insieme litio e fluoro spontaneamente si forma il fluoruro di litio, emettendo tale calore.
+
+Facendo la differenza tra tale calore e gli altri calori misurabili si trova che l'energia di reticolo vale -1050 kJ/mol, che viene emessa con la formazione del reticolo.
+
+Quindi il legame chimico nei sistemi ionici sta tutto nella formazione del reticolo, cioè la stabilità del solido e la inesistenza della singola molecola sta nel fatto che in questa l'energia emessa dal fluoro quando acquista un elettrone non basta a ionizzare il litio, che è quello che dovrebbe cedere l'elettrone, per cui la molecola non potrà formarsi, mentre quando si forma il solido questi ioni liberano una grande quantità di energia, cosa che permette al solido di formarsi. Quindi è proprio all'interno del reticolo che si trova la stabilità di questo sistema: quando questi ioni vanno ad occupare precise posizioni reticolari si forma questo reticolo estremamente stabile con l'emissione di una quantità molto grande di energia.
+
+Questo discorso vale per tutti i solidi ionici: non esistendo le loro molecole ma il loro solido si, vuol dire che la stabilità è conferita dall'arrangiamento in fase solida.
+
+\textbf{Legge di Hess}: il calore scambiato a pressione costante in una reazione chimica che possa essere scomposta in più reazioni parziali è indipendente dagli stati intermedi attraverso i quali si evolve il sistema e dipende solo dagli stati iniziale e finale. La variazione di calore è pari alla somma algebrica delle variazioni di calore dei singoli stadi.
+
+A causa di tale legge, se abbiamo calori scambiati a pressione costante il sistema può essere rappresentato attraverso una serie di stati intermedi, ottenendo così un ciclo termodinamico e quindi le energie coinvolte dipendono solo dallo stato iniziale e da quello finale.
+
+\vspace{0.2cm}N.B.: Se chiede di parlare del legame ionico attraverso un modello termodinamico descrivi il ciclo, ma se chiede perché abbiamo la necessità di usare il ciclo, il motivo è perché siamo interessati al $\Delta\rm{H}_{reticolo}$, che è l'energia del reticolo cristallino, perché in tale reazione da un lato abbiamo gli ioni gassosi e dall'altro li abbiamo nel solido, nel reticolo cristallino, per cui vogliamo conoscere l'energia che viene emessa quando questo si forma, ossia partiamo da un'energia molto alta di questi ioni $Li^+$ e $F^-$ gassosi e quando questi si uniscono per formare il solido emettono una quantità enorme di energia, e il sistema si stabilizza tantissimo. Questa energia emessa si chiama "energia reticolare" perché è l'energia del reticolo. Quindi in questo secondo caso la prima cosa da dire è:"l'energia reticolare è l'energia associata al processo nel quale sono reagenti, in questo caso particolare, ione litio gassoso più ione fluoruro gassoso, e il prodotto è il fluoruro di litio, ma noi non siamo in grado di effettuare questa reazioni, perché questi reagenti non li abbiamo. Ecco perché usiamo il ciclo di Born-Haber, il quale mi permette di aggirare questo problema". Dopodiché si  inizia a parlare del ciclo, quindi diamo la motivazione (voler conoscere l'energia del reticolo, che è quella che tiene insieme gli ioni nel reticolo).
+
 \subsection{Differenze tra composti molecolari e composti ionici}
 Per i composti molecolari esistono le singole molecole, per quelli ionici no: essi esistono solo in forma di reticolo cristallino, dove gli ioni occupano posizioni ben precise, alternandosi, in tutte e 3 le direzioni.
 
@@ -267,4 +296,18 @@ L'evidenza sperimentale di tale fatto si ottiene confrontando tre circuiti elett
 Tale esperimento mostra l'esistenza degli ioni, che sono i portatori di carica che permettono la conduzione.
 
 Se invece avessimo collegato a lampadina ad una soluzione acquosa contenente zucchero, la lampadina non si accenderebbe. Il motivo è che lo zucchero è un composto molecolare, per cui non si scioglie in acqua e non dà origine a ioni.
+\subsection{Proprietà fisiche dei composti ionici}
+Tipicamente i composti ionici sono duri, rigidi e fragili, cioè è facile romperli.
+
+Se solidi, non conducono elettricità, per cui costituiscono dei buoni isolanti. Se invece li portiamo a fusione (che per tali composti significa portarli ad una temperatura di 800-1000°C) iniziano a condurre. Se invece li sciogliamo in acqua la mobilità degli ioni diventa elevata e la conducibilità è ancora maggiore. Tale fatto è la dimostrazione dell'esistenza degli ioni come portatori di carica.
+
+In genere hanno temperature di fusione elevate, perché dobbiamo abbattere l'energia reticolare, che è molto elevata, per poter liberare gli ioni dal reticolo.
+
+All'interno dei reticoli gli ioni sono disposti alternatamente nelle varie direzioni
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=10cm]{immagini/struttura-composti-ionici.png}
+\end{figure}
+Immaginiamo un sistema bidimensionale. Se cerchiamo di rompere il cristallo, lo si deve spezzare e far scivolare il sistema in un piano. Se riusciamo a fare ciò, riusciamo a rompere il cristallo.
 \subsection{Il legame covalente}
+La molecola più semplice che esista è la molecola $H_2^+$
