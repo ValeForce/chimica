@@ -375,7 +375,7 @@ Una prima energia sarà data dall'attrazione tra l'elettrone con il nucleo dell'
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=5cm]{immagini/attrazione protone-elettrone.png}
+    \includegraphics[width=4cm]{immagini/attrazione protone-elettrone.png}
 \end{figure}
 
 Tale energia vale $E=\displaystyle-\frac{q^2}{r_{Ae}}$.
@@ -385,7 +385,7 @@ Un secondo contributo analogo si avrà dall'attrazione tra elettrone e atomo di 
 \vspace{0.2cm}Un terzo e ultimo contributo sarà dato dalla repulsione tra i due nuclei. Esso sarà positiva, quindi alzerà l'energia:
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=6cm]{immagini/repulsione protone-protone.png}
+    \includegraphics[width=5cm]{immagini/repulsione protone-protone.png}
 \end{figure}
 
 Tale energia vale $E=\displaystyle-\frac{q^2}{r_{AB}}$.
@@ -460,12 +460,16 @@ Nel caso di interazione $\sigma$ tra due orbitali $p$, se abbiamo stabilito (com
 \end{figure}
 
 Quindi per una coppia di orbitali $p$ avremo una sovrapposizione diretta lungo la congiungente i due nuclei, mentre per le altre due coppie la sovrapposizione avverrà sopra e sotto.
-\subsubsection{Forze attrattive e repulsive nel legame covalente}
+
 \begin{figure}[!tbp]
     \centering
     {\includegraphics[width=5cm]{immagini/forze_legame_covalente.png}\label{fig:f5}}
+    \caption{Forze attrattive e \\
+    repulsive nel legame covalente}
     \hfill
-    {\includegraphics[width=10cm]{immagini/legame_covalente_H_2.png}\label{fig:f6}}
+    {\includegraphics[width=9cm]{immagini/legame_covalente_H_2.png}\label{fig:f6}}
+    \caption{Legame covalente \\
+    nell'idrogeno H$_2$}
 \end{figure}
 
 Questo è il modello che dobbiamo considerare quando studiamo composti nei quali il legame è covalente.
@@ -479,3 +483,33 @@ Ruguardiamo la formazione della molecolaH$_2$: due atomi di idrogeno inizialment
 Va da ricordare che per il sistema non sono possibili tutte le energie, ma solo alcuni valori quantizzati di questa.
 \subsubsection{Orbitali molecolari leganti ed antileganti $\sigma$}
 
+Ragioniamo ancora sulla molecola H$_2$.
+
+Abbiamo due orbitali atomici, che chiameremo $1s(A)$ e $1s(B)$. Quando combiniamo le funzioni d'onda con lo stesso segno, avremo la combinazione \textit{in fase} o \textit{legante}, la cui funzione d'onda è data da una combinazione lineare delle funzioni d'onda atomiche:
+$$\Psi(VB)=\Psi(1s)A + \Psi(1s)B \quad \text{(combinazione legante)}$$
+Se invece i due orbitali $1s$ interagissero con funzioni d'onda il cui segno è opposto, avremo la combinazione \textit{fuori fase} o \textit{antilegante}:
+$$\Psi^*(VB)=\Psi(1s)A - \Psi(1s)B \quad \text{(combinazione antilegante)}$$
+
+Tracciamo una scala energetica:
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=9cm]{immagini/scala_energia_H_2.png}
+\end{figure}
+\comment{
+\setlength\extrarowheight{0.4cm}
+\begin{tabular}{ m{4cm}m{1.5cm}m{1.5cm}m{1.5cm}|m{1.5cm}m{1.5cm}m{1.5cm}}
+& $\mathbf{B_2}$ & $\mathbf{C_2}$ & $\mathbf{N_2}$ & & $\mathbf{O_2}$ & $\mathbf{F_2}$\\
+$\boldsymbol{\sigma^*}_{2p}$ & \orbital{0} & \orbital{0} & \orbital{0} & $\boldsymbol{\sigma^*}_{2p}$ & \orbital{0} & \orbital{0}\\
+$\boldsymbol{\pi^*}_{2p}$ & \hspace{-0.25cm}\orbitals{00} & \hspace{-0.25cm}\orbitals{00} & \hspace{-0.25cm}\orbitals{00} & $\boldsymbol{\pi^*}_{2p}$ & \hspace{-0.25cm}\orbitals{11} & \hspace{-0.25cm}\orbitals{22}\\
+$\boldsymbol{\sigma}_{2p}$ & \orbital{0} & \orbital{0} & \orbital{2} & $\boldsymbol{\pi}_{2p}$ & \hspace{-0.25cm}\orbitals{22} & \hspace{-0.25cm}\orbitals{22}\\
+$\boldsymbol{\pi}_{2p}$ & \hspace{-0.25cm}\orbitals{11} & \hspace{-0.25cm}\orbitals{22} & \hspace{-0.25cm}\orbitals{22} & $\boldsymbol{\sigma}_{2p}$ & \orbital{2} & \orbital{2}\\
+$\boldsymbol{\sigma^*}_{2s}$ & \orbital{2} & \orbital{2} & \orbital{2} & $\boldsymbol{\sigma^*}_{2s}$ & \orbital{2} & \orbital{2}\\
+$\boldsymbol{\sigma}_{2s}$ & \orbital{2} & \orbital{2} & \orbital{2} & $\boldsymbol{\sigma}_{2s}$ & \orbital{2} & \orbital{2}\\
+Ordine di legame & Uno & Due & Tre & & Due & Uno\\
+Energia di dissociazione di legame (kJ/mol) & 290 & 620 &945 & & 498 & 155\\
+Distanza di legame (pm) & 159 & 131 & 110 & & 121 & 143\\
+Comportamento magnetico osservato (paramagnetico o diamagnetico) & Para & Dia & Dia & & Para & Dia
+\end{tabular}
+\setlength\extrarowheight{0cm}
+}
