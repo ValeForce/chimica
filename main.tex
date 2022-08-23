@@ -19,6 +19,12 @@
 }}
 % Useful packages
 \usepackage[utf8]{inputenc}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -39,7 +45,8 @@
 \setlength\parindent{0pt}%e si gode, toglie lo spostmento a destra di una nuova riga
 \usepackage{caption}
 \usepackage{subfig}
-
+\usepackage{wrapfig}
+\usepackage{float}
 \pgfdeclaredecoration{ddbond}{initial}{
   \state{initial}[width=4pt]{
     \pgfpathlineto{\pgfpoint{4pt}{0pt}}
@@ -67,11 +74,42 @@
 }
 \makeatother
 
-\title{Chimica Nino}
-\author{V. Favitta \& S. Arena}
-
 \begin{document}
-\maketitle
+
+\thispagestyle{empty}
+\begin{center}
+
+\begin{minipage}[c]{0.45\textwidth}
+\begin{flushleft}
+\includegraphics[width=0.8\textwidth]{logo-unict-orizzontale-grigio.png}
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.45\textwidth}
+\begin{flushright}
+\includegraphics[width=\textwidth]{logo_dfa_orizzontale}
+\end{flushright}
+\end{minipage}\\
+\medskip
+\hbox to \textwidth{\hrulefill}
+
+\vfill
+\vfill
+
+\sc{ \Large{Robe a caso poi vediamo}}\vfill
+\uppercase{\sc{ \Large{\textbf{Chimica Nino}}}}\\
+
+\vfill
+\large{A cura di V. Favitta \& S. Arena }
+
+\vfill
+\vfill
+\hbox to \textwidth{\hrulefill}
+{\sc anno 2022}
+\end{center}
+
+\afterpage{\blankpage}
+
 \tableofcontents
 \comment{\chapter{Composizione materia e reazioni chimiche}
 
