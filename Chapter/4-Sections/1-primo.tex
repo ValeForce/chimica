@@ -131,6 +131,93 @@ Va da ricordare che una mole contiene $6.023 \cdot 10^23$ particelle, tale numer
 Consideriamo il radio. Esso dà luogo per disintegrazione al radon più particelle $\alpha$, le quali sono atomi di elio doppiamente ionizzati:
 
 $$\ce{^{226}_{88}Ra -> ^{222}_{86}Rn + \alpha \; \text{+ energia,} \qquad \alpha= ^{4}_{2}He^{2+}}$$
+
+Sperimentalmente si osservò che in condizioni normali per $1.165 \cdot 10^{18}$ disintegrazioni di radio si ottengono 0.043 mL di elio.
+
+Il rapporto stechiometrico della reazione è 1:1:1, per cui si formeranno un numero di atomi di elio pari al numero di disintegrazioni. Essi occuperanno un volume di 0.043 mL. Quanti ce ne stanno il 22414 mL? Si fa una proporzione:
+
+$$1.165 \cdot 10^{18}:0.043=x:22414 \implies x \approx 6.023 \cdot 10^{23}$$
+che è proprio il numero di Avogadro, misurato sperimentalmente.
+
+Abbiamo ottenuto quindi che
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=7cm]{immagini/legge_di_avogadro.png}
+\end{figure}
+
+cioè abbiamo una relazione diretta tra numero di particelle e volume, pertanto è chiaro che una espressione in moli può diventare un'espressione in volume.
 \subsection{Equazione di stato}
+$$pV=nRT$$
+dove $R$ è la costante universale dei gas. Calcoliamola nel caso $n=1$.
+
+Alla pressione di 1 atm, alla temperatura di 273 K e con un volume di 22.414 L si ottiene
+
+$$n=1 \implies pV=RT \implies R=\frac{pV}{T}=\frac{1 \cdot 22.414}{273}=0.082$$
+
+Dal fatto che tale rapporto sia uguale ad una costante, deduciamo che se il gas subisce una trasformazione e passa da uno stato 1 ad uno stato 2 si avrà
+
+$$\frac{p_1V_1}{T_1}=\frac{p_2V_2}{T_2}$$
+
+Da essa possiamo ricavare le tre leggi viste in precedenza:
+
+\begin{itemize}
+    \item Se $T=cost \rightarrow$ legge di Boyle;
+    \item Se $p=cost \rightarrow$ legge di Charles;
+    \item Se $v=cost \rightarrow$ legge di Gay-Lussac.
+\end{itemize}
 \subsection{Determinazione dei pesi molecolari}
+Supponiamo di avere una sostanza di cui conosciamo la massa ma non sappiamo che sostanza sia. Si può allora usare l'equazione di stato dei gas per calcolare il peso molecolare incognito, il quale è un primo indizio.
+
+L'equazione di stato afferma che $pV=nRT$, ma $n$ è il numero di moli, che si ottiene dividendo la massa per il peso molecolare: $n=g/M.M.$. Sostituendo nell'equazione stato troviamo:
+$$n=\frac{g}{M.M.} \implies pV=\frac{g}{M.M.}RT \implies M.M.=\frac{g \cdot RT}{pV}$$
+Moltiplichiamo entrambi i termini per M.M.:
+$$pV \cdot M.M.=\frac{g}{M.M.}\cdot M.M. RT \implies pV M.M. = gRT$$
+$$ \implies pM.M. = \frac{g}{V}RT, \quad d=\frac{g}{V} \; \text{(densità)}$$
+$$\implies M.M. = d \frac{RT}{p}$$
+\subsection{Gas reali}
+Nello studio dei gas ideali abbiamo supposti che
+
+\begin{itemize}
+    \item Le loro particelle siano in rapido e casuale movimento, non interagendo tra loro:
+    \item Tali particelle siano puntiformi, cioè non posseggano volume proprio.
+\end{itemize}
+
+\E chiaro che tale gas non può esistere. In un gase reale infatti le particelle:
+
+\begin{itemize}
+    \item Non sono puntiformi;
+    \item Hanno volume proprio;
+    \item Interagiscono tra loro. 
+\end{itemize}
+
+Infatti noi riusciamo a far diventare un gas un vapore per poi liquefarlo, cosa che implica l'esistenza di interazioni, addirittura le particelle si legano tra loro per formare un liquido, per cui devono esistere delle forze attrattive tra le particelle.
+
+Ciononostante, se ci mettiamo in condizioni di bassa pressione (entro le 100 atm) e alta temperatura i gas mostrano un comportamento ideale.
+
+Graficamente infatti si ha una tale situazione:
+
+\begin{minipage}{0.55 \textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=8cm]{immagini/grafico_gas_reali.png}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.5 \textwidth}
+\vspace{-0.4cm}Se il gas è ideale il rapporto $PV/nRT$, detto "fattore di comprimibilità di un gas" è costantemente uguale a 1, qualunque sia la pressione. 
+
+\vspace{0.2cm}Se invece il gas è reale, tale rapporto vale ancora 1 per pressioni prossime allo zero, ma man mano che la pressione aumenta l'andamento del rapporto si allontana dall'idealità.
+\end{minipage}
+
+Cerchiamo di capire cosa succede.
+
+Se siamo ad alte pressioni, tale rapporto è maggiore di 1. Dato che il fattore di comprimibilità sta crescendo, significa che il gas è meno comprimibile rispetto a quanto previsto dalla legge di Boyle
 \subsection{Gas e vapori}
+
+\hspace{0.5cm}\begin{minipage}{0.55 \textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=8cm]{immagini/grafico_pV.png}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.4 \textwidth}
+paperino
+\end{minipage}
