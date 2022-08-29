@@ -49,7 +49,8 @@ con $P_0$ e $V_0$ condizioni iniziali del gas.
 
 La legge può essere espressa come $\displaystyle PV=k \qquad P=\frac{k}{V} \qquad V=\frac{k}{P}$
 
-\vspace{0.2cm}o, in forma logaritmica, come $logV = logk - log P$
+\vspace{0.2cm}o, in forma logaritmica, come $logV = logk - log P$.
+\newpage
 \subsection{Legge di Charles (Gay-Lussac)}
 Se manteniamo costante la pressione (trasformazione isobara), il volume di un gas aumenterà rispetto a quello iniziale di un 273-esimo per ogni grado di aumento di temperatura:
 $$p=cost \implies V_t=V_0(1 + \alpha t), \; \text{con} \; \alpha=\frac{1}{273}$$
@@ -137,13 +138,14 @@ Sperimentalmente si osservò che in condizioni normali per $1.165 \cdot 10^{18}$
 Il rapporto stechiometrico della reazione è 1:1:1, per cui si formeranno un numero di atomi di elio pari al numero di disintegrazioni. Essi occuperanno un volume di 0.043 mL. Quanti ce ne stanno il 22414 mL? Si fa una proporzione:
 
 $$1.165 \cdot 10^{18}:0.043=x:22414 \implies x \approx 6.023 \cdot 10^{23}$$
+
 che è proprio il numero di Avogadro, misurato sperimentalmente.
 
 Abbiamo ottenuto quindi che
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=7cm]{immagini/legge_di_avogadro.png}
+    \includegraphics[width=8cm]{immagini/legge_di_avogadro.png}
 \end{figure}
 
 cioè abbiamo una relazione diretta tra numero di particelle e volume, pertanto è chiaro che una espressione in moli può diventare un'espressione in volume.
@@ -202,7 +204,7 @@ Graficamente infatti si ha una tale situazione:
         \includegraphics[width=8cm]{immagini/grafico_gas_reali.png}
     \end{figure}
 \end{minipage}
-\begin{minipage}{0.5 \textwidth}
+\begin{minipage}{0.44 \textwidth}
 \vspace{-0.4cm}Se il gas è ideale il rapporto $PV/nRT$, detto "fattore di comprimibilità di un gas" è costantemente uguale a 1, qualunque sia la pressione. 
 
 \vspace{0.2cm}Se invece il gas è reale, tale rapporto vale ancora 1 per pressioni prossime allo zero, ma man mano che la pressione aumenta l'andamento del rapporto si allontana dall'idealità.
@@ -210,14 +212,57 @@ Graficamente infatti si ha una tale situazione:
 
 Cerchiamo di capire cosa succede.
 
-Se siamo ad alte pressioni, tale rapporto è maggiore di 1. Dato che il fattore di comprimibilità sta crescendo, significa che il gas è meno comprimibile rispetto a quanto previsto dalla legge di Boyle
-\subsection{Gas e vapori}
+Se siamo ad alte pressioni, tale rapporto è maggiore di 1. Dato che il fattore di comprimibilità sta crescendo, significa che il gas è meno comprimibile rispetto a quanto previsto dalla legge di Boyle. \E meno comprimibile in quanto le particelle sono dotate di volume, mentre nel caso ideale assumiamo non ne abbiano. Il volume del gas infatti non è pari al volume del recipiente, ma a quello del recipiente meno quello occupato dalle singole molecole. Quindi a pressioni alte il gas è meno comprimibile e il volume è maggiore di quello che si calcola per un gas ideale.
 
-\hspace{0.5cm}\begin{minipage}{0.55 \textwidth}
+A basse pressioni il gas sarà più comprimibile rispetto al valore atteso dalla legge di Boyle, e se le forze attrattive aumentano possiamo anche liquefare il gas. Tale aumento di comprimibilità è dovuto alle forze attrattive, le quali a loro volta sono funzioni della temperatura, per cui se la temperatura è alta queste forze sono meno efficaci, se invece è bassa esse diventano incisive e quindi il volume sarà minore di quello che si osserva per un gas ideale.
+
+Pertanto, mentre a basse pressioni siamo pressoché in condizioni ideali, ad alte pressioni l'equazione di stato non è più valida in quanto vale l'\textbf{equazione di Van der Waals}:
+
+$$\left( p + \frac{n^2a}{V^2} \right)(V-nb)=nRT$$
+
+Il termine $a/V^2$ tiene conto delle interazioni attrattive tra le particelle, in modo da correggere la pressione. Il volume invece viene corretto sottraendo un termine $b$ detto "covolume" o "volume proprio delle particelle", in questo modo sottraiamo al volume del contenitore quello delle particelle.
+
+Il parametro $a$ dipende dalle forze attrattive tra le particelle.
+
+Il paramrtro $b$ dipende dalla dimensione delle particelle.
+
+\vspace{0.2cm}Va da notare che il volume occupato da una particella non è esclusivamente il volume della particella stessa se la aggreghiamo con altre particelle. In che senso?
+
+\hspace{0.5cm}\begin{minipage}{0.35 \textwidth}
     \begin{figure}[H]
-        \includegraphics[width=8cm]{immagini/grafico_pV.png}
+        \includegraphics[width=5cm]{immagini/particelle_aggregate.png}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.6 \textwidth}
+    \vspace{0.8cm}Supponiamo che una data molecola, schematizzata come una sfera di raggio $R$, si trovi a stretto contatto con altre molecole circostanti.
+    Il centro della molecola data si troverà a distanza 2R dal centro delle
+    molecole adiacenti. All’interno della sfera di raggio 2R si troverà pertanto, oltre alla data molecola, anche circa la metà di ognuna delle molecole circostanti.
+    Il volume che una molecola occupa, precludendolo alle altre molecole, corrisponde all’incirca a metà del volume di una sfera di raggio 2R. 
+\end{minipage}
+
+\vspace{0.2cm}Nel limite di tale approssimazione, ad ogni molecola occorre assegnare un volume:
+
+$$V = \frac{1}{2} \times \frac{4}{3}\pi (2R)^3 = 4 \times \frac{4}{3}\pi R^3$$
+
+Cioè, quattro volte superiore al volume effettivo della molecola. Ovvero $b \approxeq 4V_M$
+\subsection{Gas e vapori}
+Supponiamo di avere dell'acqua e di riscaldarla fino a 200° C. Essa, raggiunta la temperatura di 100° C, rimarrà a tale temperatura finché tutta l'acqua non passa allo stato di vapore. Dopodiché crescerà la temperatura del vapore.
+
+Cerchiamo quindi di capire la differenza tra vapore e gas:
+
+\vspace{-0.4cm}
+
+\hspace{1cm}\begin{minipage}{0.53 \textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=7cm]{immagini/grafico_pV.png}
     \end{figure}
 \end{minipage}
 \begin{minipage}{0.4 \textwidth}
-paperino
+\vspace{0.6cm}Consideriamo l'andamento di pressione e volume di una certa sostanza gassosa ad una fissata temperatura.
+
+\vspace{0.2cm}Si definisce \textbf{temperatura critica} quella temperatura sopra la quale non è più possibile liquefare un gase qualunque sia la pressione esercitata su esso. Pertanto per farlo liquefare dovremo prima portarlo sotto la temperatura ciritica e poi applicare la giusta pressione.
 \end{minipage}
+
+\vspace{0.2cm}Quindi quando si parla di gas intendiamo specie chimiche che siano al di sopra della loro temperatura critica. Se invece fossero al di sotto di questa dovremmo parlare di vapore. In altre parole, se abbiamo un gas non potremo ottenerne un liquido per compressione, mentre ciò è sempre pssoibile se abbiamo un vapore.
+
+\vspace{0.2cm} Il diagramma di sopra ci permette di capire in che fase si trova la sostanza, infatti è detto "\textit{doagramma di fase}". In particolare la zona in cui abbiamo sia liquido che vapore è detta "\textit{campana di coesistenza}". Se ci troviamo al suo interno e variamo di poco pressione e volume la coesistenza permane, se invece ci troviamo sulla linea di contorno, non appena variamo la pressione o il volume non siamo più in condizioni di coesistenza e avremo solo una fase.
