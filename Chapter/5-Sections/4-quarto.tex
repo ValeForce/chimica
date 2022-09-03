@@ -1,3 +1,5 @@
+Le proprietà colligative ci dicono che più che la concentrazione delle singole speci è importante il numero di particelle che si ha in soluzione.
+\subsection{Temperatura di ebollizione (ebullioscopia)}
 Finora abbiamo fatto esempi di soluzioni nelle quali tutti i componenti fossero volatili. Cosa accade se mettiamo in soluzione un dato solvente più un solvente non volatile?
 
 Esempi tipici sono zucchero e cloruro di sodio in acqua.
@@ -8,11 +10,40 @@ $$P=\rchi_AP^0_A + \rchi_BP^0_B$$
 
 dove supponiamo che A sia il solvente e B sia il soluto.
 
+Se per esempio B non fosse volatile, la tensione di vapore della specie B pura sarà zero, cioè $P_B^0 \approxeq 0$ e l'equazione di Raoult diventa
+
+$$P=\rchi_A P_A^0$$
+
+cioè la tensione di vapore di una soluzione di un soluto non volatile è uguale alla tensione di vapore del solvente puro per la frazione molare di questo. Se quindi ad esempio abbiamo una soluzione di acqua e cloruro di sodio, dovremo calcolare la tensione di vapore dell'acqua, perché l'NaCl non contribuisce alla tensione di vapore totale.
+
+Tuttavia per definizione qualunque frazione molare è minore di 1, quindi $\rchi_A<1$. Ne segue che $P < P_A^0$, cioè la tensione di vapore di una soluzione di un soluto non volatile sarà sempre minore della tensione di vapore del solvente alla stessa temperatura.
+
+Ad esempio sappiamo che la temperatura di ebollizione di un liquido è la temperatura alla quale la sua tensione di vapore eguaglia la pressione atmosferica. Se quindi abbiamo acqua pura in riva al mare la tensione di vapore dell'acqua raggiungerà i 760 torr (cioè la pressione atmosferica) a 100° C, se invece fossimo in montagna dove la pressione esterna è più bassa, bollirà prima. Supponiamo di essere in riva al mase. Nell'istante in cui aggiungiamo del cloruro di sodio all'acqua osserviamo un abbassamento della tensione di vapore. Ne segue che anche se adesso raggiungessimo i 100° C l'acqua non bollirà, perché a parità di temperatura la soluzione avrà una tensione di vapore più bassa di 760 torr. Quindi l'acqua con il sale bolle a temperatura più alta.
+
+Per definizione inoltre $\rchi_A + \rchi_B = 1 \implies \rchi_A = 1 - \rchi_B$. Possiamo allora riscrivere la legge di Raoult come 
+
 $$P=\rchi_AP^0_A=(1- \rchi_B)P^0_A=P^0_A - \rchi_BP^0_A$$
-$$\implies P=P^0_A - \rchi_BP^0_A$$
-$$\implies P^0_A - P = \rchi_BP^0_A$$
+
+$$\implies P=P^0_A - \rchi_BP^0_A \implies P^0_A - P = \rchi_BP^0_A$$
+
 $$\implies \rchi_B=\frac{P^0_A - P}{P^0_A} \implies \rchi_B=\frac{\Delta P}{P^0_A}$$
-\subsection{Temperatura di ebollizione (ebullioscopia)}
+dove $\Delta P$ è la variazione della tensione di vapore nel pasaggio da solvente puro ($P_A^0$) a soluzione ($P$).
+
+Il rapporto $\Delta P/P_A^0$ rappresenta una variazione relativa delle tensione di vapore del solvente e che è uguale alla frazione molare del soluto $\rchi_B$.
+
+Possiamo usare allora entrambe le espressioni per calcolare P, sia quella con $\rchi_A$ che quella con $\rchi_B$. Inoltre abbiamo che
+
+$$\frac{\Delta P}{P_A^0}= \rchi_B = \frac{n_B}{n_A + n_B}$$
+
+Abbiamo visto che le tensioni di vapore delle soluzioni sono più basse di quelle del solvente puro, e in conseguenza a ciò la temperatura di ebollizione aumenta rispetto a quella del solvente puro. Lo studio dell'aumento del punto di ebollizione di un solvente per aggiunta di un soluto prende il nome di \textit{ebullioscopia}
+
+Come facciamo a calcolare il $\Delta t_{eb}$ tra soluzione e solvente puro?
+
+Si ha che $\Delta t$ è pari al prodotto di una costante $k_{eb}$ specifixa del solvente moltiplicata per la molalità e per un \textbf{coefficiente di Van't Hoff} $i$:
+
+$$\Delta t_{eb} = k_{eb} \cdot m \cdot i$$
+
+
 \subsection{Temperatura di congelamento (crioscopia)}
 \subsection{Pressione osmotica}
 \subsubsection{L'osmosi}
