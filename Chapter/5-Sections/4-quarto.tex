@@ -43,8 +43,46 @@ Si ha che $\Delta t$ è pari al prodotto di una costante $k_{eb}$ specifixa del 
 
 $$\Delta t_{eb} = k_{eb} \cdot m \cdot i$$
 
+Attenzione! il coefficiente $i$ dipende dal numero di particelle, ovvero dipende dal numero di particelle in cui si dissocia la specie messa in soluzione. Vediamo degli esempi.
 
+\begin{itemize}
+    \item Se abbiamo del saccarosio messo in acqua, questa specie non si dissocia in alcun modo perché non è un elettrolita (cioè non è una sostanza capace di dissociarsi in ioni quando viene disciolta in acqua). Resta quindi sciolto ma come molecola. In questo caso $i$ vale 1;
+    \item Se mettiamo in acqua del cloruro di sodio, questo si dissocia in ioni Na$^+$ e Cl$^-$, quindi per ogni unità formula NaCl escono fuori due particelle. In questo caso $i$ vale 2;
+    \item Se avessimo idrossido di calcio, questo si dissocerebbe in uno ione Ca$^{2+}$ e due ioni OH$^-$, quindi ogni unità formula Ca(OH)$_2$ dà luogo a tre particelle. In questo caso $i$ vale 3.
+\end{itemize}
+
+In generale quindi $i$ vale 1 per i non elettroliti e più di 1 a seconda di quale elettrolita abbiamo.
+
+\vspace{0.2cm}La variazione della temperatura di ebollizione non dipende dalla concentrazione della specie, ma dal numero di particelle totali che avremo in soluzione. Il $\Delta t$ ebollioscopico quindi sarà
+
+$$\Delta t_{eb}=k_{eb} \frac{b \cdot 1000}{MM_b \cdot a}$$
+
+con $a$ grammi di solvente e $b$ grammi di soluto.
+
+La costante ebullioscopica $k_{eb}$ è tabulata. Questa può essere calcolata subito: mettiamoci nel caso di una specie che non si dissocia, quindi $i=1$, allora sarà
+
+$$\Delta t_{eb}= k_{eb} \cdot m
+\implies
+k_{eb} = \frac{\Delta t_{eb}}{m}$$
+
+Quindi sperimentalmente $k_{eb}$ è pari al $\Delta t_{eb}$ di una soluzione 1-molale (come unità di misura).
+
+Se esplicitata, $k_{eb}$ sarà
+
+$$k_{eb}=\frac{R \cdot T_{eb}^2 \cdot MM_{solvente}}{1000 \cdot \Delta H^0_{eb}}$$
+
+\subsubsection{Excursus: a che serve la pentola a pressione?}
+Quando cucinimao abbiamo una soluzione. Con la pentola a pressione chiudiamo il sistema in modo tale che tutto il vapore che si genera resti dentro. In questo modo la pressione all'interno aumenta rispetto alla pressione esterna, quindi all'interno della pentola ci sarà una pressione che sarà somma delle pressione atmosferica pià quella che si sta realizzando all'interno. Ciò significa che la soluzione bollirà a temperatura più elevata, in quanto la tensione di vapore dovrà raggiungere valori più alti.
+
+Ecco perché un dato cibo dentro la pentola a pressione si cucina prima, perché tale pentola ci permette di raggiungere temperature interne più elevate. Infatti una pentola comunque col coperchio appoggiato se contiene acqua la farà bollire a 100° C, perché la pressione all'interno sarà quella esterna, in quanto se si realizza un minimo di extrapressione il vapore esce; se invece abbiamo una pentola a pressione al suo interno ci sarà una pressione molto più elevata di quella atmosferica, cosa che permette alla soluzione di raggiungere temperature superiori ai 100° C e che ha come conseguenza una cottura più veloce.
 \subsection{Temperatura di congelamento (crioscopia)}
+Quando nevica per evitare incidenti si sparge sale sulla neve, la quale così facendo si scioglie.
+
+Nei radiatori viene messo il glicole etilenico, detto liquido anti-gelo, il quale in zone non troppo fredde può essere mischiato con acqua (in quelle troppo fredde non si può mischiare perché l'acqua è l'unica specie che congelando aumenta di volume, per cui il radiatore si spaccherebbe).
+
+In altre parole, le soluzioni avranno un punto di gelo più basso del solvente puro. Quindi ad esempio la neve col sale si scioglie perché avrà un punto di congelamento più basso dell'acqua pura che la temperatura esterna non riesce a raggiungere.
+
+Per \textit{temperatura di congelamento} di un liquido si intende la temperatura alla quale il liquido e il suo solido mostrano la stessa tensione di vapore. Ad esempio nell'acqua si ha il congelamento quando quel primo cristallo di ghiaccio che inizia a formarsi ha la stessa tensione di vapore dell'acqua ancora liquida. Va da notare che il primo ghiaccio che si forma per abbassamento di temperatura di soluzioni non contiene soluto, ma solo solvente.
 \subsection{Pressione osmotica}
 \subsubsection{L'osmosi}
 \subsection{Tensione superficiale}
