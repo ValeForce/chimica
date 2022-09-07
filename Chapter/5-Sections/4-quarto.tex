@@ -197,4 +197,46 @@ Abbiamo visto che l'acqua può attraversare, attraverso i pori, la membrana in e
 Consideriamo il caso della soluzione a sinistra e del solvente a destra. Da un punto di vista statistico a sinistra ci sono due eventi: se abbiamo messo esattamente lo stesso volume di solvente da un lato e di soluzione dall'altro, a sinistra avremo meno molecole di acqua perché a parità di volume una parte di questo sarà occupato dagli ioni. Questi ultimi inoltre sono diventati voluminosi e non riescono a passare, ma alcuni di questi insistono lo stesso sul poro della membrana e lo "otturano" parzialmente. Quindi mentre dal lato del solvente il 100\% dei pori è a disposizione delle molecole di H$_2$O, dal lato della soluzione no perché alcuni sono resi non disponibile per le molecole di acqua a sinistra.
 
 Ne segue che, seppure l'acqua attraversi la membrana da entrambi i lati, il passaggio netto non è uguale a zero, cioè passano maggiormente molecole da destra verso sinistra, per cui a un certo punto avremo un accumulo di solvente da un lato fin quando la membrana si fletterà a tal punto da non permettere più un passaggio tale da far modificare il volume delle due soluzioni. L'equilibrio sarà comunque dinamico: le particelle passano ma non abbastanza da far cambiare volume.
-\subsection{Tensione superficiale}
+
+\subsection{In sintesi: proprietà colligative}
+\begin{enumerate}
+    \item Tensione di vapore
+    \item Innalzamento ebullioscopico
+    \item Abbassamento crioscopico
+    \item Pressione osmotica
+\end{enumerate}
+Sono dette colligative perché non dipendono solo dalla concentrazione, ma dal numero di particelle che si ha in soluzione. Tale dipendenza è rappresentata dal coefficiente $i$ di Van't Hoff, pari al numero di ioni in cui gli elettroliti si dissociano. Un \textbf{elettrolita} è una specie chimica che in soluzione si dissocia generando ioni.
+
+Ma chi ci garantisce che ciò che mettiamo in soluzione si dissoci totalmente?
+
+Per gli \textit{elettroliti forti} è ragionevole fare quest'assunzione, ma ci sono speci dette \textit{elettroliti deboli} per cui non è così. L'aggettivo forte sta per "totalmente dissociato", mentre debole sta per "parzialmente dissociato".
+
+Quando abbiamo a chefare con elettroliti deboli (es. l'acido acetico) si parla di \textit{grado di dissociazione} $\alpha$, che è definito come il rapporto tra la quantità dissociata e quella iniziare.
+
+Chiaramente per gli elettroliti forti $\alpha=1$, ossia il numero di molecole dissociate è uguale al numero di molecole iniziali.
+
+Il coefficiente di Van't Hoff va allora corretto così:
+
+$$i=[1 + (\gamma - 1)\alpha]$$
+
+dove $\gamma$ è il numero di particelle ottenute per effetto della dissociazione per unità formula (es. per NaCl $\gamma=2$).
+
+\begin{center}
+    \begin{tabular}{p{9cm}p{3.5cm}p{3.5cm}}
+        & \hspace{1cm}$i$ per & \hspace{1cm}$i$ per\\
+        composto & soluzioni 1.00 m & soluzioni 0.100 m\\[0.5 ex]
+        \hline
+        non elettroliti & 1.00 (ideale) & 1.00 (ideale)\\[0.5 ex]
+        saccarosio, C$_{12}$H$_{22}$O$_{11}$ & 1.00 & 1.00\\[0.5 ex]
+        Se in soluzione ci sono 2 ioni per unità formula & 2.00 (ideale) & 2.00 (ideale)\\[0.5 ex]
+        KBr & 1.77 & 1.88\\[0.5 ex]
+        NaCl & 1.83 & 1.87\\[0.5 ex]
+        Se in soluzione ci sono 3 ioni per unità formula & 3.00(ideale) & 3.00(ideale)\\[0.5 ex]
+        K$_2$CO$_3$ & 2.39 & 2.45 \\[0.5 ex]
+        K$_2$CrO$_4$ & 1.95 & 2.39\\[0.5 ex]
+        Se in soluzione ci sono 4 ioni per unità formula & 4.00 (ideale) & 4.00 (ideale)\\[0.5 ex]
+        K$_3$[Fe(CN)$_6$] & - & 2.85\\[0.5 ex]
+    \end{tabular}
+\end{center}
+
+Sperimentalmente si nota che i valori di $i$ si discostano meno dall'idealità quando la soluzione è meno concentrata, cioè più diluita. Va da notare che una soluzione si può considerare ideale se è 10$^{-2}$-molare o più diluita, cioè la concentrazione massimo è $0.01m$.
