@@ -12,9 +12,9 @@ Cerchiamo ora di spiegare:
   \subsection{Onde elettromagnetiche}
 Le onde elettromagnetiche sono costituite da due vettori: campo elettrico $\vec{E}$ e campo magnetico $\vec{H}$, perpendicolari tra loro che oscillano nel tempo. La velocità dell'onda è la velocità della luce $c$.
 
-\textbf{DEF} Ampiezza: altezza massima di un'onda rispetto alla direzione di propagazione. 
+\vspace{0.2cm}\textbf{DEF} Ampiezza: altezza massima di un'onda rispetto alla direzione di propagazione. 
 
-\textbf{DEF} Frequenza ($\nu$): numero di oscillazioni per unità di tempo. È inversamente proporzionale alla lunghezza d'onda ($\lambda$): $\lambda\nu=c$, cioè $\lambda=c/\nu$
+\vspace{0.2cm}\textbf{DEF} Frequenza ($\nu$): numero di oscillazioni per unità di tempo. È inversamente proporzionale alla lunghezza d'onda ($\lambda$): $\lambda\nu=c$, cioè $\lambda=c/\nu$
 
 \subsection{La luce: onda o corpuscolo?}
 Nella fisica classica moto ondulatorio e moto dei corpi sono due teorie a sè stanti, ognuna con le proprie leggi.
@@ -39,7 +39,7 @@ Se la luce è un'onda, allora la sua energia è proporzionale a $E^2$ ed $H^2$, 
 
 Ciò fu messo in crisi dalle evidenze sperimentali sulla radiazione emessa da un corpo caldo: quando si riscalda un corpo, esso riemetterà tale energia sotto forma di radiazione \comment{(per raffreddarsi) mi pare inutile scriverlo fai te pd negridimerda} con frequenza che \textbf{dipende} dalla sua temperatura e dalla sua composizione chimica. Ma ciò non dovrebbe accadere se l'energia non dipende dalla frequenza! Dunque la temperatura del corpo è legata alla frequenza della radiazione che emette (e quindi la sua energia). 
 
-Un corpo nero è un oggetto ideale capace di assorbire radiazione incidente di qualunque frequenza\footnote{Per conservazione dell'energia emette anche radiazione a tutte le frequenze.}. La migliore approssimazione reale di corpo nero è una sfera di nerofumo con un piccolo foro in cui inviamo radiazione. Essa verrà riflessa varie volte all'interno riscaldando la sfera. Aumentando la temperatura, gli atomi si eccitano ed emettono radiazione diseccitandosi. Classicamente avremmo dovuto osservare uno spettro di emissione su tutte le frequenze fino all'UV, invece ci sono delle frequenze in cui l'intensità è maggiore: maggiore è la temperatura, più il picco di emissione si sposta a frequenze maggiori. 
+Un corpo nero è un oggetto ideale capace di assorbire radiazione incidente di qualunque frequenza\footnote{Per conservazione dell'energia emette anche radiazione a tutte le frequenze.}. La migliore approssimazione reale di corpo nero è una sfera di nerofumo con un piccolo foro in cui inviamo radiazione. Essa verrà riflessa varie volte all'interno riscaldando la sfera. Aumentando la temperatura, gli atomi si eccitano ed emettono radiazione diseccitandosi. Classicamente avremmo dovuto osservare uno spettro di emissione su tutte le frequenze fino all'UV, invece si osserve che vengono emesse solo alcune frequenze. Inoltre all'aumentare della temperatura l'intensità diventa maggiore e il picco di emissione si sposta a frequenze maggiori. 
 
 Il massimo dello spettro è legato alla temperatura dalla legge di Wien 
 $$T\cdot\lambda_{max}= \text{cost}= 2.8977\cdot 10^{-3} \text{m K}$$
@@ -47,27 +47,36 @@ $$T\cdot\lambda_{max}= \text{cost}= 2.8977\cdot 10^{-3} \text{m K}$$
 %oh merda a fine pagina 59 pure tu non chiudi una parentesi, tutto il resto del corso di chimica è solo una parentesi
 
 \subsection{Quantizzazione: equazione di Planck}%devo andare mi sto pisciando addosso
-Se un pezzo di metallo è riscaldato ad alta temperatura, la radiazione elettromagnetica emessa ha frequenza dipendente dalla temperatura. A temperature inferiori il colore è rosso sbiadito, ma con l'aumentare della temperatura diventa rosso più acceso. Gli occhi rilevano la radiazione emessa nella regione visibile dello spettro elettromagnetico. Sebbene non visibile, anche UV ed infrarossi sono emessi dal metallo caldo. All'aumentare della temperatura, l'intensità massima si sposta verso lunghezze d'onda inferiori (cioè UV). Alla fine del 1800, gli scienziati non erano in grado di spiegare la relazione tra intensità e lunghezza d'onda della radiazione emessa da un oggetto caldo (radiazione di corpo nero). Le teorie disponibili a quel tempo predicevano che l'intensità aumenta col diminuire della lunghezza d'onda, invece di raggiungere un massimo e poi diminuire. Questa situazione era nota come catastrofe ultravioletta perché la predizione falliva nella regione UV. Max Planck offrì una spiegazione per la catastrofe ultravioletta: la radiazione elettromagnetica emessa è originata da vibrazione di atomi dell'oggetto riscaldato. Propose che ogni atomo avesse una frequenza fondamentale di oscillazione e che gli atomi potessero oscillare solo a questa frequenza o ad un multiplo di essa. Quindi la radiazione emessa ha solo certe energie, data dalla equazione 
+Se un pezzo di metallo è riscaldato ad alta temperatura, la radiazione elettromagnetica emessa ha frequenza dipendente dalla temperatura. 
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{immagini/ferro_incandescente.png}
+\end{figure}
+
+A temperature inferiori il colore è rosso sbiadito, ma con l'aumentare della temperatura diventa rosso più acceso. Gli occhi rilevano la radiazione emessa nella regione visibile dello spettro elettromagnetico. Sebbene non visibile, anche UV ed infrarossi sono emessi dal metallo caldo. All'aumentare della temperatura, l'intensità massima si sposta verso lunghezze d'onda inferiori (cioè UV). Alla fine del 1800, gli scienziati non erano in grado di spiegare la relazione tra intensità e lunghezza d'onda della radiazione emessa da un oggetto caldo (radiazione di corpo nero). Le teorie disponibili a quel tempo predicevano che l'intensità aumenta col diminuire della lunghezza d'onda, invece di raggiungere un massimo e poi diminuire. Questa situazione era nota come catastrofe ultravioletta perché la predizione falliva nella regione UV. Max Planck offrì una spiegazione per la catastrofe ultravioletta: la radiazione elettromagnetica emessa è originata da vibrazione di atomi dell'oggetto riscaldato. Propose che ogni atomo avesse una frequenza fondamentale di oscillazione e che gli atomi potessero oscillare solo a questa frequenza o ad un multiplo di essa. Quindi la radiazione emessa ha solo certe energie, data dalla equazione 
 $$E=nh\nu \qquad n\in\mathbb{N},n \neq 0 $$
 Con $\nu$ frequenza della radiazione ed h costante di Planck.
 
 Per la prima volta si parla di quantizzazione: etichettato $h\nu$ un pacchetto di energia, l'energia varrà 1, 2, ..., n volte questa quantità con n numero intero. Si dice quindi che n quantizza la quantità di energia.
-Dunque mentre prima tutte le energie erano permesse, ora si parla di energie permesse: un atomo o i suoi elettroni non possono possedere qualunque valore di energia, ma solo alcuni. L'energia quindi non è più continua ma quantizzata.
+Dunque mentre prima tutte le energie potevano essere  assunte, ora si parla di energie permesse: un atomo o i suoi elettroni non possono possedere qualunque valore di energia, ma solo alcuni. L'energia quindi non è più continua ma quantizzata.
 
 Planck assunse che ci deve essere una distribuzione di vibrazioni di atomi in un oggetto, cioè alcuni atomi hanno alte frequenze, altri intermedi ed altri basse. I pochi atomi con alta frequenza di vibrazione sono responsabili di alcuna luce, ad esempio UV e quelli con frequenza bassa emettodo nell'infrarosso. Tuttavia, la maggior parte della luce deve venire dagli atomi che oscillano a frequenze intermedie (che sono di più). Cioè lo spettro di luce è emesso con un massimo di intensità alle lunghezze d'onda intermedie, in accordo con evidenze sperimentali. L'intensità non diventa maggiore all'avvicinarsi nella regione UV.
 L'aspetto chiave del lavoro di Planck è l'introduzione di energie quantizzate basate sull'equazione $E=h\nu$.
 
-Quando osservo un oggetto di un certo colore, ciò che succede nei suoi atomi è che i loro elettroni si erano eccitati passando ad un valore più alto di energia e, diseccitandosi, emettono proprio la differenza di energia tra quel livello e lo stato fondamentale, a cui dall'eq. di Planck corrisponde una certa frequenza e quindi un certo colore. In altre parole, i livelli energetici degli atomi sono quantizzati, per cui i loro elettroni non possono avere qualsiasi valore energetico ma solo alcuni detti "stati permessi".
+Quando osserviamo un oggetto di un certo colore, ciò che succede nei suoi atomi è che i loro elettroni si sono eccitati passando ad un valore più alto di energia e, diseccitandosi, hanno emesso proprio la differenza di energia tra quel livello e lo stato fondamentale, a cui dall'eq. di Planck corrisponde una certa frequenza e quindi un certo colore. In altre parole, i livelli energetici degli atomi sono quantizzati, per cui i loro elettroni non possono avere qualsiasi valore energetico ma solo alcuni detti \textit{stati permessi}.
 
 Le energie delle radiazioni elettromagnetiche si distribuiscono secondo la legge di distribuzione di Boltzmann:
+
 $$P\propto e^{{-\frac{nh\nu}{KT}}}$$
+
 \subsection{Effetto fotoelettrico}
 Altro fenomeno che non si riusciva a spiegare con la teoria classica.
 
 Esso consiste nell'emissione di elettroni da parte di una superficie metallica quando questa viene colpita da una radiazione elettromagnetica avente opportuna frequenza. Gli elettroni emessi si chiamano fotoelettroni.
 Se la radiazione ha bassa frequenza non osserviamo fotoemissione, ma facendo crescere la frequenza ci accorgiamo che a un certo punto tale fenomeno inizia a verificarsi. Da ciò si deduce che c'è una soglia minima da superare affinché si emettano elettroni. Inoltre se aumenta l'intensità della radiazione incidente l'energia degli elettroni emessi non cambia, aumenta solo il loro numero. Se invece aumenta la frequenza della radiazione l'energia cinetica dei fotoelettroni emessi aumenta.
 
-Einstein ebbe l'intuizione di usare l'espressione di Planck e di applicare il principio di conservazione dell'energia: se invio una certa quantità di energia al materiale, affinché avvenga fotoemissione essa deve essere almeno uguale alla quantità necessaria per vincere la forza di attrazione elettrone-nucleo (energia di legame), che costituisce la soglia di emissione. Dopodiché, usando l'espressione di Planck fu chiaro che, essendo l'energia funzione della frequenza, se cambia la frequenza della radiazione incidente cambia anche l'energia. Usata una parte dell'energia per vincere l'energia di legame, il resto si trasforma in energia cinetica del fotoelettrone emesso.
+Einstein ebbe l'intuizione di usare l'espressione di Planck e di applicare il principio di conservazione dell'energia: se inviamo una certa quantità di energia al materiale, affinché avvenga fotoemissione essa deve essere almeno uguale alla quantità necessaria per vincere la forza di attrazione elettrone-nucleo (energia di legame), che costituisce la soglia di emissione. Dopodiché, usando l'espressione di Planck fu chiaro che, essendo l'energia funzione della frequenza, se cambia la frequenza della radiazione incidente cambia anche l'energia. Usata una parte dell'energia per vincere l'energia di legame, il resto si trasforma in energia cinetica del fotoelettrone emesso.
 Pertanto all'aumentare della frequenza aumenta l'energia cinetica dell'elettrone.
 
 In generale quindi il pacchetto di energia dovrà essere uguale a un valore costante $\Phi$ detto \textbf{potenziale di estrazione} e l'eventuale eccesso di energia del pacchetto si trasformerà in energia cinetica del fotoelettrone emesso.
@@ -78,9 +87,14 @@ A questo punto Einstein affermò che la radiazione che arriva su una superficie 
 
 Si torna quindi all'ipotesi di Newton.
 
-Ma se la luce è fatta di particelle, come mai osservo fenomeni ondulatori?
+Ma se la luce è fatta di particelle, come mai osserviamo fenomeni ondulatori?
 \subsection{Spettro di emissione}
 Supponiamo di eccitare singoli atomi, inviando varie energie. Questi ne assorbiranno alcune soltanto, e nella fase di diseccitazione le riemetteranno. Si osserva che emettono righe ben precise, a lunghezze d'onda ben precise. L'insieme di queste righe costituisce lo spettro di emissione di un atomo.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{immagini/spettro_emissione.png}
+\end{figure}
 
 Il fatto che ci siano più righe implica che ci siano più stati permessi per l'elettrone.
 \subsection{Esperimento di Rutherford}
@@ -108,41 +122,42 @@ In queste condizioni l'elettrone è in uno stato stazionario.
 
 Condizioni di Bohr:
 \begin{enumerate}
-  \item L'elettrone in un atomo deve occupare stati stazionari: non può avere qualunque energia, ma solo quella permessa da tali stati. Quando l'elettrone si trova in uno di questi, non emette né assorbe energia. Se invio una radiazione posso far sì che l'elettrone assorba esattamente la differenza di energia tra questi due stati, ma deve essere proprio quella: se ne invio meno non basta, se ne invio di più non serve.
-  Facendo così l'elettrone transirà da uno stato ad uno a più alta energia.
+  \item L'elettrone in un atomo deve occupare stati stazionari: non può avere qualunque energia, ma solo quella permessa da tali stati. Quando l'elettrone si trova in uno di questi, non emette né assorbe energia. Se inviamo una radiazione possiamo far sì che l'elettrone assorba esattamente la differenza di energia tra questi due stati, ma deve essere proprio quella: se ne inviamo meno non basta, se ne inviamo di più non serve.
+  Facendo così l'elettrone transiterà da uno stato ad uno a più alta energia.
   \item In questi stati l'elettrone si muove in orbite circolari attorno al nucleo.
   
   Ci sono due errori in questa frase:
 
-  $\bullet$ Il termine "orbite": l'elettrone non si muove in un'orbita. Se così fosse, potrei conoscere con esattezza posizione e velocità in qualunque istante. Si parla infatti di orbitale.
+  $\bullet$ Il termine "orbite": l'elettrone non si muove in un'orbita. Se così fosse, potremmo conoscere con esattezza posizione e velocità in qualunque istante. Si parlerà infatti di orbitale.
 
   $\bullet$ Il termine "circolare": se ci fosse una traiettoria, sarebbe ellittica.
   \item Gli stati permessi sono quelli in cui il momento angolare dell'elettrone è un multiplo intero di $\hbar=h/2\pi$. In altre parole si quantizza il momento angolare dell'elettrone. 
 \end{enumerate}
 Matematicamente, la quantizzazione del momento angolare si esprime come
 $$m_evr=n\frac{h}{2\pi}\ \overrightarrow{\text{\tiny{elevo al quadrato}}}\ m_e^2v^2r^2=n^2\frac{h^2}{4\pi^2}$$
-Ricavo il raggio
+Ricaviamo il raggio
 $$r^2=n^2\frac{h^2}{4\pi^2m_e^2v^2}$$
-Sostituisco nella condizione di equilibrio e ricavo il raggio:
+Sostituiamo nella condizione di equilibrio e ricaviamo il raggio:
 $$\frac{m_ev^2}{r}=\frac{e^24\pi^2m_e^2v^2}{m^2h^2}\ \rightarrow\ r=\frac{n^2h^2}{4\pi^2e^2m_e}$$
-Esso è detto "raggio delle orbite di Bohr".
-Tale relazione ci dice che i raggi delle orbite sono quantizzati da n, ossia il modello di Bohr ci dice che oltre al momento angolare dell'elettrone, anche il raggio dell'orbita che esso segue è quantizzato. Si deduce quindi che l'elettrone non può stare a qualunque distanza dal nucleo, ma solo a distanze ben precise che dipendono da n.\\
-Ragioniamo ora sull'energia.
+Esso è detto \textit{raggio delle orbite di Bohr}.
+
+Tale relazione ci dice che i raggi delle orbite sono quantizzati da n, ossia il modello di Bohr ci dice che oltre al momento angolare dell'elettrone, anche il raggio dell'orbita che esso segue è quantizzato. Si deduce quindi che l'elettrone non può stare a qualunque distanza dal nucleo, ma solo a distanze ben precise che dipendono da n.
+
+\vspace{0.2cm}Ragioniamo ora sull'energia.
 
 L'energia totale di un sistema è dato dalla somma di energia cinetica e potenziale\footnote{Essa è negativa, perché siamo in uno stato legato, cioè l'elettrone è legato all'atomo.}, che per un elettrone legato all'atomo si esprime come
 $$E=E_{cin} + E_{pot}=\frac{1}{2}m_ev^2 - \frac{e^2}{r}$$
+Dalla condizione di equilibrio segue che
 $$m_ev^2=\frac{e^2}{r}\ \implies\ E=\frac{1}{2}\frac{e^2}{r} - \frac{e^2}{r}=- \frac{e^2}{2r}$$
 Sostituendo il valore di r si ha
 $$E=-\frac{2\pi^2m_ee^4}{n^2h^2}$$
-Cioè anche l'energia è quantizzata e dipende da n.
-
-Per esattezza si ha
+Cioè anche l'energia è quantizzata e dipende da n. Per esattezza si ha
 $$E=-\frac{2.18\cdot10^{-18}}{n^2}J=-\frac{13.6}{n^2}eV$$
 \subsection{Problemi insiti nel modello atomico di Bohr}
 \begin{itemize}
-  \item Nel momento in cui il numero di elettroni cresce si ottengono più righe di emissioni, non spiegabili tramite il modello di Bohr. Un esempio sono i doppietti, che producono righe molto vicine tra loro.
+  \item Nel momento in cui il numero di elettroni cresce si ottengono più righe di emissioni, non spiegabili tramite il modello di Bohr. Un esempio sono i doppietti, che producono righe molto vicine tra loro;
   \item Se l'atomo che sta emettendo si trova in una regione sede di un campo magnetico, lo spettro di emissione si complica perché si seperano gli stati con lo stesso spin
-  (Effetto Zeeman: in presenza di campi magnetici lo spin influenza l'energia).
-  \item La quantizzazione è imposta, non è motivata.
+  (Effetto Zeeman: in presenza di campi magnetici lo spin influenza l'energia);
+  \item La quantizzazione è imposta, non è motivata;
   \item Non viene spiegato perché gli stati degli elettroni debbano essere stazionari e perché gli elettroni non debbano emettere energia e cadere sul nucleo.
 \end{itemize}
