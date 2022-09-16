@@ -12,7 +12,7 @@ Consideriamo due esempi:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{immagini/piastre_metalliche.png}
+    \includegraphics[width=12cm]{immagini/piastre_metalliche.png}
 \end{figure}
 
 Consideriamo dei beker conteneti acqua distillata in cui sono immersi un filo di zinco e un filo di rame. Tale sistema è chiamato \textbf{semicella}.
@@ -27,7 +27,9 @@ Ci si accorge che metalli diversi hanno capacità diverse di liberare ioni in so
 
 Quanti elettroni liberano in soluzione?
 
-In realtà pochi, tant'è che quando mettiamo una lamina di un metallo in acqua questa, sebbene inizi a liberare ioni, non si scioglie. Pertanto il numero di ioni liberati è limitato. Ad un certo punto però si raggiunge un equilibrio, ossia gli ioni che sono in soluzione sono positivi, ma la lamina si è caricata negativamente, quindi si genera un campo elettrico che tende a far tornare gli ioni sulla lamina. La lamina però tenderà a liberarli nuovamente, fino a quando si raggiunge un equilibrio dinamico in cui il numero di ioni liberati in soluzione è pari al numero di ioni 
+In realtà pochi, tant'è che quando mettiamo una lamina di un metallo in acqua questa, sebbene inizi a liberare ioni, non si scioglie. Pertanto il numero di ioni liberati è limitato. Ad un certo punto però si raggiunge un equilibrio, ossia gli ioni che sono in soluzione sono positivi, ma la lamina si è caricata negativamente, quindi si genera un campo elettrico che tende a far tornare gli ioni sulla lamina. La lamina però tenderà a liberarli nuovamente, fino a quando si raggiunge un equilibrio dinamico in cui il numero di ioni liberati in soluzione è pari al numero di ioni che dalla soluzione ritornano alla lamina. Quest'equilibrio non si raggiunge velocemente perché in acqua sono presenti anche ioni $\rm H_3O^+$ dovuti all'autodissociazione dell'acqua, i quali sentono anch'essi il campo della lamina e competono con i cationi metallci per raggiungere la lamina, turbando dunque il raggiungimento dell'equilibrio.
+
+Pertanto non è conveniente immergere lamine metalliche in acqua, in quanto difficilmente raggiungeremo un equilibrio, conviene piuttosto immergerle in soluzioni dei loro sali, in modo tale da avere già in soluzione una concentrazione di ioni metallici molto alta, di gran lunga superiore alla concentrazione di $10^{-7}$ ioni $\rm H_3O^+$ per litro dovuti all'autodissociazione dell'acqua in modo da far sì che il turbamento dovuto a tali ioni sia irrilevante poiché la loro quantità è insignificante rispetto a quella degli ioni metallici.
 
 \subsection{Misura della d.d.p. (pila di Daniell)}
 \begin{figure}[H]
@@ -40,6 +42,24 @@ In realtà pochi, tant'è che quando mettiamo una lamina di un metallo in acqua 
     ossidazione, anodo & & riduzione, catodo
     \end{tabular}
 \end{center}
+
+Esso rappresenta il modello di pila più semplice che possiamo immmaginare.
+
+Abbiamo una lamina di zinco immersa in una soluzione di solfato di zinco, in modo tale che quando la lamina libera ioni zinco in soluzione sono già presenti ioni di questo tipo. Ciò che accade è che lo zinco in acqua libera ioni $\rm Zn^{2+}$ e lascia due elettroni per atomo sulla lamina, che si carica negativamente.
+
+Abbiamo poi una lamina di rame, la quale in teoria libera ioni $\rm Cu^{2+}$. Per lo stesso motivo della lamina di zinco è immersa in una soluzione di solfato di rame in cui tali ioni sono già presenti così che l'equilibrio si instauri velocemente.
+
+Colleghiamo i due elettrodi. Sapendo che la lamina di zinco si carica più negativamente della lamina di rame perché libera in soluzione molti più ioni ioni zinco di quanti ioni rame libera in soluzione la lamina di rame
+
+$$(-) \; \ce{Zn <--> Zn^{2+}(aq) + 2e^-} \qquad (+) \; \ce{ Cu^{2+}(aq) + 2e^- <--> Cu}$$
+
+Quindi su un elettrodo abbiamo l'ossidazione dello zinco, sull'altro la riduzione del rame. Cosa succede alle soluzioni appena avviene ciò?
+
+A sinistra arrivano ioni zinco, e la soluzione inizialmente neutra a causa degli ioni $\rm Zn^{2+}$
+
+$$\ce{Zn + Cu^{2+}(aq) <--> Zn^{2+}(aq) + Cu}$$
+
+$$L_{\text{utile}}=- \Delta G; \; L_{\text{utile}}=L_{\text{elettrico}}=q_c \times E=nFE$$
 
 $$\implies \Delta G = -nFE$$
 
@@ -54,3 +74,21 @@ $$\Delta G =  -RT \ln k_{eq} + RT \ln \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\
 $$E=\frac{RT}{nF}\ln k_{eq} - \frac{RT}{nF}\ln \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\alpha} \, a_B^{\beta}}$$
 
 $$E= E_0 + \frac{RT}{nF}\ln \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\alpha} \, a_B^{\beta}} \quad \textbf{Equazione di Nerst}$$
+
+Se poniamo
+
+$$R=8.314 \, J/mol\,K, \quad \ln x = 2.303 \log x, \quad F=96483 \, C, \quad T=298 \,K$$
+
+L'equazione diventa
+
+$$E = E_0 + \frac{0.059}{n}\log \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\alpha} \, a_B^{\beta}}$$
+
+$n$ resta tale perché dipende da quanti elettroni genera quella reazione.
+
+\vspace{0.2cm}Per un generico elettrodo vale
+
+$$\ce{\alpha M^{n+} + ne^- <--> \beta M}$$
+
+$$E = E_0 + \frac{0.059}{n}\log \frac{a_{ox}^{\alpha}}{a_{rid}^{\beta}}$$
+
+$$E = E_0 + \frac{0.059}{n}\log a(\text{Mn}^+)^{\alpha}$$
