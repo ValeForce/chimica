@@ -118,26 +118,45 @@ $$\Delta G =  -RT \ln k_{eq} + RT \ln \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\
 
 Va da notare che nelle costanti non compaiono le concentrazioni: al loro posto abbiamo l'\textbf{attività} $a$. Essa è un'unità di misura molto più precisa delle concentrazioni perché se mettiamo degli ioni in soluzione troveremo un valore per la concentrazione, ma non siamo sicuri che questi ioni siano talmente vicini da formare coppie ioniche o pertanto sottrarsi all'influenza di un possibile campo elettrico, in quanto si comporterebbero come se fossero un'unica entità. L'attività tiene conto di questo fatto, quindi ci dice in maniera più precisa quante speci chimiche abbiamo in soluzione.
 
-L'attività delle speci pure
+L'attività delle speci pure è considerata pari a 1. Ciò è molto utile. Ad esempio nella pila che abbiamo visto la lamina di zinco libera ioni zinco, per cui abbiamo la forma ossidata che è $\rm Zn^{2+}$ e la forma ridotta che è Cu. Quest'ultimo è un metallo puro, quindi la sua attività è pari a 1. D'altra parte una lamina metallica immersa in acqua non ha concentrazione. Segue che
 
 $$E=\frac{RT}{nF}\ln k_{eq} - \frac{RT}{nF}\ln \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\alpha} \, a_B^{\beta}}$$
 
-$$E= E_0 + \frac{RT}{nF}\ln \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\alpha} \, a_B^{\beta}} \quad \textbf{Equazione di Nernst}$$
+Se la temperatura è costante il prime termine sarà pari ad una costante $E_0$:
+
+$$E= E_0 + \frac{RT}{nF}\ln \frac{a_A^{\alpha} \, a_B^{\beta}}{a_C^{\gamma} \, a_D^{\delta}} \quad \textbf{Equazione di Nernst}$$
+
+Nota: siccome abbiamo cambiato il segno del logaritmo, adesso al numeratore abbiamo i reagenti e al denominatore i prodotti.
+
+Tale equazione permette di calcolare la d.d.p. di una pila. Infatti in essa compaiono 4 attività che sono quelle dei 4 termini che compaiono nella redox della pila ($\rm Zn, \; Cu^{2+}, \; Zn^{2+}$ e $\rm Cu$).
 
 Se poniamo
-
 $$R=8.314 \, J/mol\,K, \quad \ln x = 2.303 \log x, \quad F=96483 \, C, \quad T=298 \,K$$
 
 L'equazione diventa
 
-$$E = E_0 + \frac{0.059}{n}\log \frac{a_C^{\gamma} \, a_D^{\delta}}{a_A^{\alpha} \, a_B^{\beta}}$$
+$$E = E_0 + \frac{0.059}{n}\log \frac{a_A^{\alpha} \, a_B^{\beta}}{a_C^{\gamma} \, a_D^{\delta}}$$
 
 $n$ resta tale perché dipende da quanti elettroni genera quella reazione.
 
 \vspace{0.2cm}Per un generico elettrodo vale
+$$\ce{\alpha ox + ne^- <--> \beta rid}$$
 
+La forma ossidata dà la forma ridotta (se ad essa diamo un certo numero di elettroni). $\alpha$ e $\beta$ sono i coefficienti stechiometrici.
+
+Nel caso dei metalli la reazione è
 $$\ce{\alpha M^{n+} + ne^- <--> \beta M}$$
+
+Quindi per un elettrodo le speci sono due: la forma ossidata $\rm M^{n+}$ e la forma ridotta M. L'equazione di Nernst allora diventa
 
 $$E = E_0 + \frac{0.059}{n}\log \frac{a_{ox}^{\alpha}}{a_{rid}^{\beta}}$$
 
-$$E = E_0 + \frac{0.059}{n}\log a(\text{M}^{n+})^{\alpha}$$
+\vspace{0.2cm}Per definizione l'attività dei solidi puri è pari a 1, quindi $a_rid=1$. Pertanto per un singolo elettrodo avremo:
+
+$$E = E_0 + \frac{0.059}{n}\log a{(\text{M}^{n+})}^{\alpha}$$
+
+dove $n$ è il numero di elettroni scambiati, $a(\text{M}^{n+})$ è la concentrazione del catione in soluzione.
+
+In questo modo calcoliamo la d.d.p. di un elettrodo.
+
+Attenzione! Non abbiamo ancora calcolato $E_0$

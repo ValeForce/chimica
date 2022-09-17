@@ -4,17 +4,34 @@ Gli elettrodi visti finora appartengono a questa categoria. Essi sono metalli im
 L'elettrodo partecipa attivamente alla reazione, ossia è il metallo che libera ioni in soluzione, i quali lasciano elettroni sul metallo:
 
 $$\ce{M <--> M^{n+} + ne^-}$$
+\subsection{Elettrodo di seconda specie}
+In questo caso il metallo è a contatto con un suo sale poco solubile, ad esempio argento Ag a contatto con cloruro di argento AgCl che è un sale insolubile. A sua volta il sale è a contatto con una soluzione di un sale (ovviamente solubile) che abbia l'anione in comune col sale poco solubile, quindi nel nostro esempio dovrà essere un sale che ha come anione ha lo ione cloruro, come il cloruro di potassio KCl. Un altro esempio è il mercurio Hg messo in contatto con un suo sale poco solubile che è il cloruro mercuroso $\rm Hg_2Cl_2$ (nota: i pedici non possono essere semplificati, tra poco vedremo perché), che a sua volta è a contatto con cloruro di potassio KCl.
+
+Nello specifico, ciò che avviene nel primo esempio è che l'AgCl in minima parte si dissocia in $\rm Ag^+$ e $\rm Cl^-$
 
 $$\ce{AgCl(s) <--> Ag^+ + Cl^-}$$
 
+Se poi cediamo un elettrone ad $\rm Ag^+$, questo diventa $\rm Ag^0$, cioè argento metallico:
+
 $$\ce{Ag^+ e^- <--> Ag}$$
 
-$$\ce{AgCl(s) + e^- <--> Ag + Cl^-}$$
-\subsection{Elettrodo di seconda specie}
-In questo caso il metallo è a contatto con un suo sale poco solubile, ad esempio argento Ag a contatto con cloruro di argento AgCl che è un sale insolubile. A sua volta il sale è a contatto con una soluzione di un sale (ovviamente solubile) che abbia l'anione in comune col sale poco solubile, quindi nel nostro esempio dovrà essere un sale che ha come anione ha lo ione cloruro, come il cloruro di potassio KCl
-\subsection{Elettrodo di terza specie}
+In questo modo abbiamo ridotto l'argento.
 
-Scriviamo le equazioni di Nernst relative ai vari elettrodi:
+La reazione totale allora sarà
+
+$$\ce{AgCl(s) + e^- <--> Ag + Cl^-}$$
+\subsection{Elettrodo di terza specie}
+In esso un metallo nobile (cioè che non prende parte ai processi elettrolitici, funge solo da trasportatore di cariche) è immerso in una soluzione che contiene già stati ossidati e stati ridotti di un qualunque sistema redox.
+
+Un esempio è un elettrodo di platino Pt che è un metallo nobile, immerso in una soluzione contenente un sale di ferro (II) e uno di ferro (III). Il platino fungerà solo da trasportatore di carica e lo stato ossidato e quello ridotto saranno. rispettivamente lo stato ferrico e lo stato ferroso.
+
+Consideriamo il permanganato $\rm MnO_4^-$. Esso in ambiente fortemente acido acquista 5 elettroni e diventa $\rm Mn^{2+}$, quindi $\rm MnO_4^-$ è lo stato ossidato e $\rm Mn^{2+}$ quello ridotto.
+
+Va da ricordare che in ambiente fortemente acido ci sono ioni $\rm H_3O^+$, quindi la forma ossidata non è solo il permanganato ma anche gli ioni $\rm H_3O^+$. Anche in questo caso se usiamo il platino sarà un elettrodo di terza specie perché viene semplicemente immerso e funge da trasportatore di elettroni.
+
+Un altro esempio è il chinidrone, una miscela di due polveri bianche, il chinone e l'idrochinone, che sono la forma ossidata e la forma ridotta. Sono utili perché permettono di misurare in maniera veloce il pH. Se immergiamo un filo di platino in una soluzione di questi composti, agirà come un elettrodo di terza specie.
+
+\vspace{0.2cm}Scriviamo le equazioni di Nernst relative ai vari elettrodi:
 
 \vspace{0.2cm} $\bullet$\textbf{Elettrodo di prima specie}
 
@@ -36,11 +53,17 @@ $$E = E_0 + \frac{0.059}{1} \log \frac{a_{\text{Fe}^{3+}}}{a_{\text{Fe}^{2+}}}$$
 
 $$\rm Pt\,/\,Mn^{2+}, \; MnO_4^- \implies \ce{MnO_4^- + 8H^+ + 5e^- <--> Mn^{2+} + 4H_2O} $$
 
+Questa è la semi-reazione relativa al permanganato. La d.d.p. relativa ad un filo di platino immerso in una soluzione di $\rm MnO_4^-$ e $\rm Mn^{2+}$ sarà
+
 $$E = E_0 + \frac{0.059}{5} \log \frac{a_{\text{MnO}_4^-} \cdot a^8_{\text{H}^+}}{a_{\text{Mn}^{2+}}}$$
+
+Attenzione! Abbiamo scritto d.d.p. ma è corretto dire il potenziale
 \subsection{Elettrodo normale standard ad idrogeno}
 Finora non siamo stati in grado di misurare i potenziali. Per fare ciò si sceglie un elettrodo e si usa come riferimento. Ad esso si assegna un potenziale arbitrario (nel caso particolare si è assegnato valore zero) e si usa questo come secondo elettrodo per fare le misure di tutti i potenziali di qualunque altro elettrodo.
 
-Quindi la d.d.p. tra elettrodo e soluzione non è misurabile perché dovremmo introdurre un tester che farebbe da secondo elettrodo. Allora si è scelto l'elettrodo normale standard a idrogeno
+Quindi la d.d.p. tra elettrodo e soluzione non è misurabile perché dovremmo introdurre un tester che farebbe da secondo elettrodo.
+
+Come riferimento si è scelto l'elettrodo normale standard a idrogeno:
 
 \begin{minipage}{0.55\textwidth}
     \begin{figure}[H]
@@ -49,9 +72,36 @@ Quindi la d.d.p. tra elettrodo e soluzione non è misurabile perché dovremmo in
     \end{figure}
 \end{minipage}
 \begin{minipage}{0.45\textwidth}
-    Immaginiamo di avere un beker contenente una soluzione 1-molare di HCl in cui mettiamo un filo di platino saldato ad una lamina di platino, la quale in superficie è ricoperta di una polvere finissima di platino. Tale oggetto si chiama \textit{platino platinato}. Viene rivestito per aumentare la superficie di disposizione, perché si conta la superficie di ogni granello.
+    \vspace{0.7cm}Immaginiamo di avere un beker contenente una soluzione 1-molare di HCl in cui mettiamo un filo di platino saldato ad una lamina di platino, la quale in superficie è ricoperta di una polvere finissima di platino. Tale oggetto si chiama \textit{platino platinato}. Viene rivestito per aumentare la superficie di disposizione, perché si conta la superficie di ogni granello. Facciamo gorgogliare (quindi sotto la lamina) l'idrogeno che è un gas. Esso gorgogliando aderisce alla superficie della lamina, in quanto i grani finissimi di platino che ricoprono la lamina di platino fungono da supporto per le bollicine di idrogeno che vanno ad aderire sulla lamina.
 \end{minipage}
 
+\vspace{0.2cm}Perché si chiama standard?
+
+Dato che abbiamo idrogeno che gorgoglia alla pressione di 1 atm e a 25° C, siamo in condizioni standard.
+
+Perché si chiama normale?
+
+La normalità è definita come il numero di equivalenti su un litro di soluzione. Nel caso dell'acido cloridrico che libera un solo protone, molarità e normalità coincidono perchè coincidono moli ed equivalenti, per cui concentrazione 1-molare significa anche concentrazione 1-normale in questo caso.
+
+La reazione che avviene è
+
+$$\ce{2H_3O^+ + 2e^- <--> 2H_2O + H_2}$$
+
+Può anche essere immaginata come due ioni $\rm H^+$ che acquistano 2 elettroni e formano $\rm H_2$. In entrambi i casi è una riduzione.
+
+Il potenziale di questa reazione è
+
+$$E = E_0 + \frac{0.059}{2} \log \frac{a^2_{\text{H}_3\text{O}^+}}{a_{\text{H}_2}}$$
+
+L'attività di un gas che gorgoglia a pressione atmosferica è pari a 1, per cui
+
+$$E = E_0 + 0.059 \log a_{\text{H}_3\text{O}^+}$$
+
+L'attività degli ioni $\rm H_3O^+$ è pari a 1 (perché 1-molare), quindi il logaritmo si azzera e otteniamo $E=E_0$. In queste condizioni il potenziale dell'elettrodo normale standard ad idrogeno è pari a $0.000 V$.
+
+Dunque tutte le volte che vogliamo misurare il potenziale di un qualunque elettrodo, dato che per fare una misura serve un secondo elettrodo useremo questo come riferimento.
+
+In realtà è difficoltoso usare questo elettrodo, perché si deve avere una bombola che eroghi costantemente idrogeno ad 1 atm esatto. Pertanto questo elettrodo è il riferimento teorico ma non quello che si usa praticamente.
 \subsection{Elettrodo a calomelano saturo}
 \E un elettrodo a mercurio ed è quello che poi viene usato nella pratica. Si chiama così perché è presente il composto $\rm Hg_2Cl_2$, che si chiama calomelano.
 
@@ -96,7 +146,11 @@ $$\implies E=E_0 - \frac{0.059}{2} \cdot 2 \log a_{\text{Cl}^-}
 \quad
 \implies E=E_0 - 0.059 \log a_{\text{Cl}^-}$$
 
-Il potenziale di Nerst di questo elettrodo dipenderà allora dalla concentrazione dello ione cloruro (infatti se misuriamo una d.d.p. tra questo elettrodo e quello nromale standar a idrogeno, dato che per definzione il potenziale del secondo è pari a zero, quello che misuriamo è imputabile tutto a questo elettrodo). Abbiamo così scoperto un modo per misurare la concentrazione di uno ione.
+Il potenziale di Nernst di questo elettrodo dipenderà allora dalla concentrazione dello ione cloruro (infatti se misuriamo una d.d.p. tra questo elettrodo e quello normale standard a idrogeno, dato che per definzione il potenziale del secondo è pari a zero, quello che misuriamo è imputabile tutto a questo elettrodo). Abbiamo così scoperto un modo per misurare la concentrazione di uno ione. Se ad esempio vogliamo sapere se dell'acqua è potabile, misurando la d.d.p. è possibile calcolare la concentrazione degli ioni $\rm Cl^-$.
+
+Con questo metodo siamo in grado di costruire ina reazione che ci permette, tramite una misura di d.d.p.\,, di quantificare la presenza (cioè la concentrazione) di uno ione, e ciò per qualunque specie chimica. Gli oggetti che permettono tali misure si chiamano \textit{elettrodi ion-selettivi}. Essi sono sensori elettro-chimici, che una volta immersi leggono la concentrazione dello ione. Ce n'è uno specifico per ogni ione.
+
+Quindi ciò che si deve fare è andare a cercare la reazione giusta, quella più adatta, 
 \subsection{Elettrodo d'argento}
 $$\ce{AgCl + 1e^- <--> Ag + Cl^-}$$
 Il potenziale sarà
