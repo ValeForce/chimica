@@ -22,10 +22,25 @@ $$\ce{Cu^{2+} + 2e^- <--> Cu} \quad E= E_0 + \frac{0.059}{2}\log \frac{a_{\text{
 
 $$a_{\text{Cu}}=1 \implies E= E_0 + \frac{0.059}{2}\log a_{\text{Cu}^{2+}}$$
 
+Questa sarà la d.d.p. di questo semielemento/elettrodo.
+
+Va da ricordare che poi nei calcoli usiamo la concentrazione, non l'attività.
+
 \vspace{0.2cm} $\bullet$\textbf{Elettrodo di terza specie}
 
+Per convenzione le reazioni si scrivono come riduzione, quindi
+
+$$\rm Pt\,/\,Fe^{2+}, \; Fe^{3+} \implies \ce{Fe^{3+} + e^- <--> Fe^{2+}} $$
+
+$$E = E_0 + \frac{0.059}{1} \log \frac{a_{\text{Fe}^{3+}}}{a_{\text{Fe}^{2+}}}$$
+
+$$\rm Pt\,/\,Mn^{2+}, \; MnO_4^- \implies \ce{MnO_4^- + 8H^+ + 5e^- <--> Mn^{2+} + 4H_2O} $$
+
+$$E = E_0 + \frac{0.059}{5} \log \frac{a_{\text{MnO}_4^-} \cdot a^8_{\text{H}^+}}{a_{\text{Mn}^{2+}}}$$
 \subsection{Elettrodo normale standard ad idrogeno}
-Finora non siamo stati in grado di misurare i potenziali. Per fare ciò si sceglie un elettrodo e si usa come riferimento. Ad esso si assegna 
+Finora non siamo stati in grado di misurare i potenziali. Per fare ciò si sceglie un elettrodo e si usa come riferimento. Ad esso si assegna un potenziale arbitrario (nel caso particolare si è assegnato valore zero) e si usa questo come secondo elettrodo per fare le misure di tutti i potenziali di qualunque altro elettrodo.
+
+Quindi la d.d.p. tra elettrodo e soluzione non è misurabile perché dovremmo introdurre un tester che farebbe da secondo elettrodo. Allora si è scelto l'elettrodo normale standard a idrogeno
 
 \begin{minipage}{0.55\textwidth}
     \begin{figure}[H]
@@ -34,7 +49,7 @@ Finora non siamo stati in grado di misurare i potenziali. Per fare ciò si scegl
     \end{figure}
 \end{minipage}
 \begin{minipage}{0.45\textwidth}
-    paperino
+    Immaginiamo di avere un beker contenente una soluzione 1-molare di HCl in cui mettiamo un filo di platino saldato ad una lamina di platino, la quale in superficie è ricoperta di una polvere finissima di platino. Tale oggetto si chiama \textit{platino platinato}. Viene rivestito per aumentare la superficie di disposizione, perché si conta la superficie di ogni granello.
 \end{minipage}
 
 \subsection{Elettrodo a calomelano saturo}
@@ -102,3 +117,10 @@ $$E = E_0 + \frac{0.059}{2} \log \frac{a_{\text{Benzochinone}} \cdot a^2_{\text{
 $$E = E_0 + 0.059 \log a_{\text{H}^+}$$
 
 $$E = E_0 - 0.059 \log \left( \frac{1}{a_{\text{H}^+}} \right)$$
+
+\subsubsection{Excursus: la placcatura}
+Placcare qualcosa in un certo metallo significa avere una solzione di questo in cui immergiamo l'oggetto che vogliamo ricoprire e alla quale applichiamo una d.d.p. in modo tale che il metallo si depositi come un film sottile omogeneo.
+
+Quali metalli possiamo far depositare in acqua? Tutti quelli che hanno il potenziali maggiore di zero, perché altrimenti anziché ridursi il metallo gli elettroni saranno presi dall'idrogeno piuttosto che dagli ioni metallici.
+
+Quindi si riducono le speci che hanno il potenziale standard maggiore. Tutti gli elementi a potenziale negativo non vedranno mai sviluppata la loro riduzione in soluzione, al loro posto sarà lo ione $\rm H^+$ a ridursi in idrogeno: \ce{2H^+ <--> H_2}.
