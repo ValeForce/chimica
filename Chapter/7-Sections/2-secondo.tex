@@ -99,7 +99,7 @@ $$E = E_0 + 0.059 \log a_{\text{H}_3\text{O}^+}$$
 
 L'attività degli ioni $\rm H_3O^+$ è pari a 1 (perché 1-molare), quindi il logaritmo si azzera e otteniamo $E=E_0$. In queste condizioni il potenziale dell'elettrodo normale standard ad idrogeno è pari a $0.000 V$.
 
-Dunque tutte le volte che vogliamo misurare il potenziale di un qualunque elettrodo, dato che per fare una misura serve un secondo elettrodo useremo questo come riferimento.
+Dunque tutte le volte che vogliamo misurare il potenziale di un qualunque elettrodo, dato che per fare una misura serve un secondo elettrodo useremo questo come riferimento. Ne segue che tutti i potenziali che misureremo saranno dei \textbf{potenziali standard} $E_0$.
 
 In realtà è difficoltoso usare questo elettrodo, perché si deve avere una bombola che eroghi costantemente idrogeno ad 1 atm esatto. Pertanto questo elettrodo è il riferimento teorico ma non quello che si usa praticamente.
 \subsection{Elettrodo a calomelano saturo}
@@ -150,11 +150,28 @@ Il potenziale di Nernst di questo elettrodo dipenderà allora dalla concentrazio
 
 Con questo metodo siamo in grado di costruire ina reazione che ci permette, tramite una misura di d.d.p.\,, di quantificare la presenza (cioè la concentrazione) di uno ione, e ciò per qualunque specie chimica. Gli oggetti che permettono tali misure si chiamano \textit{elettrodi ion-selettivi}. Essi sono sensori elettro-chimici, che una volta immersi leggono la concentrazione dello ione. Ce n'è uno specifico per ogni ione.
 
-Quindi ciò che si deve fare è andare a cercare la reazione giusta, quella più adatta, 
+Quindi ciò che si deve fare è andare a cercare la reazione giusta, quella più adatta, poi costruiamo un elettrodo il cui potenziale dipenda, tramite questa reazione, da ciò che vogliamo misurare.
+
+La maggior parte dei sensori usa l'elettrochimica.
+
+Nel nostro esempio tale elettrodo ci permette di misurare la concentrazione del KCl. Se questo dovesse essere 1-molare, $a_{\text{Cl}^-}=1$ e allora diventa $E=E_0=0.268 V$
+
+\vspace{0.2cm}Nota: nelle misure di potenziale si usano 3 cifre dopo la virgola.
+
+\vspace{0.2cm}Quindi l'elettrodo di riferimento è quello normale standard a idrogeno, ma quello che poi si usa è l'elettrodo a calomelano saturo che, se costruito in modo tale che l'attività dello ione cloruro sia unitaria avrà un potenziale pari a quello sopra. Esso è semplice da usare perché per toccare qualunque cosa c'è solo un filo di platino e nella sua struttura è già incluso il ponte salino.
+
+Quello che si fa nella pratica è immergere il ponte salino nel beker contenente l'altro elettrodo e col filo di platino tocchiamo il tester. A questo punto poggiamo un puntale sul filo di platino e l'altro sul secondo elettrodo.
+
+Inizialmente non si era pensato di mettere il filo di platino. Al suo posto il bulbo aveva un piccolo foro da cui il mercurio gocciolava lentamente. La goccia che stava per cadere era a contatto con il mercurio dentro e con la soluzione esterna. Tale sistema si chiamava \textit{elettrodo a goccia di mercurio}. La limitazione era che il mercurio si esauriva, quindi si è messo il filo di platino per mantenere il contatto.
 \subsection{Elettrodo d'argento}
+Simile a quello a calomelano, in esso abbiamo un filo di argento Ag che è a contatto col cloruro di argento, il quale a sua volta è a contatto con cloruro di potassio. La reazione che avviene è
 $$\ce{AgCl + 1e^- <--> Ag + Cl^-}$$
 Il potenziale sarà
 $$E = E_0 -0.059 \log a_{\text{Cl}^-}$$
+
+Anche questo è un elettrodo il cui potenziale dipende dalla concentrazione degli ioni cloruro.
+
+Se questa concentrazione è pari a 1 il potenziale sarà $E=0.2355 V$
 \subsection{Elettrodo al chinidrone}
 Il chinidrone è formato da benzochinone e idrochinone, forma ossidata e forma ridotta:
 
@@ -176,9 +193,11 @@ Essendo equimolari, qualunque sia il volume di chinidrone preso avremo le stesse
 
 $$E = E_0 + 0.059 \log a_{\text{H}^+}$$
 
+Il logaritmo ricorda molto il pH, che può essere calcolato se scriviamo $E$ come
+
 $$E = E_0 - 0.059 \log \left( \frac{1}{a_{\text{H}^+}} \right)$$
 
-
+Vediamo adesso una tabella di valori dei potenziali per i vari elettrodi. Il riferimento è l'elettrodo a idrogeno, per il quale la reazione di riduzione ha potenziale di riduzione $E_0$ pari a 0
 \begin{center}
     \scriptsize\begin{tabular}{|ll|ll|}
         \hline
@@ -194,25 +213,25 @@ $$E = E_0 - 0.059 \log \left( \frac{1}{a_{\text{H}^+}} \right)$$
         \ce{Mg^{2+} + 2e^- <--> Mg} & -2.375 & \ce{Hg_2Cl_2 + 2e^- <--> 2Hg + 2Cl^-} & 0.2682\\[0.7ex]
         \ce{H_3O^+ + e^- <--> H_2O + H} & -2.10 & \ce{Cu^{2+} + 2e^- <--> Cu} & 0.337\\[0.7ex]
         \ce{Al^{3+} + 3e^- <--> Al} & -1.71 & \ce{O_2 + 2H_2O + 4e^- <--> 4OH^-} & 0.401\\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
-        \ce{} & & \ce{} & \\[0.7ex]
+        \ce{Ti^{2+} + 2e^- <--> Ti} & -1.63 & \ce{Cu^+ + e^- <--> Cu} & 0.521 \\[0.7ex]
+        \ce{ZnO_2^{2-} + 2H_2O + 2e^- <--> Zn + 4OH^-} & -1.22 & \ce{I_2 + 2e^- <--> 2I^-} & 0.536 \\[0.7ex]
+        \ce{Mn^{2+} + 2e^- <--> Mn} & -1.03 & \ce{O_2 + 2H_3O^+ + 2e^- <--> H_2O_2 + 2H_2O} & 0.682 \\[0.7ex]
+        \ce{2H_2O + 2e^- <--> H_2 + 2OH^-} & -0.828 & \ce{Fe^{3+} + e^- <--> Fe^{2+}} & 0.771\\[0.7ex]
+        \ce{Zn^{2+} + 2e^- <--> Zn} & -0.7628 & \ce{Hg_2^{2+} + 2e^- <--> 2Hg} & 0.7961 \\[0.7ex]
+        \ce{Cr^{3+} + 3e^- <--> Cr} & -0.74 & \ce{Ag + e^- <--> Ag} & 0.7996\\[0.7ex]
+        \ce{Te + 2H_3O^+ +2e^- <--> H_2Te + 2H_2O} & -0.72 & \ce{2NO_3^- + 4H_3O^+ + 2e^- <--> N_2O_4 + 6H_2O} & 0.80\\[0.7ex]
+        \ce{As + 3H_3O^+ + 3e^- <--> AsH_3 + 3H_2O} & -0.60& \ce{NO_3^- + 3H_3O^+ + 2e^- <--> HNO_2 + 4H_2O} & 0.94\\[0.7ex]
+        \ce{Cr^{2+} + 2e^- <--> Cr} & -0.557 & \ce{NO_3^- + 4H_3O^+ + 3e^- <--> NO + 6H_2O} & 0.96\\[0.7ex]
+        \ce{H_3PO_2 + H_3O^+ + e^- <--> P + 3H_2O} & -0.51 & \ce{} & 1.087\\[0.7ex]
+        \ce{Fe^{2+} + 2e^- <--> Fe} & -0.409& \ce{} & 1.2\\[0.7ex]
+        \ce{Cr^{3+} + e^- <--> Cr^{2+}} & -0.41 & \ce{} & 1.21\\[0.7ex]
+        \ce{Cd^{2+} + 2e^- <--> Cd} & -0.4026 & \ce{} & 1.229\\[0.7ex]
+        \ce{Se + 2H_3O^+ + 2e^- <--> H_2Se + 2H_2O} & -0.40 & \ce{} & 1.33 \\[0.7ex]
+        \ce{Tl^+ + e^- <--> Tl} & -0.3363 & \ce{} & 1.358 \\[0.7ex]
+        \ce{Co^{2+} +2e^- <--> Co} & -0.277 & \ce{} & 1.45\\[0.7ex]
+        \ce{Ni^{2+} + 2e^- <--> Ni} & -0.230 & \ce{} & 1.455\\[0.7ex]
+        \ce{N_2 + 5H_3O^+ -2e^- <--> N_2H_5^+ + 5H_2O} & -0.23 & \ce{MnO_4^- + 8H_3O^+ +5e^- <--> Mn^{2+} + 12H_2O} & 1.50\\[0.7ex]
+        \ce{Sn^{2+} + 2e^- <--> Sn} & -0-1364 & \ce{HClO + H_3O^+ + e^- <--> \frac{1}{2} Cl_2 + 2H_2O} & 1.63\\[0.7ex]
         \ce{Pb + 2e^- <--> Pb} & -0.1263 & \ce{H_2O_2 + 2H_3O^+ + 2e^- <--> 4H_2O} & 1.776\\[0.7ex]
         \ce{2H_3O^+ + 2e^- <--> H_2 + 2H_2O} & 0.000 & \ce{Co^{3+} + e^- <--> Co^{2+} (HNO_3 \; 3F)} & 1.842\\[0.7ex]
         \ce{NO_3^- + H_2O + 2e^- <--> NO_2^- + 2OH^-} & 0.0 & \ce{F_2 + 2e <--> 2F^-} & 2.87\\[0.7ex]
@@ -221,10 +240,6 @@ $$E = E_0 - 0.059 \log \left( \frac{1}{a_{\text{H}^+}} \right)$$
 \end{center}
 \normalsize
 
-\subsubsection{Excursus: la placcatura}
-Placcare qualcosa in un certo metallo significa avere una solzione di questo in cui immergiamo l'oggetto che vogliamo ricoprire e alla quale applichiamo una d.d.p. in modo tale che il metallo si depositi come un film sottile omogeneo.
-
-Quali metalli possiamo far depositare in acqua? Tutti quelli che hanno il potenziali maggiore di zero, perché altrimenti anziché ridursi il metallo gli elettroni saranno presi dall'idrogeno piuttosto che dagli ioni metallici.
 
 Quindi si riducono le speci che hanno il potenziale standard maggiore. Tutti gli elementi a potenziale negativo non vedranno mai sviluppata la loro riduzione in soluzione, al loro posto sarà lo ione $\rm H^+$ a ridursi in idrogeno: \ce{2H^+ <--> H_2}.
 
@@ -236,3 +251,12 @@ $$E_0 \quad \text{Sn}^{4+}/ \, \text{Sn}^{2+}=0.15 V$$
 $$E_0 \quad \text{Fe}^{3+}/ \, \text{Fe}^{2+}=0.77 V$$
 
 $$\ce{Sn^{2+} + 2Fe^{3+} <--> Sn^{4+} + 2Fe^{2+}}$$
+
+\textbf{ES.2}
+
+\textbf{ES.3}
+
+\subsubsection{Excursus: la placcatura}
+Placcare qualcosa in un certo metallo significa avere una solzione di questo in cui immergiamo l'oggetto che vogliamo ricoprire e alla quale applichiamo una d.d.p. in modo tale che il metallo si depositi come un film sottile omogeneo.
+
+Quali metalli possiamo far depositare in acqua? Tutti quelli che hanno il potenziali maggiore di zero, perché altrimenti anziché ridursi il metallo gli elettroni saranno presi dall'idrogeno piuttosto che dagli ioni metallici.
