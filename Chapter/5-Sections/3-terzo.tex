@@ -5,18 +5,18 @@ Supponiamo di avere due liquidi in soluzione, ad esempre alcol etilico e acqua. 
 
 Di norma il $\Delta$H è diverso da zero, ma spesso si lavora con soluzioni diluite e pertanto le condizioni in cui lavoriamo sono prossime all'idealità.
 
-\vspace{0.2cm}I liquidi hanno la caratteristica di evaporare, ed è evidente che se evaporano avremo particelle di A e di B in fase vapore. Nelle condizioni di idealità dei gas sappiamo che ogni specie gassosa si comporta come se fosse l'unica presente nel contenitore, pertanto se il vapore di A e di B viene assimilato ad un gas ideali ognuno dei due si comporterà come se fosse l'unico presente e quindi la pressione totale potrà essere calcolata come somma delle pressioni parziali dei componenti A e B:
+\vspace{0.2cm}I liquidi hanno la caratteristica di evaporare, ed è evidente che se evaporano avremo particelle di A e di B in fase vapore. Nelle condizioni di idealità dei gas sappiamo che ogni specie gassosa si comporta come se fosse l'unica presente nel contenitore, pertanto se sia il vapore di A che quello di B viene assimilato ad un gas ideale ognuno dei due si comporterà come se fosse l'unico presente e quindi la pressione totale potrà essere calcolata come somma delle pressioni parziali dei componenti A e B:
 $$P=P_A + P_B \quad \text{(Legge di Dalton)}$$
-Ovviamente stiamo immaginando di essere ad una temperatura, cioè fissiamo una temperatura alla quale troviamo una certa pressione/tensione di vapore dovuta al componente A e un'altra dovuta al componente B e la cui somma dà la pressione totale.
+Ovviamente stiamo immaginando di trovarci ad una data temperatura, cioè fissiamo una temperatura alla quale troviamo una certa pressione/tensione di vapore dovuta al componente A e un'altra dovuta al componente B e la cui somma dà la pressione totale.
 
 Se non avessimo questa soluzione, quale sarebbe la tensione di vapore di ognuna delle due speci pure? 
 
-Innanzitutto indichiamo con $P^0_A$ e $P^0_B$ le tensioni di vapore di ognuno dei due liquidi pure alla temperatura $T$ alla quale stiamo lavorando. Quindi, fissata la temperatura, il componente A eserciterà la pressione $P^0_A$ se puro, mentre se è in miscela esercoterà la pressione $P_A$. Analogamente per il componente B.
+Innanzitutto indichiamo con $P^0_A$ e $P^0_B$ le tensioni di vapore di ognuno dei due liquidi pure alla temperatura $T$ alla quale stiamo lavorando. Quindi, fissata la temperatura, il componente A eserciterà la pressione $P^0_A$ se puro, mentre se è in miscela eserciterà la pressione $P_A$. Analogamente per il componente B.
 
 Qual è la relazione tra $P^0_A$ e $P_A$?
 
 La loro relazione è data dalle \textit{legge di Raoult}, la quale dice che la tensione di vapore di un componente in soluzione ad una data temperatura $T$ è pari alla tensione di vapore di quel componente puro alla stessa temperatura, moltiplicata per la sua frazione molare:
-$$P_A=\rchi_A P^0_A \qquad P_B=\rchi_B P^0_B$$
+$$P_A=\rchi_A P^0_A \qquad P_B=\rchi_B P^0_B \quad \text{Legge di Raoult}$$
 Va da ricordare che la frazione molare di ogni componente è sempre inferiore a 1, per cui si ha sempre $P_A < P^0_A$. Quindi si ha un abbassamento delle tensioni di vapore delle singole speci quando le mettiamo in soluzione.
 
 Inoltre, al variare della composizione della miscela variano anche le frazioni molari e di conseguenza varieranno $P_A$ e $P_B$, ma in generale la pressione sarà sempre data da
@@ -25,7 +25,7 @@ Ovviamente per calcolarla dovremo fissare temperatura e composizione.
 
 Va da notare che $\rchi_A$ e $\rchi_B$ sono le frazioni molari in soluzione, mentre con questo metodo abbiamo calcolato la pressione del vapore. Allora quale sarà la composizione del vapore alla stessa temperatura?
 
-Intuitivamente possiamo dire che nella fase vapore avremo più abbondanza del componente più volatile\footnote{la volatilità è la tendenza delle sostanze liquide o solide a passare allo stato di vapore, dovuta alla loro elevata tensione di vapore.}. Dobbiamo però quantificare.
+Intuitivamente possiamo dire che nella fase vapore avremo più abbondanza del componente più volatile\footnote{la volatilità è la tendenza delle sostanze liquide o solide a passare allo stato di vapore.}. Dobbiamo però quantificare.
 
 Abbiamo supposto che la soluzione sia ideale, per cui i vapori si comporteranno idealmente, cioè come se ognuno di loro fosse l'unico ad occupare l'intero volume a disposizione.
 
@@ -35,13 +35,13 @@ $$P_AV=n_ART
 \qquad
 P_BV=n_BRT$$
 
-Sommando le espressioni
+Sommiamo le espressioni:
 
 $$(P_A + P_B)V= (n_A + n_B)RT$$
 
-Ma dalla legge di Dalton sappiamo che la somma delle pressionni parziali è pari alla pressione totale:
+Dalla legge di Dalton sappiamo che la somma delle pressionni parziali è pari alla pressione totale:
 
-$$PV=(n_A + n_B)RT$$
+$$P=P_A + P_B \implies PV=(n_A + n_B)RT$$
 
 Questa espressione ci permette di avere informazioni sulla fase vapore. Tuttavia adesso $n_A$ e $n_B$ non sono le moli in soluzione, ma le moli in fase vapore.
 
@@ -53,7 +53,7 @@ $$\frac{P_AV}{PV}= \frac{n_ART}{(n_A + n_B)RT}
 \implies
 P_A=P \cdot \rchi '_A$$
 
-Questa sarà la frazione molare di A in fase vapore. Un risultato analogo si ottiene per B.
+Questa sarà la frazione molare di A in fase vapore. Un risultato analogo si ottiene per B: $P_b=P \cdot \rchi '_B$.
 
 Esplicitando P si otterrà
 $$\rchi '_A=\frac{P_A}{P}=
@@ -99,17 +99,15 @@ Le due linee oblique rosse e blu rappresentano tutte le possibili tensioni di va
 
 Tale grafico è valido solo se la soluzione è ideale, cioè se il $\Delta$H di mescolamento è pari a zero, ossia è valido se siamo nel campo di validità della legge di Raoult.
 
-La linea nera rappresenta la somma di tutte le possibili pressioni totali.
-
 \vspace{0.2cm}E se invece la soluzione non è ideale, cioè se mostra un $\Delta$H di mescolamento diverso da zero?
 
 Le soluzioni ideali sono rare, per cui di norma si hanno comportamenti che derivano delle legge di Raoult.
 
-Va da ricordare che l'obiettivo è quello di conoscere la termodinamica di queste soluzioni per poterla sfruttare per separare la soluzione nei suoi componenti, Ci è quindi utile conoscere la composizione del vapore per poterlo trattare col fine di arrivare ad una composizione diversa (separandolo dal liquido e condensandolo). Ad esempio in una soluzione di acqua e alcol non è possibile separare per distillazione acqua e alcol: si arriva ad un certo punto e poi non si riesce più. Dobbiamo capire perché.
+Va da ricordare che l'obiettivo è quello di conoscere la termodinamica di queste soluzioni per poterla sfruttare per separare la soluzione nei suoi componenti. Ci è quindi utile conoscere la composizione del vapore per poterlo trattare col fine di arrivare ad una composizione diversa (separandolo dal liquido e condensandolo). Ad esempio in una soluzione di acqua e alcol non è possibile separare per distillazione acqua e alcol: si arriva ad un certo punto e poi non si riesce più. Dobbiamo capire perché.
 
 \vspace{0.2cm}\textbf{Processo di solubilizzazione endotermico}
 
-Immaginiamo che il $\Delta$H sia diverso da zero, ad esempio maggiore di zero. Ciò significa che il sistema sta assorbendo calore, ossia per potere sciogliere A e B dobbiamo riscaldare, ossia dobbiamo fornire energia altrimenti la soluzione non si forma. Ciò capita tutte le volte in cui le interazioni che verranno a formarsi tra A e B sono più deboli di quelle che esistono nei liquidi puri, cioè le interazioni A-A e B-B (per formare una soluzione si devono separare le particelle di soluto e quelle di solvente. Separare significa rompere le interazioni che si esercitano tra i componenti puri, cioè tra le loro molecole) 
+Immaginiamo che il $\Delta$H sia diverso da zero, ad esempio maggiore di zero. Ciò significa che il sistema sta assorbendo calore, ossia per potere sciogliere A e B dobbiamo riscaldare, cioè dobbiamo fornire energia altrimenti la soluzione non si forma. Ciò capita tutte le volte in cui le interazioni che verranno a formarsi tra A e B sono più deboli di quelle che esistono nei liquidi puri, ovvero le interazioni A-A e B-B (per formare una soluzione si devono separare le particelle di soluto e quelle di solvente. Separare significa rompere le interazioni che si esercitano tra i componenti puri, cioè tra le loro molecole). 
 
 \vspace{-0.3cm}\begin{minipage}{0.4\textwidth}
     \begin{figure}[H]
@@ -118,9 +116,9 @@ Immaginiamo che il $\Delta$H sia diverso da zero, ad esempio maggiore di zero. C
 \end{minipage}
 \begin{minipage}{0.6\textwidth}
 
-\vspace{0.4cm}In questo grafico e linee tratteggiate indicano il comportamento ideale, quelle continue descrivono il comportamento sperimentale, ottenuto misurando la tensione di vapore con verie composizioni.
+\vspace{0.4cm}In questo grafico e linee tratteggiate indicano il comportamento ideale, quelle continue descrivono il comportamento sperimentale, ottenuto misurando la tensione di vapore con varie composizioni.
 
-Siccome le interazioni tra A e B sono più deboli, è chiaro che andranno più facilmente in fase vapore a parità di temperatura. Ne segue che per entrambe le speci avremo tensioni di vapore più alte di quelle ideali e di conseguenza sarà maggiore anche la tensione della soluzione rispetto a quella prevista dalla legge di Raoult.
+Siccome le interazioni tra A e B sono più deboli, è chiaro che andranno più facilmente in fase vapore a parità di temperatura. Ne segue che per entrambe le speci avremo tensioni di vapore più alte di quelle ideali e di conseguenza sarà maggiore anche la tensione di vapore della soluzione rispetto a quella prevista dalla legge di Raoult.
 \end{minipage}
 
 \vspace{0.2cm}Il grafico riporta l'esempio di etere etilico CH$_3$-CH$_2$-O-CH$_2$-CH$_3$ e acetone CH$_3$-CO-CH$_3$. Fra le molecole di acetone si esercita una certa interazione e analogamente succede tra le molecole di etere etilico. Tra l'altro queste sono minori delle prime, infatti la tensione di vapore dell'etere etilico puro è maggiore di quella dell'acetone puro.
@@ -141,7 +139,7 @@ Consideriamo ora il caso opposto, cioè una soluzione non ideale con $\Delta$H$<
 \begin{minipage}{0.6\textwidth}
     Consideriamo una soluzione formata da acetone CH$_3$-CO-CH$_3$ e cloroformio CHCl$_3$.
 
-    Le tensione di vapore del cloroformio puro è minore di quella dell'acetone puro. Ciò significa che a parità di temperatura la specie B è più volatile. Inoltre sperimentalmente si osserva che entrambi i componenti hanno tensioni di vapore minori di quelle previste dall'idealità, e quindi anche la soluzione avrà un comportamento che mostro un abbassamento della tensione di vapore.
+    Le tensione di vapore del cloroformio puro è minore di quella dell'acetone puro. Ciò significa che a parità di temperatura la specie B è più volatile. Inoltre sperimentalmente si osserva che entrambi i componenti hanno tensioni di vapore minori di quelle previste dall'idealità, e quindi anche la soluzione avrà un comportamento che mostra un abbassamento della tensione di vapore.
 \end{minipage}
 \E inoltre conveniente, essendo un reazione che sprigiona calore, allontanare quest'ultimo, in quanto raffreddando il processo di dissoluzione viene facilitato.
 
@@ -149,7 +147,7 @@ La reazione sarà
 
 $$\ce{A + B ->} \text{soluzione + calore}$$
 
-Il motivo è che il calore può essere sia un reagente che un prodotto. Nel caso in cui sia un prodotto, nel momento in cui lo allontaniamo la reazione ne produrrà altro, ma questo comporterà la creazione di altra soluzione. In altre parole, allontanare i prodotto significa spostare verso destra quella reazione.
+Il motivo è che il calore può essere sia un reagente che un prodotto. Nel caso in cui sia un prodotto, nel momento in cui lo allontaniamo la reazione ne produrrà altro, ma questo comporterà la creazione di altra soluzione. In altre parole, allontanare i prodotti significa spostare verso destra quella reazione.
 \subsection{Distillazione a P costante di soluzioni ideali}
 Nei tre grafici precedenti avevamo la frazione molare in ascisse e la pressione in ordinate. Consideriamo adesso un grafico avente la frazione molare in ascisse e la temperatura in ordinate.
 
@@ -158,7 +156,7 @@ Nei tre grafici precedenti avevamo la frazione molare in ascisse e la pressione 
     \includegraphics[width=15cm]{immagini/distillazione_ideale.png}
 \end{figure}
 
-Spesso in natura abbiamo delle soluzioni e il nostro obiettivo è separarle (ad es il petrolio), ossia si vuole sfruttare la diversa volatilità di sostanze che si trovano in soluzione per separarle.
+Spesso in natura abbiamo delle soluzioni e il nostro obiettivo è separarle (ad es. il petrolio), ossia si vuole sfruttare la diversa volatilità di sostanze che si trovano in soluzione per separarle.
 
 Il caso più semplice è quello di una soluzione formata da una specie A e una specie B. Graficamente avremo che in basso a sinistra la frazione molare di A è 1 e quella di B è 0, viceversa in basso a destra la frazione molare di B è 1 e quella di A è 0. Nei punti intermedi avremo invece tutte le infinite composizioni della miscela possibili.
 
