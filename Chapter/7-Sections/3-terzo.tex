@@ -1,118 +1,47 @@
-\subsection{Schematismo}
-\begin{center}
-    \begin{tabular}{p{2cm}|p{2cm}||p{2cm}|p{2cm}}
-        \vspace{0.3cm}elettrodo 1 & soluzione 1 & soluzione 2 & \vspace{0.3cm}elettrodo 2\\
-        & attività 1 & attività 2 &
-    \end{tabular}
-\end{center}
+Finora abbiamo visto reazioni chimiche che generano energia elettrica. Facciamo il contrario: prendiamoo una soluzione, immergiamo due elettrodi e applichiamo una d.d.p. dall'esterno.
 
-\begin{center}
-    \begin{tabular}{p{2.3cm}|p{2cm}||p{1.8cm}|p{2cm}}
-        Pt($\rm H_2$) & $\rm H_3O^+$ & $\rm Ag^+$ & Ag\\[0.5ex]
-        P$\rm _{H_2}$=1 atm & $a_{\text{H}_3\text{O}^+}=1$ & $a_{\text{Ag}^+}=x$&\\[0.5ex]
-    \end{tabular}
-\end{center}
+Ciò che stiamo facendo è l'opposto di ciò che viene nelle pile. In esse infatti sfruttiamo reazioni chimiche per generare energia eletrrica, qui invece imponismo una una d.d.p. esterna e vogliamo vedere se avvengono reazioni chimiche. Tali reazioni dovranno avvenire, perché se avessimo sull'elettrodo e elettroni e ioni positivi in soluzione, quest'ultimi tenderanno a depositarsi sull'elettrodo, catturando gli elettroni e quindi riducendosi. Se però su un elettrodo si ha riduzione, sull'altro dovrà avvenire un'ossidazione perché il circuito deve essere chiuso, altrimenti non fluirebbero gli elettroni da un elettrodo all'altro.
 
-\begin{center}
-    \begin{tabular}{p{0.6cm}|p{1.6cm}||p{1.6cm}|p{2cm}}
-        Pt & $\rm Sn^{2+}$ $a_1$ & $\rm Fe^{2+}$ $a_3$ & Pt\\[0.5ex]
-         & $\rm Sn^{4+}$ $a_2$ & $\rm Fe^{3+}$ $a_4$&\\[0.5ex]
-    \end{tabular}
-\end{center}
+Consideriamo allora una soluzione di HCl in cui immergiamo due fili di platino e applichiamo una piccola d.d.p. che va via via aumentando. Man mano che sale riportiamo su un grafico i valori di intensità di corrente misurata e la d.d.p. appicata dall'esterno. Ci si accorge che se abbiamo un filo metallico, all'aumentare della d.d.p. aumenta anche la corrente che passa sul filo, mentre se abbiamo una soluzione ciò non accade.
 
-$$\ce{ox_A + ne^- <--> rid_A}$$
+Se adoperiamo un amperometro avente prontezza elavata, il quale misura immediatamente le più piccole variazioni di corrente, ci accorgiamo che la corrente ha un picco e poi ritorno a zero. Man mano che la d.d.p. aumenta avremo diversi picchi, fin quando questa non raggiunge un certo valore. Se invece non avessimo uno strumento abbastanza pronto vedremmo una corrente di fondo che poi invece cresce bruscamente:
 
-$$\ce{ox_B + ne^- <--> rid_B}$$
-\subsection{Reazioni di disproporzione}
-La disproporzione è una reazione in cui la stessa specie chimica si ossida e si riduce. Un esempio è il cloro in acqua usato come agente disinfettante: esso diventa ipoclorito (ossidandosi) e cloruro (riducendosi) a basse temperature, mentre ad alte temperature diventa clorato (ossidandosi) e cloruro (riducendosi).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{immagini/elettrolisi.png}
+\end{figure}
 
-Vediamo degli esempi:
+A cosa è dovuto questo fenomeno?
 
-\vspace{0.2cm}$\bullet$\textbf{ES.1}
+In soluzione abbiamo HCl. Stiamo mettendo due fili di platino, che è un metallo nobile, inerte. Se applichiamo una d.d.p. ci aspettiamo che lo ione $\rm H_3O^+$ acquisti due elettroni e diventi $\rm H_2$, cioè si riduca, e questi due elettroni vengono forniti da due ioni $\rm Cl^-$
+\subsection{Leggi di Faraday}
+Il fenomeno dell'elettrolisi è generato dalle due leggi di Faraday
 
-\begin{center}
-    \begin{tabular}{p{5.8cm}}
-         \hspace{-0.6cm}$\begin{cases}
-         \ce{Fe^{2+} + 2e^- -> Fe}, \; E_0= -0.41V\\
-         \ce{2Fe^{2+} -> 2Fe^{3+} + 2e^-}, \; E_0= 0.77V
-         \end{cases}$\\
-         \\[-1.5ex]
-         \hline
-         \\[-1.5ex]
-         \hspace{-0.2cm}\ce{3Fe^{2+} -> 2Fe^{3+} + Fe}
-    \end{tabular}
-    \end{center}
+\vspace{0.2cm}$\bullet$\textbf{Prima legge di Faraday}
 
-Immaginiamo di avere $\rm Fe^{2+}$. Esso può acquistare 2 elettroni e diventare $\rm Fe^0$ o può perdere un elettrone e diventare $\rm Fe^{3+}$ (i suoi stati di ossidazione sono 0, +2 e +3).
+\vspace{0.2cm}$\bullet$\textbf{Prima legge di Faraday}
 
-Se quindi abbiamo il $\rm Fe^{2+}$ che è l'intermedio possiamo passare da uno stato all'altro.
+\subsection{Accumulatore al piombo (batteria automobile)}
 
-Se mettiamo $\rm Fe^{2+}$ in acqua creiamo disproporzione di questo?
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{immagini/accumulatore_al_piombo.png}
+\end{figure}
 
-Per capirlo andiamo a vedere i potenziali delle due diverse reazioni: quella di riduzione da $\rm Fe^{2+}$ a $\rm Fe^0$ e quella di ossi da $\rm Fe^{2+}$ a $\rm Fe^{3+}$. Siccome l'$E_0$ della reazione di riduzione è minore di quello della reazione di ossidazione, la disproporzione NON avviene.
+Abbiamo l'anodo costituito da piombo metallico e il catodo da $\rm PbO_4$ (quindi $\rm Pb^{4+}$). La soluzione che ci permette di trasportare gli elettrodi è acido solforico $\rm H_2SO_4$ molto concentrato, al 30\%, tant'è che quando si abbassa il livello del liquido nella batteria non si aggiunge acido ma acqua, in quanto l'$\rm H_2SO_4$ bolle a 400° C, per cui se il livello si è abbassato sarà evaporata soltanto l'acqua.
 
-\vspace{0.2cm}$\bullet$\textbf{ES.2}
+Quando si carica ciò che succede è che il $\rm Pb^0(s)$ in presenza di acido solforico (e quindi di ioni solfato $SO_4^{2-}$) libera 2 elettroni, diventando $\rm Pb^{2+}$. Si unisce quindi allo ione solfato dando $\rm PbSO_4$ e liberando 2 elettroni.
 
-\begin{center}
-    \begin{tabular}{p{5.7cm}}
-        \hspace{-0.6cm}$\begin{cases}
-        \ce{Cu^+ + e^- -> Cu}, \; E_0= 0.52V\\
-        \ce{Cu^+ -> Cu^{2+} + e^-}, \; E_0= 0.15V
-        \end{cases}$\\
-        \\[-1.5ex]
-        \hline
-        \\[-1.5ex]
-        \hspace{-0.2cm}\ce{2Cu^+ -> Cu + Cu^{2+}}
-    \end{tabular}
-\end{center}
+$$(-)\; \ce{Pb(s) + SO_4^{2-} -> PbSO_4(s) + 2e^-}$$
 
-Lo ione rameoso $\rm Cu^+$ può cedere un elettrone e diventare ione rameico $\rm Cu^{2+}$ o può acquistare un elettrone e passare a Cu. In questo caso il potenziale della reazione di riduzione è maggiore di quello della reazione di ossidazione, quindi la dispersione avviene. Ne segue che in acqua non possiamo tenere $\rm Cu^+$, perché esso disproporziona e dà rame metallico e ione rameico $\rm Cu^{2+}$. Quindi se mettessimo del cloruro rameoso in acqua, dopo un po' non ne avremo più
+Questi due elettroni vengono catturati dal $\rm PbO_2(s)$, e il piombo passa da $\rm Pb^{4+}$ a $\rm Pb^{2+}$, per poi unirsi allo ione solfato e diventare $\rm PbSO_4$:
 
-\vspace{0.2cm}$\bullet$\textbf{ES.3}
+$$(+)\; \ce{PbO_2(s) + 4H_3O^+ + SO_4^{2-} +2e^- -> PbSO_4(s) + 6H_2O}$$
 
-\begin{center}
-    \begin{tabular}{p{8.8cm}}
-        \hspace{-0.6cm}$\begin{cases}
-        \ce{\frac{1}{2}Cl_2 + e^- -> Cl^-}, \; E_0= 1.36V\\
-        \ce{\frac{1}{2}Cl_2 + 2OH^- -> ClO^- + H_2O + e^-}, \; E_0= 0.38V
-        \end{cases}$\\
-        \\[-1.5ex]
-        \hline
-        \\[-1.5ex]
-        \hspace{-0.2cm}\ce{Cl_2 +2OH^- -> Cl^- +ClO^- + H_2O}
-    \end{tabular}
-\end{center}
+Quindi in entrambi i casi si forma $\rm PbSO_4$, però una volta a partire da $\rm Pb^0$ che deve liberare 2 elettroni e una volta a partire da $\rm Pb^{4+}$ che deve acquistare 2 elettroni.
 
-\vspace{0.2cm}$\bullet$\textbf{ES.4}
+Nel proceso di carica invece avviene l'opposto: abbiamo $\rm PbSO_4$ (quindi $\rm Pb^{2+}$) che nell'anodo assorbe 2 elettroni diventando Pb(s) mentre nel catodo cede 2 elettroni diventando $\rm Pb^{4+}$:
 
-\begin{center}
-    \begin{tabular}{p{9.8cm}}
-        \hspace{-0.6cm}$\begin{cases}
-        \ce{2ClO^- +2H_2O + 4e^- -> 2Cl^- + 4OH^-}, \; E_0= 0.88V\\
-        \ce{ClO^- + 4OH^- -> ClO_3^- + 2H_2O + 4e^-}, \; E_0= 0.5V
-        \end{cases}$\\
-        \\[-1.5ex]
-        \hline
-        \\[-1.5ex]
-        \hspace{-0.2cm}\ce{3ClO^- -> 2Cl^- + ClO_3^-}
-    \end{tabular}
-\end{center}
+$$(-) \; \ce{PbSO_4(s) + 2e^- -> Pb(s) + SO_4^{2-}}$$
 
-\subsection{Pile di concentrazione}
-
-\begin{center}
-    \begin{tabular}{p{0.6cm}|p{1.6cm}||p{1.6cm}|p{2cm}}
-        Cu & $\rm Cu^{2+}$ & $\rm Cu^{2+}$ & Cu\\[0.5ex]
-         & $a= a_1$ & $a=a_2$&\\[0.5ex]
-    \end{tabular}
-\end{center}
-
-\begin{center}
-    \begin{tabular}{p{1.8cm}|p{2cm}||p{2cm}|p{2cm}}
-        Pt ($\rm H_2$) & $\rm H_3O^+$ & $\rm H_3O^+$ & Pt ($\rm H_2$)\\[0.5ex]
-        $\rm P_{H_2} = p_1$ & $a_{\text{H}_3\text{O}^+}=a$ & $a_{\text{H}_3\text{O}^+}=a$ & $\rm P_{H_2} = p_2$\\[0.5ex]
-    \end{tabular}
-\end{center}
-
-\subsection{Determinazione del pH di una soluzione}
-
+$$(+) \; \ce{PbSO_4(s) + 6H_2O  -> PbO_2(s) + 4H_3O^+ + SO_4^{2-} +2e^-}$$

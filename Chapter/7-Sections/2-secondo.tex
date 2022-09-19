@@ -121,7 +121,7 @@ Perché lo ione in soluzione non è $\rm Hg^+$ ma è $\rm Hg_2^{2+}$, cioè ci s
     Il metallo deve essere a contatto con una soluzione di un suo sale poco solubile, che è l'$\rm Hg_2Cl_2$. Questo a sua volta è a contatto con un sale con cui ha in comune l'anione, che è il KCl. Quest'ultimo si trova nella gelatina di agar-agar che costituisce il ponte salino. In questo modo in questo elettrodo abbiamo entrambi i collegamenti: il filo metallico e il ponte salino per collegarlo ad un'altra soluzione.
 \end{minipage}
 
-\vspace{0.2cm}Ciò che avviene è che l'$\rm Hg_2Cl_2$ si dissocia in $\rm Hg_2^{2+}$ più due ioni cloruro $\rm Cl^-$:
+\vspace{0.4cm}Ciò che avviene è che l'$\rm Hg_2Cl_2$ si dissocia in $\rm Hg_2^{2+}$ più due ioni cloruro $\rm Cl^-$:
 
 $$\ce{Hg_2Cl_2(s) <--> Hg_2^{2+} + 2Cl^-}$$
 
@@ -240,8 +240,7 @@ Vediamo adesso una tabella di valori dei potenziali per i vari elettrodi. Il rif
 \end{center}
 \normalsize
 
-
-Quindi si riducono le speci che hanno il potenziale standard maggiore. Tutti gli elementi a potenziale negativo non vedranno mai sviluppata la loro riduzione in soluzione, al loro posto sarà lo ione $\rm H^+$ a ridursi in idrogeno: \ce{2H^+ <--> H_2}.
+\vspace{0.2cm}Quindi si riducono le speci che hanno il potenziale standard maggiore. Tutti gli elementi a potenziale negativo non vedranno mai sviluppata la loro riduzione in soluzione, al loro posto sarà lo ione $\rm H^+$ a ridursi in idrogeno: \ce{2H^+ <--> H_2}.
 
 \textbf{ES.1}
 $$\ce{2Fe^{2+} + Sn^{4+} <--> Sn^{2+} + 2Fe^{3+}}$$
@@ -254,9 +253,181 @@ $$\ce{Sn^{2+} + 2Fe^{3+} <--> Sn^{4+} + 2Fe^{2+}}$$
 
 \textbf{ES.2}
 
+$$\ce{Fe +2H_3O^+ -> Fe^{2+}(aq) + 2H_2O + H_2}$$
+
 \textbf{ES.3}
+
+$$\ce{Cu +2H_3O^+ -> Cu^{2+}(aq) + 2H_2O + H_2}$$
 
 \subsubsection{Excursus: la placcatura}
 Placcare qualcosa in un certo metallo significa avere una solzione di questo in cui immergiamo l'oggetto che vogliamo ricoprire e alla quale applichiamo una d.d.p. in modo tale che il metallo si depositi come un film sottile omogeneo.
 
 Quali metalli possiamo far depositare in acqua? Tutti quelli che hanno il potenziali maggiore di zero, perché altrimenti anziché ridursi il metallo gli elettroni saranno presi dall'idrogeno piuttosto che dagli ioni metallici.
+
+\subsection{Pile chimiche (schematismo)}
+\begin{center}
+    \begin{tabular}{p{2cm}|p{2cm}||p{2cm}|p{2cm}}
+        \vspace{0.3cm}elettrodo 1 & soluzione 1 & soluzione 2 & \vspace{0.3cm}elettrodo 2\\
+        & attività 1 & attività 2 &
+    \end{tabular}
+\end{center}
+
+In questo schema la doppia linea indica un ponte salino, mentre la linea singola si utilizza per separare sostanze in fase diverse nella stessa soluzione.
+
+\vspace{0.2cm}$\bullet$\textbf{ES.1}
+\begin{center}
+    \begin{tabular}{p{2.3cm}|p{2cm}||p{1.8cm}|p{2cm}}
+        Pt($\rm H_2$) & $\rm H_3O^+$ & $\rm Ag^+$ & Ag\\[0.5ex]
+        P$\rm _{H_2}$=1 atm & $a_{\text{H}_3\text{O}^+}=1$ & $a_{\text{Ag}^+}=x$&\\[0.5ex]
+    \end{tabular}
+\end{center}
+
+Abbiamo un filo di platino e uno di argento.
+
+Il filo di argento è immerso in una soluzione di un sale di argento, quello di platino in una soluzione di ioni $\rm H_3O^+$ (è l'elettrodo normale standard ad idrogeno in cui abbiamo un filo di platino ma la reazione che avviene è che due ioni $\rm H_3O^+$ danno luogo a due molecole d'acqua più $\rm H_2$)
+
+\vspace{0.2cm}$\bullet$\textbf{ES.2}
+
+\begin{center}
+    \begin{tabular}{p{0.6cm}|p{1.6cm}||p{1.6cm}|p{2cm}}
+        Pt & $\rm Sn^{2+}$ $a_1$ & $\rm Fe^{2+}$ $a_3$ & Pt\\[0.5ex]
+         & $\rm Sn^{4+}$ $a_2$ & $\rm Fe^{3+}$ $a_4$&\\[0.5ex]
+    \end{tabular}
+\end{center}
+
+$$\ce{ox_A + ne^- <--> rid_A}$$
+
+$$\ce{ox_B + ne^- <--> rid_B}$$
+
+La forma ossidata di A acquista un certo numero di elettroni e diventa la forma ridotta di A. Analogamente per B.
+
+Attenzione! Sebbene semielemento sia sinonimo di elettrodo, qua lo usiamo per indicare le speci in soluzione perché il platino è un metallo nobile.
+
+I potenziali di A e B sono
+
+$$E_A = E_{0,\,A} + \frac{0.059}{n} \log \frac{a_{ox_{A}}}{a_{rid_{A}}}$$
+
+$$E_B = E_{0,\,B} + \frac{0.059}{n} \log \frac{a_{ox_{B}}}{a_{rid_{B}}}$$
+
+Facciamone la differenza
+
+$$E = E_A - E_B = E_{0\,A} - E_{0\,B} + \frac{0.059}{n} \log \frac{a_{ox_{A}} \cdot a_{rid_{B}}}{a_{ox_{B}}  \cdot a_{rid_{A}}}$$
+\subsection{Reazioni di disproporzione $\boldsymbol{E}$(A/A$_{rid}$ )$>$$\boldsymbol{E}$(A$_{ox}$/A)}
+La disproporzione è una reazione in cui la stessa specie chimica si ossida e si riduce. Un esempio è il cloro in acqua usato come agente disinfettante: esso diventa ipoclorito (ossidandosi) e cloruro (riducendosi) a basse temperature, mentre ad alte temperature diventa clorato (ossidandosi) e cloruro (riducendosi).
+
+Vediamo degli esempi:
+
+\vspace{0.2cm}$\bullet$\textbf{ES.1}
+
+\begin{center}
+    \begin{tabular}{p{5.8cm}}
+         \hspace{-0.6cm}$\begin{cases}
+         \ce{Fe^{2+} + 2e^- -> Fe}, \; E_0= -0.41V\\
+         \ce{2Fe^{2+} -> 2Fe^{3+} + 2e^-}, \; E_0= 0.77V
+         \end{cases}$\\
+         \\[-1.5ex]
+         \hline
+         \\[-1.5ex]
+         \hspace{-0.2cm}\ce{3Fe^{2+} -> 2Fe^{3+} + Fe}
+    \end{tabular}
+    \end{center}
+
+Immaginiamo di avere $\rm Fe^{2+}$. Esso può acquistare 2 elettroni e diventare $\rm Fe^0$ o può perdere un elettrone e diventare $\rm Fe^{3+}$ (i suoi stati di ossidazione sono 0, +2 e +3).
+
+Se quindi abbiamo il $\rm Fe^{2+}$ che è l'intermedio possiamo passare da uno stato all'altro.
+
+Se mettiamo $\rm Fe^{2+}$ in acqua creiamo disproporzione di questo?
+
+Per capirlo andiamo a vedere i potenziali delle due diverse reazioni: quella di riduzione da $\rm Fe^{2+}$ a $\rm Fe^0$ e quella di ossi da $\rm Fe^{2+}$ a $\rm Fe^{3+}$. Siccome l'$E_0$ della reazione di riduzione è minore di quello della reazione di ossidazione, la disproporzione NON avviene.
+
+\vspace{0.2cm}$\bullet$\textbf{ES.2}
+
+\begin{center}
+    \begin{tabular}{p{5.7cm}}
+        \hspace{-0.6cm}$\begin{cases}
+        \ce{Cu^+ + e^- -> Cu}, \; E_0= 0.52V\\
+        \ce{Cu^+ -> Cu^{2+} + e^-}, \; E_0= 0.15V
+        \end{cases}$\\
+        \\[-1.5ex]
+        \hline
+        \\[-1.5ex]
+        \hspace{-0.2cm}\ce{2Cu^+ -> Cu + Cu^{2+}}
+    \end{tabular}
+\end{center}
+
+Lo ione rameoso $\rm Cu^+$ può cedere un elettrone e diventare ione rameico $\rm Cu^{2+}$ o può acquistare un elettrone e passare a Cu. In questo caso il potenziale della reazione di riduzione è maggiore di quello della reazione di ossidazione, quindi la dispersione avviene. Ne segue che in acqua non possiamo tenere $\rm Cu^+$, perché esso disproporziona e dà rame metallico e ione rameico $\rm Cu^{2+}$. Quindi se mettessimo del cloruro rameoso in acqua, dopo un po' non ne avremo più, ma al suo posto troveremo al fondo una polvere di rame metallico e in soluzione cloruro rameico, che dà proprietà estremamente diverse (infatti Cu ha 11 elettroni, $\rm Cu^+$ 10 e $\rm Cu^{2+}$ 9. Ciò fa sì che siccome $\rm Cu^+$ è un sistema pari avrà proprietà diamagnetiche, mentre poiché $\rm Cu^{2+}$ è un sistema dispari avrà proprietà paramagnetiche.).
+
+\vspace{0.2cm}$\bullet$\textbf{ES.3}
+
+\begin{center}
+    \begin{tabular}{p{8.8cm}}
+        \hspace{-0.6cm}$\begin{cases}
+        \ce{\frac{1}{2}Cl_2 + e^- -> Cl^-}, \; E_0= 1.36V\\
+        \ce{\frac{1}{2}Cl_2 + 2OH^- -> ClO^- + H_2O + e^-}, \; E_0= 0.38V
+        \end{cases}$\\
+        \\[-1.5ex]
+        \hline
+        \\[-1.5ex]
+        \hspace{-0.2cm}\ce{Cl_2 +2OH^- -> Cl^- +ClO^- + H_2O}
+    \end{tabular}
+\end{center}
+
+%\vspace{0.2cm}
+$\bullet$\textbf{ES.4}
+
+\begin{center}
+    \begin{tabular}{p{9.8cm}}
+        \hspace{-0.6cm}$\begin{cases}
+        \ce{2ClO^- +2H_2O + 4e^- -> 2Cl^- + 4OH^-}, \; E_0= 0.88V\\
+        \ce{ClO^- + 4OH^- -> ClO_3^- + 2H_2O + 4e^-}, \; E_0= 0.5V
+        \end{cases}$\\
+        \\[-1.5ex]
+        \hline
+        \\[-1.5ex]
+        \hspace{-0.2cm}\ce{3ClO^- -> 2Cl^- + ClO_3^-}
+    \end{tabular}
+\end{center}
+
+Questi due esempi mostrano che il cloro disproporziona in acqua.
+\subsection{Pile di concentrazione}
+Esempi di questo tipo di pile sono gli orologi a cristalli liquidi che sono senza batterie e i fili/poli sono conficcati in un frutto più o meno maturo, eppure il display si accende.
+
+Consideriamo due casi:
+
+\vspace{0.2cm}$\bullet$\textbf{ES.1: Elettrodi identici immersi in soluzioni ad attività (concentrazione) diversa}
+\begin{center}
+    \begin{tabular}{p{0.6cm}|p{1.6cm}||p{1.6cm}|p{2cm}}
+        Cu & $\rm Cu^{2+}$ & $\rm Cu^{2+}$ & Cu\\[0.5ex]
+         & $a= a_1$ & $a=a_2$&\\[0.5ex]
+    \end{tabular}
+\end{center}
+
+\vspace{0.2cm}$\bullet$\textbf{ES.2: Elettrodi ad attività diversa immersi in soluzioni identiche (cioè con la stessa concentrazione)}
+
+\begin{center}
+    \begin{tabular}{p{1.8cm}|p{2cm}||p{2cm}|p{2cm}}
+        Pt ($\rm H_2$) & $\rm H_3O^+$ & $\rm H_3O^+$ & Pt ($\rm H_2$)\\[0.5ex]
+        $\rm P_{H_2} = p_1$ & $a_{\text{H}_3\text{O}^+}=a$ & $a_{\text{H}_3\text{O}^+}=a$ & $\rm P_{H_2} = p_2$\\[0.5ex]
+    \end{tabular}
+\end{center}
+
+\subsection{Determinazione del pH di una soluzione}
+
+\E possibile misurare il pH per via elettrochimica. Per fare ciò si usa come elettrodo di riferimento quello a calomelano saturo e l'elettrodo a chinidrone.
+
+Si prende una soluzione di cui vogliamo misurare il pH e si mette del chinidrone in essa. Poi si immerge un filo di platino (e così abbiamo costruito l'elettrodo a chinidrone). Dopodiché si collega l'elettrodo a calomelano saturo tramite il ponte salino e si misura la d.d.p. tra i due elettrodi. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm]{immagini/elettrodo_pH.png}
+\end{figure}
+
+La d.d.p. sarà
+
+$$E= E_{CHIN} - E_{ECS} \implies E_{CHIN}= E + E_{ECS}$$
+
+$$\implies E_{CHIN} = E_{0 \, CHIN} + 0.059 \log a_{\text{H}^+} = E + E_{ECS}$$
+
+$$\implies E_{CHIN} = E_{0 \, CHIN} - 0.059 \text{pH} = E + E_{ECS}$$
+
+$$\implies \text{pH} = \frac{-E - E_{ECS} + E_{0 \, CHIN}}{0.059}$$
