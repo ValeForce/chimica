@@ -138,7 +138,7 @@ $$\ce{CH_3COONa -> CH_3COO^-(aq) + Na^+(aq)}$$
 
 $$\ce{CH_3COO^-(aq) + H_2O <--> CH_3COOH(aq) + OH^-(aq)}$$
 
-$$k_i = \rm{\frac{[CH_3COOH] [OH^-]}{[CH_3COO^-]}}$$
+$$k_i = \rm{\frac{[CH_3COOH] [OH^-]}{[CH_3COO^-]}} \quad (*)$$
 
 $$k_i = \rm{\frac{[CH_3COOH] [OH^-]}{[CH_3COO^-]} \cdot \frac{[H_3O^+]}{[H_3O^+]}}$$
 
@@ -149,10 +149,61 @@ $$k_i = \rm{\frac{[OH^-]^2}{gg}}$$
 \subsubsection{Calcolare le moli conoscendo il volume ma non la massa}
 
 \subsection{Soluzioni tampone}
+Queste soluzioni si chiamano così perché hanno la caratteristica di mantenere un pH quasi invariato anche se noi dall'esterno, dopo aver generato la soluzione, aggiungiamo piccole quantità di acido o di base.
 
-$$\rm{[H_3O^+]}=\textit{k}_\textit{a} \frac{c_a + \rm{[H_3O^+]}}{c_s - \rm{[H_3O^+]}}$$
+Va da ricordare che facendo la titolazione ad un certo punto con una goccia di base siamo passati da pH 4.6 a pH 7 e con un'altra goccia ancora a pH 9.4, quindi piccole quantità di acido o di base possono far cambiare drasticamente il pH. Chiaramente se anziché gocce mettiamo millilitri la situazione è ancora più marcata. Questo soluzioni tampone però hanno la caratteristica di fissare il pH a precisi valori e farlo variare pochissimo anche se aggiungiamo acido o base dall'esterno.
 
-$$\rm{[H_3O^+]}=\textit{k}_a \frac{c_a - \rm{[OH^-]}}{c_s + \rm{[OH^-]}}$$
+Sono importantissime perché esistono delle reazioni che avvengono a precisi valori di pH, quindi se tale reazione avviene in un ambiente opportuno procede, altrimenti no. Può darsi che man mano che queste reazioni procedono generino ioni $\rm H_3O^+$ o ioni $\rm OH^-$, modificando il pH della soluzione e bloccandosi. Con la soluzione tampone ciò non avviene: il pH non viene modificato in modo rilevante.
+
+Si chiama quindi soluzione tampone perché "tampona" le aggiunte esterne di acido o di base.
+
+Ne esistono di due tipi:
+
+\begin{itemize}
+    \item Acido debole + suo sale con base forte
+    (Es. acido acetico con acetato di sodio);
+    \item Base debole + suo sale con acido forte
+    (Es. ammoniaca con cloruro di ammonio).
+\end{itemize}
+
+\subsubsection{Soluzioni tampone di primo tipo}
+Consideriamo l'equilibrio dell'acido acetico
+
+$$\ce{CH_3COOH(aq) + H_2O <--> CH_3COO^-(aq) + H_3O^+(aq)}$$
+
+e la dissociazione di un suo sale con base forte
+
+$$\ce{CH_3COONa(aq) -> CH_3COO^-(aq) + Na^+(aq)}$$
+
+Lo ione $\rm Na^+$ non subisce altre reazioni, lo ione acetato si: esso si idrolizza in acqua dando acido acetico e ioni $\rm OH^-$
+
+$$\ce{CH_3COO^-(aq) + H_2O <--> CH_3COOH(aq) + H_3O^+(aq)}$$
+
+Sebbene abbiamo scritto la reazione del sale, sappiamo che  nel momento in cui questo viene messo in acqua si dissocia totalmente, essendo un elettrolita forte. In altre parole tale reazione non è un equilibrio, mentre la prima e la terza sì. Nello stesso volume di soluzione in cui abbiamo messo acido acetico 
+
+$$k_a = \rm{\frac{[CH_3COO^-] \cdot [H_3O^+]}{[CH_3COOH]}}$$
+
+$$[\text{H}_3\text{O}^+] = k_a \rm{\frac{[CH_3COOH]}{[CH_3COO^-]}}$$
+
+$$[\text{H}_3\text{O}^+] = k_a \frac{c_a}{c_s}$$
+
+$${[\text{H}_3\text{O}^+]}=\textit{k}_\textit{a} \frac{c_a + \rm{[\text{H}_3\text{O}^+]}}{c_s - \rm{[\text{H}_3\text{O}^+]}}$$
+
+$${[\text{H}_3\text{O}^+]}=\textit{k}_a \frac{c_a - {[\text{OH}^-]}}{c_s + \rm{[\text{OH}^-]}}$$
+
+\subsubsection{Soluzioni tampone di secondo tipo}
+
+$$\ce{NH_3 \cdot H_2O(aq) <--> NH_4^+(aq) + OH^-(aq)}$$
+
+$$\ce{NH_4Cl(aq) -> NH_4^+(aq) + Cl^-(aq)}$$
+
+$$\ce{NH_4^+ + 2H_2O <--> NH_3 \cdot H_20 + H_3O^+}$$
+
+$$k_b = \rm{\frac{[NH_4^+] \cdot [OH^-]}{[NH_3 \cdot H_2O]}}$$
+
+$$[\text{OH}^-] = k_b \rm{\frac{[NH_3 \cdot H_2O]}{[NH_4^+]}}$$
+
+$$[\text{OH}^-] = k_b \frac{c_b}{c_s}$$
 
 \subsection{Titolazione acido debole-base forte}
 
