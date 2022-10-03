@@ -132,27 +132,66 @@ $$\implies \rm [OH^-] = \sqrt{ \textit{k}_{\textit{b}} \cdot [NH_3 \cdot H_2O]}$
 $$\implies  [\text{OH}^-] = \sqrt{ k_b \cdot c_b}$$
 \subsection{Reazioni di idrolisi}
 Se mettiamo un cucchiaino di cloruro di sodio in acqua ciò che avviene è solo la dissociazione dell'NaCl in ione $\rm Na^+$ e $\rm Cl^-$, senza che questi subiscano reazioni successive:
+
 $$\ce{NaCl(aq) -> Na^+(aq) + Cl^-(aq)}$$
+
 Se anziché avere cloruro di sodio avessimo acetato di sodio $\rm CH_3COONa$ cosa succederebbe?
 
 Questo composto in acqua si dissocia in ione acetato $\rm CH_3COO^-$ e ione $\rm Na^+$
+
 $$\ce{CH_3COONa -> CH_3COO^-(aq) + Na^+(aq)}$$
+
 Nota: mettiamo una singola freccia perché è un sale, e i sali solubili sono tutti elettroliti forti e pertanto totalmente dissociati.
 
 Lo ione $\rm Na^+(aq)$ non darà luogo ad ulteriori reazioni perché in acqua si hanno ioni $\rm H_3O^+$ e ioni $\rm OH^-$. La specie NaOH non si potrà formare perché è una base forte quindi totalmente dissociata, cosa che porta lo ione $\rm Na^+$ e lo ione $\rm OH^-$ a non potersi riassociare.
 
+Lo ione acetato $\rm CH_3COO^-$ invece è la base di un acido debole, per cui dà ulteriori reazioni. In particolare esso reagisce con una molecola d'acqua e dà un equilibrio (a differenza della prima reazione che è una dissociazione in cui non c'è equilibrio). Con tale reazione di equilibrio lo ione acetato strappa un protone all'acqua riformando l'acido acetico e lasciando ioni $\rm OH^-$
 
 $$\ce{CH_3COO^-(aq) + H_2O <--> CH_3COOH(aq) + OH^-(aq)}$$
 
+Si forma quindi un acido, ma la soluzione è basica. Queste reazioni sono dette di \textbf{idrolisi}, in particolare la reazione appena vista è detta \textbf{idrolisi basica}.
+
+La soluzione sarà basica perché l'acido che si forma è indissociato, ma in soluzione abbiamo anche eccesso di ioni $\rm OH^-$.
+
+Quello che sta succedendo è che mettiamo in acqua un sale che è neutro (l'acetato di sodio) e troviamo una soluzione che è basica. Questo discorso è tipico di tantissimi saponi: essi sono neutri finché sono lontani dall'acqua, ma appena li bagniamo la specie che si ottiene non è più neutra.
+
+In sintesi: abbiamo messo in acqua un sale neutro, che essendo un elettrolita forte si dissocia totalmente, dando ione acetato e ione sodio. Quest'ultimo non fa nulla, resta $\rm Na^+(aq)$, ossia anche se ci sono ioni $\rm OH^-$ in soluzione non si avrà la formazione dell'NaOH perché quest'ultimo è una base forte, quindi è tutta dissociata e non può associarsi. Invece lo ione acetato che produciamo, che è la base coniugata di un acido debole, strappa un protone all'acqua, forma l'acido acetico e pertanto avremo un eccesso di ioni $\rm OH^-$.
+
+Trattandosi di un equilibrio, scriviamo la costante di questo equilibrio $k_i$, che sta per \textit{costante di idrolisi}. Va da notare che potremmo scrivere $k_b$ perché abbiamo scoperto che l'acetato di sodio è una base, in quanto sviluppa un ambiente basico con eccesso di ioni $\rm OH^-$:
+
 $$k_i = \rm{\frac{[CH_3COOH] [OH^-]}{[CH_3COO^-]}} \quad (*)$$
+
+Tuttavia i testi non riportano questa costante, ma quella $k_a$ dell'acido acetico sì. Allora moltiplichiamo e dividiamo per la concentrazione degli ioni $\rm H_3O^+$:
 
 $$k_i = \rm{\frac{[CH_3COOH] [OH^-]}{[CH_3COO^-]} \cdot \frac{[H_3O^+]}{[H_3O^+]}}$$
 
+In tale espressione al numeratore compare il prodotto $\rm [OH^-] \cdot [H_3O^+]$, che è il prodotto ionico dell'acqua $k_w$ che vale $1.0 \cdot 10^{-14}$. Ciò che invece resta è uguale all'inverso della $k_a$ dell'acido acetico:
+
 $$k_i = \frac{k_w}{k_a}$$
+
+Torniamo adesso alla $(*)$. Se guardiamo la reazione di equilibrio ci accorgiamo che ogni ione acetato che si idrolizza produrrà una molecola di acido e uno ione $\rm OH^-$, ossia queste quantità saranno uguali, quindi possiamo scrivere una sola quantità al quadrato:
 
 $$k_i = \rm{\frac{[OH^-]^2}{[CH_3COO^-]}} \implies [OH^-]= \sqrt{\textit{k}_\textit{i} \cdot [CH_3COO^-]}$$
 
+cioè la concentrazione degli ioni $\rm OH^-$ è uguale alla radice di $k_i$ per la concentrazione dello ione acetato all'equilibrio.
+
+Se però consideriamo la prima definizione di $k_i$ come il rapporto $k_w/k_a$, abbiamo che
+
 $$k_i = \frac{k_w}{k_a} = \frac{10^{-14}}{1.8 \cdot 10^{-5}}=5.55 \cdot 10^{-10}$$
+
+Quindi la costante della reazione di equilibrio è molto piccola. Ne segue che la reazione è spostata a destra quasi per niente, ovvero gli ioni acetato ad idrolizzarsi sono pochi:
+
+$$\rm{\frac{[OH^-]^2}{[CH_3COO^-]}} \approx 5.55 \cdot 10^{-10}$$
+
+\E allora lecito supporre che non si sia idrolizzato nessuno ione acetato e che quindi la concentrazione all'equilibrio è uguale alla concentrazione iniziale del sale di partenza (la concentrazione iniziale di ione acetato è uguale a quella iniziale del sale, dato che quest'ultimo si dissocia totalmente):
+
+$$[\text{OH}^-]=\sqrt{k_i \cdot C_s}=\sqrt{\frac{k_w}{k_a}\cdot C_s}$$
+
+\E quindi ribadito il fatto che la concentrazione degli ioni $\rm [OH^-]$ è determinata dal valore di $k_i$, e la concentrazione del sale influisce poco. Dunque a priori ci aspettiamo già certi valori di pOH, ossia visto che lo ione acetato che si riassocia è pochissimo avremo una scarsa produzione di ioni $\rm [OH^-]$, quindi ci aspettiamo un pH basso, vicino alla neutralità, circa 8.
+
+Facciamo un esempio. Consideriamo 7.5432 grammi di acetato di sodio AcNa in 575 mL. avremo
+
+$$\rm [OH^-]=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}}\cdot \frac{7.5432}{82.0343} \cdot \frac{1000}{575}}$$
 
 \subsubsection{Calcolare le moli conoscendo il volume ma non la massa}
 
