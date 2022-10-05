@@ -83,7 +83,7 @@ $$\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H_2O}$$
 \end{center}
 
 \begin{center}
-    \begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}||p{1.5cm}|}
+    \begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
         \textbf{pH} & \textbf{mL} & \textbf{pH} & \textbf{mL}\\
         1 & 0 & 2.59 & 95\\
         1.09 & 10 & 3.30 & 99\\
@@ -194,7 +194,14 @@ Facciamo un esempio. Consideriamo 7.5432 grammi di acetato di sodio AcNa in 575 
 $$\rm [OH^-]=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}}\cdot \frac{7.5432}{82.0343} \cdot \frac{1000}{575}}$$
 
 \subsubsection{Calcolare le moli conoscendo il volume ma non la massa}
+Supponiamo di prelevare 3 litri di ammoniaca gassosa a condizioni normali e di farli gorgogliare in 700 mL di soluzione finale. Se la quantità ci viene data in litri e non in grammi come calcoliamo la concentrazione?
 
+Ricordiamo la legge dei volumi molari, la quale afferma che a condizioni normali una mole di un gas occuperà sempre, qualunque sia il gas, un volume di 22.414 litri. Dato che siamo in condizioni normali, avremo
+
+$$n_{\text{NH}_3}=\frac{3 \, L}{22.414 \, L}$$
+
+ciò vale per qualunque gas prelevato a condizioni normali. Se venisse invece prelevato a condizioni diverse, conoscendo pressione e temperatura avremo che
+$$n=\frac{PV}{RT}$$
 \subsection{Soluzioni tampone}
 Queste soluzioni si chiamano così perché hanno la caratteristica di mantenere un pH quasi invariato anche se noi dall'esterno, dopo aver generato la soluzione, aggiungiamo piccole quantità di acido o di base.
 
@@ -239,12 +246,19 @@ $${[\text{H}_3\text{O}^+]}=\textit{k}_\textit{a} \frac{c_a + \rm{[\text{H}_3\tex
 $${[\text{H}_3\text{O}^+]}=\textit{k}_a \frac{c_a - {[\text{OH}^-]}}{c_s + \rm{[\text{OH}^-]}}$$
 
 \subsubsection{Soluzioni tampone di secondo tipo}
+Essa è formata da una base debole più un suo sale con acido forte. Un esempio di base debole è l'ammoniaca e un suo sale con acido forte è il cloruro di ammonio.
+
+L'$\rm NH_3$ in acqua instaura un equilibrio con formazione dello ione ammonio e dello ione $\rm OH^-$ in soluzione; l'$\rm NH_4Cl$ si dissocia in ione ammonio e ione $\rm Cl^-$. Quest'ultimo è l'anione di un acido forte, pertanto anche se in acqua ci sono ioni $\rm H_3O^+$ non ci sarà l'associazione e quindi non succede nulla. Lo ione ammonio al contrario è il catione di una base debole. Esso in acqua dà luogo ad un equilibrio di idrolisi, formando la specie $\rm NH_3$ associata ad una molecola d'acqua più lo ione $\rm H_3O^+$.
+
+In sintesi
 
 $$\ce{NH_3 \cdot H_2O(aq) <--> NH_4^+(aq) + OH^-(aq)}$$
 
 $$\ce{NH_4Cl(aq) -> NH_4^+(aq) + Cl^-(aq)}$$
 
 $$\ce{NH_4^+ + 2H_2O <--> NH_3 \cdot H_20 + H_3O^+}$$
+
+Questi sono gli equilibri presenti in una soluzione tampone formata da
 
 $$k_b = \rm{\frac{[NH_4^+] \cdot [OH^-]}{[NH_3 \cdot H_2O]}}$$
 
