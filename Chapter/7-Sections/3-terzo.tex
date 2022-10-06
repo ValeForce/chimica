@@ -16,7 +16,9 @@ Questa reazione non è tutta spostata verso destra, per cui mettiamo le doppie f
 
 \vspace{0.2cm}\ce{CH_3COOH + HClO_4(aq) <--> CH_3COOH_2^+(aq) + ClO_4^-(aq)}
 
-\vspace{0.2cm}In questa terza reazione
+\vspace{0.2cm}In questa terza reazione abbiamo due acidi: acido acetico e acido perclorico. Abbiamo visto che ci sono speci anfotere, cioè che si comportano o da acido o da base a seconda del partner. Da un punto di vista formale allora, possiamo "forzare la mano" e scegliere una specie etichettata acida per dimostrare che anch'essa può comportarsi da base se in presenza di un acido estremamente più forte: sebbene l'acido acetico sia un acido, se è in soluzione con un acido molto più forte (l'acido perclorico è l'acido più forte che esista) anziché dissociarsi cedendo un protone e rimanendo ione acetato vedrà l'$\rm HClO_4$ cedere un protone, formando lo ione $\rm ClO_4^-$. Questo protone si somma all'acido acetico ottenendo la specie $\rm CH_3COOH_2^+$, ione acidioacetato. Quindi in questa reazione, avendo forzato molto, l'acido acetico si è comportato da base, perché ha accettato il protone.
+
+Attenzione! Ciò non implica che l'acido acetico sia un afolita. Questo esempio serve solo 
 
 \begin{center}
     \begin{tabular}{llllllll}
@@ -41,6 +43,14 @@ Nelle due successive l'acqua è in presenza di basi, per cui si comporta da acid
 
 Nell'ultima reazione vediamo che due molecole d'acqua danno luogo ad uno ione $\rm H_3O^+$ e ad uno ione $\rm OH^-$. Approfondiremo.
 \subsection{Sistemi acido-base secondo Brönsted}
+Per generalizzare il comportamento che abbiamo descritto non possiamo parlare di acido o di base, ma di sistemi acido-base.
+
+Dato che gli acidi cedono protoni, li etichettiamo con H-A e con $\rm H^+$ indichiamo il protone e con $\rm A^-$ ciò che resta. Etichettiamo invece con B la base, che sarà tale se e solo potrà acquistare il protone:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{immagini/acido_base_coniugata.png}
+\end{figure}
 
 \subsection{Forza degli acidi e delle basi}
 \textbf{ES.}
@@ -87,12 +97,45 @@ $$\implies \rm pH + pOH = 1$$
 
 \ce{HA <--> H^+ + A^-}
 
+In questa reazione abbiamo un acido che si dissocia in $\rm H^+$ + $\rm A^-$. Correttamente dovremmo scrivere
+
+$$\ce{HA + H_2O <--> H_3O^+ + A^-}$$
+
+Per questa prima specie calcoliamo $k_a$, data da
+
 $$k_a = \left( \rm \frac{[H^+] \cdot [A^-]}{[HA]} \right)$$
 
-\ce{A^- + H_2O <--> HA + OH^-}
+Se ad esempio HA fosse l'acido acetico, e anziché metterlo in acqua prendessimo un suo sale come l'acetato di sodio, quest'ultimo, come tutti i sali, si dissocerà totalmente in ioni acetato e ione $\rm Na^+$. Lo ione acetato è la base coniugata dell'acido acetico, in quanto è ottenuto a partire da questo togliendo un protone.
+
+Che succede alla base coniugata di un qualunque acido??
+
+Va da ricordare che se l'acido è debole, la sua base coinugata è forte. Ne segue che la $k_b$ è grande.
+
+\vspace{0.2cm}\ce{A^- + H_2O <--> HA + OH^-}
+
+\vspace{0.2cm}Se mettiamo lo ione $\rm A^-$ (ione acetato nel nostro esempio), questo strappa un protone all'acqua perché è una base forte, formando la specie HA che in teoria è un acido, ma se non si dissocia non manifesta le proprietà acide.
+
+Avendo tolto un protone ad $\rm H_2O$, ci sarà rimasto un eccesso di $\rm OH^-$. Abbiamo quindi scoperto che avevamo messo in acqua un sale neutro e la reazione è basica. Questo perché le basi coniugate degli acidi deboli sono basi forti.
+
+Ciò che succede è che quando mettiamo un sale neutro in acqua questo si dissocia, l'anione poi strappa un protone all'acqua e libera ioni $\rm OH^-$, ottenendo così una soluzione basica.
+
+Ci sarà allora una costante basica, pari a
 
 $$k_b = \left( \rm \frac{[OH^-] \cdot [HA]}{[A^-]} \right)$$
+
+Consideriamo ora il prodotto di $k_a$ e $k_b$
 
 $$k_a \cdot k_b = \left( \rm \frac{[H^+] \cdot [A^-]}{[HA]} \right) \cdot \left( \rm \frac{[OH^-] \cdot [HA]}{[A^-]} \right)$$
 
 $$\implies k_a \cdot k_b = \rm [H^+] \cdot [OH^-] \equiv \textit{k}_\textit{w}$$
+
+Ecco perché se una cresce l'altra diminuisce: perché il loro prodotto deve essere pari a $10^{-14}$ sempre.
+
+Quindi il prodotto della costante di un acido e della costante della sua base coniugata darà sempre il prodotto ionico dell'acqua $k_w$, per cui si avrà sempre che se l'acido è debole la base coniugata sarà forte, mentre se l'acido è forte la sua base coniugata sarà debole.
+
+\vspace{0.2cm}Esempi:
+\begin{itemize}
+    \item L'aicdo fluoridrico ha costante $k_a=7.2 \cdot 10^{-4}$. La sua base coniugata, lo ione fluoruro $\rm F^-$;
+    \item Acido nitroso
+    \item Acido solforoso
+\end{itemize}
