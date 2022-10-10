@@ -1,7 +1,18 @@
 La titolazione è una tipica operazione dell'analisi chimica che consiste nel determinare la concentrazione o \textbf{titolo} di una specie chimica in soluzione, facendola reagire con una quantità nota di un dato reagente, detto \textbf{titolante}.
 \subsection{Titolazione acido forte-base forte}
+Si versa in un beker dell'acido, si aggiungono una o al massimo due gocce di una soluzione di una soluzione che per ora chiamiamo \textit{indicatore}, che è un composto che cambia colore nell'istante in cui si passa da un PH ad un altro. Il cambio di colore prende il nome di \textit{viraggio dell'indicatore}.
+
+Ci sono vari tipi di indicatore. Se volessimo osservare la fine della titolazione, ossia partiamo da una soluzione acida e aggiungiamo una base, è utile un indicatore che abbia un punto di viraggio per pH pari a 7. Non è necessario che l'indicatore cambi colore esattamente a quel pH, perché ci sarà un valore di pH acido superato il quale con appena qualche goccia di base si raggiunge l'equivalenza. Gli indicatori sono dunque delle sostanze che in modo visibile ai nostri occhi cambiano colore e ci danno indicazione sul cambiamento di pH.
+
+Nello specifico, questa reazione conviene farla usando come indicatore una sostanza chiamata \textit{fenoltaleina}, o meglio soluzioni estremamente diluite (all'1\%) di questa. Basta mettere una goccia di questa soluzione nel beker per potere osservare un cambio di colore pressoché immediato. Quando?
+
+In ambiente acido è incolore (quindi ad esempio partendo da una soluzione di acido cloridrico non vedremmo nulla), per pH tra 8.5 e 9 da incolore diventa rossa, quindi avremo l'indicazione che il pH ha raggiunto tale valore al cambio di colore della soluzione. Se avessimo voluto capire invece quando si aveva l'equivalenza (cioè pH=7), potremmo pensare di aver perso questo punto di equivalenza. Vedremo che non è così: in prossimità del punto di equivalenza il pH varierà in modo repentino, con piccolissime aggiunte; al contrario, quando si è lontani dal punti di equivalenza il pH cambierà molto poco pur aggiungendo, se partiamo da una soluzione acida, parecchia base. D'altronde, avendo definito il pH come il logaritmo dell'inverso della concentrazione degli ioni $\rm H_3O^+$ di una soluzione, ci aspettiamo un andamento logaritmico e non lineare per il pH dopo l'aggiunta di una base.
+
+\vspace{0.2cm}Immaginiamo di avere due soluzioni in due bekere diversi. Nel primo abbiamo 100 mL di HCl 0.1-N (nota: per l'HCl normalità e molarità coincidono). Aggiungiamo in esso la prima goccia di indicatore e poi aggiungiamo lentamente NaOH 0.1-N\footnote{Ovviamente non è necessario scegliere stesse concentrazioni, le usiamo per comodità di calcolo.}. In questo caso, se partiamo da 100 mL di acido cloridrico 0.1-N, quando avremo aggiunto 100 mL di idrossido di sodio 0.1-N (quindi stessi volumi e stesse concentrazioni) non avremo più né acido né base perché si saranno neutralizzati totalmente formando cloruro di sodio:
 
 $$\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H_2O}$$
+
+Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, significa ione $\rm H_3O^+$ e ione $\rm Cl^-$ totalmente dissociati. Analogamente NaOH acquoso, visto che si tratta di una base forte, significa ione $\rm Na^+$ e ione $\rm OH^-$ totalmente dissociati.
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -95,6 +106,11 @@ $$\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H_2O}$$
     \end{tabular}
 \end{center}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{immagini/titolazione_acido_forte_base_forte.png}
+\end{figure}
+
 \subsection{Acidi deboli}
 
 $$\ce{CH_3COOH(aq) + H_2O <--> CH_3COO^-(aq) + H_3O^+(aq)}$$
@@ -111,7 +127,7 @@ $$k_a=\frac{\rm{[H_3O^+]^2}}{\rm{[CH_3COOH]}}$$
     \end{tabular}
 \end{center}
 
-$$k_a = \frac{x^2 \, c}{(1-x)c}= c \frac{x^2}{(1-x)}$$
+$$k_a = \frac{x^2 \, c^2}{(1-x)c}= c \frac{x^2}{(1-x)}$$
 
 $$[\text{H}_3\text{O}^+]^2= k_a \cdot c_a$$
 
@@ -283,14 +299,28 @@ $$[\text{OH}^-] = k_b \frac{c_b}{c_s}$$
 \subsection{Titolazione base debole-acido forte}
 
 \subsection{Indicatori}
+L'indicatore indica una variazione di pH. \E un composto che a seconda di come si dissocia mostra una forma acida e una forma basica aventi colori diversi.
+
+Chiamiamo l'indicatore HIn. \E una specie debole che si dissocia in $\rm H^+$ e $\rm In^-$ (ovviamente in acqua $\rm H^+$ si associa all'acqua dando $\rm H_3O^+$). Essendo una specie debole avremo una reazione di equilibrio di dissociazione e quindi una costante di equilibrio
 
 $$\ce{HIn(aq) + H_2O <--> H_3O^+ + In^-}$$
 
-$$\implies k_{In}=\frac{\rm{[H_3O^+]} \cdot \rm{[In^-]}}{\rm{[HIn]}}$$
+$$k_{In}=\frac{\rm{[H_3O^+]} \cdot \rm{[In^-]}}{\rm{[HIn]}}\implies \rm{[H_3O^+]}=\textit{k}_{\textit{In}} \frac{\rm{[HIn]}}{\rm{[In^-]}}$$
 
-$$\rm{[H_3O^+]}=\textit{k}_{\textit{In}} \frac{\rm{[HIn]}}{\rm{[In^-]}}$$
+%Ogni ione $\rm H_3O^+$ corrisponderà ad uno ione $\rm In^-$, pertanto possiamo scrivere la concentrazione degli ioni $\rm H_3O^+$ al quadrato
 
 $$\implies \rm pH = log \left( \frac{1}{[H_3O^+]} \right) = log \left( \frac{1}{\textit{k}_{\textit{In}}} \right) + log \left( \frac{\rm{[In^-]}}{\rm{[HIn]}} \right)$$
 
 $$\implies \rm pH= p\textit{k}_\textit{a} + log \left( \frac{\rm{[In^-]}}{\rm{[HIn]}} \right)$$
+
+Noi stiamo aggiungendo un colorante, che colora la soluzione in modo diverso a seconda che si sia in ambiente acido o in ambiente basico. \E importante allora capire le quantità relative delle due forme colorate. Ad occhio nudo non riusciamo a vedere se uno dei due è in eccesso di un minimo: per vederlo è necessario che una delle due forme sia più abbondante dell'altra.
+
+Di norma allora si immagina di essere in condizioni tali che una delle due sia almeno 10 volte più abbondante dell'altra. 
 \subsection{Solubilità}
+Quando mettiamo qualcosa in acqua non è detto che essa si sciolga del tutto. Dobbiamo quindi stare attenti a ragionare su soluzioni, non sospensioni. In altre parole, se abbiamo messo in acqua un qualunque composto chimico e non si è sciolto totalmente, dobbiamo filtrare la soluzione. Ciò che non si è sciolto resterà nel filtro, la soluzione limpida invece passerà dal filtro e la otterremo nel beker.
+
+\E quindi importante capire che esiste una \textbf{solubilità} di ogni specie chimica. Essa varia da composto a composto, passando da qualche milligrammo per litro a quasi un chilogrammo per litro.
+
+Esempi di ciò sono il nitrato di potassio e il solfuro di mercurio. Della prima specie a 100° C se ne sciolgono circa 850 grammi in un litro di soluzione, mentre la seconda è talmente insolubile che forse in soluzione si scioglie qualche molecola.
+
+\E possibile scrivere degli equilibri di solubilità per tutte le speci, ma non li trattateremo.
