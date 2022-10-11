@@ -12,7 +12,41 @@ In ambiente acido è incolore (quindi ad esempio partendo da una soluzione di ac
 
 $$\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H_2O}$$
 
-Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, significa ione $\rm H_3O^+$ e ione $\rm Cl^-$ totalmente dissociati. Analogamente NaOH acquoso, visto che si tratta di una base forte, significa ione $\rm Na^+$ e ione $\rm OH^-$ totalmente dissociati. Ma anche il cloruro di sodio, essendo un sale e quindi un elettrolita forte, sarà totalmente dissociato in $\rm Na^+$ e $\rm Cl^-$. Ne segue che l'unica vera reazione che sta venendo è la formazione di acqua: lo ione $\rm H^+$ dell'acido cloridrico e lo ione $\rm OH^-$ dell'NaOH danno luogo ad $\rm H_2O$
+Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, significa ione $\rm H_3O^+$ e ione $\rm Cl^-$ totalmente dissociati. Analogamente NaOH acquoso, visto che si tratta di una base forte, significa ione $\rm Na^+$ e ione $\rm OH^-$ totalmente dissociati. Ma anche il cloruro di sodio, essendo un sale e quindi un elettrolita forte, sarà totalmente dissociato in $\rm Na^+$ e $\rm Cl^-$. Ne segue che l'unica vera reazione che sta venendo è la formazione di acqua: lo ione $\rm H^+$ dell'acido cloridrico e lo ione $\rm OH^-$ dell'NaOH danno luogo ad $\rm H_2O$, mentre gli altri ioni restano dissociati prima e dopo la reazione.
+
+Quant'è il pH della soluzione iniziale?
+
+Innanzitutto scriviamo sopra la reazione le quantità iniziali, sotto quelle finali.
+
+All'inizio avevamo 100 mL di HCl 0.1N, il che significa (in questo caso in cui moli ed equivalenti coincidono) 0.1 moli in un litro di soluzione, quindi per sapere quante moli/equivalenti abbiamo in 1 mL dobbiamo dividere per 1000.
+
+Per sapere gli equivalenti totali dobbiamo fare
+
+$$\frac{0.1}{1000} \cdot 100$$
+
+Per avere il pH del primo punto non è necessario nemmeno questo calcolo perché abbiamo già la concentrazione. Infatti il pH è definito come
+
+$$\rm pH=\log \frac{1}{[H_3O^+]}$$
+
+Va da ricordare che l'acido cloridrico in acqua darà luogo a ioni $\rm H_3O^+$ e ioni $\rm Cl^-$:
+
+$$\ce{HCl + H_2O -> H_3O^+ + Cl^-}$$
+
+Essendo un acido forte, tale reazione è compiuta da tutto l'acido. Ne segue che la concentrazione degli ioni $\rm H_3O^+$ corrisponde alla concentrazione dell'acido cloridrico.
+
+$\rm [H_3O^+]$ è espressa come equivalenti/litro, che abbiamo già. Quindi il pH sarà
+
+$$\rm pH=\log\frac{1}{0.1}=\log10=1$$
+
+Quindi ancora prima di iniziare l'aggiunta della base abbiamo una soluzione che ha pH pari a 1.
+
+A questo punto facciamo la prima aggiunta. Queste vanno fatte lentamente, quindi inizialmente aggiungiamo 10 mL di base. Dopo averli aggiunti calcoliamo il pH.
+
+Torniamo alla reazione. Gli equivalenti iniziali di HCl erano 0.01 eq. Quanti equivalenti/moli ci sono in 10 mL di base?
+
+Il calcolo è lo stesso.
+
+$$\frac{0.1}{1000} \cdot 10=10^{-3}=0.001 \; eq$$
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -22,6 +56,24 @@ Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, signific
     \end{tabular}
 \end{center}
 
+Calcoliamo la concentrazione di questa soluzione.
+
+Non abbiamo base, abbiamo solo l'acido di cui ci sono $9 \cdot 10^{-3}$ moli. Esse stanno in un volume di 110 mL, quindi la molarità (e dunque la normalità) sarà data da
+
+$$M=9 \cdot 10^{-3} \frac{1000}{110}=8.1818 \cdot 10^{-2}$$
+
+Questa è la molarità della soluzione acida, perché la base è scomparsa e abbiamo solo acido cloridrico. Il calcolo da fare sarà allora
+
+$$\rm pH=\log\left( \frac{1}{8.1818 \cdot 10^{-2}} \right)=1.09$$
+
+A questo punto aggiungiamo 20 mL di NaOH, considerando però la quantità di acido di partenza.
+
+Calcoliamo le moli di NaOH
+
+$$n=\frac{0.1}{1000}\cdot 20=2 \cdot 10^{-3}$$
+
+L'NaOH è in difetto e formerà 0.002 moli di sale. Di acido ce ne rimangono 0.008 moli
+
 \begin{center}
     \begin{tabular}{ccccccc}
         0.01 &  & 0.002 & & / & &\\
@@ -30,6 +82,16 @@ Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, signific
     \end{tabular}
 \end{center}
 
+La molarità sarà
+
+$$M=8\cdot 10^{-3}\frac{1000}{120}=6.6667 \cdot 10^{-2}$$
+
+La soluzione è ancora acida, pertanto
+
+$$\rm pH=\log\left( \frac{1}{6.6667 \cdot 10^{-2}} \right)=1.18$$
+
+Adesso aggiungiamo 40 mL di base. Le moli di NaOH saranno $4 \cdot 10^{-3}$ (calcolate come prima), per cui la base continua ad essere in difetto, quindi viene neutralizzata totalmente, dando $4 \cdot 10^{-3}$ moli di sale. Ci restano 0.006 moli di acido:
+
 \begin{center}
     \begin{tabular}{ccccccc}
         0.01 &  & 0.004 & & / & &\\
@@ -37,6 +99,14 @@ Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, signific
         0.006 &  &  / & & 0.004 & &\\
     \end{tabular}
 \end{center}
+
+La molarità sarà
+
+$$M=6\cdot 10^{-3}\frac{1000}{140}=4.2857\cdot 10^{-2}$$
+
+$$\implies \rm pH=\log\left( \frac{1}{4.2857 \cdot 10^{-2}} \right)=1.37$$
+
+Aggiungiamo 50 mL di NaOH 0.1-N. A questo punto arriviamo a metà della titolazione. Si ottengono
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -107,11 +177,11 @@ Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, signific
 \end{center}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=14cm]{immagini/titolazione_acido_forte_base_forte.png}
+    \hspace{1.3cm}\includegraphics[width=14cm]{immagini/titolazione_acido_forte_base_forte.png}
 \end{figure}
 
 \subsection{Acidi deboli}
+Come calcoliamo il pH di una specie che invece non è forte, cioè una specie di cui ne mettiamo una certa quantità ma se ne dissocia poca?
 
 $$\ce{CH_3COOH(aq) + H_2O <--> CH_3COO^-(aq) + H_3O^+(aq)}$$
 
@@ -269,6 +339,9 @@ $$[\text{H}_3\text{O}^+] = k_a \rm{\frac{[CH_3COOH]}{[CH_3COO^-]}}$$
 
 $$[\text{H}_3\text{O}^+] = k_a \frac{c_a}{c_s}$$
 
+%Inoltre il termine di volume presente a numeratore e denominatore si elide, quindi anziché calcolare la concentrazione bastano le moli, che abbiamo già:
+
+
 $${[\text{H}_3\text{O}^+]}=\textit{k}_\textit{a} \frac{c_a + \rm{[\text{H}_3\text{O}^+]}}{c_s - \rm{[\text{H}_3\text{O}^+]}}$$
 
 $${[\text{H}_3\text{O}^+]}=\textit{k}_a \frac{c_a - {[\text{OH}^-]}}{c_s + \rm{[\text{OH}^-]}}$$
@@ -316,6 +389,16 @@ $$\implies \rm pH= p\textit{k}_\textit{a} + log \left( \frac{\rm{[In^-]}}{\rm{[H
 Noi stiamo aggiungendo un colorante, che colora la soluzione in modo diverso a seconda che si sia in ambiente acido o in ambiente basico. \E importante allora capire le quantità relative delle due forme colorate. Ad occhio nudo non riusciamo a vedere se uno dei due è in eccesso di un minimo: per vederlo è necessario che una delle due forme sia più abbondante dell'altra.
 
 Di norma allora si immagina di essere in condizioni tali che una delle due sia almeno 10 volte più abbondante dell'altra. 
+
+\vspace{0.2cm}$\bullet \rm \; [In^-]=[HIn] \implies pH=p\textit{k}_{\textit{a}}$
+
+\vspace{0.2cm}$\bullet \rm \; [In^-]=10[HIn] \implies pH=p\textit{k}_{\textit{a}}+1$
+
+\vspace{0.2cm}$\bullet \rm \; [HIn]=10[In^-] \implies pH=p\textit{k}_{\textit{a}}-1$
+
+\vspace{0.2cm}Va da notare che in prossimità del punto di viraggio queste variazioni avvengono con l'aggiunta di una sola goccia.
+
+In questo modo anche se l'intervallo di viraggio è ampio non sbagliamo la titolazione. L'importante è andare a prendere l'indicatore che varia più o meno all'equivalenza.
 \subsection{Solubilità}
 Quando mettiamo qualcosa in acqua non è detto che essa si sciolga del tutto. Dobbiamo quindi stare attenti a ragionare su soluzioni, non sospensioni. In altre parole, se abbiamo messo in acqua un qualunque composto chimico e non si è sciolto totalmente, dobbiamo filtrare la soluzione. Ciò che non si è sciolto resterà nel filtro, la soluzione limpida invece passerà dal filtro e la otterremo nel beker.
 
