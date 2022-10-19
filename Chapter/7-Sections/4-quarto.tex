@@ -324,14 +324,37 @@ Se riportiamo i dati su un grafico avremo tale andamento:
     \hspace{1.3cm}\includegraphics[width=14cm]{immagini/titolazione_acido_forte_base_forte.png}
 \end{figure}
 
+Per questa titolazione acido forte-base forte si ha il flesso per pH=7.
+
+Se fossimo partiti al contrario da una base e avessimo aggiunto l'acido, il pH sarebbe stato alto all'inizio, variando inizialmente poco e bruscamente poi in prossimità dell'equivalenza per poi appiattirsi di nuovo.
+
+A questo punto capiamo che qualunque indicatore abbia un intervallo di viraggio compreso nella regione in cui il pH varia velocemente è ottimo per i nostri scopi, perché avreo variazione di pH con poche gocce. Se inoltre sappiamo a priori quando l'indicatore vira (ad esempio la fenoltaleina vira tra 8.8 e 9), possiamo capire di quanto abbiamo ecceduto nell'aggiungere il titolante. Chiaramente bisogna essere pronti a chiudere il rubinetto appena vediamo la soluzione cambiare colore.
+
+Sapendo quando l'indicatore vira possiamo capire quante gocce dobbiamo aggiungere o togliere per arrivare a pH pari a 7.
+
+Affinché l'indicatore sia utile ai nostri scopi serve che il suo intervallo di viraggio sia nell'arco di 1-2 gocce.
+
+A cosa serve questo discorso?
+
+Se avessimo delle soluzioni di cui conosciamo precisamente la concentrazione questo lavoro non servirebbe. Se invece avessimo una soluzione di una data specie di cui non conosciamo la concentrazione, con questo metodo potremmo ottenerla, perché ciò che succede è che abbiamo un becher in cui c'è una certa quantità di una specie (acido o base che sia) e poi ne aggiungiamo un'altra, quindi conosciamo con esattezza i due volumi, quello della specie nel becher e quello che misuriamo goccia a goccia.
 \subsection{Acidi deboli}
 Come calcoliamo il pH di una specie che invece non è forte, cioè una specie di cui ne mettiamo una certa quantità ma se ne dissocia poca?
 
+Nella reazione tra HCl e NaOH abbiamo utilizzato un criterio: la concentrazione degli ioni $\rm H_3O^+$ è uguale a quella dell'HCl in eccesso (o se eravamo a destra dell'equivalenza si assumeva la concentrazione degli ioni $\rm OH^-$ uguale a quella dell'NaOH in eccesso). Ciò non è più vero con un acido debole. L'esempio tipico è l'acido acetico:
+
 $$\ce{CH_3COOH(aq) + H_2O <--> CH_3COO^-(aq) + H_3O^+(aq)}$$
+
+L'acido acetico si dissocia poco, quindi avremo una reazione di equilibrio. La costante di questa dissociazione vale $1.8 \cdot 10^{-5}$, che per definizione si esprime come
 
 $$k_a=\frac{\rm{[CH_3COO^-]} \cdot \rm{[H_3O^+]}}{\rm{[CH_3COOH]}}$$
 
+Dal basso valore della costante deduciamo che si dissocia poco, ma quelle poche molecole che si dissociano producono uno ione acetato e uno ione $\rm H_3O^+$ ciascuna, quindi numericamente le due concentrazioni saranno sempre uguali. La costante si può allora scrivere come
+
 $$k_a=\frac{\rm{[H_3O^+]^2}}{\rm{[CH_3COOH]}}$$
+
+Nota: queste sono quantità all'equilibrio, non quelle di partenza. Ne segue che al denominatore abbiamo la concentrazione dell'acido acetico rimasto.
+
+Essendosi l'acido dissociato molto poco, non commettiamo errore di calcolo, dato che il pH è dato con due cifre decimali, se facciamo l'approssimazione di immaginare che la concentrazione all'equilibrio sia uguale a quella di partenza. Tale approssimazione ci fa evitare un'equazione di secondo grado. Se infatti all'inizio avessimo ad esempio una mole di acido di cui se ne dissocia una quantità $x$, avremo $x$ moli di ione acetato e $x$ moli di $\rm H_3O^+$. Di acido ce ne restano $1-x$ moli:
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -341,11 +364,16 @@ $$k_a=\frac{\rm{[H_3O^+]^2}}{\rm{[CH_3COOH]}}$$
     \end{tabular}
 \end{center}
 
+La costante allora diverrebbe $k=\frac{x^1}{1-x^2}$
+
+Se invece partiamo da $c$ moli avremo
 $$k_a = \frac{x^2 \, c^2}{(1-x)c}= c \frac{x^2}{(1-x)}$$
 
-$$[\text{H}_3\text{O}^+]^2= k_a \cdot c_a$$
+Se però trascuriamo $x$ al denominatore avremo
 
-$$\implies [\text{H}_3\text{O}^+] = \sqrt{k_a \cdot c_a}$$
+$$[\text{H}_3\text{O}^+]^2= k_a \cdot c_a \implies [\text{H}_3\text{O}^+] = \sqrt{k_a \cdot c_a}$$
+
+con $c_a$ concentrazione iniziale dell'acido.
 
 \subsection{Basi deboli}
 
