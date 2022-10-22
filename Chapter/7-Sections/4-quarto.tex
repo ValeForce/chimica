@@ -389,17 +389,40 @@ Gli acidi deboli, a parità di concentrazione con un acido forte, danno un pH me
 
 \subsection{Basi deboli}
 
+L'esempio classico di pH di basi deboli è il caso dell'ammoniaca $\rm NH_3$, che è un gas. Noi lavoriamo con le soluzioni ammoniacali, cioè facciamo gorgogliare questo gas disciogliendolo in acqua. Quello che succede è che si forma l'addotto $\rm NH_3 \cdot H_2O$, cioè ogni molecola di $\rm NH_3$ associa una molecola d'acqua. A volte si fa la somma algebrica e si scrive $\rm NH_4OH$, ma è meno corretta. Ciononostante si usa perché ci dà un'idea più diretta della dissociazione che avviene:
+
 $$\ce{NH_4OH <--> NH_4^+ + OH^-}$$
+
+Useremo la prima notazione:
 
 $$\ce{NH_3 \cdot H_2O <--> NH_4^+ + OH^-}$$
 
+Questa sarà la dissociazione di tale base debole. La relativa costante di dissociazione è
+
 $$k_b= \frac{\rm{[NH_4^+] \cdot [OH^-]}}{\rm{[NH_3 \cdot H_2O]}}$$
+
+Quanto detto per l'acido acetico vale anche per questa base: ogni molecola di ammoniaca che si dissocia produrrà uno ione ammonio $\rm NH_4^+$ e uno ione $\rm OH^-$, quindi le loro concentrazioni saranno numericamente sempre uguali, quindi ci basta prenderne una ed elevarla al quadrato:
 
 $$k_b= \frac{\rm{[OH^-]^2}}{\rm{[NH_3 \cdot H_2O]}}$$
 
 $$\implies \rm [OH^-] = \sqrt{ \textit{k}_{\textit{b}} \cdot [NH_3 \cdot H_2O]}$$
 
-$$\implies  [\text{OH}^-] = \sqrt{ k_b \cdot c_b}$$
+$$\implies  [\text{OH}^-] = \sqrt{ k_b \cdot c_b}$$ù
+
+La costante di dissociazione dell'$\rm NH_3$ è pari a $1.8 \cdot 10^{-5}$, cioò significa che questa dissociazione ha un equilibrio spostato a sinistra, ossia l'ammoniaca si dissocia poco. Pertanto possiamo trascurare la quantità che si è dissociata e immaginare che all'equilibrio si abbia la concentrazione iniziale della base:
+
+$$[\text{OH}]=\sqrt{k_b \cdot c_b}$$
+
+In questo modo calcoliamo prima la concentrazione degli ioni $\rm OH^-$, poi il pOH e quindi il pH.
+
+\vspace{0.2cm}Facciamo un esempio numerico: immaginiamo di avere 25 grammi di $\rm NH_3$ in un volume di 1 litro di soluzione finale. Attenzione! avremo 25 grammi della specie $\rm NH_3H_2O$, quindi il peso molecolare sarà circa 35. Dunque
+
+$$[\text{OH}^-]=\sqrt{1.8 \cdot 10^{-5} \cdot \frac{25}{35}}=3.5857 \cdot 10^{-3}$$
+
+$$\implies \rm pOH= \log \left( \frac{1}{3.5857 \cdot 10^{-3}} \right)=2.45 \implies pH=11.55$$
+
+Abbiamo quindi visto che un'acido forte mostra un pH intorno ad 1, un acido debole un pH intorno a 3 (differenza notevole perché abbiamo a che fare con una scala logaritmica). Una base debole mostra pH superiore a 11. Tuttavia osservando le espressioni per acidi e basi deboli intuiamo che le concentrazioni sono fortemente determinate dalla costante di dissociazione. Ne segue che il pH delle speci deboli è fortemente determinato dalla costante. Facciamo questo confronto perché se avessimo la necessità di ottenere una soluzione con un dato pH dobbiamo sapere qual è la specie in grado di produrci tale pH, e per fare ciò si va a vedere il valore della costante di dissociazione.
+
 \subsection{Reazioni di idrolisi}
 Se mettiamo un cucchiaino di cloruro di sodio in acqua ciò che avviene è solo la dissociazione dell'NaCl in ione $\rm Na^+$ e $\rm Cl^-$, senza che questi subiscano reazioni successive:
 
@@ -461,8 +484,9 @@ $$[\text{OH}^-]=\sqrt{k_i \cdot C_s}=\sqrt{\frac{k_w}{k_a}\cdot C_s}$$
 
 Facciamo un esempio. Consideriamo 7.5432 grammi di acetato di sodio AcNa in 575 mL. avremo
 
-$$\rm [OH^-]=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}}\cdot \frac{7.5432}{82.0343} \cdot \frac{1000}{575}}$$
+$$\rm [OH^-]=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}}\cdot \frac{7.5432}{82.0343} \cdot \frac{1000}{575}}=9.425 \cdot 10^{-6}$$
 
+$$\implies \rm pOH = \log \left( \frac{1}{9.425 \cdot 10^{-6}} \right)=5.03 \implies pH= 14-5.03=8.97$$
 \subsubsection{Calcolare le moli conoscendo il volume ma non la massa}
 Supponiamo di prelevare 3 litri di ammoniaca gassosa a condizioni normali e di farli gorgogliare in 700 mL di soluzione finale. Se la quantità ci viene data in litri e non in grammi come calcoliamo la concentrazione?
 
