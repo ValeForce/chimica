@@ -336,7 +336,19 @@ Affinché l'indicatore sia utile ai nostri scopi serve che il suo intervallo di 
 
 A cosa serve questo discorso?
 
-Se avessimo delle soluzioni di cui conosciamo precisamente la concentrazione questo lavoro non servirebbe. Se invece avessimo una soluzione di una data specie di cui non conosciamo la concentrazione, con questo metodo potremmo ottenerla, perché ciò che succede è che abbiamo un becher in cui c'è una certa quantità di una specie (acido o base che sia) e poi ne aggiungiamo un'altra, quindi conosciamo con esattezza i due volumi, quello della specie nel becher e quello che misuriamo goccia a goccia.
+Se avessimo delle soluzioni di cui conosciamo precisamente la concentrazione questo lavoro non servirebbe. Se invece avessimo una soluzione di una data specie di cui non conosciamo la concentrazione, con questo metodo potremmo ottenerla, perché ciò che succede è che abbiamo un becher in cui c'è una certa quantità di una specie (acido o base che sia) e poi ne aggiungiamo un'altra, quindi conosciamo con esattezza i due volumi, quello della specie nel becher e quello che misuriamo goccia a goccia. Avremo la neutralità quando gli ioni $\rm H_3O^+$ provengono eslcusivamente dall'autodissociazione dell'acqua, ossia quando l'acido e la base che abbiamo aggiunto sono esattamente uguali in moli. Non appena il numero di moli è uguale a meno di una goccia, l'indicatore vira, facendo cambiare colore alla soluzione e indicandoci di fermarci.
+
+In questa condizione valgono le espressioni
+
+$$N_1V_1=N_2V_2
+\quad
+;
+\quad
+M_1V_1=M_2V_2$$
+
+dove $N$ è la normalità e $M$ la molarità. Entrambe sono espressioni per indicare il numero di moli.
+
+Immaginiamo di avere dell'acido cloridrico a concentrazione $M_1$ incognita. Di esso ne preleviamo un volume $V_1$ a piacere. (Attenzione! Nell'esempio la concentrazione la abbiamo, ci è stata data solo per fare meno calcoli). Andiamo allora a prendere dell'NaOH della quale sia nota la concentrazione e di cui quindi conosciamo la molarità $M_2$, ed iniziamo ad aggiungere 
 \subsection{Acidi deboli}
 Come calcoliamo il pH di una specie che invece non è forte, cioè una specie di cui ne mettiamo una certa quantità ma se ne dissocia poca?
 
@@ -539,15 +551,31 @@ Immaginiamo ora invece di avere introdotto dell'idrossido di sodio dall'esterno.
 
 Questo è come funziona il meccanismo tampone. Calcoliamone il pH.
 
-Avendo due equilibri tra loro interdipendenti
+Avendo due equilibri tra loro interdipendenti, avremo una costante di equilibrio che vale per entrambi. Scriviamo allora ad esempio la costante dell'acido acetico
 
 $$k_a = \rm{\frac{[CH_3COO^-] \cdot [H_3O^+]}{[CH_3COOH]}}$$
 
+Stavolta non possiamo più dire che la concentrazione dello ione acetato è uguale a quella dello ione $\rm H_3O^+$, perché esso proviene solo dalla dissociazione dell'acido acetico, lo ione acetato invece proviene in maniera abbondante dalla dissociazione del sale. Pertanto non possiamo prenderne una ed elevarla al quadrato. Avremo allora che
+
 $$[\text{H}_3\text{O}^+] = k_a \rm{\frac{[CH_3COOH]}{[CH_3COO^-]}}$$
+
+Le concentrazioni dell'acido acetico e dello ione acetato sono quelle all'equilibrio. Qual è la concentrazione dell'acido?
+
+Una parte dell'acido messo all'inizio si perde perché si dissocia, ma l'idrolisi dello ione acetato produce acido acetico, per cui ne ripristina un po'. Possiamo allora assumere di non averne né perso né guadagnato e quindi considerare la concentrazione di partenza dell'acido.
+
+Qual è la concentrazione dello ione acetato?
+
+Esso si ottiene dalla dissociazione del sale, ma un po' si perde perché subendo idrolisi si trasforma in acido e un po' si guadagna per dissociazione dell'acido. Si può allora assumere di non averne né perso né guadagnato e quindi scrivere lecitamente che la concentrazione dello ione acetato è uguale alla concentrazione del sale di partenza.
+
+Dunque
 
 $$[\text{H}_3\text{O}^+] = k_a \frac{c_a}{c_s}$$
 
 %Inoltre il termine di volume presente a numeratore e denominatore si elide, quindi anziché calcolare la concentrazione bastano le moli, che abbiamo già:
+
+Le concentrazioni si esprimono in moli su volume, ma siccome stiamo lavorando sulla stessa soluzione il volume del numeratore è lo stesso di quello al denominatore, quindi si elidono. Ne segue che anziché le concentrazioni possiamo usare le moli di acido e sale. In altre parole, non è necessario calcolare le concentrazioni.
+
+Quindi se ad una soluzione tampone aggiungiamo dell'acqua la concentrazione degli ioni $\rm H_3O^+$
 
 
 $${[\text{H}_3\text{O}^+]}=\textit{k}_\textit{a} \frac{c_a + \rm{[\text{H}_3\text{O}^+]}}{c_s - \rm{[\text{H}_3\text{O}^+]}}$$
@@ -573,7 +601,11 @@ Come nel caso precedente, questi due equilibri sono contemporanei nella stessa s
 
 $$k_b = \rm{\frac{[NH_4^+] \cdot [OH^-]}{[NH_3 \cdot H_2O]}}$$
 
+Ancora una volta non possiamo dire che la concentrazione degli ioni $\rm NH_4^+$ sia uguale a quella degli ioni $\rm OH^-$ perché lo ione $\rm OH^-$ proviene solo dal primo equilibrio mentre lo ione ammonio è presente in due diversi equilibri. Esso infatti è dovuto alla dissociazione dell'ammoniaca e in larga misura al sale che si dissocia totalmente. Allora 
+
 $$[\text{OH}^-] = k_b \rm{\frac{[NH_3 \cdot H_2O]}{[NH_4^+]}}$$
+
+Queste sono speci all'equilibrio, ma così come nel caso precedente perdiamo un po' di ammoniaca per dissociazione ma se ne forma un po' per idrolisi. Si trascura allora quella che si acquista e quella che si perde e si prende la concentrazione iniziale della base. Lo ione ammonio invece proviene dalla dissociazione del cloruro di ammonio
 
 $$[\text{OH}^-] = k_b \frac{c_b}{c_s}$$
 
