@@ -32,6 +32,11 @@
 \usepackage{electrons}
 \usepackage[version=4]{mhchem}
 \newcommand{\comment}[1]{}
+
+\newcommand\myline[1][]{%
+  \,\tikz[baseline]\draw[very thick,#1](0,-\dp\strutbox)--(0,\ht\strutbox);\,%
+}
+
 \usepackage{float}
 \usepackage{mathtools}
 \usepackage{tikz}
@@ -106,6 +111,14 @@
 \hbox to \textwidth{\hrulefill}
 {\sc anno 2022}
 \end{center}
+
+\afterpage{\blankpage}
+\newpage
+
+\begin{figure}[H]
+    \includegraphics[angle=90,origin=c]{immagini/tavola periodica.png}
+\end{figure}
+
 
 \afterpage{\blankpage}
 
@@ -273,13 +286,6 @@ Nel seguente capitolo sono riportati sia esercizi svolti a lezione dal professor
 
 \section{Elettrochimica}
 \import{./Chapter/9-Sections}{5-quinto}
-
-\chapter{Tavola periodica}
-
-\begin{figure}[htp]
-  \centering
-  \includegraphics[angle=90,origin=c]{immagini/tavola periodica.png}
-\end{figure}
 %}
 
 \end{document}

@@ -599,7 +599,7 @@ $$\ce{NH_3 \cdot H_2O(aq) <--> NH_4^+(aq) + OH^-(aq)}$$
 
 $$\ce{NH_4Cl(aq) -> NH_4^+(aq) + Cl^-(aq)}$$
 
-$$\ce{NH_4^+ + 2H_2O <--> NH_3 \cdot H_20 + H_3O^+}$$
+$$\ce{NH_4^+ + 2H_2O <--> NH_3 \cdot H_2O + H_3O^+}$$
 
 Questi sono gli equilibri presenti in una soluzione tampone formata da una base debole più un suo sale con acido forte.
 
@@ -611,14 +611,67 @@ Ancora una volta non possiamo dire che la concentrazione degli ioni $\rm NH_4^+$
 
 $$[\text{OH}^-] = k_b \rm{\frac{[NH_3 \cdot H_2O]}{[NH_4^+]}}$$
 
-Queste sono speci all'equilibrio, ma così come nel caso precedente perdiamo un po' di ammoniaca per dissociazione ma se ne forma un po' per idrolisi. Si trascura allora quella che si acquista e quella che si perde e si prende la concentrazione iniziale della base. Lo ione ammonio invece proviene dalla dissociazione del cloruro di ammonio
+Queste sono speci all'equilibrio, ma così come nel caso precedente perdiamo un po' di ammoniaca per dissociazione ma se ne forma un po' per idrolisi. Si trascura allora quella che si acquista e quella che si perde e si prende la concentrazione iniziale della base. Lo ione ammonio invece proviene dalla dissociazione del cloruro di ammonio. Sebbene una parte si idrolizza e e la perdiamo, al contempo la dissociazione dell'ammoniaca produce ioni ammonio; dunque trascuriamo quello che si perde e quello che si acquista e prendiamo la concentrazione del sale di partenza. Quindi
 
 $$[\text{OH}^-] = k_b \frac{c_b}{c_s}$$
 
-\subsection{Titolazione acido debole-base forte}
-Inizialmente abbiamo solo l'acido debole, quindi il pH non è basso quanto il caso precedente
+Analogamente alle speci acide valgono i concetti detti prima.
 
-\subsection{Titolazione base debole-acido forte}
+Non sarà necessario calcolare le concentrazioni perché i termini di volume si elidono (è lo stesso volume), quindi basta usare le moli.
+
+Ovviamente stavolta calcoliamo il pOH e poi il pH.
+
+Proprio perché i termini di volume si elidono, se diluissimo questa soluzione il pH non cambierebbe.
+
+(Fatta da me)
+
+$${[\text{OH}^-]}=\textit{k}_\textit{a} \frac{c_b - \rm{[\text{H}_3\text{O}^+]}}{c_s + \rm{[\text{H}_3\text{O}^+]}}$$
+
+$${[\text{OH}^-]}=\textit{k}_a \frac{c_b + {[\text{OH}^-]}}{c_s - \rm{[\text{OH}^-]}}$$
+
+\subsection{Riepilogo}
+
+\textbf{Soluzioni diluite di acidi o basi deboli}
+
+\begin{center}
+    \begin{tabular}{p{5cm}p{8cm}}
+        $[\text{H}_3\text{O}^+]=\sqrt{k_a \cdot c_a}$ & \ce{CH_3COOH + H_2O <--> CH_3COO^- + H_3O^+}\\[1.5ex]
+        $[\text{OH}^-]=\sqrt{k_b \cdot c_b}$ & \ce{NH_3 \cdot H_2O <--> NH_4^+ + OH^-}
+    \end{tabular}   
+\end{center}
+
+\textbf{Soluzioni di sali di acidi o basi deboli}
+
+\begin{center}
+    \begin{tabular}{p{5cm}p{8cm}}
+        $[\text{H}_3\text{O}^+]=\sqrt{k_i \cdot c_s}$, $k_i=\displaystyle \frac{k_w}{k_b}$ & \ce{NH_4^+ + 2H_2O <--> NH_3 \cdot H_2O + H_3O^+}\\[2ex]
+        $[\text{OH}^-]=\sqrt{k_i \cdot c_s}$, $k_i=\displaystyle \frac{k_w}{k_a}$ & \ce{CH_3COO^- + H_2O <--> CH_3COOH + OH^-}
+    \end{tabular}   
+\end{center}
+
+\textbf{Soluzioni tampone}
+
+\begin{center}
+    \begin{tabular}{p{5cm}p{8cm}}
+        $[\text{H}_3\text{O}^+]=k_a \cdot \displaystyle \frac{c_a}{c_s}$ & acido debole + suo sale con base forte\\[2ex]
+        $[\text{OH}^-]=k_b \cdot \displaystyle \frac{c_b}{c_s}$ & base debole + suo sale con acido forte
+    \end{tabular}   
+\end{center}
+
+\textbf{Titolazione acido forte-base forte}
+Vista in dettaglia precedentemente. Ci si accorge che avviene una reazione acido-base semplice (si parte da acido cloridrico e idrossido di sodio) e l'andamento è tale che in prossimità del punto di equivalenza il pH cambia drasticamente per piccolissime aggiunte di base.
+
+All'equivalenza si ha anche la neutralità: il pH vale 7.
+
+\subsubsection{Titolazione acido debole-base forte}
+Inizialmente abbiamo solo l'acido debole, quindi il pH non è basso quanto il caso precedente e cresce cambiando poco. Tale regione in cui vi è poca variaione è detta \textit{zona tampone}. Quando abbiamo neutralizzato il 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{immagini/titolazione_base_forte_acido_debole.png}
+\end{figure}
+
+\subsubsection{Titolazione base debole-acido forte}
 
 \subsection{Indicatori}
 L'indicatore indica una variazione di pH. \E un composto che a seconda di come si dissocia mostra una forma acida e una forma basica aventi colori diversi.
