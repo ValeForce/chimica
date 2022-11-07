@@ -22,7 +22,7 @@ La pressione è dovuta agli urti delle particelle contro le pareti del recipient
 \subsection{Significato molecolare della temperatura}
 Supponiamo di avere un gas dentro un contenitore chiuso e di riscaldarlo mantenendo costante il suo volue. Ci accorgiamo che aumenta la pressione, cioè aumenta il numero di urti delle particelle nell'unità di tempo. Se aumentano gli urti, aumenterà la velocità delle particelle. Dalla teoria cinetica molecolare sappiamo che l'energia cinetica di una particella è pari a $E_k=3/2 K_bT$, dove $K_b$ è la costante di Boltzmann e $T$ è la temperatura.
 
-\hspace{0.5cm}\begin{minipage}{0.55 \textwidth}
+\comment{\hspace{0.5cm}\begin{minipage}{0.55 \textwidth}
     \begin{figure}[H]
         \includegraphics[width=8cm]{immagini/velocità_molecolare.png}
     \end{figure}
@@ -31,7 +31,16 @@ Supponiamo di avere un gas dentro un contenitore chiuso e di riscaldarlo mantene
 \vspace{0.6cm}Consideriamo l'O$_2$. Notiamo che a 25° C la porzione di molecole che ha velocità elevata è ristretta, mentre a 1000° C tale porzione è molto maggiore.
 
 Deduciamo che aumentare la temperatura significa aumentare la velocità media della maggior parte delle particelle e aumentare la porzione di particelle che hanno velocità molto elevate.
-\end{minipage}
+\end{minipage}}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=8cm]{immagini/velocità_molecolare.png}
+\end{figure}
+
+Consideriamo l'O$_2$. Notiamo che a 25° C la porzione di molecole che ha velocità elevata è ristretta, mentre a 1000° C tale porzione è molto maggiore.
+
+Deduciamo che aumentare la temperatura significa aumentare la velocità media della maggior parte delle particelle e aumentare la porzione di particelle che hanno velocità molto elevate.
 
 \subsection{Legge di Boyle}
 Se manteniamo costante la temperatura (trasformazione isoterma), il prodotto $P \cdot V$ è costante.
@@ -49,12 +58,8 @@ con $P_0$ e $V_0$ condizioni iniziali del gas.
 
 La legge può essere espressa come
 
-$$PV=k \qquad P=\frac{k}{V} \qquad V=\frac{k}{P}$$
+$$PV=k \qquad P=\frac{k}{V} \qquad V=\frac{k}{P} \qquad \log{V} = \log{k} - \log{P}$$
 
-o, in forma logaritmica, come
-
-$$logV = logk - log P$$
-\newpage
 \subsection{Legge di Charles (Gay-Lussac)}
 Se manteniamo costante la pressione (trasformazione isobara), il volume di un gas aumenterà rispetto a quello iniziale di un 273-esimo per ogni grado di aumento di temperatura:
 $$p=cost \implies V_t=V_0(1 + \alpha t), \; \text{con} \; \alpha=\frac{1}{273}$$
