@@ -145,15 +145,15 @@ In questo modo misuriamo le costanti di dissociazione. Si trova ad esempio
 
 \vspace{0.2cm}$\bullet \rm CH_2ClCOOH$: $k=1.4 \cdot 10^{-3}$
 
-Se nell'acido acetico sostituiamo un idrogeno del gruppo $\rm CH_3$ con un atomo di cloro, il quale è molto elettronegativo, anziché un gruppo $\rm CH_3$ avremo un gruppo $\rm CH_2Cl$. Dato che il cloro è elettronegativo, esso tenderà ad attirare la carica verso questo gruppo, quindi il legame OH, che è quello che si romperà permettendo la dissociazione e quindi la perdita del protone, sarà impoverito di elettroni, quindi romperlo sarà più facile rispetto al caso precedente laddove il cloro manca, quindi la costante cresce.
+\vspace{0.2cm}Se nell'acido acetico sostituiamo un idrogeno del gruppo $\rm CH_3$ con un atomo di cloro, il quale è molto elettronegativo, anziché un gruppo $\rm CH_3$ avremo un gruppo $\rm CH_2Cl$. Dato che il cloro è elettronegativo, esso tenderà ad attirare la carica verso questo gruppo, quindi il legame OH, che è quello che si romperà permettendo la dissociazione e quindi la perdita del protone, sarà impoverito di elettroni, quindi romperlo sarà più facile rispetto al caso precedente laddove il cloro manca, quindi la costante cresce.
 
 \vspace{0.2cm}$\bullet \rm CHCl_2COOH$: $k=5 \cdot 10^{-2}$
 
-Se sostituiamo un ulteriore idrogeno con un altro atomo di cloro, avremo il gruppo $\rm CHCl_2$ che comporta un maggiore spostamento di carica verso questo gruppo, quindi un legame OH con meno carica dunque più indebolito. Il protone si libererà più facilmente: la costante cresce.
+\vspace{0.2cm}Se sostituiamo un ulteriore idrogeno con un altro atomo di cloro, avremo il gruppo $\rm CHCl_2$ che comporta un maggiore spostamento di carica verso questo gruppo, quindi un legame OH con meno carica dunque più indebolito. Il protone si libererà più facilmente: la costante cresce.
 
 \vspace{0.2cm}$\bullet \rm CCl_3COOH$: $k=2 \cdot 10^{-1}$
 
-Se sostituiamo tutti e tre gli atomi di idrogeno con tre clori, la costante crescerebbe ancora di più
+\vspace{0.2cm}Se sostituiamo tutti e tre gli atomi di idrogeno con tre clori, la costante crescerebbe ancora di più
 
 \vspace{0.2cm}$\bullet \rm HSO_4^-$: $k=10^{-2}$
 
@@ -194,6 +194,8 @@ $$k_w = 10^{-7} \, (mol/L) \cdot 10^{-7} \, (mol/L) = 10^{-14}$$
 
 Ossia in condizioni standard si ha autodissociazione dell'acqua con produzione di $10^{-7}$ moli di ioni $\rm OH^-$. Ciò significa che l'acqua purissima mostra una piccola conducibilità.
 
+\textbf{SI E ORA LA ROBA SULLA COSTANTE DELL'ACQUA? COME LA METTIAMO}
+
 \comment{\vspace{0.2cm}Vediamo adesso perché nel calcolo delle costanti di dissociazione non figura la concentrazione dell'acqua.
 
 La costante di autodissociazione dell'acqua, a 25°C, vale $1.8 \cdot 10^{-16}$. Essendo così piccola, le molecole d'acqua che si sono dissociate saranno un numero piccolissimo; ne segue che possiamo immaginare che all'equilibrio il numero di molecole di acqua sia uguale a quello che si ha prima che avvenga. Potendo fare questa assunzione, si ingloba la concentrazione dell'acqua nella costante e si calcola il nuovo valore di $k_w$:}
@@ -222,12 +224,32 @@ Va da notare che le reazioni acido-base, cioè quelle in cui una specie cede un 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{immagini/scala_pH.png}
+    \includegraphics[width=12cm]{immagini/scala_pH.png}
 \end{figure}
+
+Abbiamo visto che la concentrazione di $\rm H3O^+$ nell'acqua pura è $10^{-7}$, il che significa $\rm pH=\log(\frac{1}{10^{-7}})=7$, cioè l'acqua pura ha pH pari a 7, pertanto tutto ciò che ha tale valore di pH è neutro, in quanto diciamo che l'acqua pura è nuetra, dato che il numero di ioni $\rm H3O^+$ è uguale al numero di ioni $\rm OH^-$. Quindi pH neutro significa pH pari a 7.
+
+Se la concentrazione dello ione $\rm H3O^+$ aumenta, ad esempio da $10^{-7}$ a $10^{-5}$, avremo che pH=5. Ne segue che più è concentrato l'acido che stiamo mettendo, più si abbassa il valore del pH, quindi man mano che diminuisce il valore del pH aumenta l'acidità.
+
+Attenzione! Se ad esempio si ha pH=2, ciò significa pOH=12, quindi un valore elevato del pOH significa ambiente acido, non basico. Al contrario, affinché una specie sia basica si deve avere $\rm pH > 7$. Ovviamente se ad esempio avessimo pH=12 sarà pOH=2.
+
+Per non confonderli faremo sempre riferimento al pH, quindi se si tratta di una specie acida calcoliamo direttamente il pH, se si tratta di una specie basica calcoliamo prima il pOH, poi facciamo 14-pOH per ottenere il pH e poter dire, se questo è maggiore di 7, che quella specie era basica.
 
 \subsubsection{Definizioni: pH e P$\boldsymbol{k_a}$}
 
+\begin{itemize}
+    \item $\rm pH=-\log{[H^+]}=-\log{H_3O^+}$
+    \item $\rm pOH=-\log{[OH^-]}$
+    \item $\text{p}k_a=\log{k_a}$
+    \item $\text{p}k_b=\log{k_b}$
+\end{itemize}
+
 \subsubsection{Definizioni: pOH e P$\boldsymbol{k_w}$}
+
+\begin{itemize}
+    \item $\rm pOH=-\log{[OH^-]}$
+    \item $\rm pH + pOH=-\log{[H^+]} - \log{[OH^-]}=-\log{[H^+][OH^-]}=-\log{\textit{k}_{\textit{w}}}=\textit{k}_{\textit{w}}=14$
+\end{itemize}
 
 \subsubsection{Definizioni: P$\boldsymbol{k_a}$ vs P$\boldsymbol{k_b}$}
 
@@ -275,3 +297,5 @@ Quindi il prodotto della costante di un acido e della costante della sua base co
     \item Acido nitroso $\rm HNO_3$ $k_a=4.5 \cdot 10^{-4}$, ione nitrato $\rm NO_3^-$ $k_b=2.2 \cdot 10^{-11}$
     \item Acido solforoso  $k_a=1.2 \cdot 10^{-2}$
 \end{itemize}
+
+\textbf{MANCA IMMAGINE SCALA PH E SPIEGAZIONI}
