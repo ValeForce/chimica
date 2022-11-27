@@ -498,18 +498,47 @@ $$\rm [OH^-]=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}}\cdot \frac{7.5432}
 
 $$\implies \rm pOH = \log \left( \frac{1}{9.425 \cdot 10^{-6}} \right)=5.03 \implies pH= 14-5.03=8.97$$
 
+Quindi l'acetato di sodio apparentemente non ha né protoni né gruppi $\rm OH^-$ da liberare, eppure scopriamo che è una base, tant'è che ha un pH poco inferiore a 9. Pertanto i sali che derivano da una specie debole e una forte (questo sale può infatti essere immaginato come ottenuto a partire da acido acetico e idrossido di sodio: un acido e una base si neutralizzano formando l'acetato di sodio) danno luogo a reazioni di idrolisi.
+
+\vspace{0.4cm}Facciamo ora il caso opposto: immaginiamo un sale derivante da una base debole e un acido forte. Gli esempi tipici sono l'ammoniaca e l'acido cloridrico, che insieme danno il cloruro di ammonio $\rm NH_4Cl$.
+
+Essendo un sale, esso in acqua sarà totalmente dissociato in ione ammonio $\rm NH_4^+$ e ione cloruro $\rm Cl^-$:
 
 $$\ce{NH_4Cl(aq) -> NH_4^+(aq) + Cl^-(aq)}$$
 
+\E vero che in acqua per autodissociazione abbiamo $\rm H_3O^+$ e $\rm OH^-$, ma lo ione $\rm H_3O^+$ non si legherà allo ione $\rm Cl^-$ per produrre HCl visto che quest'ultimo è un acido forte e quindi totalmente dissociato, ovvero non può riassociarsi; invece lo ione ammonio è l'acido coniugato di una base debole. Esso in acqua reagisce insieme a questa con un equilibrio, dando l'addotto $\rm NH_3 \cdot H_2O$ e lo ione $\rm H_3O^+$:
+
 $$\ce{NH_4^+(aq) + 2H_2O <--> NH_3 \cdot H_2O + H_3O^+}$$
 
-$$k_i=\rm \frac{[NH_3 \cdot H_2O][H_3O^+]}{[NH_4^+]}$$
+Quindi si forma una base, ma la soluzione è acida (c'è eccesso di ioni $\rm H_3O^+$). Avevamo messo in acqua una specie neutra e invece la soluzione è acida, quindi scriviamo la costante relativa all'equilibrio $k_i$ (che può essere chiamata $k_a$ perché abbiamo scoperto che il cloruro di ammonio è un acido debole)
+
+$$k_i=\rm \frac{[NH_3 \cdot H_2O][H_3O^+]}{[NH_4^+]} \quad (**)$$
+
+Come prima, questa costante non la troviamo tabulata. Moltiplichiamo e dividiamo per la concentrazione dello ione $\rm OH^-$:
 
 $$k_i=\rm \frac{[NH_3 \cdot H_2O][H_3O^+]}{[NH_4^+]} \cdot \frac{[OH^-]}{[OH^-]}$$
 
+In questo modo al numeratore avremo il prodotto $\rm [H_3O^+] \cdot [OH^-]$, che è la $k_w$. Ciò che resta sarà l'inverso della $k_b$, quindi
+
 $$k_i=\frac{k_w}{k_b}$$
 
-$$k_i=\rm \frac{[ ]^2}{}$$
+Così possiamo calcolare $k_i$.
+
+Torniamo ora alla $(**)$. Ogni ione ammonio che si idrolizza produce una molecola di ammoniaca e uno ione $\rm H_3O^+$, quindi le loro concentrazioni saranno sempre uguali. Si può allora scrivere che
+
+$$k_i=\rm \frac{[H_3O^+]^2}{[NH_4^+]}$$
+
+$$\implies [\text{H}_3\text{O}^+]=\sqrt{k_i \cdot c_s}$$
+
+dove la concentrazione del sale è lecitamente posta uguale a quella iniziale per gli stessi motivi di prima (intendiamo la concentrazione dello ione ammonio all'equilibrio).
+
+\vspace{0.2cm}Facciamo un esempio: consideriamo 6.5432 grammi di cloruro di ammonio in 412 mL di soluzione finale.
+
+$$\rm [H_3O^+]=\sqrt{\frac{10^{-14} \cdot 6.5432 \cdot 1000}{1.8 \cdot 10^{-5} \cdot 53.491 \cdot 412}}=1.2843 \cdot 10^{-5}$$
+
+$$\implies \rm pH=\log{\left( \frac{1}{1.2843 \cdot 10^{-5}} \right)}=4.89$$
+
+Osserviamo come otteniamo un valore diverso di pH rispetto a quello che otterremmo da un acido forte (circa 1) o uno debole (circa 3)
 
 \textbf{QUA SEI FOLLE MANCANO DUE PAGINE DI APPUNTI}
 \subsubsection{Calcolare le moli conoscendo il volume ma non la massa}
@@ -764,7 +793,7 @@ In questo modo anche se l'intervallo di viraggio è ampio non sbagliamo la titol
 \subsection{Solubilità}
 Quando mettiamo qualcosa in acqua non è detto che essa si sciolga del tutto. Dobbiamo quindi stare attenti a ragionare su soluzioni, non sospensioni. In altre parole, se abbiamo messo in acqua un qualunque composto chimico e non si è sciolto totalmente, dobbiamo filtrare la soluzione. Ciò che non si è sciolto resterà nel filtro, la soluzione limpida invece passerà dal filtro e la otterremo nel beker.
 
-\E quindi importante capire che esiste una \textbf{solubilità} di ogni specie chimica. Essa varia da composto a composto, passando da qualche milligrammo per litro a quasi un chilogrammo per litro.
+\E quindi importante capire che esiste una \textbf{solubilità} di ogni specie chimica, la quale varia da composto a composto, passando da qualche milligrammo per litro a quasi un chilogrammo per litro.
 
 Esempi di ciò sono il nitrato di potassio e il solfuro di mercurio. Della prima specie a 100° C se ne sciolgono circa 850 grammi in un litro di soluzione, mentre la seconda è talmente insolubile che forse in soluzione si scioglie qualche molecola.
 
