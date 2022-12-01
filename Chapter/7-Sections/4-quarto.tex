@@ -677,13 +677,91 @@ Nota: le aggiunte dall'esterno di acido o di base alla soluzione tampone vanno d
 
 \vspace{0.4cm}Abbiamo visto le soluzioni tampone costituite da un acido debole ed un suo sale con base forte. In particolar modo si è discusso delle soluzioni di acido acetico $\rm CH_3COOH$ più acetato di sodio $\rm CH_3COONa$. Vediamo di fare in breve una titolazione tra acido acetico e idrossido di sodio, in modo tale da produrre acetato di sodio. Immaginiamo quindi di avere una soluzione di 100 mL di acido acetico 0.1 N e di aggiungere ad essa NaOH 0.1 N.
 
-All'inizio
+All'inizio immaginiamo di avere solo acido acetico. Qualunque sarà il volume, la concentrazione è 0.1 N. In presenza di un acido debole la concnentrazione degli ioni $\rm H_3O^+$ è pari a
+
+$$[\text{H}_3\text{O}^+]=\sqrt{k_a \cdot c_a}$$
+
+Nel nostro caso
+
+$$\rm [H_3O^+]=\sqrt{1.2 \cdot 10^{-5} \cdot 0.1}=1.3416 \cdot 10^{-3}$$
+
+$$\implies \rm pH=\log{\left(\frac{1}{1.3416 \cdot 10^{-3}}\right)}=2.87$$
+
+Aggiungiamo 10 mL di NaOH e facciamo reagire:
 
 \begin{center}
     \begin{tabular}{ccccccc}
-        0.01 &  & $9.99 \cdot 10^{-3}$  & & / & &\\
+        0.01 &  & 0.001  & & / & &\\
         $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
-        $1 \cdot 10^{-5}$ &  &  / & & $9.99 \cdot 10^{-3}$ & &\\
+        $9 \cdot 10^{-3}$ &  &  / & & $1 \cdot 10^{-3}$ & &\\
+    \end{tabular}
+\end{center}
+
+(Si mette la singola freccia perché è una reazione acido-base)
+
+Quante moli di acido acetico abbiamo?
+
+$$n_{\text{acido}}=\frac{0.1}{1000}\cdot 100 = 0.01 \; mol$$
+
+Le moli di NaOH aggiunte sono
+
+$$n_{\text{NaOH}}=\frac{0.1}{1000}\cdot 10 = 0.001 \; mol$$
+
+La base è in difetto, quindi si trasforma tutta in sale, cioè avreo $10^{-3}$ moli di sale. Ci restano $9 \cdot 10^{-3}$ moli di sale.
+
+Dopo aver fatto i calcoli, possiamo dire di che tipo di soluzione si tratta: abbiamo un acido debole ed un suo sale con base forte, dunque è una soluzione tampone. Per calcolare la concentrazione degli ioni $\rm H_3O^+$ allora varrà l'espressione per le soluzioni tampone acide:
+
+$$[\text{H}_3\text{O}^+] = k_a \frac{c_a}{c_s}$$
+
+Inoltre il termine di volume presente a numeratore e denominatore si elide, quindi anziché calcolare le concentrazioni bastano le moli, che abbiamo già
+
+$$\rm [H_3O^+]=1.8 \cdot 10^{-5} \cdot \frac{9 \cdot 10^{-3}}{1 \cdot 10^{-3}}=1.62 \cdot 10^{-4}$$
+
+$$\implies \rm pH=\log\left(\frac{1}{1.62 \cdot 10^{-4}}\right)=3.79$$
+
+Aggiungiamo altri 10 mL di soda\footnote{L'idrossido di sodio è commercialmente noto come soda caustica.}, per un totale di 20 mL aggiunti e quindi 0.002 moli di base aggiunte. Continua ad essere in difetto, producendo 0.002 moli di sale. Restano $8 \cdot 10^{-3}$ di acido:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        0.01 &  & 0.002  & & / & &\\
+        $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
+        $8 \cdot 10^{-3}$ &  &  / & & $2 \cdot 10^{-3}$ & &\\
+    \end{tabular}
+\end{center}
+
+Continuiamo ad avere un acido debole ed un suo sale con base forte, quindi è una soluzione tampone. Allora
+
+$$\rm [H_3O^+]=1.8 \cdot 10^{-5}\cdot \frac{8 \cdot 10^{-3}}{2 \cdot 10^{-3}}=7.2 \cdot 10^{-5}$$
+
+$$\implies pH=\log\left(\frac{1}{7.2 \cdot 10^{-5}}\right)=4.14$$
+
+Aggiungiamo in totale 50 mL di base. Dato che la normalità di acido e di base sono uguali, mettendo metà del volume neutralizzeremo metà dell'acido. Avremo $5 \cdot 10^{-3}$ moli di base, che sono in difetto e si trasformano quindi tutte in sale. Restano $5 \cdot 10^{-3}$ moli di acido:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        0.01 &  & $5 \cdot 10^{-3}$  & & / & &\\
+        $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
+        $5 \cdot 10^{-3}$ &  &  / & & $5 \cdot 10^{-3}$ & &\\
+    \end{tabular}
+\end{center}
+
+Abbiamo un acido debole e un suo sale: è ancora una soluzione tampone. Stavolta però abbiamo le stesse moli di acido e di sale, per cui
+
+$$[\text{H}_3\text{O}^+]=k_a \cdot \frac{5 \cdot 10^{-3}}{5 \cdot 10^{-3}} \equiv k_a$$
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        0.01 &  & 0.007  & & / & &\\
+        $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
+        0.003 &  &  / & & 0.007 & &\\
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        0.01 &  & 0.01  & & / & &\\
+        $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
+        / &  &  / & & 0.01 & &\\
     \end{tabular}
 \end{center}
 
