@@ -747,7 +747,15 @@ Aggiungiamo in totale 50 mL di base. Dato che la normalità di acido e di base s
 
 Abbiamo un acido debole e un suo sale: è ancora una soluzione tampone. Stavolta però abbiamo le stesse moli di acido e di sale, per cui
 
-$$[\text{H}_3\text{O}^+]=k_a \cdot \frac{5 \cdot 10^{-3}}{5 \cdot 10^{-3}} \equiv k_a$$
+$$[\text{H}_3\text{O}^+]=k_a \cdot \frac{5 \cdot 10^{-3}}{5 \cdot 10^{-3}} \equiv k_a \implies \rm [H_3O^+]=1.8 \cdot 10^{-5}$$
+
+$$\implies \text{pH}=\text{p}k_a=\log{\left(\frac{1}{1.8 \cdot 10^{-5}}\right)}=4.74$$
+
+Quest'ultima è la condizione che permette di avere il massimo potere tamponante, perché l'acido debole ancora presente e il suo sale sono in quantità equimolari, quindi ci accorgiamo che i due equilibri, uno che produce $\rm H_3O^+$ e l'altro $\rm OH^-$, avranno lo stesso potere tamponante qualunque sia l'aggiunta di acido o di base dall'esterno.
+
+Prima di questa condizione il tampone funzionava meno bene perché era più sbilanciato, in quanto c'era più acido che sale e quindi c'era maggiore produzione di ioni $\rm H_3O^+$. Se invece adesso continuiassimo ad aggiungere base ci sarà più sale che acido, quindi ci sarà maggiore produzione di ioni $\rm OH^-$ a causa dell'idrolisi dello ione acetato.
+
+Aggiungiamo 70 mL di base. Avremo $7 \cdot 10^{-3}$ moli di base, che essendo in difetto diventano tutte sale e per differenza restano $3 \cdot 10^{-3}$ moli di acido:
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -757,6 +765,12 @@ $$[\text{H}_3\text{O}^+]=k_a \cdot \frac{5 \cdot 10^{-3}}{5 \cdot 10^{-3}} \equi
     \end{tabular}
 \end{center}
 
+$$\rm [H_3O^+]=1.8 \cdot 10^{-5} \cdot \frac{3 \cdot 10^{-3}}{7 \cdot 10^{-3}}=7.714 \cdot 10^{-6}$$
+
+$$\implies \rm pH=\log{\left(\frac{1}{7.714 \cdot 10^{-6}}\right)}=5.11$$
+
+Aggiungiamo 100 mL di base in modo da avere l'equivalenza. Avremo 0.01 moli di base, quindi non avremo eccesso di acido: sono uguali e si neutralizzeranno entrambi diventando tutto sale, dandone 0.01 moli
+
 \begin{center}
     \begin{tabular}{ccccccc}
         0.01 &  & 0.01  & & / & &\\
@@ -764,6 +778,21 @@ $$[\text{H}_3\text{O}^+]=k_a \cdot \frac{5 \cdot 10^{-3}}{5 \cdot 10^{-3}} \equi
         / &  &  / & & 0.01 & &\\
     \end{tabular}
 \end{center}
+
+A questo punto non abbiamo più un acido debole con un suo sale, quindi non abbiamo più la soluzione tampone, abbiamo soltanto il sale acetato di sodio, che in acqua è totalmente dissociato in ione acetato e ione $\rm Na^+$; quest'ultimo non subisce ulteriori reazioni, lo ione acetato invece strappa un protone all'acqua e diventa acido acetico lasciando un eccesso di ioni $\rm OH^-$:
+
+$$\ce{CH_3COO^-(aq) + H_2O <--> CH_3COOH(aq) + OH^-}$$
+
+Quindi si forma l'acido acetico per idrolisi dello ione acetato, ma la soluzione è basica. Pertanto all'equivalenza ci accorgiamo di non avere pH 7 come capitava quando usavamo HCl e NaOH: essi all'equivalenza danno soltanto NaCl, qui invece vi è anche produzione di ioni $\rm OH^-$, per cui il pH sarà basico. Dunque, se avessimo quantità uguali di HCl e NaOH, essendo entrambi speci forti il pH all'equivalenza sarebbe stato pari a 7 perché si consuma tutto l'acido e tutta la base; qui in teoria ci aspettavamo la stessa cosa perché abbiamo consumato tutto l'acido e tutta la base, invece ragionando sul prodotto ci accorgiamo che l'acetato di sodio è un sale che subisce idrolisi e produce ioni $\rm OH^-$. In questo caso per trovare la concentrazione degli ioni $\rm OH^-$ l'espressione è
+
+$$\rm [OH^-]=\sqrt{k_i \cdot c_s}$$
+
+$$=\sqrt{\frac{k_w}{k_a} \cdot c_s}
+=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot 0.01 \cdot \frac{1000}{200}}=5.27 \cdot 10^{-6}$$
+
+$$\implies \rm pOH=\log{\left(\frac{1}{5.27 \cdot 10^{-6}}\right)}=5.28$$
+
+$$\implies \rm pH=14-5.28=8.72$$
 
 \textbf{E TUTTA LA TITOLAZIONE?}
 
