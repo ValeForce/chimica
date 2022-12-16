@@ -136,20 +136,104 @@ Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto
 
 \textbf{CONTROLLA BENE IL TESTO PERCHE' FORSE E' QUEL CASO BASTARDO}
 
-\vspace{0.2cm}\textbf{4.6} Calcolare il pH della soluzione ottenuta mescolando 100 ml di cloruro di ammonio 0.1-N e 100
-ml di acido cloridrico 0.1-N. $k_{b_{\rm NH_3}}=1.8 \cdot 10^{-5}$.
+\vspace{0.2cm}\textbf{4.6} Calcolare il pH della soluzione ottenuta mescolando 100 ml di cloruro di ammonio 0.1 N e 100
+ml di acido cloridrico 0.1 N. $k_{b_{\rm NH_3}}=1.8 \cdot 10^{-5}$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Analizziamo le singole speci.
+
+L'HCl è un acido forte, per cui in acqua si dissocia totalmente in ione $\rm Cl^-$ e ione $\rm H_3O^+$:
+
+$$\ce{HCl + H_2O -> H_3O^+ + Cl^-}$$
+
+Per il cloruro di ammonio abbiamo invece che, mentre lo ione $\rm Cl^-$ non produce ulteriori reazioni, lo ione $\rm NH_4^+$ instaura un equilibrio di idrolisi, procucendo ammoniaca e ioni $\rm H_3O^+$:
+
+$$\ce{NH_4^+ + H_2O <--> NH_3 + H_3O^+}$$
+
+Entrambe le speci quindi in acqua producono ioni $\rm H_3O^+$, per cui in questo caso per calcolare il pH dovremo sommare le concentrazioni degli ioni $\rm H_3O^+$ prodotti da ogni specie.
+
+Calcoliamo innanzitutto le moli.
+
+L'acido cloridrico è una specie monoprotica, per cui molarità e normalità coincidono. Facciamo quindi la proporzione
+
+$$n_{\rm HCl}:100=0.1:1000
+\implies
+n_{\rm HCl}=\frac{100 \cdot 0.1}{1000}=1 \cdot 10^{-2}\;mol$$
+
+Il cloruro di ammonio in acqua si dissocia in ione Cloruro $\rm Cl^-$ e ione ammonio $\rm NH_4^+$, per cui si produce una carica positiva (o una carica) negativa e dunque molarità e normalità coincidono. Facciamo dunque la proporzione
+
+$$n_{\rm HCl}:200=0.1:1000
+\implies
+n_{\rm NH_4Cl}=\frac{100 \cdot 0.1}{1000}=1 \cdot 10^{-2}\;mol$$
+
+Avendo le moli possiamo calcolare le concentrazioni.
+
+La concentrazione degli ioni $\rm H_3O^+$ provenienti dall'acido cloridrico sarà data da
+
+$$[\rm H_3O^+]=\frac{1 \cdot 10^{-2} \cdot 1000}{200}=5 \cdot 10^{-2}\;mol/L$$
+
+In quanto si producono un numeri di moli di $\rm H_3O^+$ pari al numero di moli di acido.
+
+La concentrazione degli ioni $\rm H_3O^+$ provenienti dall'idrolisi dello ione ammonio sarà data da
+
+$$\implies [\text{H}_3\text{O}^+]=\sqrt{\frac{k_w}{k_b} \cdot c_s}=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{1 \cdot 10^{-2} \cdot 1000}{200}}=5.2705 \cdot 10^{-6}$$
+
+Notiamo che le due concentrazioni differiscono per un fattore $10^4$ per cui, sebbene in generale sia corretto sommare le concentrazioni, in questo caso è lecito trascurare la concentrazione degli ioni $\rm H_3O^+$ provenienti dall'idrolisi dello ione ammonio e considerare solo quella degli ioni $\rm H_3O^+$ provenienti dall'acido cloridrico. Pertanto il pH sarà dato da
+
+$$\rm pH=\log\left(\frac{1}{5 \cdot 10^{-2}}\right)=1.30$$
 
 \vspace{0.2cm}\textbf{4.7} Calcolare il pH della soluzione ottenuta sciogliendo in acqua 3.5 g di acido acetico e 2.8 g di idrossido di sodio. Il volume finale della soluzione è di 650 mL.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Calcoliamo innanzitutto le moli:
 
-\vspace{0.2cm}\textbf{4.8} Calcolare il pH di una soluzione $1.000 \cdot 10^{-2}$-M di un acido debole HA monoprotico con costante di dissociazione di $4.25 \rm  10^{-5}$.
+$$n_{\rm CH_3COOH}=\frac{g}{MM_{\rm CH_3COOH}}=\frac{3.5}{60.052}=5.8283 \cdot 10^{-2}\;mol$$
+
+$$n_{\rm NaOH}=\frac{2.8}{39.997}=7.0005 \cdot 10^{-2}\;mol$$
+
+Le moli di acido acetico sono in difetto, quindi sarà il reagente limitante.
+
+Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        $5.8283 \cdot 10^{-2}$ &  & $7.0005 \cdot 10^{-2}$ & & / &&\\
+        $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
+        / & & $1.1722 \cdot 10^{-2}$ & & $1.1722 \cdot 10^{-2}$&&\\
+    \end{tabular}
+\end{center}
+
+A fine reazione abbiamo una base forte che è l'idrossido di sodio e un sale che è l'acetato di sodio, ottenuto a partire da un acido debole.
+
+Analizziamo le singole speci.
+
+L'idrossido di sodio è una base forte, per cui si dissocia totalmente in $\rm Na^+$ e $\rm OH^-$:
+
+$$\ce{NaOH -> Na^+ + OH^-}$$
+
+La concentrazione degli ioni $\rm OH^-$ derivanti da tale specie è pari a
+
+$$[\rm OH^-]=\frac{1.1722 \cdot 10^{-2} \cdot 1000}{650}=1.8034 \cdot 10^{-2}$$
+
+L'acetato di sodio in acqua si dissocia in ione $\rm Na^+$ e ione acetato $\rm CH_3COO^-$; quest'ultimo dà luogo a una reazione di equilibrio di idrolisi basica:
+
+$$\ce{CH_3COO^- + H_2O <--> CH_3COOH + OH^-}$$
+
+La concentrazione di ioni $\rm OH^-$ derivanti da tale specie è pari a
+
+$$\implies [\text{OH}^-]=\sqrt{\frac{k_w}{k_a} \cdot c_s}=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{1.1722 \cdot 10^{-2} \cdot 1000}{650}}=3.1652 \cdot 10^{-6}$$
+
+Notiamo che le due concentrazioni differiscono per un fattore $10^4$ per cui, sebbene in generale sia corretto sommare le concentrazioni, in questo caso è lecito trascurare la concentrazione degli ioni $\rm OH^-$ provenienti dall'idrolisi dello ione acetato e considerare solo quella degli ioni $\rm OH^-$ provenienti dall'idrossido di sodio. Pertanto il pOH sarà dato da
+
+$$\rm pOH=\log{\left(\frac{1}{1.8034 \cdot 10^{-2}}\right)}=1.74$$
+
+$$\implies \rm pH=14-pOH=14-1.74=12.26$$
+
+Nota: il testo non fornisce la costante di dissociazione dell'acido acetico, eppure sembra essere necessaria nei calcoli. In realtà è superfluo calcolare la concentrazioni degli ioni $\rm OH^-$ provenienti dal sale, in quanto ogni volta che in soluzione abbiamo una specie fote e una debole (e questo include anche i sali che danno luogo a reazioni di idrolisi), prevale la specie forte e quindi il pH sarà determinata unicamente da questa.
+
+\vspace{0.2cm}\textbf{4.8} Calcolare il pH di una soluzione $1.000 \cdot 10^{-2}$ M di un acido debole HA monoprotico con costante di dissociazione di $4.25 \rm  10^{-5}$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
