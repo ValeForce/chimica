@@ -23,14 +23,56 @@ $$I=\frac{Q}{t}
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}La reazione che deve avvenire è
+
+$$\ce{Cu^{2+} + 2e^- -> Cu^{0}}$$
+
+Vediamo a quanti equivalenti corispondo i grammi di rame. Poiché nella reazione si scambiano 2 elettroni, la massa equivalente sarà uguale al peso atomico diviso 2:
+
+$$ME_{\rm Cu}\frac{MA_{\rm Cu}}{2}
+=\frac{3.5887}{2 \cdot 63.546}
+=2.8237 \cdot 10^{-2}\;eq$$
+
+Per la seconda legge di Faraday, essi corrisponderanno a $2.8237 \cdot 10^{-2}$ Faraday di corrente.
+
+Sapendo inoltre che 2 ore corrispondono a 7200 secondi, avremo che
+
+$$I=\frac{Q}{t}
+=\frac{2.8237 \cdot 10^{-2} \cdot 96485}{7200}=0.3784\;A$$
 
 \vspace{0.2cm}\textbf{5.3} Una corrente di 5 A passa per 30 min in un fuso di NaCl. Calcolare i grammi di sodio ed il
 volume di cloro a c.n. che si formano.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}La carica che scorre è data da
+
+$$I=\frac{Q}{t}
+\implies
+Q=I \cdot t
+=5 \cdot 1800=9000\;C$$
+
+Calcoliamo gli equivalenti che si depositano agli elettrodi:
+
+$$n_{eq}=\frac{Q}{96485}=\frac{9000}{96485}=9.3279 \cdot 10^{-2}\;eq$$
+
+Le reazioni che avvengono agli elettrodi sono
+
+$$\ce{Na^+ + e^- -> Na}
+\quad;\quad
+\ce{2Cl^- -> Cl_2 + 2e^-}$$
+
+Nel caso del sodio, moli ed equivalenti coincidono perché viene scambiato un solo elettrone, quindi i grammi prodotti saranno dati da
+
+$$g=n_{\rm Na} \cdot MM_{\rm Na}
+=9.3279 \cdot 10^{-2} \cdot 22.98=2.1435\;grammi$$
+
+Per quanto riguarda il cloro, visto che vengono scambiati due elettroni il numero di moli sarà pari al doppio del numero di equivalenti. Dall'equazione di stato dei gas troviamo il volume di cloro:
+
+$$PV=nRT
+\implies
+V_{\rm Cl_2}=\frac{nRT}{P}
+=\frac{9.3279 \cdot 10^{-2} \cdot 2 \cdot 0.082 \cdot 273.15}{1}=4.1786\;L$$
 
 \vspace{0.2cm}\textbf{5.4} Determinare la f.e.m. della seguente pila:
 
@@ -41,11 +83,36 @@ volume di cloro a c.n. che si formano.
     \end{tabular}
 \end{center}
 
-Sapendo che $E^{0}_{(\rm Zn^{2+}/Zn)}=-0.76V$ e $E^{0}_{(\rm Cr^{3+}/Cr)}=-0.74V$.
+Sapendo che $E^{0}_{(\rm Zn^{2+}/Zn)}=-0.76\;V$ e $E^{0}_{(\rm Cr^{3+}/Cr)}=-0.74\;V$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Scriviamo le reazioni di riduzione delle singole semicelle:
+
+$$\ce{Cr^{3+}(aq) + 3 e^- -> Cr(s)}
+\quad;\quad
+\ce{Zn(s) -> Zn^{2+}(aq) + 2 e^-}$$
+
+Poiché il potenziale standard del cromo è maggiore di quello dello zinco, sarà esso a ridursi al catodo, per cui la reazione che avviene è la prima.
+
+La forza elettromotrice sarà data da
+
+$$f.e.m. = E_{catodo} - E_{anodo}$$
+
+Calcoliamo singolarmente i potenziali
+
+$$E_{catodo}
+=E^0_{(\rm Cr^{3+}/Cr)} + \frac{0.059}{3} \log \frac{a_{\rm Cr^{3+}}}{a_{\rm Cr}}
+=-0.74 + \frac{0.059}{3} \log \frac{2.5 \cdot 10^{-1}}{1}
+=-0.75\;V$$
+
+$$E_{anodo} = E^0_{(\rm Zn^{2+}/Zn)} + \frac{0.059}{2} \log \frac{a_{\rm Zn^{2+}}}{a_{\rm Zn}}
+=-0.76 + \frac{0.059}{2} \log \frac{1.5 \cdot 10^{-2}}{1}
+=-0.81\;V$$
+
+da cui
+
+$$f.e.m.=0.75 - (-0.81) = 0.06\;V$$
 
 \vspace{0.2cm}\textbf{5.5} Calcolare il potenziale della semicella 
 
@@ -56,35 +123,130 @@ Sapendo che $E^{0}_{(\rm Zn^{2+}/Zn)}=-0.76V$ e $E^{0}_{(\rm Cr^{3+}/Cr)}=-0.74V
     \end{tabular}
 \end{center}
 
-Sapendo che $E^{0}_{(\rm Ag^{+}/Ag)}=+0.8V$
+Sapendo che $E^{0}_{(\rm Ag^{+}/Ag)}=+0.8V$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Il potenziale sarà dato, banalmente, da
 
-\vspace{0.2cm}\textbf{5.6} Una corrente di 18 Ampere fluisce attraverso un fuso di $\rm Al_2O_3$ ed al catodo si depositano 15.45 g
-di alluminio. Calcolare il volume di ossigeno (P= 1.2 atm; T= 18°C) che si forma all’anodo e la
+$$E = E^0_{(\rm Ag^{+}/Ag)} + \frac{0.059}{1} \log \frac{a_{\rm Ag^{+}}}{a_{\rm Ag}}
+=0.8 \frac{0.059}{1} \log \frac{4 \cdot 10^{-2}}{1}
+=0.72\;V$$
+
+\vspace{0.2cm}\textbf{5.6} Una corrente di 18 Ampere fluisce attraverso un fuso di $\rm Al_2O_3$ ed al catodo si depositano 15.45 g di alluminio. Calcolare il volume di ossigeno (P= 1.2 atm; T= 18°C) che si forma all'anodo e la
 durata del processo.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Per prima cosa calolciamo la durata del processo. L'allumina $\rm Al_2O_3$ si dissocia secondo la reazione 
+
+$$\ce{Al_2O_3 -> 2Al^{3+} + 3O^{2-}}$$
+
+La reazione che avviene al catodo è
+
+$$\ce{Al^{3+} -> Al + 3e^-}$$
+
+Calcoliamo gli equivalenti di alluminio. Siccome vengono scambiati tre elettroni, essi saranno pari al numero di moli diviso 3:
+
+$$n_{eq}=\frac{n}{3}
+=\frac{15.45}{3 \cdot 26.98}
+=1.9088 \cdot 10^{-1}\;eq$$
+
+Ad essi corrisponderanno $1.9088 \cdot 10^{-1}$ Faraday di corrente. La durata del processo sarà data da
+
+$$I=\frac{Q}{t}
+\implies
+t=\frac{Q}{I}=\frac{1.9088 \cdot 10^{-1} \cdot 96485}{18}
+=1023.17\;s$$
+
+A questo punto calcoliamo il volume di ossigeno prodotto. La reazione che avviene all'anodo è
+
+$$\ce{2O^{2-} -> O_2 + 4e^-}$$
+
+Se al catodo si sono depositati $1.9088 \cdot 10^{-1}$ equivalenti di sostanza, altrettanti se ne depositeranno all'anodo. Siccome nella reazione vengono scambiati 4 elettroni, le moli saranno pari al numero di equivalenti moltiplicate per 4:
+
+$$n=n_{eq} \cdot 4
+=1.9088 \cdot 10^{-1} \cdot 4
+=0.7635\;mol$$
+
+Il volume sarà dato dall'equazione di stato dei gas
+
+$$PV=nRT
+\implies
+V_{\rm O_2}=\frac{nRT}{P}=\frac{0.7635 \cdot 0.082 \cdot 309.15}{1.2}=16.1291 \;L$$
 
 \vspace{0.2cm}\textbf{5.7} Calcolare la f.e.m. della seguente pila:
 
 \begin{center}
     \begin{tabular}{|p{3.7cm}||p{3.7cm}|}
          Fe(s) & Cd(s)\\[0.5ex]
-         $\rm Fe^{2+}$ \, \big[0.0120-M\big] & $\rm Cd^{2+}$ \, \big[0.8988-M\big] \\[0.5ex]
+         $\rm Fe^{2+}$ \, \big[0.0120 M\big] & $\rm Cd^{2+}$ \, \big[0.8988 M\big] \\[0.5ex]
     \end{tabular}
 \end{center}
 
 sapendo che $E^0_{(\rm Fe^{2+}/Fe)}=0.44V$ e $E^0_{(\rm Cd^{2+}/Cd)}=-0.40V$.
 
-\ce{Fe(s) -> Fe^{2+}(aq) + 2 e^-}
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\ce{Cd^{2+}(aq) -> Cd(s) + 2 e^-}
+\vspace{0.2cm}Le reazioni di riduzione delle singole semicelle sono
+
+$$\ce{Fe^{2+}(aq) + 2 e^- -> Fe(s)}
+\quad;\quad
+\ce{Cd^{2+}(aq) + 2 e^- -> Cd(s)}$$
+
+Poiché il potenziale standard del ferro è maggiore di quello del cadmio, sarà esso a ridursi al catodo, per cui avviene la prima reazione. La forza elettromotrice sarà data da
+
+$$f.e.m. = E_{catodo} - E_{anodo}$$
+
+Calcoliamo singolarmente i potenziali
+
+$$E_{catodo}
+=E^0_{(\rm Fe^{2+}/Fe)} + \frac{0.059}{2} \log \frac{a_{\rm Fe^{2+}}}{a_{\rm Fe}}
+=0.44 + \frac{0.059}{2} \log \frac{0.0120}{1}
+=0.38\;V$$
+
+$$E_{anodo} = E^0_{(\rm Cd^{2+}/Cd)} + \frac{0.059}{2} \log \frac{a_{\rm Cd^{2+}}}{a_{\rm Cd}}
+=-0.40 + \frac{0.059}{2} \log \frac{0.8988}{1}
+\approx -0.40\;V$$
+
+da cui
+
+$$f.e.m.=0.38 - (-0.40) = 0.78\;V$$
+
+\vspace{0.2cm}\textbf{5.8} Calcolare la f.e.m. della seguente pila:
+
+\begin{center}
+    \begin{tabular}{p{0.6cm}|p{3cm}||p{3cm}|p{1cm}}
+        Pt & $[\rm Sn^{4+}]$=1 M & $[\rm Zn^{2+}]$=1 M & Pt\\[0.5ex]
+        & $[\rm Sn^{2+}]$=1 M & Zn &\\[0.5ex]
+    \end{tabular}
+\end{center}
+
+sapendo che $E^0_{(\rm Sn^{4+}/Sn^{2+})}=0.15V$ e $E^0_{(\rm Zn^{2+}/Zn)}=-0.76V$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Le reazioni di riduzione delle singole semicelle sono
+
+$$\ce{Sn^{4+}(aq) + 2 e^- -> Sn^{2+}(aq)}
+\quad;\quad
+\ce{Zn^{2+}(aq) + 2 e^- -> Zn(s)}$$
+
+Poiché il potenziale standard dello stagno è maggiore di quello dello zinco, sarà esso a ridursi al catodo, per cui avviene la prima reazione. La forza elettromotrice sarà data da
+
+$$f.e.m. = E_{catodo} - E_{anodo}$$
+
+Calcoliamo singolarmente i potenziali
+
+$$E_{catodo}
+=E^0_{(\rm Sn^{4+}/Sn^{2+})} + \frac{0.059}{2} \log \frac{a_{\rm Sn^{4+}}}{a_{\rm Sn^{2+}}}
+=0.15 + \frac{0.059}{2} \log \frac{1}{1}
+=0.15 + 0 = 0.15 V$$
+
+$$E_{anodo} = E^0_{(\rm Zn^{2+}/Zn)} + \frac{0.059}{2} \log \frac{a_{\rm Zn^{2+}}}{a_{\rm Zn}}
+=-0.76 + \frac{0.059}{2} \log \frac{1}{1}
+= -0.76 + 0=-0.76\;V$$
+
+da cui
+
+$$f.e.m.=0.15 - (-0.76) = 0.91\;V$$
