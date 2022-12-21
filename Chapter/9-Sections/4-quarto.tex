@@ -395,13 +395,52 @@ n=\frac{5.8182 \cdot 10^{-2} \cdot 50}{1000}=$$
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Calcoliamo le moli.
+
+Le moli di $\rm NH_4OH$ si calcolano dalla proporzione
+
+$$n:750=0.15:1000
+\implies
+n=\frac{750 \cdot 0.15}{1000}=0.1125\;mol$$
+
+Le moli di HCl invece saranno date dall'equazione di stato dei gas:
+
+$$PV=nRT \implies n=\frac{PV}{RT}
+=\frac{1 \cdot 1.3079}{0.082 \cdot 273.15}=0.0584\;mol$$
+
+Le moli di HCl sono in difetto, quindi esso sarà il reagente limitante.
+
+Scriviamo la reazione che avviene, mettendo sopra le quntità iniziali e sotto quelle finali:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        $0.1125$ &  & $0.0584$ & & / &&\\
+        $\rm NH_4OH$ & + & $\rm HCl$ & \ce{->} & $\rm NH_4Cl$ & + & $\rm H_2O$\\
+        $0.0541$ &  & / & & $0.0584$ &&\\
+    \end{tabular}
+\end{center}
 
 \vspace{0.2cm}\textbf{4.16} Calcolare il pH di una soluzione 0.35 M di NaCN ($k{a_{\rm HCN}} = 2.1 \cdot 10^{-9}$).
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Supponiamo di avere 1 litro di soluzione, quindi avremo 0.35 moli. Il cianato di sodio in acqua si dissocia in ione $\rm Na^+$ ione cianato $\rm CN^-$. Mentre il primo non dà luogo ad ulteriori reazioni, il secondo, essendo la base coniugata di un acido debole, dà luogo all'equilibrio
+
+$$\ce{CN^- + H_2O <--> HCN + OH^-}$$
+
+il pH sarà quindi basico, in quanto siamo davanti ad una reazione di idrolisi. La concentrazione degli ioni $\rm OH^-$ sarà data da
+
+
+$$[\text{OH}^-]
+=\sqrt{\frac{k_w}{k_a}\cdot C_s}
+=\sqrt{\frac{10^{-14}}{2.1 \cdot 10^{-9}} \cdot 0.35}
+=1.2910 \cdot 10^{-3}\;mol/L$$
+
+$$\implies \rm pOH
+=\log{\left(\frac{1}{1.2910 \cdot 10^{-3}}\right)}
+=2.89$$
+
+$$\implies \rm pH=14-pOH=14-2.89=11.11$$
 
 \vspace{0.2cm}\textbf{4.17} Calcolare il pH di una soluzione ottenuta mescolando 100 mL di soluzione di acido acetico 0,1 M ($k_a=1.8 \cdot 10^{-5}$) con 1 mL di HCl 1 M.
 
