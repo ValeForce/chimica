@@ -179,20 +179,39 @@ Alla fine il numero totale di moli sarà la somma di tutte e tre le speci, cioè
 
 $$n_{tot}=1 - \alpha + \alpha + \alpha=1+\alpha$$
 
-Tale valore andrà a moltiplicare la molalità.
-
-L'espressione allora si riduce a
+Tale valore andrà a moltiplicare la molalità. L'espressione allora si riduce a
 
 $$\Delta t=k_{cr} \cdot m \cdot (1 + \alpha)$$
 
 $$\implies
-0.278 = 1.86 \cdot 0.1 \cdot (1+\alpha)$$
+0.278 = 1.86 \cdot 0.1 \cdot (1+\alpha)
+\implies
+\frac{0.278}{0.186}= 1 + \alpha
+\implies
+\alpha=\frac{0.278}{0.186} - 1$$
+
+$$\implies \alpha=0.4946$$
+
+Quindi si è dissociato il 49.46\%.
 
 \vspace{0.2cm}\textbf{3.1} Calcolare la pressione osmotica, in mmHg, di una soluzione acquosa 0,001 M di acido acetico dissociato al 10\% a 25 °C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}innanzitutto notiamo che siamo davanti ad una specie debole, per cui il coefficiente di Van't Hoff si calcolerà come
+
+$$i=[1 + (\gamma -1)\alpha]$$
+
+con $\alpha$ grado di dissociazione e $\gamma$ numero di particelle in cui il composto si dissocia.
+
+L'acido acetico in acqua si dissocia in ione $\rm H^+$ e ione acetato, per cui $\gamma=2$; inoltre il testo ci dice che $\alpha=0.1$, quindi
+
+$$i=[1 + (2-1) \cdot 0.1]=1.1$$
+
+La pressione osmotica sarà quindi data da
+
+$$\Pi=1.1 \cdot cRT \cdot 760
+=1.1 \cdot 0.001 \cdot 0.082 \cdot 298.15 \cdot 760=20.4388\;mmHg$$
 
 \vspace{0.2cm}\textbf{3.2} Calcolare la pressione osmotica di una soluzione di 923 mL, contenente 4.1234 grammi di idrossido di magnesio alla temperatura di 27°C. 
 
@@ -211,7 +230,19 @@ di potassio alla temperatura di 27°C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Il testo non fornisce sufficienti dati, quindi ai fini della risoluzione del problema supporremo che l'acido debole sia monoprotico. Sotto tale ipotesi, chiamiamo HA il generico acido debole, il quale in acqua darà luogo all'equilibrio
+
+$$\ce{HA <--> H^+ + A^-}$$
+
+Se partiamo da una mole di acido, a fine reazione resteranno $1 - \alpha$ moli indissociate di acido e si produrranno $\alpha$ moli sia di ione $\rm H^+$ che di ione $\rm A^-$. 
+
+La costante di dissociazione sarà allora pari, avendo una concentrazione iniziale $c$, a
+
+$$k_a=c\,\frac{\alpha^2}{1-\alpha}
+\implies
+\alpha=$$
+
+\textbf{lascia stare mi sono buggato}
 
 \vspace{0.2cm}\textbf{3.5} 50.00 mL di una soluzione acquosa di nitrato di argento vengono trattati con un eccesso di acido
 cloridrico. Si formano 1.7658 g di cloruro di argento. Calcolare la molarità della soluzione di nitrato
@@ -219,7 +250,20 @@ di argento.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}La reazione che avviene è
+
+$$\ce{AgNO_3 + HCl -> AgCl + HNO_3}$$
+
+il testo ci dice che siamo in eccesso di acido cloridrico, quindi il reagente limitante sarà il nitrato d'argento, che ha quindi reagito completamente. Inoltre, poiché il rapporto stechiometrico tra questo e il cloruro d'argento è 1:1, il numero di moli di AgCl prodotte corrisponderà al numero iniziale di moli di $\rm AgNO_3$. Quindi:
+
+$$n_{\rm AgNO_3}=n_{\rm AgCl}=\frac{g}{MM_{\rm AgCl}}
+=\frac{1.7658}{143.32}=1.2321 \cdot 10^{-2}\;mol$$
+
+La concentrazione sarà data da
+
+$$c=\frac{n_{\rm AgCl}}{V(L)}
+=\frac{1.2321 \cdot 10^{-2} \cdot 1000}{50}
+=0.2464\;mol/L$$
 
 \vspace{0.2cm}\textbf{3.6} In un recipiente di 5 litri sono introdotti 300 mL di cloro misurati a 20°C e 750 torr, 800 mL di azoto misurati a 15°C e 700 torr, 500 mL di ossigeno misurati a 18°C e 850 torr e 450 mL di anidride carbonica misurati a 20°C e 760 torr. Calcolare la pressione totale della miscela a 25°C e la frazione molare dell’ossigeno.
 
@@ -239,24 +283,69 @@ di argento.
     \ce{2 NOCl <--> 2NO + Cl_2}
 \end{center}
 
-All’equilibrio sono presenti 0.86 moli di NO. Calcolare la relativa costante di equilibrio in funzione delle concentrazioni.
+All'equilibrio sono presenti 0.86 moli di NO. Calcolare la relativa costante di equilibrio in funzione delle concentrazioni.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Scriviamo innanzitutto la reazione che avviene con le quantità iniziali sopra e quelle finali sotto: 
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        $2.5$ & & / & & /\\
+        $\rm 2NOCl$ & \ce{<-->} & $\rm 2NO$ & + & $\rm Cl_2$\\
+        $1.64$ & & $0.86$ & & $0.43$\\
+    \end{tabular}
+\end{center}
+
+Vediamo perché abbiamo scritto tali quantità finali:
+
+Il testo ci dice che a fine reazione abbiamo 0.86 moli di NO, e siccome esso è stato prodotto a partire dall'NOCl di quest'ultimo ci resteranno un numero di moli pari proprio alla differenza, cioè pari a 1.64; per quanto riguarda il $\rm Cl_2$ invece abbiamo scritto 0.43 perché il suo rapporto stechiometrico con l'NO è 2:1, cioè avremo il numero di moli di tale specie sarà pari alla metà di quelle dell'NO.
+
+Scriviamo la concentrazione di tutte le speci. Attenzione! dovremo usare le moli finali. Inoltre, siccome abbiamo un litro di soluzione, le concentrazioni coincideranno in numero col numero di moli, per cui
+
+$$c_{\rm NOCl}=1.64\;mol/L
+\quad;\quad
+c_{\rm NO}=0.86\;mol/L
+\quad;\quad
+c_{\rm Cl_2}=0.43\;mol/L$$
+
+La costante di equilibrio sarà data da
+
+$$k=\rm \frac{[NO]^2 \cdot [Cl_2]}{[NOCl]^2}
+=\frac{0.86^2 \cdot 0.44}{1.64^2}=1.1824 \cdot 10^{-1}$$
 
 \vspace{0.2cm}\textbf{3.9} Sia data una soluzione composta da due liquidi A e B. Ad una data temperatura la $P^0_A = 152$ torr
 e la $P^0_B = 324$ torr. Calcolare la pressione totale dei vapori di A e B in equilibrio con la soluzione sapendo che la frazione molare di A in soluzione è 0.75.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}innanzitutto, poiché $\rchi_A=0.75$, segue che $\rchi_B=0.25$ (deve sempre valere $\rchi_A + \rchi_B =1$).
+
+Dalla legge di Dalton unita alla legge di Raoult segue che la pressione totale dei vapori è data da
+
+$$P=\rchi_A P_A^0 + \rchi_B P_B^0$$
+
+da cui 
+
+$$P=0.75 \cdot 152 + 0.25 \cdot 324=195\;torr$$
 
 \vspace{0.2cm}\textbf{3.10} Calcolare la pressione osmotica di una soluzione di 900 mL, contenente 5.56 grammi di KOH alla temperatura di 26°C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Calcoliamo innanzitutto le moli di KOH
+
+$$n_{\rm KOH}=\frac{5.56}{56.1056}=9.9099 \cdot 10^{-2}\;mol$$
+
+da cui si ha che la concentrazione è pari a
+
+$$c=\frac{n}{V(L)}=\frac{9.9099 \cdot 10^{-2}}{0.9}=1.1011 \cdot 10^{-2}\;mol/L$$
+
+Infine notiamo che l'idrossido di potassio in acqua si dissocia in uno ione $\rm K^+$ e uno ione $OH^-$, per cui il coefficiente di Van't Hoff è pari a 2. Pertanto la pressione osmotica sarà data da
+
+$$\Pi=2cRT
+=2 \cdot 1.1011 \cdot 10^{-2} \cdot 0.082 \cdot 299.15
+=0.5402\;atm$$
 
 \vspace{0.2cm}\textbf{3.11} A 400 mL di una soluzione acquosa di $\rm FeCl_3$ 0.0132 M sono stati aggiunti 350 mg di un composto organico senza variazione apprezzabile di volume. A 25 °C si misura una pressione osmotica di 1072 torr. Calcolare la massa molare del composto organico.
 
