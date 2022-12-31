@@ -250,7 +250,7 @@ $$\Pi=2 \cdot cRT
 =2 \cdot 6.2128 \cdot 10^{-2} \cdot 0.082 \cdot 300.15
 =3.0582\;atm$$
 
-\vspace{0.2cm}\textbf{3.4} Calcolare a 25°C la pressione osmotica di una soluzione di un acido debole 0.15 M la cui $k_a=0.17$.
+\vspace{0.2cm}\textbf{3.4} Calcolare a 25°C la pressione osmotica di una soluzione di un acido debole 0.15 M la cui $k_a=0.17$\,.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -264,9 +264,14 @@ La costante di dissociazione sarà allora pari, avendo una concentrazione inizia
 
 $$k_a=c\,\frac{\alpha^2}{1-\alpha}
 \implies
-\alpha=$$
+\frac{c}{k_a}\alpha^2 + \alpha -1=0$$
 
-\textbf{lascia stare mi sono buggato}
+Tale equazione di secondo grado in $\alpha$ ammette una soluzione positiva (e una negativa che scartiamo) pari a:
+
+$$\alpha=\frac{-1 + \sqrt{1 + 4 \cdot \displaystyle \frac{c}{k_a}}}{2 \cdot \displaystyle \frac{c}{k_a}}
+=\frac{-1 + \sqrt{1 + 3.5294}}{1.7647}=0.6393$$
+
+
 
 \vspace{0.2cm}\textbf{3.5} 50.00 mL di una soluzione acquosa di nitrato di argento vengono trattati con un eccesso di acido
 cloridrico. Si formano 1.7658 g di cloruro di argento. Calcolare la molarità della soluzione di nitrato
@@ -305,15 +310,16 @@ $$\ce{HA <--> H^+ + A^-}$$
 
 Se partiamo da 1 mole di acido, all'equilibrio avremo $\alpha$ moli di $\rm H^+$ e di $\rm A^-$ e $1-\alpha$ di acido indissociato. Partendo da una concentrazione $c$, la costante di dissociazione sarà pari a
 
-$$k_a=c \frac{\alpha^2}{1 - \alpha}$$
-
-trascurando l'$\alpha$ al denominatore avremo che
-
-$$k_a=c \alpha^2
+$$k_a=c\,\frac{\alpha^2}{1-\alpha}
 \implies
-\alpha=\sqrt{\frac{k_a}{c}}=\frac{1.7 \cdot 10^{-1}}{0.15}$$
+\frac{c}{k_a}\alpha^2 + \alpha -1=0$$
 
-\textbf{EH NON VA RISULTA MAGGIORE DI 1}
+Tale equazione di secondo grado in $\alpha$ ammette una soluzione positiva (e una negativa che scartiamo) pari a:
+
+$$\alpha=\frac{-1 + \sqrt{1 + 4 \cdot \displaystyle \frac{c}{k_a}}}{2 \cdot \displaystyle \frac{c}{k_a}}
+=\frac{-1 + \sqrt{1 + 3.5294}}{1.7647}=0.6393$$
+
+\textbf{CONTROLLA I NUMERI}
 
 \vspace{0.2cm}\textbf{3.8} In un recipiente di 1 L sono state introdotte 2.5 moli di NOCl. Dopo opportuno riscaldamento ad una fissata temperatura si realizza il seguente equilibrio:
 
@@ -489,7 +495,32 @@ $$P_{\rm O_2}=\rchi_{\rm O_2} \cdot P^0_{\rm O_2}
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Calcoliamo innanzitutto le moli:
+
+$$n_{\rm NaCl}=\frac{g}{MM_{\rm NaCl}}
+=\frac{5.8440}{58.44}=0.1\;mol$$
+
+$$n_{\rm Al(NO_3)_3}=\frac{g}{MM_{\rm Al(NO_3)_3}}
+=\frac{21.2996}{212.996}=0.1\;mol$$
+
+da cui le concentrazioni sono uguali e pari a
+
+$$c_{\rm NaCl}=c_{\rm Al(NO_3)_3}=\frac{0.1 \cdot 1000}{789}
+=0.1267\;mol/L$$
+
+Calcoliamo le singole pressioni osmotiche.
+
+L'NaCl in acqua si dissocia in ione $\rm Na^+$ e ione $\rm Cl^-$, quindi il coefficiente di Van't Hoff è pari a 2, da cui
+
+$$\Pi_{\rm NaCl}=2cRT=2 \cdot 0.1267 \cdot 0.082 \cdot 300.15=12.4735\;atm$$
+
+L'$\rm Al(NO_3)_3$ in acqua si dissocia in ione $\rm Al^{3+}$ e 3 ioni $\rm NO_3^-$, quindi il coefficiente di Van't Hoff è pari a 4, da cui
+
+$$\Pi_{\rm Al(NO_3)_3}=4cRT=4 \cdot 0.1267 \cdot 0.082 \cdot 300.15=24.9470\;atm$$
+
+La pressione totale sarà pari alla somma
+
+$$\Pi_{tot}=12.4735 + 24.9470=37.4205\;atm$$
 
 \vspace{0.2cm}\textbf{3.16} Calcolare la pressione osmotica di una soluzione di 850 mL contenente 89.1234 grammi di solfato di alluminio alla temperatura di 80 °C.
 
