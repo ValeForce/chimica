@@ -1,14 +1,19 @@
 La titolazione è una tipica operazione dell'analisi chimica che consiste nel determinare la concentrazione o \textbf{titolo} di una specie chimica in soluzione, facendola reagire con una quantità nota di un dato reagente, detto \textbf{titolante}.
 \subsection{Titolazione acido forte-base forte}
-Si versa in un beker dell'acido, si aggiungono una o al massimo due gocce di una soluzione di una specie che per ora chiamiamo \textit{indicatore}, che è un composto che cambia colore nell'istante in cui si passa da un pH ad un altro. Il cambio di colore prende il nome di \textit{viraggio dell'indicatore}.
+Si versa in un beker dell'acido, si aggiungono una o al massimo due gocce di una soluzione di una specie che per ora chiamiamo \textit{indicatore}, che è un composto che cambia colore nell'istante in cui si passa da un valore di pH ad un altro. Il cambio di colore prende il nome di \textit{viraggio dell'indicatore}.
 
-Ci sono vari tipi di indicatore. Se volessimo osservare la fine della titolazione, ossia partiamo da una soluzione acida e aggiungiamo una base, è utile un indicatore che abbia un punto di viraggio per pH pari a 7. Non è necessario che l'indicatore cambi colore esattamente a quel pH, perché ci sarà un valore di pH acido superato il quale con appena qualche goccia di base si raggiunge l'equivalenza. Gli indicatori sono dunque delle sostanze che in modo visibile ai nostri occhi cambiano colore e ci danno indicazione sul cambiamento di pH.
+Ci sono vari tipi di indicatore. Se volessimo osservare la fine della titolazione, ossia partiamo da una soluzione acida e aggiungiamo una base, è utile un indicatore che abbia un punto di viraggio per pH pari a 7. Non è necessario che l'indicatore cambi colore esattamente a quel pH, perché ci sarà un valore di pH acido superato il quale con appena qualche goccia di base si raggiunge l'equivalenza. Gli indicatori sono dunque delle sostanze che cambiano colore in modo visibile ai nostri occhi e ci danno indicazioni sul cambiamento di pH.
 
 Nello specifico, questa reazione conviene farla usando come indicatore una sostanza chiamata \textit{fenoltaleina}, o meglio soluzioni estremamente diluite (all'1\%) di questa. Basta mettere una goccia di questa soluzione nel beker per potere osservare un cambio di colore pressoché immediato. Quando?
 
-In ambiente acido è incolore (quindi ad esempio partendo da una soluzione di acido cloridrico non vedremmo nulla), per pH tra 8.5 e 9 da incolore diventa rossa, quindi avremo l'indicazione che il pH ha raggiunto tale valore al cambio di colore della soluzione. Se avessimo voluto capire invece quando si aveva l'equivalenza (cioè pH=7), potremmo pensare di aver perso questo punto di equivalenza. Vedremo che non è così: in prossimità del punto di equivalenza il pH varierà in modo repentino, con piccolissime aggiunte; al contrario, quando si è lontani dal punti di equivalenza il pH cambierà molto poco pur aggiungendo, se partiamo da una soluzione acida, parecchia base. D'altronde, avendo definito il pH come il logaritmo dell'inverso della concentrazione degli ioni $\rm H_3O^+$ di una soluzione, ci aspettiamo un andamento logaritmico e non lineare per il pH dopo l'aggiunta di una base.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{immagini/Fenoltaleina.png}
+\end{figure}
 
-\vspace{0.2cm}Immaginiamo di avere due soluzioni in due bekere diversi. Nel primo abbiamo 100 mL di HCl 0.1-N (nota: per l'HCl normalità e molarità coincidono). Aggiungiamo in esso la prima goccia di indicatore e poi aggiungiamo lentamente NaOH 0.1-N\footnote{Ovviamente non è necessario scegliere stesse concentrazioni, le usiamo per comodità di calcolo.}. In questo caso, se partiamo da 100 mL di acido cloridrico 0.1-N, quando avremo aggiunto 100 mL di idrossido di sodio 0.1-N (quindi stessi volumi e stesse concentrazioni) non avremo più né acido né base perché si saranno neutralizzati totalmente formando cloruro di sodio:
+In ambiente acido è incolore (quindi ad esempio partendo da una soluzione di acido cloridrico non vedremmo nulla), mentre per pH tra 8.5 e 9 da incolore diventa rossa, quindi avremo l'indicazione che il pH ha raggiunto tale valore al cambio di colore della soluzione. Se avessimo voluto capire invece quando si aveva l'equivalenza (cioè pH=7), potremmo pensare di aver perso questo punto di equivalenza. Vedremo che non è così: in prossimità del punto di equivalenza il pH varierà in modo repentino, con piccolissime aggiunte; al contrario, quando si è lontani dal punto di equivalenza il pH cambierà molto poco pur aggiungendo, se partiamo da una soluzione acida, parecchia base. D'altronde, avendo definito il pH come il logaritmo dell'inverso della concentrazione degli ioni $\rm H_3O^+$ di una soluzione, ci aspettiamo un andamento logaritmico e non lineare per il pH dopo l'aggiunta di una base.
+
+\vspace{0.2cm}Immaginiamo di avere due soluzioni in due beker diversi. Nel primo abbiamo 100 mL di HCl 0.1 N (nota: per l'HCl normalità e molarità coincidono). Aggiungiamo in esso la prima goccia di indicatore e poi aggiungiamo lentamente NaOH 0.1 N\footnote{Ovviamente non è necessario scegliere stesse concentrazioni, le usiamo per comodità di calcolo.}. In questo caso, se partiamo da 100 mL di acido cloridrico 0.1 N, quando avremo aggiunto 100 mL di idrossido di sodio 0.1 N (quindi stessi volumi e stesse concentrazioni) non avremo più né acido né base perché si saranno neutralizzati totalmente formando cloruro di sodio:
 
 $$\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H_2O}$$
 
@@ -16,9 +21,19 @@ Va da ricordare che HCl acquoso, visto che si tratta di un acido forte, signific
 
 Quant'è il pH della soluzione iniziale?
 
-Innanzitutto scriviamo sopra la reazione le quantità iniziali, sotto quelle finali.
+Inizialmente abbiamo solo acido cloridrico. Scriviamo sopra la reazione le quantità iniziali, sotto quelle finali:
 
-All'inizio avevamo 100 mL di HCl 0.1N, il che significa (in questo caso in cui moli ed equivalenti coincidono) 0.1 moli in un litro di soluzione, quindi per sapere quante moli/equivalenti abbiamo in 1 mL dobbiamo dividere per 1000.
+\begin{center}
+    \begin{tabular}{ccccccc}
+        0.01 &  & / & & / & &\\
+        HCl & + & NaOH & \ce{->} & NaCl & + & $\rm H_2O$\\
+        0.01 &  &  / & & / & &\\
+    \end{tabular}
+\end{center}
+
+(Non c'è base con cui reagire, quindi le moli finali sono uguali a quelle iniziali)
+
+All'inizio abbiamo 100 mL di HCl 0.1 N, il che significa (in questo caso in cui moli ed equivalenti coincidono) 0.1 moli in un litro di soluzione, quindi per sapere quante moli/equivalenti abbiamo in 1 mL dobbiamo dividere per 1000.
 
 Per sapere gli equivalenti totali dobbiamo fare
 
@@ -45,6 +60,10 @@ A questo punto facciamo la prima aggiunta. Queste vanno fatte lentamente, quindi
 Torniamo alla reazione. Gli equivalenti iniziali di HCl erano 0.01 eq. Quanti equivalenti/moli ci sono in 10 mL di base? Il calcolo è lo stesso:
 
 $$\frac{0.1}{1000} \cdot 10=10^{-3}=0.001 \; eq$$
+
+Quindi, dopo la prima aggiunta e prima della reazione, abbiamo 0.01 eq di HCl e 0.001 eq di NaOH. Ci accorgiamo che quest'ultimo è in difetto, quindi sarà tutto consumato per produrre cloruro di sodio. Ne segue che avremo $10^{-3}$ moli di NaCl, mentre di HCl ne resterà la differemza, cioè $9 \cdot 10^{-3}$ moli.
+
+Schematizzando, i valori prima e dopo saranno
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -260,7 +279,7 @@ Notiamo che all'inizio il pH cambiava pochissimo: 10 mL fanno variare il pH di m
 
 Notiamo che serve molta precisione, quindi conviene usare 4 cifre dopo la virgola approssimando la quarta cifra dopo aver letto la quinta.
 
-Continuiamo: aggiungiamo un'ulteriore goccia, quindi si hanno 100.05 mL di base, ossia una goccia in più rispetto alla neutralità. Avremo $(0.1 \cdot 100.05)/1000=1.0005 \cdot 10^{-2}$ moli di base, che è in eccesso. Quindi stavolta l'acido cloridrico va via del tutto e produce 0.01 moli di sale. Resta $5 \cdot 10^{-6}$ moli di base:
+Continuiamo: aggiungiamo un'ulteriore goccia, quindi si hanno 100.05 mL di base, ossia una goccia in più rispetto alla neutralità. Avremo $(0.1 \cdot 100.05)/1000=1.0005 \cdot 10^{-2}$ moli di base, che è in eccesso. Quindi stavolta l'acido cloridrico va via del tutto e produce 0.01 moli di sale. Restano $5 \cdot 10^{-6}$ moli di base:
 
 \begin{center}
     \begin{tabular}{ccccccc}
@@ -324,7 +343,7 @@ Per questa titolazione acido forte-base forte si ha il flesso per pH=7.
 
 Se fossimo partiti al contrario da una base e avessimo aggiunto l'acido, il pH sarebbe stato alto all'inizio, variando inizialmente poco e bruscamente poi in prossimità dell'equivalenza per poi appiattirsi di nuovo.
 
-A questo punto capiamo che qualunque indicatore abbia un intervallo di viraggio compreso nella regione in cui il pH varia velocemente è ottimo per i nostri scopi, perché avreo variazione di pH con poche gocce. Se inoltre sappiamo a priori quando l'indicatore vira (ad esempio la fenoltaleina vira tra 8.8 e 9), possiamo capire di quanto abbiamo ecceduto nell'aggiungere il titolante. Chiaramente bisogna essere pronti a chiudere il rubinetto appena vediamo la soluzione cambiare colore.
+A questo punto capiamo che qualunque indicatore abbia un intervallo di viraggio compreso nella regione in cui il pH varia velocemente è ottimo per i nostri scopi, perché avremo variazione di pH con poche gocce. Se inoltre sappiamo a priori quando l'indicatore vira (ad esempio la fenoltaleina vira tra 8.8 e 9), possiamo capire di quanto abbiamo ecceduto nell'aggiungere il titolante. Chiaramente bisogna essere pronti a chiudere il rubinetto appena vediamo la soluzione cambiare colore.
 
 Sapendo quando l'indicatore vira possiamo capire quante gocce dobbiamo aggiungere o togliere per arrivare a pH pari a 7.
 
@@ -344,9 +363,16 @@ M_1V_1=M_2V_2$$
 
 dove $N$ è la normalità e $M$ la molarità. Entrambe sono espressioni per indicare il numero di moli.
 
-Immaginiamo di avere dell'acido cloridrico a concentrazione $M_1$ incognita. Di esso ne preleviamo un volume $V_1$ a piacere. (Attenzione! Nell'esempio la concentrazione la abbiamo, ci è stata data solo per fare meno calcoli). Andiamo allora a prendere dell'NaOH della quale sia nota la concentrazione e di cui quindi conosciamo la molarità $M_2$, ed iniziamo ad aggiungere pian piano il volume $V_2$ fino a quando la soluzione in cui è messo l'indicatore cambia colore; in quel momento chiudiamo il rubinetto e leggiamo il volume di NaOH aggiunto e andiamo a calcolare $M_1$
+Immaginiamo di avere dell'acido cloridrico a concentrazione $M_1$ incognita. Di esso ne preleviamo un volume $V_1$ a piacere. (Attenzione! Nell'esempio la concentrazione la abbiamo, ci è stata data solo per fare meno calcoli). Andiamo allora a prendere dell'NaOH della quale sia nota la concentrazione e di cui quindi conosciamo la molarità $M_2$, ed iniziamo ad aggiungere pian piano il volume $V_2$ fino a quando la soluzione in cui è messo l'indicatore cambia colore; in quel momento chiudiamo il rubinetto e leggiamo il volume di NaOH aggiunto e andiamo a calcolare $M_1$.
 
-\textbf{QUA POTREBBERO MANCARE LE AGGIUNTE}
+\vspace{0.2cm}Quindi abbiamo usato questo metodo per più motivi:
+
+\begin{itemize}
+    \item Avere percezione di come vari il pH per aggiunte di una specie forte ad un'altra forte (cioè un acido o una base o viceversa);
+    \item Capire quanto possiamo andare spediti nell'aggiungere il volume di titolante. Se avessimo poi già una stima di quella che è la concentrazione della specie che era nel beker, faremo attenzione arrivati al punto di viraggio aggiungendo una goccia ogni 5-10 secondi;
+    \item Capire la sensibilità della scala del pH.
+\end{itemize}
+
 \subsection{Acidi deboli}
 Come calcoliamo il pH di una specie che invece non è forte, cioè una specie di cui ne mettiamo una certa quantità ma se ne dissocia poca?
 
@@ -927,7 +953,9 @@ $$\implies \rm pH= p\textit{k}_\textit{a} + log \left( \frac{\rm{[In^-]}}{\rm{[H
 
 Noi stiamo aggiungendo un colorante, che colora la soluzione in modo diverso a seconda che si sia in ambiente acido o in ambiente basico. \E importante allora capire le quantità relative delle due forme colorate. Ad occhio nudo non riusciamo a vedere se uno dei due è in eccesso di un minimo: per vederlo è necessario che una delle due forme sia più abbondante dell'altra.
 
-Di norma allora si immagina di essere in condizioni tali che una delle due sia almeno 10 volte più abbondante dell'altra. Quindi potremmo avere uguali concentrazioni di $\rm In^-$ e HIn e in questo caso, se una forma è incolore e l'altra è colorata si percepisce la maggiore abbondanza di uno; se invece tutte e due le forme sono colorate in modo diverso (ad esempio in giallo e in blu) non è facile capire il colore della soluzione. Se invece $\rm [In^-]$ fosse 10 volte più grande di $\rm [HIn]$ il termine $\rm \log{\frac{[In^-]}{[HIn]}}$ dà 1; se $\rm [HIn]$ è 10 volte più grande di $\rm [In^-]$ il termine $\rm \log{\frac{[In^-]}{[HIn]}}$ dà -1:
+Di norma allora si immagina di essere in condizioni tali che una delle due sia almeno 10 volte più abbondante dell'altra. Quindi potremmo avere uguali concentrazioni di $\rm In^-$ e HIn e in questo caso, se una forma è incolore e l'altra è colorata si percepisce la maggiore abbondanza di uno; se invece tutte e due le forme sono colorate in modo diverso (ad esempio in giallo e in blu) non è facile capire il colore della soluzione. Ne segue che quando si hanno le due forme entrambe colorate e in uguale concentrazione, sappiamo che il pH è uguale al p$k_a$, ma con i nostri occhi non siamo certi di percepire questo punto della titolazione.
+
+Se invece $\rm [In^-]$ fosse 10 volte più grande di $\rm [HIn]$ il termine $\rm \log{\frac{[In^-]}{[HIn]}}$ dà 1; se $\rm [HIn]$ è 10 volte più grande di $\rm [In^-]$ il termine $\rm \log{\frac{[In^-]}{[HIn]}}$ dà -1:
 
 \vspace{0.2cm}$\bullet \rm \; [In^-]=[HIn] \implies pH=p\textit{k}_{\textit{a}}$
 
@@ -941,7 +969,6 @@ Va da notare che in prossimità del punto di viraggio queste variazioni avvengon
 
 In questo modo anche se l'intervallo di viraggio è ampio non sbagliamo la titolazione. L'importante è andare a prendere l'indicatore che varia più o meno all'equivalenza.
 
-\textbf{ANCHE QUI OVVIAMENTE MANCANO COSE (+ rileggi sembra scritto male)}
 \subsection{Solubilità}
 Quando mettiamo qualcosa in acqua non è detto che essa si sciolga del tutto. Dobbiamo quindi stare attenti a ragionare su soluzioni, non sospensioni. In altre parole, se abbiamo messo in acqua un qualunque composto chimico e non si è sciolto totalmente, dobbiamo filtrare la soluzione. Ciò che non si è sciolto resterà nel filtro, la soluzione limpida invece passerà dal filtro e la otterremo nel beker.
 
