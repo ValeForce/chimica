@@ -200,13 +200,13 @@ Quindi si è dissociato il 49.46\%.
 
 \vspace{0.2cm}Innanzitutto notiamo che siamo davanti ad una specie debole, per cui il coefficiente di Van't Hoff si calcolerà come
 
-$$i=[1 + (\gamma -1)\alpha]$$
+$$i=\big[1 + (\gamma -1)\alpha\big]$$
 
 con $\alpha$ grado di dissociazione e $\gamma$ numero di particelle in cui il composto si dissocia.
 
 L'acido acetico in acqua si dissocia in ione $\rm H^+$ e ione acetato, per cui $\gamma=2$; inoltre il testo ci dice che $\alpha=0.1$, quindi
 
-$$i=[1 + (2-1) \cdot 0.1]=1.1$$
+$$i=\big[1 + (2-1) \cdot 0.1\big]=1.1$$
 
 La pressione osmotica sarà quindi data da
 
@@ -298,9 +298,41 @@ $$c=\frac{n_{\rm AgCl}}{V(L)}
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Per prima cosa calcoliamo attraverso l'equazione di stato dei gas le moli di ciascun componente:
 
-\vspace{0.2cm}\textbf{3.7} Calcolare a 25°C la pressione osmotica di una soluzione 0.15 M di acido iodico ($k_a= 1.7 \cdot 10^{-1}$).
+$$PV=nRT \implies n=\frac{PV}{RT}$$
+
+$$n_{\rm Cl_2}=\frac{750 \cdot 300}{0.082 \cdot 293.15 \cdot 1000 \cdot 760}=1.2316 \cdot 10^{-2}\;mol$$
+
+$$n_{\rm N_2}=\frac{700 \cdot 800}{0.082 \cdot 288.15 \cdot 1000 \cdot 760}=3.1185 \cdot 10^{-2}\;mol$$
+
+$$n_{\rm O_2}=\frac{850 \cdot 500}{0.082 \cdot 291.15 \cdot 1000 \cdot 760}=2.3423 \cdot 10^{-2}\;mol$$
+
+$$n_{\rm CO_2}=\frac{760 \cdot 450}{0.082 \cdot 293.15 \cdot 1000 \cdot 760}=1.9720 \cdot 10^{-2}\;mol$$
+
+nota: abbiamo diviso per 1000 per passare da $mL$ a $L$ e per 760 per passare da $torr$ a $atm$.
+
+A questo punto calcoliamo le pressioni parziali
+
+$$PV=nRT \implies P=\frac{nRT}{V}$$
+
+$$P_{\rm Cl_2}=\frac{1.2316 \cdot 10^{-2} \cdot 0.082 \cdot 298.15}{5}=0.6022 \cdot 10^{-1}\;atm$$
+
+$$P_{\rm N_2}=\frac{3.1185 \cdot 10^{-2} \cdot 0.082 \cdot 298.15}{5}=0.1525 \cdot 10^{-1}\;atm$$
+
+$$P_{\rm O_2}=\frac{2.3423 \cdot 10^{-2} \cdot 0.082 \cdot 298.15}{5}=1.1453 \cdot 10^{-1}\;atm$$
+
+$$P_{\rm CO_2}=\frac{1.9720 \cdot 10^{-2} \cdot 0.082 \cdot 298.15}{5}=0.9642 \cdot 10^{-1}\;atm$$
+
+La pressione totale sarà pari a
+
+$$P_{tot}=(0.6022 + 0.1525 + 1.1453 + 0.9642) \cdot 10^{-1}=2.8642 \cdot 10^{-1}\;atm$$
+
+Inoltre la frazione molare dell'ossigeno sarà pari a
+
+$$\rchi_{\rm O_2}=\frac{n_{\rm O_2}}{n_{tot}}=\frac{2.3423 \cdot 10^{-2}}{(1.2316 + 3.1185 + 2.3423 + 1.9720) \cdot 10^{-2}}=0.4223$$
+
+\vspace{0.2cm}\textbf{3.7} Calcolare a 25°C la pressione osmotica di una soluzione 0.15 M di acido iodico ($k_a=1.7 \cdot 10^{-1}$).
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -479,13 +511,31 @@ $$P_{\rm SO_3}=\rchi_{\rm SO_3} \cdot P^0_{\rm SO_3}
 $$P_{\rm O_2}=\rchi_{\rm O_2} \cdot P^0_{\rm O_2}
 =0.8537 \cdot 5.2112=4.4488\;atm$$
 
-\vspace{0.2cm}\textbf{3.13} In un recipiente di 5.6 litri, alla temperatura di 80°C, vi sono 4,5432 g di metano, 1,2345 g di idrogeno e 14,5678 g di azoto. Calcolare i valori delle pressioni parziali dei tre gas. 
+\vspace{0.2cm}\textbf{3.13} In un recipiente di 5.6 litri, alla temperatura di 80°C, vi sono 4.5432 g di metano, 1.2345 g di idrogeno e 14.5678 g di azoto. Calcolare i valori delle pressioni parziali dei tre gas. 
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Essendo nel caso di gas ideali, ognuno di questi si comporterà come se fosse l'unico presente all'interno del recipiente, occupando l'intero volume. Le pressioni parziali si calcoleranno a partire dell'equazione di stato dei gas:
 
-\vspace{0.2cm}\textbf{3.14} Una soluzione al 5\% in peso di $\rm CaX_2$ (ove X è un alogeno), inizia a congelare a $-1,396$°C. $k_cr_{\rm H_2O} = 1,860$. Qual è l'alogeno? 
+$$PV=nRT
+\implies
+P=\frac{nRT}{V}$$
+
+Calcoliamo le moli e conseguentemente le pressioni:
+
+$$n_{\rm CH_4}=\frac{4.5432}{16.04}=0.2832
+\implies
+P_{\rm CH_4}=\frac{0.2832 \cdot 0.082 \cdot 353.15}{5.6}=1.4645\;atm$$
+
+$$n_{\rm H_2}=\frac{1.2345}{2.0158}=0.6124
+\implies
+P_{\rm H_2}=\frac{0.6124 \cdot 0.082 \cdot 353.15}{5.6}=3.1668\;atm$$
+
+$$n_{\rm N_2}=\frac{14.5678}{28.0134}=0.5200
+\implies
+P_{\rm N_2}=\frac{0.5200 \cdot 0.082 \cdot 353.15}{5.6}=2.6891\;atm$$
+
+\vspace{0.2cm}\textbf{3.14} Una soluzione al 5\% in peso di $\rm CaX_2$ (ove X è un alogeno), inizia a congelare a $-1,396$°C. $k_{cr_{\rm H_2O}} = 1,860$. Qual è l'alogeno? 
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -526,7 +576,21 @@ $$\Pi_{tot}=12.4735 + 24.9470=37.4205\;atm$$
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
-\vspace{0.2cm}
+\vspace{0.2cm}Per prima cosa calcoliamo le moli, per poi calcolare la concentrazione:
+
+$$n_{\rm Al_2(SO_4)_3}=\frac{g}{MM_{\rm Al_2(SO_4)_3}}=\frac{89.1234}{342.15}=2.6048 \cdot 10^{-1}\;mol$$
+
+$$\implies c=\frac{n}{V(L)}=\frac{2.6048 \cdot 10^{-1} \cdot 1000}{850}=3.0645 \cdot 10^{-1}\;mol/L$$
+
+A questo punto possiamo calcolare la pressione osmotica.
+
+L'$\rm Al_2(SO_4)_3$ in acqua si dissocia in due ioni $\rm Al^{3+}$ e tre ioni $\rm SO_4^-$, quindi il coefficiente di Van't Hoff è pari a 5, da cui
+
+$$\Pi=5cRT
+=5 \cdot 3.0645 \cdot 10^{-1} \cdot 0.082 \cdot 353.15
+=44.3713\;atm$$
+
+\textbf{controlla sto numero è un po' grandetto}
 
 \vspace{0.2cm}\textbf{3.17} Una soluzione di acido nitrico al 27\% in massa ha una densità di $1.16\;g/mL$. Calcolarne la molarità, molalità e temperatura di ebollizione sapendo che $k_{eb_{\rm H_2O}}=1.86\,\text{°}C \cdot kg/mol$
 
