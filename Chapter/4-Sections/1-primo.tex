@@ -9,14 +9,16 @@ Un gas occupa l'intero volume che trova a sua disposizione ed esercita una press
 
 Le proprietà di un gas sono determinate dalla sua pressione a la sua temperatura.
 
-\vspace{0.2cm}La pressione, cioè la forza esercitata sulle pareti, ha come unità di misura l'\textit{atmosfera (atm)}. Inoltre $1 \; atm=760 \; mmHg=1 \; Torr$. Nel S.I. l'unità di misura è il \textit{Pascal (Pa)}, per cui
+\vspace{0.2cm}La pressione, cioè la forza esercitata sulle pareti, ha come unità di misura l'\textit{atmosfera} ($atm$). Inoltre $1 \; atm=760 \; mmHg=1 \; Torr$. Nel S.I. l'unità di misura è il \textit{Pascal} ($Pa$), per cui
 
 $$P=N/m^2=\big[ (kg \cdot m)/s^2 \big]/m^2=(kg \cdot m)/(s^2 \cdot m^2)$$
 $$\implies P=kg/(s^2 \cdot m)$$
 
 Spesso nelle bombole l'unità di misura è il \textit{bar}. 1 bar equivale a $10^5 \; Pa$.
 
-La temperatura si misura in gradi centigradi (°C) o in gradi Kelvin (K).
+La temperatura si misura in gradi centigradi (°C) o in gradi Kelvin (K). Per passare da Celsius a Kelvin aggiungiamo 273.15:
+
+$$T(K)=T(^{\circ}C) + 273.15$$
 \subsection{Significato molecolare della pressione}
 La pressione è dovuta agli urti delle particelle contro le pareti del recipiente che lo contiene ed è la stessa in tutti i suoi punti.
 \subsection{Significato molecolare della temperatura}
@@ -83,9 +85,10 @@ $$V=cost \implies P_t=P_0(1 + \alpha t), \; \text{con} \; \alpha=\frac{1}{273}$$
 $$\implies P_t=P_0 \left( \frac{273 + t}{273} \right), \; T=273 + t$$
 $$\implies P_T = \frac{P_0 T}{273}, \; \frac{P_T}{T}=\frac{P_0}{273}=cost$$
 
-\subsection{Legge di Dalton e delle pressioni parziali}
+\subsection{Legge di Dalton delle pressioni parziali}
 Supponiamo di avere più di un gas ideale nel volume a disposizione. Abbiamo detto che un gas ideale è caratterizzato dall'assenza di interazione fra le particelle, per cui se tutti i gas presenti hanno tale comportamento non ci saranno interazioni fra le varie particelle, ossia ogni gas si comporta come se fosse l'unico presente nell'intero contenitore. Pertanto la pressione totale sarà pari alla pressione dei singoli gas:
-$$P_{tot}=P_1 + P_2 + P_3 + \ldots + P_N = \sum_{i=1}^nP_i$$
+$$P_{tot}=P_1 + P_2 + P_3 + \ldots + P_N = \sum_{i=1}^nP_i
+\quad\text{Legge di Dalton}$$
 
 Vediamo un esempio numerico:
 
@@ -228,7 +231,7 @@ A basse pressioni il gas sarà più comprimibile rispetto al valore atteso dalla
 
 Pertanto, mentre a basse pressioni siamo pressoché in condizioni ideali, ad alte pressioni l'equazione di stato non è più valida in quanto vale l'\textbf{equazione di Van der Waals}:
 
-$$\left( P + \frac{n^2a}{V^2} \right)(V-nb)=nRT$$
+$$\left( P + \frac{n^2a}{V^2} \right)\big(V-nb\big)=nRT$$
 
 Il termine $a/V^2$ tiene conto delle interazioni attrattive tra le particelle, in modo da correggere la pressione. Il volume invece viene corretto sottraendo un termine $b$ detto \textit{covolume} o \textit{volume proprio delle particelle}, in questo modo sottraiamo al volume del contenitore quello delle particelle.
 
@@ -238,23 +241,22 @@ Il parametro $b$ dipende dalla dimensione delle particelle.
 
 \vspace{0.2cm}Va da notare che il volume occupato da una particella non è esclusivamente il volume della particella stessa se la aggreghiamo con altre particelle. In che senso?
 
-\hspace{0.5cm}\begin{minipage}{0.35 \textwidth}
+\begin{minipage}{0.34 \textwidth}
     \begin{figure}[H]
         \includegraphics[width=5cm]{immagini/particelle_aggregate.png}
     \end{figure}
 \end{minipage}
-\begin{minipage}{0.6 \textwidth}
-    \vspace{0.8cm}Supponiamo che una data molecola, schematizzata come una sfera di raggio $R$, si trovi a stretto contatto con altre molecole circostanti.
-    Il centro della molecola data si troverà a distanza 2R dal centro delle
-    molecole adiacenti. All’interno della sfera di raggio 2R si troverà pertanto, oltre alla data molecola, anche circa la metà di ognuna delle molecole circostanti.
-    Il volume che una molecola occupa, precludendolo alle altre molecole, corrisponde all’incirca a metà del volume di una sfera di raggio 2R. 
+\begin{minipage}{0.65 \textwidth}
+    \vspace{0.8cm}Supponiamo che una data molecola, schematizzata come una sfera di raggio $R$, si trovi a stretto contatto con altre molecole circostanti. Attorno ad essa riusciamo a posizionare altre sei molecole.
+    Il centro della molecola data si troverà a distanza 2R dal centro delle molecole adiacenti. Se adesso consideriamo una sfera di raggio 2R troveremo al suo interno, oltre alla data molecola, anche circa la metà di ognuna delle molecole circostanti.
+    Il volume che una molecola occupa, precludendolo alle altre molecole, corrisponderà quindi a circa metà del volume di una sfera di raggio 2R. 
 \end{minipage}
 
 \vspace{0.2cm}Nel limite di tale approssimazione, ad ogni molecola occorre assegnare un volume:
 
 $$V = \frac{1}{2} \times \frac{4}{3}\pi (2R)^3 = 4 \times \frac{4}{3}\pi R^3$$
 
-Cioè, quattro volte superiore al volume effettivo della molecola. Ovvero $b \approxeq 4V_M$
+Cioè, quattro volte superiore al volume effettivo della molecola, ovvero $b \approxeq 4V_M$.
 \subsection{Gas e vapori}
 Supponiamo di avere dell'acqua e di riscaldarla fino a 200° C. Essa, raggiunta la temperatura di 100° C, rimarrà a tale temperatura finché tutta l'acqua non passa allo stato di vapore. Dopodiché crescerà la temperatura del vapore.
 
