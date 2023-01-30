@@ -30,7 +30,7 @@ $$\rchi_{\text{sacc.}}=\frac{\frac{684}{342}}{\frac{684}{342} + \frac{900}{18}}=
 
 \vspace{0.2cm}\textbf{3.3}$\bigstar$ 350 grammi di cloruro di zinco $\rm ZnCl_2$ con densità $d=2.91 g/cm^3$ (attenzione! Questa non è la densità di tutta la soluzione, ma solo del solido) vengono sciolti in 650 grammi di acqua. Si ottiene una soluzione che avrà un volume di 740 mL. Calcolare molarità, normalità, molalità, frazioni molari, percentuali in massa e percentuali in volume.
 
-\vspace{0.2cm}Nota: $d_{\text{H}_3\text{O}}=1$, quindi 650 grammi sono anche 650 mL.
+\vspace{0.2cm}Nota: $d_{\text{H}_2\text{O}}=1$, quindi 650 grammi sono anche 650 mL.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -51,7 +51,40 @@ $$N=M \cdot 2=6.941\;eq/L$$
 Calcoliamo la molalità
 
 $$m=\frac{350 \cdot 1000}{136.28 \cdot 650}=3.9511\;mol/kg$$
-\textbf{Incompleto}
+
+Calcoliamo le frazioni molari
+
+$$\rchi_{\rm ZnCl_2}=\frac{\frac{350}{136.28}}{\frac{350}{136.28} + \frac{650}{18}}
+\quad;\quad
+\rchi_{\rm H_2O}=\frac{\frac{650}{18}}{\frac{350}{136.28} + \frac{650}{18}}$$
+
+$$\implies
+\rchi_{\rm ZnCl_2}=0.0665
+\quad;\quad
+\rchi_{\rm H_2O}=0.933
+$$
+
+Infatti la loro somma è circa 1.
+
+Calcoliamo la percentuale in massa
+
+$$\text{\% in massa}
+=\frac{\text{massa sale}}{\text{massa totale}} \cdot 100
+=\frac{350 \cdot 100}{350 + 650}=35\%$$
+
+Calcoliamo la percentuale in volume
+
+$$\text{\% in volume}
+=\frac{\text{volume sale}}{\text{volume totale}} \cdot 100$$
+
+Il volume del sale va calcolato tramite la densità: $d=2.91\;g/cm^3$. Il volume sarà dato da
+
+$$V=\frac{m}{d}=\frac{350}{2.91}=120.27\;L$$
+
+da cui 
+
+$$\text{\% in volume}
+=\frac{120.27 \cdot 100}{740}=16.25\%$$
 
 \vspace{0.2cm}\textbf{3.4}$\bigstar$ Consideriamo un composto avente la seguente composizione percentuale: 14.3\% carbonio, 1.2\% idrogeno, 84.5\% cloro. 1 grammo di questo composto viene vaporizzato a $120^{\circ}C$ e alla pressione di 752 torr. In queste condizioni occupa un volume di 194 mL. Calcolare la formula del composto.
 
@@ -87,8 +120,6 @@ $$P_{cloroformio}=\frac{0.568}{119.5}\cdot\frac{0.082 \cdot 373.15}{1}=0.1454\;a
 
 \vspace{0.2cm}\textbf{3.6}$\bigstar$Quanti litri di solfuro di idrogeno $\rm H_2S$ a condizioni normali ($1\;atm$ e 20°$\;C$) sono stati necessari per precipitare l'antimonio come solfuro da una soluzione contenente 10 grammi di tricloruro di antimonio $\rm SbCl_3$?
 
-Supponiamo in seguito di ottenere l'$\rm H_2S$ per reazione di solfuro ferroso con acido cloridrico, però con un materiale contenente solo il 70\% di solfuro ferroso. In questo caso quanti litri sono necessari?
-
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
 \vspace{0.2cm}La reazione che avviene è
@@ -111,8 +142,6 @@ A condizioni normali una mole di qualunque gas occupa sempre un volume di $22.41
 
 $$L_{\rm H_2S}=frac{10 \cdot 3}{2 \cdot 228.109} \cdot 22.414
 =1.4739\;L$$
-
-Vediamo adesso il caso in cui \textbf{continua ma devi farlo tu}
 
 \vspace{0.2cm}\textbf{3.7}$\bigstar$ Un gas a 20°C e alla pressione di 730 torr occupa un volume di 20 L. Calcolare
 
@@ -178,6 +207,15 @@ P_2=700\;torr
 \quad;\quad
 V_2=V_1$$
 
+L'equazione di stato diventa
+
+$$\frac{P_1V_1}{T_1}=\frac{P_2V_2}{T_2}
+\implies
+T_2=\frac{P_2V_2T_1}{P_1V_1}$$
+
+$$\implies
+T_2=\frac{650 \cdot 26 \cdot 293.15 \cdot 760}{760 \cdot 730 \cdot 20}=339.3\;K\quad(\approx 66^{\circ}\;C)$$
+
 \vspace{0.2cm}\textbf{3.8}$\bigstar$ Una soluzione 0.1 m di acido dicloro acetico congela a 0.278° C. Calcolare la percentuale di soluto presente in soluzione come ione idrogeno $\rm H^+$, ione dicloro acetato $\rm CHCl_2COO^-$ e molecole indissociate dell'acido.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
@@ -229,7 +267,26 @@ $$\implies \alpha=0.4946$$
 
 Quindi si è dissociato il 49.46\%.
 
-\vspace{0.2cm}\textbf{3.9} Calcolare la pressione osmotica, in mmHg, di una soluzione acquosa 0,001 M di acido acetico dissociato al 10\% a 25 °C.
+\vspace{0.2cm}\textbf{3.9} Qual è la percentuale in massa di acetato di etile in una miscela di questo e acetato di propile, sapendo che $P_{et.}^0=415\;torr$ e $P_{pr.}?0=172\;torr$ e che a 60°C questa miscela ha una tensione di vapore di $250\;torr$?
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}Tutti e due i composti sono volatili, quindi la tensione di vapore sarà
+
+$$P=P_{et.}^0\rchi_{et.} + P_{pr.}^0\rchi_{pr.}$$
+
+Poiché $\rchi_{et.} + \rchi_{pr.}=1$ allora $\rchi_{pr.}=1 - \rchi_{et.}$. L'espressione diventa
+
+$$250=415 \rchi_{et.} + 172(1 - \rchi_{et.})
+=415 \rchi_{et.} - 172 \rchi_{et.} + 172$$
+
+$$243\rchi_{et.}=78
+\implies
+\rchi_{et.}=\frac{78}{243}=0.32\quad(\implies \rchi_{pr.}=0.68)$$
+
+Le percentuali allora sono: 32\% di acetato di etile e 68\% di acetato di propile.
+
+\vspace{0.2cm}\textbf{3.10} Calcolare la pressione osmotica, in mmHg, di una soluzione acquosa 0,001 M di acido acetico dissociato al 10\% a 25 °C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -248,7 +305,7 @@ La pressione osmotica sarà quindi data da
 $$\Pi=1.1 \cdot cRT \cdot 760
 =1.1 \cdot 0.001 \cdot 0.082 \cdot 298.15 \cdot 760=20.4388\;mmHg$$
 
-\vspace{0.2cm}\textbf{3.10} Calcolare la pressione osmotica di una soluzione di 923 mL, contenente 4.1234 grammi di idrossido di magnesio alla temperatura di 27°C. 
+\vspace{0.2cm}\textbf{3.11} Calcolare la pressione osmotica di una soluzione di 923 mL, contenente 4.1234 grammi di idrossido di magnesio alla temperatura di 27°C. 
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -266,7 +323,7 @@ $$\Pi=3 \cdot cRT
 =3 \cdot 7.6601 \cdot 10^{-2} \cdot 0.082 \cdot 300.15
 =5.6560\;atm$$
 
-\vspace{0.2cm}\textbf{3.11} Calcolare la pressione osmotica di una soluzione di 875 mL, contenente 3.05 grammi di idrossido
+\vspace{0.2cm}\textbf{3.12} Calcolare la pressione osmotica di una soluzione di 875 mL, contenente 3.05 grammi di idrossido
 di potassio alla temperatura di 27°C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
@@ -285,7 +342,7 @@ $$\Pi=2 \cdot cRT
 =2 \cdot 6.2128 \cdot 10^{-2} \cdot 0.082 \cdot 300.15
 =3.0582\;atm$$
 
-\vspace{0.2cm}\textbf{3.12} Calcolare a 25°C la pressione osmotica di una soluzione di un acido debole 0.15 M la cui $k_a=0.17$\,.
+\vspace{0.2cm}\textbf{3.13} Calcolare a 25°C la pressione osmotica di una soluzione di un acido debole 0.15 M la cui $k_a=0.17$\,.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -306,9 +363,7 @@ Tale equazione di secondo grado in $\alpha$ ammette una soluzione positiva (e un
 $$\alpha=\frac{-1 + \sqrt{1 + 4 \cdot \displaystyle \frac{c}{k_a}}}{2 \cdot \displaystyle \frac{c}{k_a}}
 =\frac{-1 + \sqrt{1 + 3.5294}}{1.7647}=0.6393$$
 
-
-
-\vspace{0.2cm}\textbf{3.13} 50.00 mL di una soluzione acquosa di nitrato di argento vengono trattati con un eccesso di acido
+\vspace{0.2cm}\textbf{3.14} 50.00 mL di una soluzione acquosa di nitrato di argento vengono trattati con un eccesso di acido
 cloridrico. Si formano 1.7658 g di cloruro di argento. Calcolare la molarità della soluzione di nitrato
 di argento.
 
@@ -329,7 +384,7 @@ $$c=\frac{n_{\rm AgCl}}{V(L)}
 =\frac{1.2321 \cdot 10^{-2} \cdot 1000}{50}
 =0.2464\;mol/L$$
 
-\vspace{0.2cm}\textbf{3.14} In un recipiente di 5 litri sono introdotti 300 mL di cloro misurati a 20°C e 750 torr, 800 mL di azoto misurati a 15°C e 700 torr, 500 mL di ossigeno misurati a 18°C e 850 torr e 450 mL di anidride carbonica misurati a 20°C e 760 torr. Calcolare la pressione totale della miscela a 25°C e la frazione molare dell'ossigeno.
+\vspace{0.2cm}\textbf{3.15} In un recipiente di 5 litri sono introdotti 300 mL di cloro misurati a 20°C e 750 torr, 800 mL di azoto misurati a 15°C e 700 torr, 500 mL di ossigeno misurati a 18°C e 850 torr e 450 mL di anidride carbonica misurati a 20°C e 760 torr. Calcolare la pressione totale della miscela a 25°C e la frazione molare dell'ossigeno.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -367,7 +422,7 @@ Inoltre la frazione molare dell'ossigeno sarà pari a
 
 $$\rchi_{\rm O_2}=\frac{n_{\rm O_2}}{n_{tot}}=\frac{2.3423 \cdot 10^{-2}}{(1.2316 + 3.1185 + 2.3423 + 1.9720) \cdot 10^{-2}}=0.4223$$
 
-\vspace{0.2cm}\textbf{3.15} Calcolare a 25°C la pressione osmotica di una soluzione 0.15 M di acido iodico ($k_a=1.7 \cdot 10^{-1}$).
+\vspace{0.2cm}\textbf{3.16} Calcolare a 25°C la pressione osmotica di una soluzione 0.15 M di acido iodico ($k_a=1.7 \cdot 10^{-1}$).
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -388,7 +443,7 @@ $$\alpha=\frac{-1 + \sqrt{1 + 4 \cdot \displaystyle \frac{c}{k_a}}}{2 \cdot \dis
 
 \textbf{CONTROLLA I NUMERI}
 
-\vspace{0.2cm}\textbf{3.16} In un recipiente di 1 L sono state introdotte 2.5 moli di NOCl. Dopo opportuno riscaldamento ad una fissata temperatura si realizza il seguente equilibrio:
+\vspace{0.2cm}\textbf{3.17} In un recipiente di 1 L sono state introdotte 2.5 moli di NOCl. Dopo opportuno riscaldamento ad una fissata temperatura si realizza il seguente equilibrio:
 
 \begin{center}
     \ce{2 NOCl <--> 2NO + Cl_2}
@@ -425,7 +480,7 @@ La costante di equilibrio sarà data da
 $$k=\rm \frac{[NO]^2 \cdot [Cl_2]}{[NOCl]^2}
 =\frac{0.86^2 \cdot 0.44}{1.64^2}=1.1824 \cdot 10^{-1}$$
 
-\vspace{0.2cm}\textbf{3.17} Sia data una soluzione composta da due liquidi A e B. Ad una data temperatura la $P^0_A = 152$ torr
+\vspace{0.2cm}\textbf{3.18} Sia data una soluzione composta da due liquidi A e B. Ad una data temperatura la $P^0_A = 152$ torr
 e la $P^0_B = 324$ torr. Calcolare la pressione totale dei vapori di A e B in equilibrio con la soluzione sapendo che la frazione molare di A in soluzione è 0.75.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
@@ -440,7 +495,7 @@ da cui
 
 $$P=0.75 \cdot 152 + 0.25 \cdot 324=195\;torr$$
 
-\vspace{0.2cm}\textbf{3.18} Calcolare la pressione osmotica di una soluzione di 900 mL, contenente 5.56 grammi di KOH alla temperatura di 26°C.
+\vspace{0.2cm}\textbf{3.19} Calcolare la pressione osmotica di una soluzione di 900 mL, contenente 5.56 grammi di KOH alla temperatura di 26°C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -458,7 +513,7 @@ $$\Pi=2cRT
 =2 \cdot 1.1011 \cdot 10^{-2} \cdot 0.082 \cdot 299.15
 =0.5402\;atm$$
 
-\vspace{0.2cm}\textbf{3.19} A 400 mL di una soluzione acquosa di $\rm FeCl_3$ 0.0132 M sono stati aggiunti 350 mg di un composto organico senza variazione apprezzabile di volume. A 25 °C si misura una pressione osmotica di 1072 torr. Calcolare la massa molare del composto organico.
+\vspace{0.2cm}\textbf{3.20} A 400 mL di una soluzione acquosa di $\rm FeCl_3$ 0.0132 M sono stati aggiunti 350 mg di un composto organico senza variazione apprezzabile di volume. A 25 °C si misura una pressione osmotica di 1072 torr. Calcolare la massa molare del composto organico.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -498,7 +553,7 @@ $$n_{\rm X}=\frac{g}{MM_{\rm X}}
 \implies
 MM_{\rm X}=\frac{g}{n_{\rm X}}=\frac{0.350}{5.0400 \cdot 10^{-3}}=69.4444$$
 
-\vspace{0.2cm}\textbf{3.20} Un volume di 10 L di una miscela gassosa di 80 grammi alla temperatura di 90°C contiene il
+\vspace{0.2cm}\textbf{3.21} Un volume di 10 L di una miscela gassosa di 80 grammi alla temperatura di 90°C contiene il
 30\% in peso di $\rm SO_3$ ed il 70\% di $\rm O_2$. Calcolare le pressioni parziali dei singoli gas.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
@@ -546,7 +601,7 @@ $$P_{\rm SO_3}=\rchi_{\rm SO_3} \cdot P^0_{\rm SO_3}
 $$P_{\rm O_2}=\rchi_{\rm O_2} \cdot P^0_{\rm O_2}
 =0.8537 \cdot 5.2112=4.4488\;atm$$
 
-\vspace{0.2cm}\textbf{3.21} In un recipiente di 5.6 litri, alla temperatura di 80°C, vi sono 4.5432 g di metano, 1.2345 g di idrogeno e 14.5678 g di azoto. Calcolare i valori delle pressioni parziali dei tre gas. 
+\vspace{0.2cm}\textbf{3.22} In un recipiente di 5.6 litri, alla temperatura di 80°C, vi sono 4.5432 g di metano, 1.2345 g di idrogeno e 14.5678 g di azoto. Calcolare i valori delle pressioni parziali dei tre gas. 
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -570,7 +625,7 @@ $$n_{\rm N_2}=\frac{14.5678}{28.0134}=0.5200
 \implies
 P_{\rm N_2}=\frac{0.5200 \cdot 0.082 \cdot 353.15}{5.6}=2.6891\;atm$$
 
-\vspace{0.2cm}\textbf{3.22} Una soluzione al 5\% in peso di $\rm CaX_2$ (ove X è un alogeno), inizia a congelare a $-1,396$°C. $k_{cr_{\rm H_2O}} = 1,860$. Qual è l'alogeno? 
+\vspace{0.2cm}\textbf{3.23} Una soluzione al 5\% in peso di $\rm CaX_2$ (ove X è un alogeno), inizia a congelare a $-1,396$°C. $k_{cr_{\rm H_2O}} = 1,860$. Qual è l'alogeno? 
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -599,7 +654,7 @@ MM_{\rm X} \approx 79.8884$$
 
 Dunque l'alogeno incognito è il bromo.
 
-\vspace{0.2cm}\textbf{3.23} Calcolare la pressione osmotica di 789 ml di soluzione contenente 5.8440 grammi di NaCl e  21.2996 grammi di $\rm Al(NO_3)_3$ alla temperatura di 27°C.
+\vspace{0.2cm}\textbf{3.24} Calcolare la pressione osmotica di 789 ml di soluzione contenente 5.8440 grammi di NaCl e  21.2996 grammi di $\rm Al(NO_3)_3$ alla temperatura di 27°C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -630,7 +685,7 @@ La pressione totale sarà pari alla somma
 
 $$\Pi_{tot}=12.4735 + 24.9470=37.4205\;atm$$
 
-\vspace{0.2cm}\textbf{3.24} Calcolare la pressione osmotica di una soluzione di 850 mL contenente 89.1234 grammi di solfato di alluminio alla temperatura di 80 °C.
+\vspace{0.2cm}\textbf{3.25} Calcolare la pressione osmotica di una soluzione di 850 mL contenente 89.1234 grammi di solfato di alluminio alla temperatura di 80 °C.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -650,7 +705,7 @@ $$\Pi=5cRT
 
 \textbf{controlla sto numero è un po' grandetto}
 
-\vspace{0.2cm}\textbf{3.25} Una soluzione di acido nitrico al 27\% in massa ha una densità di $1.16\;g/mL$. Calcolarne la molarità, molalità e temperatura di ebollizione sapendo che $k_{eb_{\rm H_2O}}=1.86\,\text{°}C \cdot kg/mol$
+\vspace{0.2cm}\textbf{3.26} Una soluzione di acido nitrico al 27\% in massa ha una densità di $1.16\;g/mL$. Calcolarne la molarità, molalità e temperatura di ebollizione sapendo che $k_{eb_{\rm H_2O}}=1.86\,\text{°}C \cdot kg/mol$
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
