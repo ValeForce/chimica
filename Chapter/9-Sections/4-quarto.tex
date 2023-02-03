@@ -816,3 +816,59 @@ $$[\text{H}_3\text{O}^+] = \sqrt{k_a \cdot c_a}
 =\sqrt{2.2222 \cdot 10^{-4} \cdot 0.02}=2.1082 \cdot 10^{-3}$$
 
 $$\implies \rm pH=\log{\left(\frac{1}{2.1082 \cdot 10^{-3}}\right)}=2.68$$
+
+\vspace{0.2cm}\textbf{4.24} Il grado di dissociazione dell'acido monocloro acetico in una soluzione $1.0 \cdot 10^{-2}$ M è 0.309. Trovare quanti grammi del suo sale di sodio devono essere aggiunti ad un litro della precedente soluzione per avere un pH pari a 2.90.
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}Visto che si parla di grado di dissociazione sappiamo già che tale acido è una specie debole. Chiamato questo HA per semplicità, esso in acqua dà luogo all'equilibrio
+
+$$\ce{HA <--> H^+ + A^-}$$
+
+Supponiamo di partire da 1 mole di acido e scriviamo sopra la reazione le quantità iniziali e sotto quelle finali:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        1 & & / & & /\\
+        $\rm HA$ & \ce{<-->} & $\rm H^+$ & + & $\rm A^-$\\
+        $1- \alpha$ & & $\alpha$ & & $\alpha$\\
+    \end{tabular}
+\end{center}
+
+dove $\alpha$ è il grado di dissociazione.
+
+La costante di equilibrio sarà data da
+
+$$k_a=\frac{\alpha^2}{1-\alpha^2}$$
+
+Ma siccome stiamo partendo da una concentrazione $c=1.0 \cdot 10^{-2}\;mol/L$, la costante si calcolerà come
+
+$$k_a=c\,\frac{\alpha^2}{1-\alpha^2}
+=1.0 \cdot 10^{-2} \cdot \frac{0.309^2}{1-0.309}
+=1.3818 \cdot 10^{-3}$$
+
+A questo punto consideriamo la soluzione da realizzare: dobbiamo mischiare un acido debole con un suo sale con base forte, per cui ci troviamo di fronte ad una soluzione tampone del primo tipo. La concentrazione degli ioni $\rm H_3O^+$ sarà data da
+
+$$[\text{H}_3\text{O}^+] = k_a \frac{c_a}{c_s}$$
+
+Ovviamene la concentrazione del sale è incognita. D'altra parte però sappiamo che il pH deve essere pari a 2.90, per cui 
+
+$$\rm pH=\log{\left(\frac{1}{[H_3O^+]}\right)}
+\implies
+[H_3O^+]=\frac{1}{10^{pH}}$$
+
+$$\implies
+\rm [H_3O^+]=\frac{1}{10^{2.90}}
+=1.2589 \cdot 10^{-3}$$
+
+Ne segue che
+
+$$c_s=ka\frac{c_a}{\rm [H_3O^+]}
+=1.3818 \cdot 10^{-3} \cdot \frac{1.0 \cdot 10^{-2}}{1.2589 \cdot 10^{-3}}
+=1.0976 \cdot 10^{-2}$$
+
+E siccome abbiamo un litro di soluzione, questo sarà anche il numero di moli.
+
+A questo punto per calcolare il peso molecolare dovremmo conoscere l'espressione del monocloro acetato di sodio. Non è un problema: l'espressione dell'acido monocloro acetatico si trova a pagina 228 §7.3.3, \textit{"Forza degli acidi e delle basi"}, ed essa è $\rm CH_2ClCOOH$ da cui segue che il suo sale di sodio è $\rm CH_2ClCOONa$, il cui peso molecolare è 116.48. Quindi:
+
+$$g=n \cdot MM=1.0976 \cdot 10^{-2} \cdot 116.48=1.2785\;grammi$$
