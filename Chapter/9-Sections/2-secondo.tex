@@ -494,19 +494,71 @@ I grammi saranno allora dati da
 
 $$n=\frac{g}{MM} \implies g=n \cdot MM=20 \cdot 70.906=1.418,12\;grammi$$
 
-\vspace{0.2cm}\textbf{2.12} Calcolare i grammi di solfato ferrico che si ottengano mescolando in acqua 2.3456 grammi di permanganato di potassio  e 12,3456 grammi di solfato ferroso, in eccesso di acido solforico.
+\vspace{0.2cm}\textbf{2.12} Bilanciare la seguente reazione:
+
+\begin{center}
+    Permanganato di sodio + Cloruro stannoso + acido cloridrico \ce{->}
+
+    \ce{->} Cloruro di sodio + Cloruro di Manganese (II) + Cloruro stannico + Acqua
+\end{center}
+
+e calcolare i grammi del sale di stagno che si formano a partire da 0.5932 grammi di permanganato di sodio
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
 \vspace{0.2cm}La reazione che avviene è
 
-$$\ce{FeSO_4 + KMnO_4 + H_2SO_4 -> Fe_2(SO_4)_3 + MnSO_4 + K_2SO_4 + H_2O}$$
+$$\ce{NaMnO4 + SnCl2 + HCl -> NaCl + MnCl2 + SnCl4 + H2O}$$
 
-Scriviamo la dissociazione delle varie speci chimiche
+Scriviamo la dissociazione delle varie speci:
 
-$$\ce{FeSO_4 -> Fe^{2+} + SO_4^{2-}}$$
-$$\ce{KMnO_4}$$
-$$\ce{H_2SO_4}$$
-$$\ce{Fe_2(SO_4)_3}$$
-$$\ce{MnSO_4}$$
-$$\ce{K_2SO_4}$$ 
+$$\ce{NaMnO4 -> Na^+ + MnO_4^-}$$
+$$\ce{SnCl2 -> Sn^{2+} + 2Cl^-}$$
+$$\ce{HCl -> H^+ + Cl^-}$$
+$$\ce{NaCl -> Na^+ + Cl^-}$$
+$$\ce{MnCl2 -> Mn^{2+} + 2Cl^-}$$
+$$\ce{SnCl4 -> Sn^{4+} + 4Cl^-}$$
+
+Il manganese passo da n.o. +7 nello ione permanganato a n.o. +2 nel cloruro di
+manganese, quindi si riduce; lo stagno passa da n.o. +2 nel cloruro stannoso a n.o. +4 nel cloruro stannico, quindi si è ossidato.
+
+L'equazione semplificata sarà
+
+$$\ce{MnO_4^- + Sn^{2+} + H^+ -> Mn^{2+} + Sn^{4+} + H_2O}$$
+
+Le semireazioni che avvengono sono
+
+$$\begin{cases}
+    \ce{Mn^{7+} + 5e^- -> Mn^{2+}}\\
+    \ce{Sn^{2+} -> Sn^{4+} + 2e^-}
+\end{cases}$$
+
+Moltiplichiamo quindi per 2 le speci del manganese e per 5 quello dello stagno:
+
+$$\ce{2MnO_4^- + 5Sn^{2+} + H^+ -> 2Mn^{2+} + 5Sn^{4+} + H_2O}$$
+
+A questo punto bilanciamo le cariche. A sinistra abbiamo due cariche negative dal permanganato e 10 cariche positive dallo stagno, per un totale di 8 cariche positive; a destra abbiamo 4 cariche positive dal manganese e 20 dallo stagno, per un totale di 24 cariche positive. La differenza è di 16 cariche, per cui ci serviranno 16 ioni $\rm H^+$ e quindi 8 molecole d'acqua: 
+
+$$\ce{2MnO_4^- + 5Sn^{2+} + 16H^+ -> 2Mn^{2+} + 5Sn^{4+} + 8H_2O}$$
+
+Tornando alla reazione completa avremo
+
+$$\ce{2NaMnO4 + 5SnCl2 + 16HCl -> 2NaCl + 2MnCl2 + 5SnCl4 + 8H2O}$$
+
+dove abbiamo bilanciato in un secondo momento gli atomi di sodio.
+
+A questo punto calcoliamo i grammi del cloruro stannico a partire dal permanganato di sodio. Calcoliamo innanzitutto le moli di quest'ultimo:
+
+$$n_{\rm NaMnO_4}=\frac{0.5932}{141.9254}
+=4.1797 \cdot 10^{-3}\;mol$$
+
+Il rapporto stechiometrico tra $\rm NaMnO_4$ e $\rm SnCl_4$ è 2:5, per cui 
+
+$$2:5=n_{\rm NaMnO_4}:n_{\rm SnCl_4}
+\implies
+n_{\rm SnCl_4}=\frac{5 \cdot 4.1797 \cdot 10^{-3}}{2}
+=10.44925 \cdot 10^{-3}\;mol$$
+
+da cui
+
+$$g_{\rm SnCl_4}=n \cdot MM=10.44925 \cdot 10^{-3} \cdot 260.5=2.7220\;grammi$$
