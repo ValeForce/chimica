@@ -206,7 +206,7 @@ Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto
     \begin{tabular}{ccccccc}
         $5.8283 \cdot 10^{-2}$ &  & $7.0005 \cdot 10^{-2}$ & & / &&\\
         $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
-        / & & $1.1722 \cdot 10^{-2}$ & & $1.1722 \cdot 10^{-2}$&&\\
+        / & & $1.1722 \cdot 10^{-2}$ & & $5.8283 \cdot 10^{-2}$&&\\
     \end{tabular}
 \end{center}
 
@@ -228,13 +228,13 @@ $$\ce{CH_3COO^- + H_2O <--> CH_3COOH + OH^-}$$
 
 La concentrazione di ioni $\rm OH^-$ derivanti da tale specie è pari a
 
-$$\implies [\text{OH}^-]=\sqrt{\frac{k_w}{k_a} \cdot c_s}=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{1.1722 \cdot 10^{-2} \cdot 1000}{650}}=3.1652 \cdot 10^{-6}$$
+$$\implies [\text{OH}^-]=\sqrt{\frac{k_w}{k_a} \cdot c_s}=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{5.8283 \cdot 10^{-2} \cdot 1000}{650}}=7.0579 \cdot 10^{-6}$$
 
 Notiamo che le due concentrazioni differiscono per un fattore $10^4$ per cui, sebbene in generale sia corretto sommare le concentrazioni, in questo caso è lecito trascurare la concentrazione degli ioni $\rm OH^-$ provenienti dall'idrolisi dello ione acetato e considerare solo quella degli ioni $\rm OH^-$ provenienti dall'idrossido di sodio. Pertanto il pOH sarà dato da
 
-$$\rm pOH=\log{\left(\frac{1}{1.8034 \cdot 10^{-2}}\right)}=1.74$$
+$$\rm pOH=\log{\left(\frac{1}{1.8034 \cdot 10^{-2}}\right)}=5.15$$
 
-$$\implies \rm pH=14-pOH=14-1.74=12.26$$
+$$\implies \rm pH=14-pOH=14-5.15=8.85$$
 
 Nota: il testo non fornisce la costante di dissociazione dell'acido acetico, eppure sembra essere necessaria nei calcoli. In realtà è superfluo calcolare la concentrazioni degli ioni $\rm OH^-$ provenienti dal sale, in quanto ogni volta che in soluzione abbiamo una specie forte e una debole (e questo include anche i sali che danno luogo a reazioni di idrolisi), prevale la specie forte e quindi il pH sarà determinato unicamente da questa.
 
@@ -260,9 +260,9 @@ Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto
 
 A fine reazione, come nell'esercizio precedente, abbiamo una base forte e e sale ottenuto a partire da un acido debole. Per calcolare il pH sarà quindi sufficiente considerare la concentrazione degli ioni $\rm OH^-$ prodotti dalla base forte:
 
-$$[\rm OH^-]=\frac{2.7502 \cdot 10^{-1} \cdot 1000}{2800}=9.8221 \cdot 10^{-1}$$
+$$[\rm OH^-]=\frac{2.7502 \cdot 10^{-1} \cdot 1000}{2800}=9.8221 \cdot 10^{-2}$$
 
-$$\rm pOH=\log{\left(\frac{1}{9.8221 \cdot 10^{-1}}\right)}=1.01$$
+$$\rm pOH=\log{\left(\frac{1}{9.8221 \cdot 10^{-2}}\right)}=1.01$$
 
 $$\implies \rm pH=14-pOH=14-1.01=12.99$$
 
@@ -287,7 +287,7 @@ $$[\text{H}_3\text{O}^+] = \sqrt{k_a \cdot c_a}
 \implies
 [\text{H}_3\text{O}^+]^2 = k_a \cdot c_a
 \implies
-c_a=\frac{k_a}{[\text{H}_3\text{O}^+]^2}$$
+c_a=\frac{[\text{H}_3\text{O}^+]^2}{k_a}$$
 
 d'altro canto, sappiamo che
 
@@ -411,7 +411,7 @@ Le moli di acido sono in difetto, quindi esso sarà il reagente limitante. Scriv
 Analizziamo i composti che abbiamo a fine reazione: abbiamo acetato di sodio, che si dissocia in ione $\rm Na^+$ che non dà luogo ad ulteriori reazioni e in ione $\rm CH_3COO^-$ che invece instaura un equilibrio di idrolisi basica, la cui concentrazione degli ioni $\rm OH^-$ è data da
 
 $$[\text{OH}^-]
-=\sqrt{\frac{k_w}{k_a}\cdot C_s}
+=\sqrt{\frac{k_w}{k_a}\cdot c_s}
 =\sqrt{\frac{10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{0.2498 \cdot 1000}{900}}
 =6.5420 \cdot 10^{-6}$$
 
@@ -542,7 +542,7 @@ il pH sarà quindi basico, in quanto siamo davanti ad una reazione di idrolisi. 
 
 
 $$[\text{OH}^-]
-=\sqrt{\frac{k_w}{k_a}\cdot C_s}
+=\sqrt{\frac{k_w}{k_a}\cdot c_s}
 =\sqrt{\frac{10^{-14}}{2.1 \cdot 10^{-9}} \cdot 0.35}
 =1.2910 \cdot 10^{-3}\;mol/L$$
 
@@ -620,10 +620,7 @@ $$k_a=\rm \frac{[H_3O^+]^2}{[HCN]}=\frac{(2.09 \cdot 10^{-5})^2}{1.1}=3.971 \cdo
 
 dove come concentrazione dell'acido cianidrico abbiamo presa quella iniziale perché il numero di moli dissociate è piccolo e quindi trascurabile ($1.1 - 2.9 \cdot 10^-5 \sim 1.1$).
 
-\newpage
-
-%\vspace{0.2cm}
-\textbf{4.19}  Calcolare quanti mL di una soluzione di NaOH 0,2 M devono essere mescolati con
+\vspace{0.2cm}\textbf{4.19}  Calcolare quanti mL di una soluzione di NaOH 0,2 M devono essere mescolati con
 100 mL di una soluzione di $\rm CH_3COOH$ 0,2 M affinché il pH della soluzione risultante sia 4,05. $k_{a_{\rm CH3COOH}}=1.8 \cdot 10^{-5}$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
@@ -863,7 +860,7 @@ $$\implies
 
 Ne segue che
 
-$$c_s=ka\frac{c_a}{\rm [H_3O^+]}
+$$c_s=k_a\frac{c_a}{\rm [H_3O^+]}
 =1.3818 \cdot 10^{-3} \cdot \frac{1.0 \cdot 10^{-2}}{1.2589 \cdot 10^{-3}}
 =1.0976 \cdot 10^{-2}$$
 
