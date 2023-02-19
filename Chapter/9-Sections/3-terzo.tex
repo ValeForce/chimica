@@ -267,7 +267,7 @@ $$\implies \alpha=0.4946$$
 
 Quindi si è dissociato il 49.46\%.
 
-\vspace{0.2cm}\textbf{3.9} Qual è la percentuale in massa di acetato di etile in una miscela di questo e acetato di propile, sapendo che $P_{et.}^0=415\;torr$ e $P_{pr.}?0=172\;torr$ e che a 60°C questa miscela ha una tensione di vapore di $250\;torr$?
+\vspace{0.2cm}\textbf{3.9} Qual è la percentuale in massa di acetato di etile in una miscela di questo e acetato di propile, sapendo che $P_{et.}^0=415\;torr$ e $P_{pr.}^0=172\;torr$ e che a 60°C questa miscela ha una tensione di vapore di $250\;torr$?
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -342,7 +342,7 @@ $$\Pi=2 \cdot cRT
 =2 \cdot 6.2128 \cdot 10^{-2} \cdot 0.082 \cdot 300.15
 =3.0582\;atm$$
 
-\vspace{0.2cm}\textbf{3.13} Calcolare a 25°C la pressione osmotica di una soluzione di un acido debole 0.15 M la cui $k_a=0.17$\,.
+\vspace{0.2cm}\textbf{3.13} Calcolare a 25°C la pressione osmotica di una soluzione 0.15 M di acido iodico ($k_a=1.7 \cdot 10^{-1}$).
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -354,14 +354,26 @@ Se partiamo da una mole di acido, a fine reazione resteranno $1 - \alpha$ moli i
 
 La costante di dissociazione sarà allora pari, avendo una concentrazione iniziale $c$, a
 
-$$k_a=c\,\frac{\alpha^2}{1-\alpha}
-\implies
-\frac{c}{k_a}\alpha^2 + \alpha -1=0$$
+$$k_a=c\,\frac{\alpha^2}{1-\alpha}$$
+
+Poiché $k_a=1.7 \cdot 10^{-1}$ non è possibile trascurare l'$\alpha$ al denominatore. Infatti è lecito adoperare tale approssimazione solo nel caso in cui $c_a \geq 10^{-2}$ e $k_a \leq 10^{-5}$. Non essendo soddisfatta la condizione sull'acido siamo costretti a dover risolvere la seguente equazione di secondo grado, che si ottiene con semplici passaggi algebrici a partire dalla definizione di $k_a$ di sopra:
+
+$$\frac{c}{k_a}\alpha^2 + \alpha -1=0$$
 
 Tale equazione di secondo grado in $\alpha$ ammette una soluzione positiva (e una negativa che scartiamo) pari a:
 
 $$\alpha=\frac{-1 + \sqrt{1 + 4 \cdot \displaystyle \frac{c}{k_a}}}{2 \cdot \displaystyle \frac{c}{k_a}}
-=\frac{-1 + \sqrt{1 + 3.5294}}{1.7647}=0.6393$$
+=\frac{-1 + \sqrt{1 + 3.5294}}{1.7647}=0.6393\approx0.64$$
+
+Il coefficiente di Van't Hoff sarà allora dato da
+
+$$i=\big[1 + (2-1) \cdot 0.64\big]=1.64$$
+
+da cui la pressione osmotica sarà pari a
+
+$$\Pi=1.64 \cdot cRT
+=1.64 \cdot 0.15 \cdot 0.082 \cdot 298.15
+=6.0143\;atm$$
 
 \vspace{0.2cm}\textbf{3.14} 50.00 mL di una soluzione acquosa di nitrato di argento vengono trattati con un eccesso di acido
 cloridrico. Si formano 1.7658 g di cloruro di argento. Calcolare la molarità della soluzione di nitrato
@@ -422,28 +434,7 @@ Inoltre la frazione molare dell'ossigeno sarà pari a
 
 $$\rchi_{\rm O_2}=\frac{n_{\rm O_2}}{n_{tot}}=\frac{2.3423 \cdot 10^{-2}}{(1.2316 + 3.1185 + 2.3423 + 1.9720) \cdot 10^{-2}}=0.4223$$
 
-\vspace{0.2cm}\textbf{3.16} Calcolare a 25°C la pressione osmotica di una soluzione 0.15 M di acido iodico ($k_a=1.7 \cdot 10^{-1}$).
-
-\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
-
-\vspace{0.2cm}Per calcolare la pressione osmotica è necessario conoscere il grado di dissociazione $\alpha$. Chiamato HA l'acido, la reazione che avviene è
-
-$$\ce{HA <--> H^+ + A^-}$$
-
-Se partiamo da 1 mole di acido, all'equilibrio avremo $\alpha$ moli di $\rm H^+$ e di $\rm A^-$ e $1-\alpha$ di acido indissociato. Partendo da una concentrazione $c$, la costante di dissociazione sarà pari a
-
-$$k_a=c\,\frac{\alpha^2}{1-\alpha}
-\implies
-\frac{c}{k_a}\alpha^2 + \alpha -1=0$$
-
-Tale equazione di secondo grado in $\alpha$ ammette una soluzione positiva (e una negativa che scartiamo) pari a:
-
-$$\alpha=\frac{-1 + \sqrt{1 + 4 \cdot \displaystyle \frac{c}{k_a}}}{2 \cdot \displaystyle \frac{c}{k_a}}
-=\frac{-1 + \sqrt{1 + 3.5294}}{1.7647}=0.6393$$
-
-\textbf{CONTROLLA I NUMERI}
-
-\vspace{0.2cm}\textbf{3.17} In un recipiente di 1 L sono state introdotte 2.5 moli di NOCl. Dopo opportuno riscaldamento ad una fissata temperatura si realizza il seguente equilibrio:
+\vspace{0.2cm}\textbf{3.16} In un recipiente di 1 L sono state introdotte 2.5 moli di NOCl. Dopo opportuno riscaldamento ad una fissata temperatura si realizza il seguente equilibrio:
 
 \begin{center}
     \ce{2 NOCl <--> 2NO + Cl_2}
@@ -480,7 +471,7 @@ La costante di equilibrio sarà data da
 $$k=\rm \frac{[NO]^2 \cdot [Cl_2]}{[NOCl]^2}
 =\frac{0.86^2 \cdot 0.44}{1.64^2}=1.1824 \cdot 10^{-1}$$
 
-\vspace{0.2cm}\textbf{3.18} Sia data una soluzione composta da due liquidi A e B. Ad una data temperatura la $P^0_A = 152$ torr
+\vspace{0.2cm}\textbf{3.17} Sia data una soluzione composta da due liquidi A e B. Ad una data temperatura la $P^0_A = 152$ torr
 e la $P^0_B = 324$ torr. Calcolare la pressione totale dei vapori di A e B in equilibrio con la soluzione sapendo che la frazione molare di A in soluzione è 0.75.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
@@ -494,6 +485,36 @@ $$P=\rchi_A P_A^0 + \rchi_B P_B^0$$
 da cui 
 
 $$P=0.75 \cdot 152 + 0.25 \cdot 324=195\;torr$$
+
+\vspace{0.2cm}\textbf{3.18} Calcolare la pressione osmotica delle seguenti soluzioni a $T=25^{\circ}\;C$:
+
+\begin{enumerate}
+    \item Glucosio 0.3 M;
+    \item Cloruro di bario 0.1 M;
+    \item Cloruro di alluminio 0.15 M.
+\end{enumerate}
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}La pressione osmotica è data da
+
+$$\Pi=cRTi$$
+
+Calcoliamola per i vari casi:
+
+\begin{enumerate}
+    \item Il glucosio è una specie molecolare, per cui in acqua non si dissocia e quindi $i=1$:
+    
+    $$\Pi_{glucosio}=0.3 \cdot 0.082 \cdot 298.15=7.3345\;atm$$
+
+    \item Il cloruro di bario $\rm BaCl_2$ in acqua si dissocia in uno ione $\rm Ba^{2+}$ e due ioni $\rm Cl^-$, per cui $i=3$:
+    
+    $$\Pi_{\rm BaCl_2}=0.1 \cdot 0.082 \cdot 298.15 \cdot 3=7.3345\;atm$$
+
+    \item Il cloruro di alluminio $\rm AlCl_3$ in acqua si dissocia in uno ione $\rm Al^{3+}$ e tre ioni $\rm Cl^-$, per cui $i=4$:
+    
+    $$\Pi_{\rm BaCl_2}=0.15 \cdot 0.082 \cdot 298.15 \cdot 4=14.6690\;atm$$
+\end{enumerate}
 
 \vspace{0.2cm}\textbf{3.19} Calcolare la pressione osmotica di una soluzione di 900 mL, contenente 5.56 grammi di KOH alla temperatura di 26°C.
 
@@ -703,9 +724,7 @@ $$\Pi=5cRT
 =5 \cdot 3.0645 \cdot 10^{-1} \cdot 0.082 \cdot 353.15
 =44.3713\;atm$$
 
-\textbf{controlla sto numero è un po' grandetto}
-
-\vspace{0.2cm}\textbf{3.26} Una soluzione di acido nitrico al 27\% in massa ha una densità di $1.16\;g/mL$. Calcolarne la molarità, molalità e temperatura di ebollizione sapendo che $k_{eb_{\rm H_2O}}=1.86\,\text{°}C \cdot kg/mol$
+\vspace{0.2cm}\textbf{3.26} Una soluzione di acido nitrico al 27\% in massa ha una densità di $1.16\;g/mL$. Calcolarne la molarità, molalità e temperatura di ebollizione sapendo che $k_{eb_{\rm H_2O}}=1.86\,\text{°}C \cdot kg/mol$.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -738,7 +757,7 @@ m=\frac{1000 \cdot 4.97}{846.8}=5.8691\;mol/kg$$
 
 Avendo ricavato la molalità, possiamo calcolare la temperatura di ebollizione.
 
-Essendo l'acido nitrico una specie forte, essa in acqua si dissocia totalmente in ione $\rm H_3O^+$ e ione $NO_3^-$, per cui il coefficiente $i$ di Van't Hoff sarà pari a 2. Dunque
+Essendo l'acido nitrico una specie forte, essa in acqua si dissocia totalmente in ione $\rm H_3O^+$ e ione $\rm NO_3^-$, per cui il coefficiente $i$ di Van't Hoff sarà pari a 2. Dunque
 
 $$\Delta t_{eb}=t_f - t_i=t_f - 0\,\text{°}C=t_f$$
 
@@ -785,33 +804,3 @@ n_{cloroformio}=\frac{0.14544 \cdot 1}{0.082 \cdot 373.15}
 e i grammi saranno pari a
 
 $$g=n \cdot MM=4.7532 \cdot 10^{-3} \cdot 119.5=0.5680\;grammi$$
-
-\vspace{0.2cm}\textbf{3.28} Calcolare la pressione osmotica delle seguenti soluzioni a $T=25^{\circ}\;C$:
-
-\begin{enumerate}
-    \item Glucosio 0.3 M;
-    \item Cloruro di bario 0.1 M;
-    \item Cloruro di alluminio 0.15 M.
-\end{enumerate}
-
-\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
-
-\vspace{0.2cm}La pressione osmotica è data da
-
-$$\Pi=cRTi$$
-
-Calcoliamola per i vari casi:
-
-\begin{enumerate}
-    \item Il glucosio è una specie molecolare, per cui in acqua non si dissocia e quindi $i=1$:
-    
-    $$\Pi_{glucosio}=0.3 \cdot 0.082 \cdot 298.15=7.3345\;atm$$
-
-    \item Il cloruro di bario $\rm BaCl_2$ in acqua si dissocia in uno ione $\rm Ba^{2+}$ e due ioni $\rm Cl^-$, per cui $i=3$:
-    
-    $$\Pi_{\rm BaCl_2}=0.1 \cdot 0.082 \cdot 298.15 \cdot 3=7.3345\;atm$$
-
-    \item Il cloruro di alluminio $\rm AlCl_3$ in acqua si dissocia in uno ione $\rm Al^{3+}$ e tre ioni $\rm Cl^-$, per cui $i=4$:
-    
-    $$\Pi_{\rm BaCl_2}=0.15 \cdot 0.082 \cdot 298.15 \cdot 4=14.6690\;atm$$
-\end{enumerate}
