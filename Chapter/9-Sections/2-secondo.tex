@@ -517,7 +517,7 @@ $$\ce{3Cu + 8HNO3 -> 3Cu(NO3)2(aq) + 2NO(g) + 4H2O(l)}$$
 
 \E bene notare la discrepanza tra i valori dei coefficienti di $\rm H^+$ (8) e $\rm NO_3^-$ (2) che si traduce nel coefficiente 8 per $\rm HNO_3$. Il motivo è che nello schema di reazione si tiene conto solo degli elementi che variano il loro n.o.\,: 2 ioni $\rm NO_3^-$ diventano due molecole di NO; non si può tenere conto degli ioni $\rm NO_3^-$ che rimangono tali perché devono formare il sale $\rm Cu(NO_3)_2$ (3 molecole quindi 6 ioni). Siccome $\rm HNO_3$ fornisce sia i 2 ioni che si trasformano in NO che i 6 ioni che vanno a formare il sale, il bilanciamento assume l'aspetto sopra scritto.
 
-(Definizione pratica: quando lo ione $\rm H^+$ proviene da una molecola in cui una specie si sta ossidando/riducendo, quando torniamo alla reazione completa la specie chimica prenderà il coefficiente dell'$\rm H^+$).
+(Definizione pratica: quando lo ione $\rm H^+$ proviene da una molecola in cui una specie si sta ossidando/riducendo, quando torniamo alla reazione completa la specie chimica prenderà il coefficiente dell'$\rm H^+$. In particolare il professore ha detto che in generale si considera il coefficiente più grande tra i due, che di solito è proprio quello dell'idrogeno).
 
 \vspace{0.2cm}\textbf{2.10} Bilanciare la seguente reazione e calcolare i grammi di cloruro di zinco che si ottengono a partire da 3.1234 grammi di anidride arseniosa.
 
@@ -817,6 +817,65 @@ $$\ce{KMnO_4 + H_2S + H_2SO_4 -> MnSO_4 + S + K_2SO_4 + H_2O}$$
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
 \vspace{0.2cm}Scriviamo le dissociazioni delle varie speci:
+
+$$\ce{KMnO_4 -> K^+ + MnO_4^-}$$
+$$\ce{H_2S -> 2H^+ + S^{2-}}$$
+$$\ce{H_2SO_4 -> 2H^+ + SO_4^{2-}}$$
+$$\ce{MnSO_4 -> Mn^{2+}}$$
+$$\ce{S -> S^{(0)}}$$
+$$\ce{K_2SO_4 -> 2K^+ + SO_4^{2-}}$$
+
+Il manganese passa n.o. +7 nel permanganato a n.o. +2 nel solfato, pertanto si è ridotto; lo zolfo passa da n.o. -2 nell'acido solfidrico a n.o. 0 nello zolfo puro, quindi si è ossidato.
+
+L'equazione semplificata sarà
+
+$$\ce{MnO_4^- + S^{2-} + H^+ -> Mn^{2+} + S + H_2O}$$
+
+Le semireazioni redox che avvengono sono
+
+$$\begin{cases}
+    \ce{Mn^{7+} + 5e^- -> Mn^{2+}}\\
+    \ce{S^{2-} + 2e^- -> S^{(0)}}
+\end{cases}$$
+
+Moltiplichiamo quindi per 5 le speci dello zolfo e per 2 quelle del manganese:
+
+$$\ce{2MnO_4^- + 5S^{2-} + H^+ -> 2Mn^{2+} + 5S + H_2O}$$
+
+A questo punto bilanciamo le cariche. A sinistra abbiamo 2 cariche negative dal permanganato e 10 cariche negative dallo zolfo, per un totale di 12 cariche negative; a destra abbiamo solo 4 cariche positive dal manganese. La differenza è di 16 cariche, per cui ci serviranno 16 ioni $\rm H^+$ e quindi 8 molecole d'acqua:
+
+$$\ce{2MnO_4^- + 5S^{2-} + 16H^+ -> 2Mn^{2+} + 5S + 8H_2O}$$
+
+A questo punto torniamo alla reazione completa. Attenzione però: tra i reagenti c'è la specie $\rm H_2S$, la quale contiene idrogeno. Ne segue che dei 16 ioni $\rm H^+$ che sono necessari per bilanciare le cariche non tutti nella reazione completa andranno nell'acido solforico. In particolare, siccome il coefficiente dello ione solfuro $\rm S^{2-}$ è 5 e per ogni molecola servono due atomi di idrogeno, 10 ioni $\rm H^+$ andranno in questa specie e solo i restanti 6 andranno nell'acido solforico. Quindi si avrà
+
+$$\ce{2KMnO_4 + 5H_2S + 3H_2SO_4 -> 2MnSO_4 + 5S + K_2SO_4 + 8H_2O}$$
+
+Come al solito notiamo che siccome nell'$\rm H_2S$ e nell'$\rm H_2SO_4$ la specie è $\rm H_2$ abbiamo dovuto dimezzare i coefficienti.
+
+A questo punto calcoliamo i grammi di permanganato necessari per ossidare 2.2414 L di acido solforico prelevati a c.n.\,. Innanzitutto calcoliamo le moli di acido solforico attraverso l'equazione di stato dei gas:
+
+$$PV=nRT
+\implies
+n=\frac{PV}{RT}
+=\frac{1 \cdot 2.2414}{0.082 \cdot 298.15}
+\approx 0.1\;mol$$
+
+notiamo come saremmo potuti arrivare allo stesso risultato attraverso attraverso la legge di avogadro: trovandoci in condizioni normali, 1 mole di sostanza occuperà 22.414 litri, per cui conoscendo il volume potevamo ottenere le moli tramite la proporzione
+
+$$1:22.414=n:2.2414
+\implies
+n=\frac{1 \cdot 2.2414}{22.414}=0.1$$
+
+Il rapporto stechiometrico tra $\rm KMnO_4$ e $\rm H_2SO_4$ è 2:3, per cui le moli di permanganato necessarie possono essere trovate tramite la proporzione
+
+$$2:3=n_{\rm KMnO_4}:n_{\rm H_2SO_4}
+\implies
+n_{\rm KMnO_4}=\frac{2 \cdot 0.1}{3}=6.6667 \cdot 10^{-2}\;mol$$
+
+e i grammi corrispondenti saranno
+
+$$g=n \cdot MM=6.6667 \cdot 10^{-2} \cdot 158.034
+=10.5356\;grammi$$
 
 \textbf{continua}
 
