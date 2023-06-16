@@ -869,3 +869,37 @@ E siccome abbiamo un litro di soluzione, questo sarà anche il numero di moli.
 A questo punto per calcolare il peso molecolare dovremmo conoscere l'espressione del monocloro acetato di sodio. Non è un problema: l'espressione dell'acido monocloro acetatico si trova a pagina 228 §7.3.3, \textit{"Forza degli acidi e delle basi"}, ed essa è $\rm CH_2ClCOOH$ da cui segue che il suo sale di sodio è $\rm CH_2ClCOONa$, il cui peso molecolare è 116.48. Quindi:
 
 $$g=n \cdot MM=1.0976 \cdot 10^{-2} \cdot 94.5=1.0372\;grammi$$
+
+\vspace{0.2cm}\textbf{4.25} Calcolare il pH di una soluzione ottenuta mescolando 650 mL di una soluzione di idrossido di potassio 0.14 M con 910 mL di una soluzione di acido acetico 0.10 M. $k_a = 1.78 \cdot 10^{-5}$ (HAc).
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}Calcoliamo le moli di idrossido di potassio e di acido acetico.
+$$n_{\rm KOH}=0.14\cdot 0.650 = 9.1000\cdot 10^{-2}$$
+$$n_{\rm CH_3COOH}=0.10\cdot 0.910 = 9.1000\cdot 10^{-2}$$
+Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        $9.1\cdot 10^{-2}$ &  & $9.1\cdot 10^{-2}$ & & / &&\\
+        $\rm KOH$ & + & $\rm CH_3COOH$ & \ce{->} & $\rm CH_3COOK$ & + & $\rm H_2O$\\
+        / &  &  / & & $9.1\cdot 10^{-2}$ &&\\
+    \end{tabular}
+\end{center}
+
+Poichè le moli dei reagenti sono uguali, i composti si neutralizzano totalmente dando solo acetato di potassio. Dunque avviene idrolisi basica, infatti:
+$$\ce{CH_3COOK \ce{->} CH_3COO^- + K^+}$$
+Lo ione K$^+$ non dà luogo ad altre reazioni, invece lo ione acetato dà la seguente reazione di equilibrio:
+$$\ce{CH_3COO^- + H_2O <--> CH_3COOH + OH^-}$$
+La concentrazione degli ioni OH$^-$ sarà data da 
+
+$$[\text{OH}^-]
+=\sqrt{\frac{k_w}{k_a}\cdot c_s}
+=\sqrt{\frac{10^{-14}}{1.78 \cdot 10^{-5}} \cdot \frac{9.1\cdot 10^{-2}}{1.56}}
+=5.7246 \cdot 10^{-6}$$
+
+$$\implies \rm pOH
+=\log{\left(\frac{1}{5.7246 \cdot 10^{-6}}\right)}
+=5.24$$
+
+$$\implies \rm pH=14-pOH=14-5.24=8.76$$
