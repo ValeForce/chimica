@@ -81,7 +81,7 @@ Un terzo e ultimo contributo sarà dato dalla repulsione tra i due nuclei. Tale 
 
 Avremo tre distanze: quella tra il nucleo A e l'elettrone $r_{Ae}$, quella tra il nucleo B e l'elettrone $r_{Be}$ e quella tra i due nuclei $r_{AB}$.
 
-Va da ricordare che la meccanica quantistica studia stati stazionari, cioè indipendenti dal tempo, il che significa che stiamo immaginando la molecola come se fosse rigida, cioè nel momento in cui andiamo a fare questi calcoli immaginiamo che non esistano vibrazioni ecc.
+Ricordiamo che la meccanica quantistica studia stati stazionari, cioè indipendenti dal tempo, il che significa che stiamo immaginando la molecola come se fosse rigida, cioè nel momento in cui andiamo a fare questi calcoli immaginiamo che non esistano vibrazioni ecc.
 
 I termini energetici che avremo sono:
 \newpage
@@ -503,6 +503,8 @@ In tutte queste molecole al diminuire dell'O.L. diminuiscono l'energia di legame
 
 Tutti i dati sono in accordo con le previsioni del modello che stiamo utilizzando. Infatti, tramite la teoria degli orbitali molecolari siamo in grado di ottenere dei dati che non sono soluzioni esatte di una equazione che non sappiamo risolvere, ma che sono soluzioni estremamente vicine a quelle che ci aspetteremmo qualora fossimo in grado di ottenerle da un punto di vista teorico con metodi di calcolo estremamente accurati, cioè le approssimazioni raggiunte oggi sono prossime a delle soluzioni non esatte ma quantomeno precise dei modelli quanto-meccanici di calcolo.
 
+\vspace{-0.3cm}
+
 \subsection{Molecole eteronucleari}
 Finora abbiamo fatto interagire selettivamente orbitali dello stesso tipo. Abbiamo fatto ciò perché avevamo atomi identici e quindi ogni livello ne aveva un altro accanto alla stessa energia.
 
@@ -512,9 +514,7 @@ Entriamo quindi nel merito delle quattro regole necessarie per costruire gli orb
 
 \vspace{0.2cm}\textbf{ES.1} HF
 
-Consideriamo la molecola dell'acido fluoridrico, che abbiamo etichettato come covalente polare. Cosa succederà? L'unico orbitale occupato nello stato fondamentale dell'idrogeno, ossia l'1s, interagirà con l'1s del fluoro?
-
-Servono delle regole che ci saranno da guida per costruire diagrammi di orbitali molecolari:
+Consideriamo la molecola dell'acido fluoridrico, che abbiamo etichettato come covalente polare. Cosa succederà? L'unico orbitale occupato nello stato fondamentale dell'idrogeno, ossia l'1s, interagirà con l'1s del fluoro? Servono delle regole che ci saranno da guida per costruire diagrammi di orbitali molecolari:
 
 \begin{enumerate}
     \item Gli orbitali atomici interagiranno in fase e fuori fase e genereranno orbitali molecolari;
@@ -523,10 +523,113 @@ Servono delle regole che ci saranno da guida per costruire diagrammi di orbitali
     \item Gli orbitali che interagiranno saranno quelli che hanno la stessa simmetria rispetto all'asse internucleare ma anche energia confrontabile: se hanno la stessa simmetria ma stanno ad energie lontane non si avrà interazione.
 \end{enumerate}
 
-\vspace{-0.3cm}\begin{figure}[H]
+\begin{center}
+    \begin{tikzpicture}
+    %livello 1s di H
+    \draw[very thick] (0,0) to (0.6,0);
+    \draw[thick,-stealth] (0.22,-0.24) -- (0.4,0.3);
+    \node at (0,0.2) {\footnotesize $\mathbf{1s}$};
+    %livello sigma*
+    \draw[very thick] (2.3,1) to (2.9,1);
+    \node at (3.16,1.1) {\footnotesize $\boldsymbol{\sigma^*}$};
+    %livelli pi greco
+    \draw[very thick] (1.9,-2.7) to (2.5,-2.7); %pixi
+    \draw[thick,-stealth] (2.02,-2.94) -- (2.2,-2.4);
+    \draw[thick,-stealth] (2.4,-2.4) -- (2.22,-2.94);
+    \node at (1.9,-2.5) {\footnotesize $\boldsymbol{\pi_{\xi}}$};
+    \draw[very thick] (2.7,-2.7) to (3.3,-2.7); %pipsi
+    \draw[thick,-stealth] (2.82,-2.94) -- (3,-2.4);
+    \draw[thick,-stealth] (3.2,-2.4) -- (3.02,-2.94);
+    \node at (3.5,-2.5) {\footnotesize $\boldsymbol{\pi_{\Psi}}$};
+    %livelli 2p
+    \draw[very thick]  (4.6,-2.7) to (5.2,-2.7); %2px
+    \draw[thick,-stealth] (4.72,-2.94) -- (4.9,-2.4);
+    \draw[thick,-stealth] (5.1,-2.4) -- (4.92,-2.94);
+    \node at(5,-2.1) {\footnotesize $\mathbf{2p_{\boldsymbol{x}}}$};
+    \draw[very thick]  (5.6,-2.7) to (6.2,-2.7); %2py
+    \draw[thick,-stealth] (5.72,-2.94) -- (5.9,-2.4);
+    \draw[thick,-stealth] (6.1,-2.4) -- (5.92,-2.94);
+    \node at(6,-2.1) {\footnotesize $\mathbf{2p_{\boldsymbol{y}}}$};
+    \draw[very thick]  (6.6,-2.7) to (7.2,-2.7); %2pz
+    \draw[thick,-stealth] (6.72,-2.94) -- (6.9,-2.4);
+    \draw[thick,-stealth] (7.1,-2.4) -- (6.92,-2.94);
+    \node at(7,-2.1) {\footnotesize $\mathbf{2p_{\boldsymbol{z}}}$};
+    %livello sigma
+    \draw[very thick] (2.3,-4) to (2.9,-4);
+    \draw[thick,-stealth] (2.42,-4.24) -- (2.6,-3.7);
+    \draw[thick,-stealth] (2.8,-3.7) -- (2.62,-4.24);
+    \node at (3.06,-4.1) {\footnotesize $\boldsymbol{\sigma}$};
+    %livello 2s di HF
+    \draw[very thick] (2.3,-5) to (2.9,-5);
+    \draw[thick,-stealth] (2.42,-5.24) -- (2.6,-4.7);
+    \draw[thick,-stealth] (2.8,-4.7) -- (2.62,-5.24);
+    \node at (2.2,-4.83) {\footnotesize \textbf{2s}};
+    %livello 2s di F
+    \draw[very thick] (5.6,-5) to (6.2,-5);
+    \draw[thick,-stealth] (5.72,-5.24) -- (5.9,-4.7);
+    \draw[thick,-stealth] (6.1,-4.7) -- (5.92,-5.24);
+    \node at (6.4,-4.9) {\footnotesize \textbf{2s}};
+    %collegamenti
+    \draw[dashed] (0.6,0) to (2.3,1); %1s con sigma*
+    \draw[dashed] (0.6,0) to (2.3,-4); %1s con sigma
+    \draw[dashed] (2.9,1) to (4.6,-2.7); %sigma* con 2px
+    \draw[dashed] (2.9,-4) to (4.6,-2.7); %sigma con 2px
+    \draw[dashed] (-1.2,0) to (0,0);
+    \draw[dashed] (-1.2,-2.7) to (1.9,-2.7);
+    \draw[dashed] (3,-2.7) to (4.6,-2.7);
+    %linee di confine
+    \draw (0.6,1.3) to (0.6,-1.1);
+    \draw (0.6,-1.45) to (0.6,-5.5);
+    \draw (-1.2,1.3) to (8,1.3);
+    \draw (8,1.3) to (8,-5.5);
+    \draw (-1.2,-5.5) to (8,-5.5);
+    \draw (-1.2,-5.5) to (-1.2,1.3);
+    \draw (4.6,1.3) to (4.6,-5.5);
+    %specchietti
+    \filldraw[brown!50!yellow!80!white!40!] (-2.4,-3.2) -- (1.4,-3.2) -- (1.4,-4.8) -- (-2.4,-4.8) -- cycle;
+    \node[red] at (-0.5,-4)
+    {$\displaystyle \begin{subarray}{l}
+        \text{O.M. legante proveniente}\\
+        \text{dalla sovrapposizione di}\\
+        \text{O.A. ad energia molto}\\
+        \text{diversa, con squilibrio nella}\\
+        \text{distribuzione elettronica}
+    \end{subarray}$};
+    \filldraw[cyan!50!] (5.3,0.45) -- (8.93,0.45) -- (8.93,-1.4) -- (5.3,-1.4) -- cycle;
+    \node at (7.1,-0.5)
+    {$\displaystyle \begin{subarray}{l}
+        \text{L'atomo di idrogeno}\\
+        \text{trasferisce un elettrone in}\\
+        \text{un orbitale ad energia}\\
+        \text{vicina ai p del fluoro}\\
+        \text{(\textcolor{blue}{trasferimento di elettrone}}\\
+         \text{\textcolor{blue}{all'interno del legame})}\\
+    \end{subarray}$};
+    %frecce in generale
+    \draw[-Stealth, shorten >=0.3mm] (-0.6,-1.1) to (-0.6,0);
+    \draw[-Stealth, shorten >=0.3mm] (-0.6,-1.45) to (-0.6,-2.7);
+    \node at (-0.1,-1.3) {\footnotesize 372 kJ/mol};
+    \draw[-Stealth,shorten >=0.3mm, shorten <=0.3mm] (1.4,-4.4) to (2.3,-4);
+    \draw[red, -Stealth,shorten >=0.1mm] (8,-4) to (2.9,-5);
+    \draw[red, -Stealth,shorten >=0.1mm] (8,-4) to (2.5,-2.7);
+    \draw[red, -Stealth,shorten >=0.1mm] (8,-4) to (3.3,-2.7);
+    \node at (8.8,-4)
+    {$\displaystyle \begin{subarray}{l}
+        \text{Coppie di}\\
+        \text{non legame}
+    \end{subarray}$};
+    \draw[thick, -stealth] (-1.5,-2.5) to (-1.5,0.8);
+    \node at (-1.8,0.3) {\footnotesize E};
+    \node at (-0.3,-5.8) {H};
+    \node at (2.5,-5.8) {HF};
+    \node at (6.3,-5.8) {F};
+\end{tikzpicture}
+\end{center}
+
+\comment{\vspace{-0.3cm}\begin{figure}[H]
     \centering
     \includegraphics[width=10.5cm]{immagini/orbitali_molecolari_HF.png}
-\end{figure}
+\end{figure}}
 
 Consideriamo le energie dei livelli atomici. Si nota che l'1s del fluoro non è nemmeno riportato, perché è molto interno in energia (e non è nemmeno di valenza), mentre l'1s dell'idrogeno si.
 
@@ -554,7 +657,7 @@ Questo era un primo esempio di interazione tra orbitali di atomi diversi a energ
     \item Due orbitali d che hanno stesso segno ma un nodo lungo l'asse di legame danno luogo ad un legame $\pi$.
 \end{itemize}
 
-Abbiamo visto che il diagramma qualitativo ottenuto per alcune molecole biatomiche omonucleari, distinguendole tra B$_2$, C$_2$, N$_2$ e O$_2$, F$_2$, Ne$_2$, in funzione del livello di energia dell'orbitale $\sigma$ proveniente dalla combinazione lineare degli orbitali p, ci dava delle previsioni che concordano coi valori sperimentali di energia di legame, lunghezza di legame e costante di forza del legame. Usando poi il concetto di ordine di legame vedevamo che nelle molecole B$_2$, C$_2$, N$_2$  l'O.L. cresce di una unità alla volta. Inoltre in esse aumentano energia e costante di forza, mentre diminuisce la lunghezza di legame. Dopodiché per O$_2$, F$_2$ e Ne$_2$ avviene il contrario: O.L., energia e costante di forza diminuiscono, mentre la distanza di legame cresce.
+Abbiamo visto che il diagramma qualitativo ottenuto per alcune molecole biatomiche omonucleari, distinguendole tra B$_2$, C$_2$, N$_2$ e O$_2$, F$_2$, Ne$_2$, in funzione del livello di energia dell'orbitale $\sigma$ proveniente dalla combinazione lineare degli orbitali p, ci dava delle previsioni che concordano coi valori sperimentali di energia di legame, lunghezza di legame e costante di forza del legame. Usando poi il concetto di ordine di legame vedevamo che nelle molecole B$_2$, C$_2$, N$_2$ l'O.L. cresce di una unità alla volta. Inoltre in esse aumentano energia e costante di forza, mentre diminuisce la lunghezza di legame. Dopodiché per O$_2$, F$_2$ e Ne$_2$ avviene il contrario: O.L.\,, energia e costante di forza diminuiscono, mentre la distanza di legame cresce.
 
 Le osservazioni fatte si ripetono scendendo lungo i gruppi a cui appartengono le varie molecole, cioè hanno validità generale, in quanto si tratta di razionalizzazioni di esiti di calcoli quanto-meccanici abbastanza accurati.
 

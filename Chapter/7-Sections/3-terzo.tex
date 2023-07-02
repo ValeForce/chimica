@@ -49,32 +49,123 @@ Per generalizzare il comportamento che abbiamo descritto non possiamo parlare di
 
 Dato che gli acidi cedono protoni, li etichettiamo con H-A e con $\rm H^+$ indichiamo il protone e con $\rm A^-$ ciò che resta. Etichettiamo invece con B la base, che sarà tale se e solo potrà acquistare il protone:
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=12cm]{immagini/acido_base_coniugata.png}
-\end{figure}
+\begin{center}
+    \hspace{3cm}
+    \begin{tikzpicture}
+        %reagenti
+        \draw[fill=cyan!60!] (-0.22,-0.25) rectangle (0.22,0.25);
+        \node at (0,0) {H};
+        \draw[thick] (0.24,0) -- (0.44,0);
+        \node at (0.54,0) {A};
+        \node at (1.1,0) {+};
+        \node at (1.6,0) {B};
+        %frecce reazione
+        \draw[-latex] (2.1,0.1) to (3,0.1);
+        \draw[-latex] (2.7,0) to (2.25,0);
+        %prodotti
+        \draw[fill=cyan!60!] (3.38,-0.25) rectangle (3.82,0.25);
+        \node at (3.6,0) {H};
+        \draw[thick] (3.84,0) -- (4.04,0);
+        \node at (4.29,0) {$\rm B^+$};
+        \node at (5,0) {+};
+        \node at (5.7,0) {$\rm A^-$};
+        %freccia sotto
+        \draw (0.34,-0.55) to (5.6,-0.55);
+        \draw (0.34,-0.55) to (0.34,-0.25);
+        \draw[-latex] (5.6,-0.55) to (5.6,-0.25);
+        \node[red] at (0.4,-0.8) {\footnotesize acido};
+        \node[blue] at (5.6,-0.8) {\footnotesize base coniugata};
+        %freccia sopra
+        \draw (1.6,0.55) to (3.94,0.55);
+        \draw (1.6,0.55) to (1.6,0.25);
+        \draw[-latex] (3.94,0.55) to (3.94,0.25);
+        \node[blue] at (1.6,0.8) {\footnotesize base};
+        \node[red] at (4.3,0.8) {\footnotesize acido coniugato};
+        %specchietto
+        \filldraw[gray!30!] (6.7,0.06) -- (6.7,0.74) -- (9.3,0.74) -- (9.3,0.06) -- cycle;
+        \node at (8,0.4) {$\begin{subarray}{l}
+            \text{Differiscono per un}\\
+            \text{protone legato.}
+        \end{subarray}$};
+    \end{tikzpicture}
+\end{center}
 
-Con questo simbolismo quindi avremo sempre a sinistra un acido e una base, mentre a destra avremo la base coniugata dell'acido e l'acido coniugato della base, cioè a sinistra avremo le specie che vogliamo far reagire e a destra le loro specie coniugate.
+Con questo simbolismo avremo sempre a sinistra un acido e una base, mentre a destra avremo la base coniugata dell'acido e l'acido coniugato della base, cioè a sinistra avremo le specie che vogliamo far reagire e a destra le loro specie coniugate.
 
-Va da notare che la differenza tra specie coniugate è di un protone: $\rm H-A$ e $\rm A^-$ differiscono per un protone, così come B e $\rm B^+$.
+Notiamo che la differenza tra specie coniugate è di un protone: $\rm H-A$ e $\rm A^-$ differiscono per un protone, così come B e $\rm B^+$.
 
 \vspace{0.2cm}\textbf{ES.1}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=6cm]{immagini/acido_base_coniugata_es1.png}
-\end{figure}
 
-HCl è l'acido, $\rm Cl^-$ è la base coniugata, la quale vi differisce per un protone.
+\vspace{0.2cm}
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[fill=cyan!60!] (-0.22,-0.25) rectangle (0.22,0.25);
+        \node at (0,0) {H};
+        \draw[thick] (0.24,0) -- (0.44,0);
+        \node at (0.64,0) {Cl};
+        \node at (1.1,0) {+};
+        \node at (1.75,0) {$\rm H_2O$};
+        \draw[-latex] (2.3,0) to (3.2,0);
+        \draw[-latex] (2.8,0.1) to (2.35,0.1);
+        \node at (2.7,-0.2) {\scriptsize $\rm H_2O$};
+        \draw[fill=cyan!60!] (3.38,-0.25) rectangle (3.82,0.25);
+        \node at (3.6,0) {H};
+        \draw[thick] (3.84,0) -- (4.04,0);
+        \node at (4.48,0) {$\rm OH_2^+$};
+        \node at (5.18,0) {+};
+        \node at (5.8,0) {$\rm Cl^-$};
+        %freccia sotto
+        \draw (0.34,-0.55) to (5.7,-0.55);
+        \draw (0.34,-0.55) to (0.34,-0.25);
+        \draw[-latex] (5.7,-0.55) to (5.7,-0.25);
+        \node at (2.8,-0.8) {\footnotesize Solvente acqua};
+        %freccia sopra
+        \draw (1.6,0.55) to (3.94,0.55);
+        \draw (1.6,0.55) to (1.6,0.25);
+        \draw[-latex] (3.94,0.55) to (3.94,0.25);
+    \end{tikzpicture}
+\end{center}
+
+\vspace{-0.2cm}HCl è l'acido, $\rm Cl^-$ è la base coniugata, la quale vi differisce per un protone.
 
 $\rm H_2O$ accetterà questo protone e quindi sarà una base mentre il suo acido coniugato è $\rm H_3O^+$, da cui differisce per un protone.
 
 \vspace{0.2cm}\textbf{ES.2}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=6cm]{immagini/acido_base_coniugata_es2.png}
-\end{figure}
 
-Qui come reagenti abbiamo ione ammonio e ione ioduro.
+\begin{center}
+    \begin{tikzpicture}
+        %reagenti
+        \draw[fill=cyan!60!] (-0.22,-0.25) rectangle (0.22,0.25);
+        \node at (0,0) {H};
+        \draw[thick] (0.24,0) -- (0.44,0);
+        \node at (0.85,0) {$\rm NH_3^+$};
+        \node at (1.6,0) {+};
+        \node at (2.15,0) {$\rm I^-$};
+        %frecce reazione
+        \draw[-latex] (2.7,0) to (3.6,0);
+        \draw[-latex] (3.4,0.1) to (2.95,0.1);
+        \node at (3.1,-0.3) {\scriptsize $\rm NH_3 \, (l)$};
+        %prodotti
+        \node at (4.36,0) {$\rm NH_3$};
+        \node at (5.1,0) {+};
+        \draw[fill=cyan!60!] (5.5,-0.25) rectangle (5.94,0.25);
+        \node at (5.72,0) {H};
+        \draw[thick] (5.96,0) -- (6.16,0);
+        \node at (6.22,0) {I};
+        %freccia sotto
+        \draw (2.025,-0.55) to (6.06,-0.55);
+        \draw (2.025,-0.55) to (2.025,-0.25);
+        \draw[-latex] (6.06,-0.55) to (6.06,-0.25);
+        \node at (3,-0.8) {\footnotesize Solvente ammoniaca};
+        %freccia sopra
+        \draw (0.34,0.55) to (4.25,0.55);
+        \draw (0.34,0.55) to (0.34,0.25);
+        \draw[-latex] (4.25,0.55) to (4.25,0.25);
+    \end{tikzpicture}
+\end{center}
+
+\vspace{-0.18cm}Qui come reagenti abbiamo ione ammonio e ione ioduro.
 
 Lo ione ammonio ha un protone in più rispetto all'ammoniaca, il quale può essere ceduto. Quindi l'$\rm NH_4^+$ è un acido e la sua base coniugata è l'$\rm NH_3$.
 
@@ -135,7 +226,7 @@ $$k= \rm{\frac{[HCOO^-]\cdot[H_3O^+]}{[HCOOH]}} = \frac{\alpha^2}{1- \alpha}\tex
 
 Cerchiamo di capire la seconda espressione.
 
-Consideriamo le quantità in gioco prima e dopo la reazione. Se inizialmente abbiamo una mole di acido formico, abbiamo però 0 moli di ione formiato e di $\rm H_3O^+$. Appena la specie si dissocia, avremo $\alpha$ moli per entrambi gli ioni. Ovviamente sarà $\alpha<1$, altrimenti significherebbe che si è dissociato totalmente, quindi all'equilibrio ci saranno $1-\alpha$ moli di reagente. Va da notare che $\alpha$ lo abbiamo già incontrato: è il grado di dissociazione. Ogni molecola di acido che si dissocia produce una molecola di formiato e una di $\rm H_3O^+$, quindi la concentrazione dei prodotti sarà $\alpha^2$, mentre quella dei reagenti $1-\alpha$. Se però non partissimo da una mole, bensì da una concentrazione $c$, ogni quantità andrebbe moltiplicata per $c$. In questo modo avremo $c^2/c$ come fattore, ovvero basta moltiplicare per $c$.
+Consideriamo le quantità in gioco prima e dopo la reazione. Se inizialmente abbiamo una mole di acido formico, abbiamo però 0 moli di ione formiato e di $\rm H_3O^+$. Appena la specie si dissocia, avremo $\alpha$ moli per entrambi gli ioni. Ovviamente sarà $\alpha<1$, altrimenti significherebbe che si è dissociato totalmente, quindi all'equilibrio ci saranno $1-\alpha$ moli di reagente. Notiamo che $\alpha$ lo abbiamo già incontrato: è il grado di dissociazione. Ogni molecola di acido che si dissocia produce una molecola di formiato e una di $\rm H_3O^+$, quindi la concentrazione dei prodotti sarà $\alpha^2$, mentre quella dei reagenti $1-\alpha$. Se però non partissimo da una mole, bensì da una concentrazione $c$, ogni quantità andrebbe moltiplicata per $c$. In questo modo avremo $c^2/c$ come fattore, ovvero basta moltiplicare per $c$.
 
 $\alpha$ si ottiene da misure di conducibilità.
 
@@ -190,7 +281,7 @@ $$\implies k \cdot [\text{H}_2\text{O}]^2 = [\text{H}_3\text{O}^+] \cdot [\text{
 
 Poniamo $k_w$ il prodotto di $k$ per la concentrazione dell'acqua all'equilibrio al quadrato, che si vede essere pari anche al prodotto della concentrazione dello ione $\rm H_3O^+$ per quella dello ione $\rm OH^-$. Inoltre quest'ultime due concentrazioni saranno uguali, perché ogni due molecole di acqua si producono uno ione $\rm H_3O^+$ e uno ione $\rm OH^-$. Si trova infatti che entrambe sono pari a $10^{-7}$ mol/L.
 
-Va da notare che se le quantità degli ioni sono uguali, non ci sarà un eccesso di $\rm H_3O^+$ che porta l'acqua ad essere acida né un eccesso di ioni $\rm OH^-$ che porta l'acqua ad essere basica: l'acqua è neutra, poiché questi ioni hanno stessa concentrazione.
+Se le quantità degli ioni sono uguali, non ci sarà un eccesso di $\rm H_3O^+$ che porta l'acqua ad essere acida né un eccesso di ioni $\rm OH^-$ che porta l'acqua ad essere basica: l'acqua è neutra, poiché questi ioni hanno stessa concentrazione.
 
 Visto che sono a moltiplicare, a 25°C e 1 atm (condizioni standard) avremo che
 
@@ -219,10 +310,35 @@ Le reazioni acido-base, cioè quelle in cui una specie cede un protone e l'altro
 
 \vspace{0.2cm}Inoltre, dato che $\rm pH + pOH = 14$, da un punto di vista operativo si fissa una scala da 0 a 14. Diciamo operativa perché il pH può assumere anche valori minori di zero o maggiori di 14. Infatti se ad esempio avessimo $\rm H_3O^+$ 1 M, (il che significa avere preso una mole di acido e averla messa in una soluzione il cui volume totale sia di 1 L), avremmo che $\rm pH=\log(\frac{1}{1})=\log{1}=0$, mentre se avessimo una soluzione più concentrata con ad esempio $\rm H_3O^+$ 3 M, avremmo che $\rm pH=\log(\frac{1}{3})=-0.477$, cioè troveremmo un valore negativo.
 
-\begin{figure}[H]
+\vspace{0.3cm}
+
+\begin{center}
+    \begin{tikzpicture}
+        %asse principale e tacche
+        \draw[thick,->,-latex] (0,0) -- (12,0);
+        \node at (12.5,0) {\textbf{pH}};
+        \draw[thick] (1,0) -- (1,0.2);
+        \node at (1,-0.25) {\textbf{0}};
+        \draw[thick] (11,0) -- (11,0.2);
+        \node at (11,-0.25) {\textbf{14}};
+        \draw[thick] (6,0) -- (6,0.2);
+        \node at (6,-0.25) {\textbf{7}};
+        %ambiente neutro
+        \draw[thick,->,-latex] (6,-1.1) to (6,-0.45);
+        \node at (6,-1.3) {Ambiente neutro};
+        %\ambiente basico
+        \draw[thick,->,-latex] (6.3,-0.6) -- (10.7,-0.6);
+        \node[blue] at (8.5,-0.3) {Ambiente Basico};
+        %\ambiente acido
+        \node[red] at (3.6,0.3) {Ambiente Acido};
+        \draw[thick,->,-latex] (5.7,0.6) -- (1.3,0.6);
+    \end{tikzpicture}
+\end{center}
+
+\comment{\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{immagini/scala_pH.png}
-\end{figure}
+\end{figure}}
 
 Abbiamo visto che la concentrazione di $\rm H_3O^+$ nell'acqua pura è $10^{-7}$, il che significa $\rm pH=\log(\frac{1}{10^{-7}})=7$, cioè l'acqua pura ha pH pari a 7, pertanto tutto ciò che ha tale valore di pH è neutro, in quanto diciamo che l'acqua pura è neutra, dato che il numero di ioni $\rm H_3O^+$ è uguale al numero di ioni $\rm OH^-$. Quindi pH neutro significa pH pari a 7.
 
@@ -264,7 +380,7 @@ Se ad esempio HA fosse l'acido acetico, e anziché metterlo in acqua prendessimo
 
 Che succede alla base coniugata di un qualunque acido?
 
-Va da ricordare che se l'acido è debole, la sua base coniugata è forte. Ne segue che la $k_b$ è grande.
+Ricordiamo che se l'acido è debole, la sua base coniugata è forte. Ne segue che la $k_b$ è grande.
 
 \vspace{0.2cm}\ce{A^- + H_2O <--> HA + OH^-}
 
@@ -292,13 +408,137 @@ Quindi il prodotto della costante di un acido e della costante della sua base co
 \begin{itemize}
     \item L'acido fluoridrico ha costante $k_a=7.2 \cdot 10^{-4}$. La sua base coniugata, lo ione fluoruro $\rm F^-$, avrà una costante $k_b$ complementare per arrivare a $10^{-14}$, infatti $k_b=1.4\cdot10^{-11}$. Se ad esempio mettessimo fluoruro di sodio in soluzione, lo ione $\rm F^-$ strapperà all'acqua un protone per formare nuovamente HF, che restando indissociato non manifesterà le sue proprietà, mentre l'acqua, avendo perso un protone, sarà diventata $\rm OH^-$ e quindi la soluzione sarà basica;
     \item Acido nitroso $\rm HNO_3$ $k_a=4.5 \cdot 10^{-4}$, ione nitrato $\rm NO_3^-$ $k_b=2.2 \cdot 10^{-11}$
-    \item Acido solforoso  $k_a=1.2 \cdot 10^{-2}$
+    \item Acido solforoso $k_a=1.2 \cdot 10^{-2}$
 \end{itemize}
 
-\begin{figure}[H]
+\begin{center}
+    \begin{tikzpicture}
+        %titolo
+        \node at (7,11.5) {\large \textbf{pH (pOH) di Tipiche Soluzioni Acquose}};
+        \shade[top color=red, bottom color=blue, middle color=violet] (0,-0.2) rectangle +(1,10.4);
+        \node at (1.8,10.5) {\textbf{pH}};
+        \node at (12.1,10.5) {\textbf{pOH}};
+        %linea di sinistra
+        \draw[thick] (1.8,10.2) to (1.8,-0.2);
+        %valori e sala graduata a sinistra
+        \node[color=orange!60!yellow!90!] at (1.38,0) {\textbf{15}};
+        \draw[thick] (1.8,0) to (2,0);
+        \node[color=orange!60!yellow!90!] at (1.38,0.625) {\textbf{14}};
+        \draw[thick] (1.8,0.625) to (2,0.625);
+        \node[color=orange!60!yellow!90!] at (1.38,1.25) {\textbf{13}};
+        \draw[thick] (1.8,1.25) to (2,1.25);
+        \node[color=orange!60!yellow!90!] at (1.38,1.875) {\textbf{12}};
+        \draw[thick] (1.8,1.875) to (2,1.875);
+        \node[color=orange!60!yellow!90!] at (1.38,2.5) {\textbf{11}};
+        \draw[thick] (1.8,2.5) to (2,2.5);
+        \node[color=orange!60!yellow!90!] at (1.38,3.125) {\textbf{10}};
+        \draw[thick] (1.8,3.125) to (2,3.125);
+        \node[color=orange!60!yellow!90!] at (1.5,3.75) {\textbf{9}};
+        \draw[thick] (1.8,3.75) to (2,3.75);
+        \node[color=orange!60!yellow!90!] at (1.5,4.375) {\textbf{8}};
+        \draw[thick] (1.8,4.375) to (2,4.375);
+        \node[color=orange!60!yellow!90!] at (1.5,5) {\textbf{7}};
+        \draw[thick] (1.8,5) to (2,5);
+        \node[color=orange!60!yellow!90!] at (1.5,5.625) {\textbf{6}};
+        \draw[thick] (1.8,5.625) to (2,5.625);
+        \node[color=orange!60!yellow!90!] at (1.5,6.25) {\textbf{5}};
+        \draw[thick] (1.8,6.25) to (2,6.25);
+        \node[color=orange!60!yellow!90!] at (1.5,6.875) {\textbf{4}};
+        \draw[thick] (1.8,6.875) to (2,6.875);
+        \node[color=orange!60!yellow!90!] at (1.5,7.5) {\textbf{3}};
+        \draw[thick] (1.8,7.5) to (2,7.5);
+        \node[color=orange!60!yellow!90!] at (1.5,8.125) {\textbf{2}};
+        \draw[thick] (1.8,8.125) to (2,8.125);
+        \node[color=orange!60!yellow!90!] at (1.5,8.75) {\textbf{1}};
+        \draw[thick] (1.8,8.75) to (2,8.75);
+        \node[color=orange!60!yellow!90!] at (1.5,9.375) {\textbf{0}};
+        \draw[thick] (1.8,9.375) to (2,9.375);
+        \node[color=orange!60!yellow!90!] at (1.42,10) {\textbf{-1}};
+        \draw[thick] (1.8,10) to (2,10);
+        %linea orizzontlae
+        \draw[thick,dashed,yellow] (2.2,5) to (7.1,5);
+        \draw[thick,dashed,yellow] (8,5) to (11.7,5);
+        %scritte
+        \node at (3.3,9.1) {\footnotesize batterie Acide};
+        \node at (3.37,8.7) {\footnotesize succhi Gastrici};
+        \node at (2.73,8.2) {\footnotesize limone};
+        \node at (2.65,7.7) {\footnotesize aceto};
+        \node at (2.6,7.383) {\footnotesize mela};
+        \node at (4.23,7) {\footnotesize bibite, succo di pomodoro};
+        \node at (2.6,6.3) {\footnotesize caffè};
+        \node at (3.492,5.71) {\footnotesize pioggia normale,};
+        \node at (3.115,5.25) {\footnotesize latte, saliva};
+        \node at (2.75,4.65) {\footnotesize sangue};
+        \node at (3.58,4.2) {\footnotesize succo pancreatico};
+        \node at (3.26,3.75) {\footnotesize acqua marina};
+        \node at (3.65,3.35) {\footnotesize soluzioni $\rm NaHCO_3$};
+        \node at (4.15,2.9) {\footnotesize saponi e detergenti tipici};
+        \node at (3.6,2.3) {\footnotesize soluzioni $\rm Na_2CO_3$};
+        \node at (3.3,1.55) {\footnotesize soluzioni $\rm NH_3$};
+        \node at (4.2,0.8) {\footnotesize soluzioni $\rm NaOH$,$\rm Ca(OH)_2$};
+        %scritta rossa
+        \draw[thick] (6.1,5.71) to (6.4,5.71);
+        \draw[thick] (6.1,8.41) to (6.4,8.41);
+        \draw[thick] (6.4,5.71) to (6.4,8.41);
+        \node[color=red!90!pink!80!] at (6.64,7.1) {\footnotesize \rotatebox{90}{"piogge acide"}};
+        %scritta blu
+        \node[color=cyan] at (7.3,5.3) {\footnotesize \rotatebox{90}{acque naturali}};
+        %scritta verde
+        \draw[thick] (7.65,6.875) to (7.95,6.875);
+        \draw[thick] (7.65,6.25) to (7.95,6.25);
+        \draw[thick] (7.95,6.875) to (7.95,6.25);
+        \node[color=green!60!teal!90!] at (9.55,6.55)
+        {$\begin{subarray}{l}
+            \text{Limite "inferiore"}\\
+            \text{per la maggior parte}\\
+            \text{degli animali acquatici}
+        \end{subarray}$};
+        %linea di destra
+        \draw[thick] (12,10.2) to (12,-0.2);
+        %valori e scala a destra
+        \node[color=orange!60!yellow!90!] at (12.42,10) {\textbf{15}};
+        \draw[thick] (11.8,0) to (12,0);
+        \node[color=orange!60!yellow!90!] at (12.42,9.375) {\textbf{14}};
+        \draw[thick] (11.8,0.625) to (12,0.625);
+        \node[color=orange!60!yellow!90!] at (12.42,8.75) {\textbf{13}};
+        \draw[thick] (11.8,1.25) to (12,1.25);
+        \node[color=orange!60!yellow!90!] at (12.42,8.125) {\textbf{12}};
+        \draw[thick] (11.8,1.875) to (12,1.875);
+        \node[color=orange!60!yellow!90!] at (12.42,7.5) {\textbf{11}};
+        \draw[thick] (11.8,2.5) to (12,2.5);
+        \node[color=orange!60!yellow!90!] at (12.42,6.875) {\textbf{10}};
+        \draw[thick] (11.8,3.125) to (12,3.125);
+        \node[color=orange!60!yellow!90!] at (12.52,6.25) {\textbf{9}};
+        \draw[thick] (11.8,3.75) to (12,3.75);
+        \node[color=orange!60!yellow!90!] at (12.52,5.625) {\textbf{8}};
+        \draw[thick] (11.8,4.375) to (12,4.375);
+        \node[color=orange!60!yellow!90!] at (12.52,5) {\textbf{7}};
+        \draw[thick] (11.8,5) to (12,5);
+        \node[color=orange!60!yellow!90!] at (12.52,4.375) {\textbf{6}};
+        \draw[thick] (11.8,5.625) to (12,5.625);
+        \node[color=orange!60!yellow!90!] at (12.52,3.75) {\textbf{5}};
+        \draw[thick] (11.8,6.25) to (12,6.25);
+        \node[color=orange!60!yellow!90!] at (12.52,3.125) {\textbf{4}};
+        \draw[thick] (11.8,6.875) to (12,6.875);
+        \node[color=orange!60!yellow!90!] at (12.52,2.5) {\textbf{3}};
+        \draw[thick] (11.8,7.5) to (12,7.5);
+        \node[color=orange!60!yellow!90!] at (12.52,1.875) {\textbf{2}};
+        \draw[thick] (11.8,8.125) to (12,8.125);
+        \node[color=orange!60!yellow!90!] at (12.52,1.25) {\textbf{1}};
+        \draw[thick] (11.8,8.75) to (12,8.75);
+        \node[color=orange!60!yellow!90!] at (12.52,0.625) {\textbf{0}};
+        \draw[thick] (11.8,9.375) to (12,9.375);
+        \node[color=orange!60!yellow!90!] at (12.52,0) {\textbf{-1}};
+        \draw[thick] (11.8,10) to (12,10);
+    
+        \shade[top color=red, bottom color=blue, middle color=violet] (13,-0.2) rectangle +(1,10.4);
+    \end{tikzpicture}
+\end{center}
+
+\comment{\begin{figure}[H]
     \centering
     \includegraphics[width=14cm]{immagini/pH_esempi.png}
-\end{figure}
+\end{figure}}
 
 \begin{itemize}
     \item La pioggia normale ha un pH appena inferiore a 6 perché l'anidride carbonica dell'aria si scioglie nella pioggia dando acido carbonico: $\ce{CO_2 + H_2O <--> H_2CO_3}$. La pioggia diventa acida se nell'atmosfera viene immersa anidride solforosa $\rm SO_2$, che reagendo con l'umidità dell'aria diventa acido solforoso $\rm H_2SO_3$, oppure si ossida con l'ossigeno per diventare $\rm SO_3$ e poi acido solforico $\rm H_2SO_4$ con l'acqua. Con piogge acide intendiamo piogge con pH inferiore a 6;

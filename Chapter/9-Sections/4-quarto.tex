@@ -152,13 +152,17 @@ L'HCl è un acido forte, per cui in acqua si dissocia totalmente in ione $\rm Cl
 
 $$\ce{HCl + H_2O -> H_3O^+ + Cl^-}$$
 
-Per il cloruro di ammonio abbiamo invece che, mentre lo ione $\rm Cl^-$ non produce ulteriori reazioni, lo ione $\rm NH_4^+$ instaura un equilibrio di idrolisi, producendo ammoniaca e ioni $\rm H_3O^+$:
+Per il cloruro di ammonio abbiamo invece
+
+$$\ce{NH_4Cl -> NH_4^+ + Cl^-}$$
+
+Mentre lo ione $\rm Cl^-$ non produce ulteriori reazioni, lo ione $\rm NH_4^+$ instaura un equilibrio di idrolisi, producendo ammoniaca e ioni $\rm H_3O^+$:
 
 $$\ce{NH_4^+ + H_2O <--> NH_3 + H_3O^+}$$
 
-Entrambe le specie quindi in acqua producono ioni $\rm H_3O^+$, per cui in questo caso per calcolare il pH dovremo sommare le concentrazioni degli ioni $\rm H_3O^+$ prodotti da ogni specie.
+In soluzione sono presenti già parecchi ioni $\rm H_3O^+$ provenienti dalla dissociazione dell'acido forte, per cui tale equilibrio è spostato totalmente a sinistra e di fatto la reazione non avviene.
 
-Calcoliamo innanzitutto le moli.
+Calcoliamo adesso le moli di HCl.
 
 L'acido cloridrico è una specie monoprotica, per cui molarità e normalità coincidono. Facciamo quindi la proporzione
 
@@ -166,25 +170,13 @@ $$n_{\rm HCl}:100=0.1:1000
 \implies
 n_{\rm HCl}=\frac{100 \cdot 0.1}{1000}=1 \cdot 10^{-2}\;mol$$
 
-Il cloruro di ammonio in acqua si dissocia in ione cloruro $\rm Cl^-$ e ione ammonio $\rm NH_4^+$, per cui si produce una carica positiva (o una carica negativa) e dunque molarità e normalità coincidono. Facciamo dunque la proporzione
-
-$$n_{\rm NH_4Cl}:100=0.1:1000
-\implies
-n_{\rm NH_4Cl}=\frac{100 \cdot 0.1}{1000}=1 \cdot 10^{-2}\;mol$$
-
-Avendo le moli possiamo calcolare le concentrazioni.
-
-La concentrazione degli ioni $\rm H_3O^+$ provenienti dall'acido cloridrico sarà data da
+Avendo le moli possiamo calcolare la concentrazione degli ioni $\rm H_3O^+$:
 
 $$[\rm H_3O^+]=\frac{1 \cdot 10^{-2} \cdot 1000}{200}=5 \cdot 10^{-2}\;mol/L$$
 
 In quanto si producono un numeri di moli di $\rm H_3O^+$ pari al numero di moli di acido.
 
-La concentrazione degli ioni $\rm H_3O^+$ provenienti dall'idrolisi dello ione ammonio sarà data da
-
-$$\implies [\text{H}_3\text{O}^+]=\sqrt{\frac{k_w}{k_b} \cdot c_s}=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{1 \cdot 10^{-2} \cdot 1000}{200}}=5.2705 \cdot 10^{-6}\;mol/L$$
-
-Notiamo che le due concentrazioni differiscono per un fattore $10^4$ per cui, sebbene in generale sia corretto sommare le concentrazioni, in questo caso è lecito trascurare la concentrazione degli ioni $\rm H_3O^+$ provenienti dall'idrolisi dello ione ammonio e considerare solo quella degli ioni $\rm H_3O^+$ provenienti dall'acido cloridrico. Pertanto il pH sarà dato da
+Il pH sarà dato da
 
 $$\rm pH=\log\left(\frac{1}{5 \cdot 10^{-2}}\right)=1.30$$
 
@@ -226,17 +218,15 @@ L'acetato di sodio in acqua si dissocia in ione $\rm Na^+$ e ione acetato $\rm C
 
 $$\ce{CH_3COO^- + H_2O <--> CH_3COOH + OH^-}$$
 
-La concentrazione di ioni $\rm OH^-$ derivanti da tale specie è pari a
+Tuttavia, in soluzione sono già presenti molti ioni $\rm OH^-$ provenienti dalla dissociazione della base forte, per cui l'equilibrio sarà totalmente spostato a sinistra e di fatto tale reazione non avviene.
 
-$$\implies [\text{OH}^-]=\sqrt{\frac{k_w}{k_a} \cdot c_s}=\sqrt{\frac{1 \cdot 10^{-14}}{1.8 \cdot 10^{-5}} \cdot \frac{5.8283 \cdot 10^{-2} \cdot 1000}{650}}=7.0579 \cdot 10^{-6}$$
-
-Notiamo che le due concentrazioni differiscono per un fattore $10^4$ per cui, sebbene in generale sia corretto sommare le concentrazioni, in questo caso è lecito trascurare la concentrazione degli ioni $\rm OH^-$ provenienti dall'idrolisi dello ione acetato e considerare solo quella degli ioni $\rm OH^-$ provenienti dall'idrossido di sodio. Pertanto il pOH sarà dato da
+Il pOH sarà allora dato solo dalla dissociazione della base forte:
 
 $$\rm pOH=\log{\left(\frac{1}{1.8034 \cdot 10^{-2}}\right)}=5.15$$
 
 $$\implies \rm pH=14-pOH=14-5.15=8.85$$
 
-Nota: il testo non fornisce la costante di dissociazione dell'acido acetico, eppure sembra essere necessaria nei calcoli. In realtà è superfluo calcolare la concentrazioni degli ioni $\rm OH^-$ provenienti dal sale, in quanto ogni volta che in soluzione abbiamo una specie forte e una debole (e questo include anche i sali che danno luogo a reazioni di idrolisi), prevale la specie forte e quindi il pH sarà determinato unicamente da questa.
+Nota: il testo non fornisce la costante di dissociazione dell'acido acetico in quanto è superfluo calcolare la concentrazioni degli ioni $\rm OH^-$ provenienti dal sale, poiché ogni volta che in soluzione abbiamo una specie forte e una debole (e questo include anche i sali che danno luogo a reazioni di idrolisi), prevale la specie forte e quindi il pH sarà determinato unicamente da questa.
 
 \vspace{0.2cm}\textbf{4.7} Calcolare il pH di una soluzione di 2800 mL ottenuta sciogliendo 15 grammi di acido acetico e 11 grammi di idrossido di sodio.
 
@@ -391,6 +381,8 @@ $$k_a=\frac{(5.4954 \cdot 10^{-5})^2}{0.1}
 \vspace{0.2cm}\textbf{4.13} Calcolare il pH di una soluzione di 900 mL ottenuta sciogliendo 15 grammi di acido acetico e 10 grammi di idrossido di sodio in acqua ($k_a = 1.8 \cdot 10^{-5}$).
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}\textbf{Disclaimer}: Siamo fortemente dubbiosi circa la seguente risoluzione. Suggeriamo di chiederlo ad un ricevimento ed in caso comunicarci la soluzione.
 
 \vspace{0.2cm}Calcoliamo innanzitutto le moli
 
@@ -673,8 +665,6 @@ V(mL)=\frac{n}{c_s}=\frac{3.3611 \cdot 10^{-3}}{0.2} \cdot 1000
 
 \vspace{0.2cm}\textbf{4.20} 3.504 gr di ammoniaca acquosa vengono sciolti in 870 mL di soluzione finale e di questa ne vengono prelevati 250 mL. A questa aliquota di soluzione vengono aggiunti 2.8868 grammi di acido perclorico. Calcolare il pH sapendo che $k_{b_{\rm NH_3}}=1.8 \cdot 10^{-5}$.
 
-\newpage
-
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
 \vspace{0.2cm}Per prima cosa calcoliamo le moli di ammoniaca
@@ -903,3 +893,38 @@ $$\implies \rm pOH
 =5.24$$
 
 $$\implies \rm pH=14-pOH=14-5.24=8.76$$
+
+\vspace{0.2cm}\textbf{4.26} Calcolare il pH di una soluzione formata mescolando 50 mL di una soluzione 0.1 M di acetato di sodio ($\rm CH_3COONa$) con 100 mL di una soluzione 0.1 M di acido acetico ($\rm CH_3COOH$; $k_a=1.8 \cdot 10^{-5}$). Calcolare anche come varia il pH della soluzione quando 10 mL di HCl 0.1 M vengono mescolati ad essa.
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+Si tratta di una soluzione tampone del primo tipo. Calcoliamo innanzitutto le moli
+
+$$n_{\rm AcNa}=\frac{0.1 \cdot 50}{1000}= 5 \cdot 10^{-3} \; mol
+\quad;\quad
+n_{\rm HAc}=\frac{0.1 \cdot 100}{1000}=1 \cdot 10^{-2} \; mol$$
+
+La concentrazione degli ioni $\rm H_3O^+$ è pari a
+
+$$[\text{H}_3\text{O}^+]=k_a\frac{c_a}{c_s}
+=1.8 \cdot 10^{-5}\,\frac{\frac{1 \cdot 10^{-2}}{150}}{\frac{5 \cdot 10^{-3}}{150}}=3.6 \cdot 10^{-5} \; mol/L$$
+
+Il pH sarà dato da
+
+$$\rm pH=\log{\left(\frac{1}{3.6 \cdot 10^{-5}}\right)}=4.44$$
+
+Vediamo adesso come varia il pH dopo l'aggiunta di 10 mL di HCl 0.1 M. Le moli di questo sono
+
+$$n_{\rm HCl}=\frac{10 \cdot 0.1}{1000}=1 \cdot 10^{-3} \; mol$$
+
+per cui la nuova concentrazione degli ioni $\rm H_3O^+$ sarà
+
+$${[\text{H}_3\text{O}^+]}=\textit{k}_\textit{a} \frac{c_a + \rm{[\text{H}_3\text{O}^+]}}{c_s - \rm{[\text{H}_3\text{O}^+]}}
+=1.8 \cdot 10^{-5} \, \frac{1 \cdot 10^{-2} + 1 \cdot 10^{-3}}{5 \cdot 10^{-3} - 1 \cdot 10^{-3}}
+=3.636 \cdot 10^{-5} \; mol/L$$
+
+pertanto il nuovo pH sarà pari a
+
+$$\rm pH=\log{\left(\frac{1}{3.636 \cdot 10^{-5}}\right)}=4.43$$
+
+Notiamo che il pH è variato solo dello 0.01. Il motivo è che le moli del sale sono esattamente la metà di quelle dell'acido, per cui la soluzione ha il massimo potere tamponante e di conseguenza minimizza molto bene le variazioni del pH.

@@ -275,11 +275,51 @@ $$9.9534 \cdot 10^{-2}:855=M:1000
 \implies
 M=\frac{9.9534 \cdot 1000}{855}=1.1641\;mol/L$$
 
+\textbf{1.1.7} Trovare il volume in litri di biossido di zolfo a 35° C e 740 Torr ottenuto a partire dalla combustione di 2.7543 grammi di un minerale al 75\% pirite\footnote{Anche nota come l'oro degli sciocchi, è possibile vederla in "\textit{Barbie - La principessa e la povera}", dove Annalisa la osserva con una lente di ingrandimento.} (persolfuro ferroso, FeS2).
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}La reazione che avviene è
+
+$$\ce{FeS2 + O_2 -> FeO + SO_2}$$
+
+Notiamo che avviene questa e non la reazione
+
+$$\ce{FeS2 + O_2 -> Fe2O3 + SO_2}$$
+
+perché non ci troviamo in eccesso di ossigeno, altrimenti sarebbe stato specificato nel testo.
+
+Bilanciamo la reazione. Abbiamo un atomo di ferro sia a destra che a sinistra, quindi non dobbiamo moltiplicare; per quanto riguarda lo zolfo ne abbiamo 2 a sinistra nell'$\rm FeS_2$ e solo uno a destra nell'$\rm SO_2$, per cui moltiplichiamo quest'ultima specie per 2:
+
+$$\ce{FeS2 + O_2 -> FeO + 2SO_2}$$
+
+Bilanciamo infine l'ossigeno. A destra ne abbiamo 4 provenienti dalle due molecole di $\rm SO_2$ e uno proveniente dal FeO, per un totale di 5. Siccome la specie a sinistra è $\rm O_2$ moltiplichiamo per $5/2$:
+
+$$\ce{FeS2 + \frac{5}{2}O2 -> FeO + 2SO2}$$
+
+Per lavorare con coefficienti interi moltiplichiamo tutte le specie per 2:
+
+$$\ce{2FeS2 + 5O2 -> 2FeO + 4SO2}$$
+
+Calcoliamo le moli di $\rm FeS_2$. I grammi da considerare saranno solo il 75\% di quelli forniti, per cui:
+
+$$n_{\rm FeS_2}=\frac{2.7543}{119.98} \cdot \frac{75}{100}
+=1.0323 \cdot 10^{-2} \; mol$$
+
+Il rapporto stechiometrico tra $\rm FeS_2$ e $\rm SO_2$ è 2:4 ossia 1:2, per cui le moli di biossido di zolfo saranno date da
+
+$$1:2=n_{\rm FeS_2}:n_{\rm SO_2}
+\implies
+n_{\rm SO_2}=2 \cdot 1.0323 \cdot 10^{-2}
+=2.0646 \cdot 10^{-2} \; mol$$
+
+Il volume si ottiene dall'equazione di stato dei gas
+
+$$PV=nRT
+\implies
+V=\frac{nRT}{P}=\frac{2.0646 \cdot 10^{-2} \cdot 0.082 \cdot 308.15 \cdot 760}{740}=0.5358 \; L$$
+
 \subsection{Reazioni varie}
-
-\large\textbf{Svolgimento}\normalsize
-
-\vspace{0.2cm}
 
 \textbf{1.2.1}$\bigstar$ La soda caustica (idrossido di sodio NaOH) viene commercialmente preparata dalla reazione fra carbonato di sodio ($\rm Na_2CO_3$) e calce spenta (idrossido di calcio $\rm Ca(OH)_2$):
 
@@ -681,7 +721,12 @@ $$n=\frac{g}{MM}
 \implies
 g=n \cdot MM$$
 
-Calcoliamo le moli di $\rm Ag(NO_3)$:
+Le reazioni che avvengono sono
+
+$$\ce{NaCl + AgNO3 -> AgCl + NaNO3}$$
+$$\ce{KCl + AgNO3 -> AgCl + KNO3}$$
+
+Notiamo che il rapporto stechiometrico tra i cloruri ed il nitrato d'argento è 1:1, per cui le moli dovranno essere tante quante le moli di $\rm AgNO_3$. Calcoliamo le moli di quest'ultimo:
 
 $$n_{\rm Ag(NO_3)_3}=\frac{0.3 \cdot 51.92}{1000}=1.5576 \cdot 10^{-2}\;mol$$
 
@@ -721,9 +766,77 @@ g_{\rm KCl}=5.5676 \cdot 10^{-3} \cdot 74.55
 
 cioè la miscela è composta al 58\% da NaCl e al 42\% da KCl.
 
-\newpage
+\vspace{0.2cm}\textbf{1.2.15} Una miscela di massa m=1.5400 g di ossido di bario (BaO) e ossido di calcio (CaO), ha richiesto 40 mL di acido cloridrico 1 M per essere trasformati in cloruri. Calcolare la percentuale in massa dei due ossidi della miscela.
 
-\vspace{0.2cm}\textbf{1.2.15} Calcolare i grammi di bromuro di litio che si ottengono da 4.5678 g di carbonato di litio fatti reagire con acido bromidrico. La reazione, da bilanciare, genera inoltre anidride carbonica ed acqua.
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}Bisogna impostare un sistema. La prima equazione riguarda i grammi dei composti, la seconda le moli:
+
+$$\begin{cases}
+    g_{\rm Bao} + g_{\rm CaO}=1.5400\\
+    n_{\rm BaO} + n_{\rm CaO}=n_{\rm HCl}
+\end{cases}$$
+
+Possiamo ridurre le incognite a due, in quanto grammi e moli sono legati tra loro tramite la relazione
+
+$$n=\frac{g}{MM}
+\implies
+g=n \cdot MM$$
+
+In particolare nella seconda equazione le moli di HCl sono date da:
+
+$$n_{\rm HCl}=V(L) \cdot M=40 \cdot 10^{-3} \cdot 1
+=4 \cdot 10^{-2} \; mol$$
+
+Le reazioni che avvengono sono
+
+$$\ce{BaO + 2 HCl -> BaCl2 + H_2O}$$
+$$\ce{CaO + 2 HCl -> CaCl2 + H_2O}$$
+
+Notiamo come il rapporto stechiometrico tra gli ossidi e l'HCl in entrambe le reazioni sia 1:2, per cui le moli di questi saranno pari alla metà di quelle dell'HCl.
+
+Ponendo allora per semplicità $x=n_{\rm BaO}$ e $y=n_{\rm CaO}$. Avremo
+
+$$\begin{cases}
+    153.33x + 56.0774y=1.54\\
+    x+y=2 \cdot 10^{-2}
+\end{cases}$$
+
+dove i coefficienti della prima equazione sono rispettivamente i pesi molecolari di BaO e CaO.
+
+$$\implies
+\begin{cases}
+    \displaystyle \frac{153.33}{56.0774}x + y=\displaystyle \frac{1.54}{56.0774}\\[0.2cm]
+    x+y=2\cdot 10^{-2}
+\end{cases}
+\implies
+\begin{cases}
+    2.7342 x + y=2.7462 \cdot 10^-2\\
+    x+y=2 \cdot 10^{-2}
+\end{cases}$$
+
+$$\implies
+\begin{cases}
+    x=4.4066 \cdot 10^{-3} \;mol\\
+    y=1.5593 \cdot 10^{-2} \;mol
+\end{cases}$$
+
+A questo punto per calcolare la composizione percentuale calcoliamo i grammi:
+
+$$g_{\rm BaO}=4.4066 \cdot 10^{-3} \cdot 153.33
+=0.6757 \; grammi
+\quad;\quad
+g_{\rm CaO}=1.5593 \cdot 10^{-2} \cdot 56.0774
+=0.8744 \; grammi$$
+
+Le composizioni percentuali sono date da
+
+$$\% \rm BaO=\frac{0.6757}{1.54} \cdot 100=44\%$$
+$$\% \rm CaO=\frac{0.8744}{1.54} \cdot 100=56\%$$
+
+cioè la miscela è composta al 44\% da BaO e al 56\% da CaO.
+
+\vspace{0.2cm}\textbf{1.2.16} Calcolare i grammi di bromuro di litio che si ottengono da 4.5678 g di carbonato di litio fatti reagire con acido bromidrico. La reazione, da bilanciare, genera inoltre anidride carbonica ed acqua.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
