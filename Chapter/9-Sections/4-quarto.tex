@@ -732,7 +732,9 @@ $$\rm pOH=\log \left( \frac{1}{8.0645 \cdot 10^{-5}} \right)=4.09$$
 
 $$\implies \rm pH=14-pOH=14-4.09=9.91$$
 
-\vspace{0.2cm}\textbf{4.22} 0.4 L di HCl gassoso prelevato a c.n. vengono fatti gorgogliare in 325 mL di una soluzione acquosa di ammoniaca 0.1 N senza notare variazione del volume finale. Calcolare il pH della soluzione e come esso varia quando 10 mL di NaOH 0.1 M vengono mescolati ad essa.
+\newpage
+
+\textbf{4.22} 0.4 L di HCl gassoso prelevato a c.n. vengono fatti gorgogliare in 325 mL di una soluzione acquosa di ammoniaca 0.1 N senza notare variazione del volume finale. Calcolare il pH della soluzione e come esso varia quando 10 mL di NaOH 0.1 M vengono mescolati ad essa.
 
 \vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
 
@@ -928,3 +930,52 @@ pertanto il nuovo pH sarà pari a
 $$\rm pH=\log{\left(\frac{1}{3.636 \cdot 10^{-5}}\right)}=4.43$$
 
 Notiamo che il pH è variato solo dello 0.01. Il motivo è che le moli del sale sono esattamente la metà di quelle dell'acido, per cui la soluzione ha il massimo potere tamponante e di conseguenza minimizza molto bene le variazioni del pH.
+
+\vspace{0.2cm}\textbf{4.27} a 100 mL di una soluzione 0.2 M di HCN ($k_a=2.1 \cdot 10^{-9}$) vengono aggiunti 40 mL di idrossido di sodio 0.5 M. Calcolare la concentrazione di $\rm H_3O^+$ della soluzione.
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+Calcoliamo innanzitutto le moli.
+
+$$n_{\rm HCN}:100=0.2:1000
+\implies
+n_{\rm HCN}=\frac{100 \cdot 0.2}{1000}=2 \cdot 10^{-2}\;mol$$
+
+$$n_{\rm NaOH}:40=0.5:1000
+\implies
+n_{\rm HCN}=\frac{40 \cdot 0.5}{1000}=2 \cdot 10^{-2}\;mol$$
+
+Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        $2 \cdot 10^{-2}$ &  & $2 \cdot 10^{-2}$ & & / &&\\
+        $\rm NaOH$ & + & HCN & \ce{->} & $\rm NaCN$ & + & $\rm H_2O$\\
+        / &  &  / & & $2 \cdot 10^{-2}$ &&\\
+    \end{tabular}
+\end{center}
+
+Poiché le moli dei reagenti sono uguali, i due composti si neutralizzano totalmente dando $2 \cdot 10^{-2}$ moli di cianato di sodio. Quest'ultimo è un sale, che in acqua si trova dissociato in ione $\rm Na^+$ e ione $\rm CN^-$:
+
+$$\ce{NaCN -> Na^+ + CN^-}$$
+
+Mentre lo ione $\rm Na^+$ non dà luogo ad ulteriori reazioni, lo ione $\rm CN^-$ reagisce con una molecola d'acqua e dà un equilibrio:
+
+$$\ce{CN^- + H_2O <--> HCN + OH^-}$$
+
+Siamo quindi davanti ad una reazione di idrolisi basica. La concentrazione degli ioni $\rm OH^-$ sarà data da
+
+$$[\text{OH}^-]
+=\sqrt{\frac{k_w}{k_a}\cdot c_s}
+=\sqrt{\frac{10^{-14}}{2.1 \cdot 10^{-9}} \cdot \frac{2 \cdot 10^{-2}}{140 \cdot 10^{-2}}}
+=8.2479 \cdot 10^{-4}$$
+
+A noi però interessa la concentrazione degli ioni $\rm H_3O^+$. Per ottenerla basta ricordare che
+
+$$\rm [H_3O^+][OH^-]=\textit{k}_{\textit{w}}=10^{-14}$$
+
+da cui
+
+$$\rm [H_3O^+]=\frac{10^{-14}}{[OH^-]}
+=\frac{10^{-14}}{[OH^-]}
+=\frac{10^{-14}}{8.2479 \cdot 10^{-4}}=1.2121 \cdot 10^{-11}$$
