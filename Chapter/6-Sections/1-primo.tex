@@ -28,7 +28,7 @@ Chiaramente alla fine ci sarà una parte dei reagenti che non ha reagito (o megl
 
 Si dimostra poi che il rapporto tra la concentrazione (indicata con le parentesi quadre) al quadrato del prodotto HI\footnote{eleviamo perché avevamo coefficiente stechiometrico pari a 2, cioè il coefficiente diventa esponente.} e il prodotto delle concentrazioni dei reagenti (ognuna elevata a 1 perché il loro coefficiente stechiometrico è 1) resta costante nel tempo, ossia è come se non cambiasse per le concentrazioni:
 
-$$\rm \frac{[HI]^2}{[H_2] \cdot [I_2]}=\textit{cost}$$
+$$\rm \frac{[HI]^2}{[H_2] \cdot [I_2]}=\text{cost}$$
 
 In questa fase diciamo che il sistema ha raggiunto l'equilibrio, cioè quando la reazione è in equilibrio tale rapporto non cambia più.
 
@@ -73,9 +73,9 @@ $$\ce{\alpha A + \beta B <--> \gamma C + \delta D}$$
 
 dove $\alpha$, $\beta$, $\gamma$ e $\delta$ sono i coefficienti stechiometrici. A, B, C e D sono specie chimiche gassose del sistema in equilibrio.
 
-Indichiamo poi con $G_A^0$, $G_B^0$, $G_C^0$ e $G_D^0$ le energie libere molari standard\footnote{L'energia libera di Gibbs (o entalpia libera) è una funzione di stato usata per rappresentare l'energia libera, cioè il lavoro che il sistema può compiere sull'ambiente. \E definita come $G(T,P,n)=H-TS$.} (cioè a 25° C e e 1 atm) delle relative specie.
+Indichiamo poi con $G_A^0$, $G_B^0$, $G_C^0$ e $G_D^0$ le energie libere molari standard\footnote{L'energia libera di Gibbs (o entalpia libera) è una funzione di stato usata per rappresentare l'energia libera, cioè il lavoro che il sistema può compiere sull'ambiente. \E definita come $G(T,P,n)=H-TS$.} (cioè a $25 \; ^{\circ} \rm C$ e e 1 atm) delle relative specie.
 
-Indicheremo con $G_A$, $G_B$, $G_C$ e $G_D$ le energie libere molari a 25° C ma rispetto alle pressioni parziali finali di quando abbiamo raggiunto l'equilibrio.
+Indicheremo con $G_A$, $G_B$, $G_C$ e $G_D$ le energie libere molari a $25 \; ^{\circ} \rm C$ ma rispetto alle pressioni parziali finali di quando abbiamo raggiunto l'equilibrio.
 
 Immaginiamo di avere eseguito una reazione e di essere passati da uno stato 1 a uno stato 2, in cui lo stato iniziale è a condizioni standard e lo stato finale è a condizioni di equilibrio, quindi ogni specie inizialmente aveva la pressione di 1 atm e alla fine avrà la pressione parziale $P_A$, $P_B$, $P_C$ o $P_D$. La variazione di energia libera in questa reazione sarà data da
 
@@ -97,7 +97,7 @@ $$\beta G_B = \beta G_B^0 + \beta RT \ln P_B
 \delta G_D = \delta G_D^0 + \delta RT \ln P_D$$
 
 Possiamo allora calcolare un $\Delta G$ della reazione, dato dalla variazione di energia libera dei prodotti meno la variazione di energia libera dei reagenti:
-$$\Delta G_{reazione} = (\gamma G_C + \delta G_D) - (\alpha G_A + \beta G_B)$$
+$$\Delta G_{\rm reazione} = (\gamma G_C + \delta G_D) - (\alpha G_A + \beta G_B)$$
 
 sostituendo
 $$\Delta G = (\gamma G_C^0  + \gamma RT \ln P_C + \delta G_D^0  + \delta RT \ln P_D) - 
@@ -114,48 +114,49 @@ Segue che all'equilibrio vale
 
 $$\Delta G^0 = -RT \ln \frac{P_C^{\gamma} \cdot P_D^{\delta}}{P_A^{\alpha} \cdot P_B^{\beta}}$$
 
-A $T$ costante $\Delta G^0$ è un numero. Ne segue che anche l'argomento del logaritmo sarà uguale a una costante, la quale è funzione delle pressioni parziali. Tale costante è detta \textit{costante di reazione} $k_p$. L'espressione allora diventa
+A $T$ costante $\Delta G^0$ è un numero. Ne segue che anche l'argomento del logaritmo sarà uguale a una costante, la quale è funzione delle pressioni parziali. Tale costante è detta \textit{costante di reazione} $K_p$. L'espressione allora diventa
 
-$$\frac{P_C^{\gamma} \cdot P_D^{\delta}}{P_A^{\alpha} \cdot P_B^{\beta}} = k_p
+$$\frac{P_C^{\gamma} \cdot P_D^{\delta}}{P_A^{\alpha} \cdot P_B^{\beta}} = K_p
 \quad\big(\text{da cui }
-\Delta G^0 = -RT\ln k_p\big)\footnotemark$$
+\Delta G^0 = -RT\ln K_p\big)\footnotemark$$
 
 \footnotetext{Questa implicazione verrà usata in un secondo momento, quando ricaveremo l'equazione di Nernst in elettrochimica.}
 
-Se la costante $k_p$ viene espressa in funzione delle concentrazioni diventa il rapporto delle concentrazioni visto all'inizio e che non cambia nonostante le concentrazioni iniziali. Tale risultato rappresenta la legge delle masse\footnote{Nei testi viene riportata come "Legge di azione di massa".}, la quale afferma che
+Se la costante $K_p$ viene espressa in funzione delle concentrazioni diventa il rapporto delle concentrazioni visto all'inizio e che non cambia nonostante le concentrazioni iniziali. Tale risultato rappresenta la legge delle masse\footnote{Nei testi viene riportata come "Legge di azione di massa".}, la quale afferma che
 
 \vspace{0.2cm}"\textit{In una reazione che ha raggiunto l'equilibrio, il rapporto tra il prodotto delle concentrazioni dei prodotti e quello dei reagenti, ciascuna elevata al proprio coefficiente stechiometrico, è una costante.}"
 
-\vspace{0.2cm}Quindi, qualunque siano le condizioni iniziali, purché sia fissata la temperatura, il valore della costante $k_p$ non cambia per ogni reazione, cioè ogni reazione ha la sua costante che varia se cambia la temperatura, ma che non varia anche se cambiano le concentrazioni di reagenti e di prodotti.
+\vspace{0.2cm}Quindi, qualunque siano le condizioni iniziali, purché sia fissata la temperatura, il valore della costante $K_p$ non cambia per ogni reazione, cioè ogni reazione ha la sua costante che varia se cambia la temperatura, ma che non varia anche se cambiano le concentrazioni di reagenti e di prodotti.
 
 Va notato che le pressioni parziali che figurano in essa sono quelle all'equilibrio e non quelle iniziali. Analogamente se la esprimiamo con le concentrazioni.
-\subsection{Relazione tra \texorpdfstring{$\boldsymbol{k_p}$}{k\_p} e \texorpdfstring{$\boldsymbol{k_c}$}{k\_c}}
-Stiamo parlando di equilibri in fase gassosa e quindi di reazioni in fase gassosa, nonché di pressioni parziali di ciascuno dei componenti. Noi però siamo abituati a lavorare in soluzione, pertanto laddove fosse possibile vogliamo capire come fare per ragionare su equilibri in soluzione acquosa (con "possibile" si intende avere specie che si sciolgono in acqua). Quindi quello che vogliamo capire è se c'è una relazione tra la costante di equilibrio in funzione delle pressioni parziali $k_p$ e la costante di equilibrio in funzione della concentrazione $k_c$.
+\subsection[Relazione tra \texorpdfstring{$K_p$}{K\_p} e \texorpdfstring{$K_c$}{K\_c}]%
+{Relazione tra $\boldsymbol{K_p}$ e $\boldsymbol{K_c}$}
+Stiamo parlando di equilibri in fase gassosa e quindi di reazioni in fase gassosa, nonché di pressioni parziali di ciascuno dei componenti. Noi però siamo abituati a lavorare in soluzione, pertanto laddove fosse possibile vogliamo capire come fare per ragionare su equilibri in soluzione acquosa (con "possibile" si intende avere specie che si sciolgono in acqua). Quindi quello che vogliamo capire è se c'è una relazione tra la costante di equilibrio in funzione delle pressioni parziali $K_p$ e la costante di equilibrio in funzione della concentrazione $K_c$.
 
-La $k_p$ della reazione è
-$$k_p = \frac{P_C^{\gamma} \cdot P_D^{\delta}}{P_A^{\alpha} \cdot P_B^{\beta}}$$
+La $K_p$ della reazione è
+$$K_p = \frac{P_C^{\gamma} \cdot P_D^{\delta}}{P_A^{\alpha} \cdot P_B^{\beta}}$$
 
 Dall'equazione di stato dei gas si ha
 
-$$PV=nRT \implies P=\frac{n}{V}RT \implies P=c \cdot RT$$
+$$PV=nRT \implies P=\frac{n}{V}RT \implies P=C \cdot RT$$
 
-Se indichiamo con [A], [B], [C] e [D] le varie concentrazioni, la $k_p$ sarà
+Se indichiamo con [A], [B], [C] e [D] le varie concentrazioni, la $K_p$ sarà
 
-$$k_p = \frac{[\text{C}]^{\gamma} [\text{D}]^{\delta}}{[\text{A}]^{\alpha} [\text{B}]^{\beta}} \cdot \frac{(RT)^{\gamma} (RT)^{\delta}}{(RT)^{\alpha} (RT)^{\beta}}$$
+$$K_p = \frac{[\text{C}]^{\gamma} [\text{D}]^{\delta}}{[\text{A}]^{\alpha} [\text{B}]^{\beta}} \cdot \frac{(RT)^{\gamma} (RT)^{\delta}}{(RT)^{\alpha} (RT)^{\beta}}$$
 
 Poniamo
 
-$$k_c = \frac{[\text{C}]^{\gamma} [\text{D}]^{\delta}}{[\text{A}]^{\alpha} [\text{B}]^{\beta}}
+$$K_c = \frac{[\text{C}]^{\gamma} [\text{D}]^{\delta}}{[\text{A}]^{\alpha} [\text{B}]^{\beta}}
 \quad;\quad
 \Delta n= (\gamma + \delta - \alpha - \beta)$$
 
 Scriveremo che
-$$k_p = k_c \cdot (RT)^{\Delta n}$$
+$$K_p = K_c \cdot (RT)^{\Delta n}$$
 
-$\Delta n$ è la variazione del numero di moli. Se le moli di reagenti sono uguali in numero a quelle dei prodotti $\Delta n$ sarà pari a zero, per cui $k_p = k_c$. In caso contrario, cioè se c'è variazione del numero di moli, $\Delta n \neq 0$ e $k_p \neq k_c$.
+$\Delta n$ è la variazione del numero di moli. Se le moli di reagenti sono uguali in numero a quelle dei prodotti $\Delta n$ sarà pari a zero, per cui $K_p = K_c$. In caso contrario, cioè se c'è variazione del numero di moli, $\Delta n \neq 0$ e $K_p \neq K_c$.
 
 \vspace{0.2cm}\textbf{ES.1}
-$$\ce{H_2 + I_2 <--> 2HI}, \quad \Delta n = 0 \implies k_p = k_c$$
+$$\ce{H_2 + I_2 <--> 2HI}, \quad \Delta n = 0 \implies K_p = K_c$$
 
 \textbf{ES.2}
-$$\ce{PCl_5  <--> PCl_3 + Cl_2}, \quad \Delta n = 1 \implies k_p = k_c - RT$$
+$$\ce{PCl_5  <--> PCl_3 + Cl_2}, \quad \Delta n = 1 \implies K_p = K_c - RT$$
