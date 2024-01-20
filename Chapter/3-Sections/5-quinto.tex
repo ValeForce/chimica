@@ -55,7 +55,26 @@ Notiamo che questa reazione è diversa da quella di partenza, ma se stiamo atten
 
 \vspace{-0.4cm}\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{immagini/Ciclo-Born-Haber.png}
+    %\includegraphics[width=12cm]{immagini/Ciclo-Born-Haber.png}
+    \begin{tikzpicture}[scale=.6]
+        %linee
+        \draw[teal, line width=3pt] (0,0) -- (6,0) node[black,midway,below] {\scriptsize \ce{Li(s) + \frac{1}{2}F_2(g)}}; %livello di partenza
+        \draw[line width=1pt] (0,1.61) -- (5,1.61) node[near start, above=-0.1cm] {\scriptsize\ce{Li(g) + \frac{1}{2}F_2(g)}};
+        \draw[line width=1pt] (3,2.405) -- (8,2.405) node[near start, above=-0.1cm] {\scriptsize\ce{Li(g) + F(g)}};
+        \draw[line width=1pt] (6,7.605) -- (11,7.605) node[midway, above=-0.1cm] {\scriptsize\ce{Li^+(g) + F(g)}};
+        \draw[line width=1pt] (9,4.325) -- (14,4.325) node[near end, above=-0.1cm] {\scriptsize\ce{Li^+(g) + F^-(g)}};
+        \draw[teal, line width=3pt] 
+        (2,-6.17) -- (14,-6.17) node[black,midway,below] {\scriptsize LiF(s)}; %livello finale
+        %frecce
+        \draw[red, -{Triangle[width = 10pt, length = 6pt]}, line width = 6pt, shorten >= 0.51pt,shorten <= 1.51pt] (1,0) -- (1,1.61) node[black,midway, right] {\scriptsize $\rm \Delta H^0_{atomiz}$ di Li}; %fase 1
+        \draw[red, -{Triangle[width = 10pt, length = 6pt]}, line width = 6pt, shorten >= 0.51pt,shorten <= 0.51pt] (4,1.61) -- (4,2.405) node[black,midway, below=0.05cm, right] {\scriptsize $\rm \Delta H^0_{1/2 \, BE}$ di $\rm F_2$}; %fase 2
+        \draw[red, -{Triangle[width = 10pt, length = 6pt]}, line width = 6pt, shorten >= 0.51pt,shorten <= 0.51pt] (7,2.405) -- (7,7.605) node[black,midway, left] {\scriptsize $\rm \Delta H^0_{IP_1}$ di Li}; %fase 3
+        \draw[red, -{Triangle[width = 10pt, length = 6pt]}, line width = 6pt, shorten >= 0.51pt,shorten <= 0.51pt] (10,7.605) -- (10,4.325) node[black,midway, right] {\scriptsize $\rm \Delta H^0_{EA}$ di F}; %fase 4
+        \draw[red, -{Triangle[width = 10pt, length = 6pt]}, line width = 6pt, shorten >= 1.51pt,shorten <= 0.51pt] (13,4.325) -- (13,-6.17) node[black,midway, right] {\scriptsize $\rm \Delta H^0_{\text{reticolo}}$};
+        \draw[cyan, -{Triangle[width = 10pt, length = 6pt]}, line width = 6pt, shorten >= 1.51pt,shorten <= 1.51pt] (5,0) -- (5,-6.17) node[black,midway, left] {\scriptsize $\rm \Delta H^0$ complessivo}; 
+        %asse
+        \draw[-latex,line width=1pt] (-1,-7) -- (-1,8.5) node [midway, above, rotate=90] {\footnotesize Entalpia, H};
+    \end{tikzpicture}
 \end{figure}
 
 \vspace{-0.2cm}Poiché stato iniziale e stato finale sono gli stessi, la somma di tutti questi calori deve essere uguale al calore scambiato nel percorso diretto.
@@ -88,7 +107,7 @@ L'evidenza sperimentale di tale fatto si ottiene confrontando tre circuiti elett
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=9cm]{immagini/lampadina.png}
+    \includegraphics[width=8cm]{immagini/lampadina.png}
 \end{figure}
 
 Tale esperimento mostra l'esistenza degli ioni, che sono i portatori di carica che permettono la conduzione.
@@ -102,9 +121,10 @@ Se solidi, non conducono elettricità, per cui costituiscono dei buoni isolanti.
 In genere hanno temperature di fusione elevate, perché dobbiamo abbattere l'energia reticolare, che è molto elevata, per poter liberare gli ioni dal reticolo.
 
 All'interno dei reticoli gli ioni sono disposti alternatamente nelle varie direzioni
-\begin{figure}[htp]
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=9cm]{immagini/struttura-composti-ionici.png}
+    \includegraphics[width=8cm]{immagini/struttura-composti-ionici.png}
 \end{figure}
 
 Immaginiamo un sistema bidimensionale. Se cerchiamo di rompere il cristallo, lo si deve spezzare e far scivolare il sistema in un piano. Se riusciamo a fare ciò, riusciamo a rompere il cristallo.
