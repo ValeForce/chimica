@@ -311,6 +311,67 @@ $$E=E_1 - E_2 = \frac{0.059}{n} \log \frac{a_1}{a_2}$$
 
 dove $a_1$ è la concentrazione più elevata (è importante che sia così altrimenti il potenziale risulterebbe negativo\footnote{Se la f.e.m. fosse negativa fisicamente significherebbe che la pila sta agendo come un ricevitore di energia elettrica piuttosto che come una fonte, ecco perché è un risultato non accettabile.}) e $n$ è il numero di elettroni scambiati. Poiché per passare da $\rm Ag^{+}$ ad Ag serve un solo elettrone $n=1$ e quindi:
 
-$$E=0.059 \cdot \log \frac{1.0 \cdot 10^{-2}}{1.0 \cdot 10^{-7}}
-=0.059 \cdot \log 1 \cdot 10^{5}
-=0.295 \; \rm V$$
+\begin{equation*}
+    E=0.059 \cdot \log \frac{1.0 \cdot 10^{-2}}{1.0 \cdot 10^{-7}}
+    =0.059 \cdot \log (1.0 \cdot 10^{5})
+    =0.295 \; \rm V
+\end{equation*}
+
+\textbf{5.11} Si fa passare una corrente costante di $10 \; \rm A$ per 30 minuti in una cella contenente idrossido di sodio fuso, usando elettrodi inerti. Si calcoli la massa del metallo che si è formata al catodo ed il volume del gas che si è sviluppato all'anodo (\ce{ 4OH^- -> O_2 + 2H_2O + 4e^-}), trascurando l'$\rm H_2O$, a condizioni normali.
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}Si tratta di un'idrolisi di sali fusi. Infatti non è possibile fare idrolisi della base NaOH in acqua, in quanto se mettessimo sodio metallico in acqua otterremo un'esplosione. Inoltre il potenziale standard di riduzione del sodio è uno dei più negativi, per cui non possiamo idrolizzare un sale di sodio o una base di sodio per ottenere sodio: al catodo infatti si andrà a sviluppare la specie con potenziale maggiore, cioè l'idrogeno che ha potenziale pari a 0.
+
+In altre parole, se facessimo elettrolisi di una soluzione acquosa di idrossido di sodio, al catodo otterremmo un flusso di idrogeno, non di sodio metallico. Ecco perché qualora ci serva il sodio metallico dobbiamo lavorare sul fuso, in assenza di acqua.
+
+\vspace{0.2cm}In tale fuso di idrossido di sodio viene fatta passare una corrente di 10 A per un tempo $t=30 \cdot 60=1800 \; \rm s$, che corrispondono ad una carica pari a
+
+\begin{equation*}
+    Q=I \cdot t=10 \cdot 1800=18000 \; \rm C
+\end{equation*}
+
+che in Faraday corrispondono a
+
+\begin{equation*}
+    Q(\rm F)=\frac{18000}{96485}=1.8656 \cdot 10^{-1} \; F
+\end{equation*}
+
+Per le leggi di Faraday, tale quantità sarà pari al numero di equivalenti di sostanza depositata al catodo. Inoltre, siccome al catodo avviene la reazione di riduzione del sodio
+
+\begin{equation*}
+    \ce{Na^+ + 1e^- -> Na}
+\end{equation*}
+
+in cui si scambia un solo elettrone, equivalenti e moli coincidono, Ne segue che le moli di sodio depositate $n_{\rm Na}$ sono pari a $1.8656 \cdot 10^{-1} \; \rm mol$. La massa di sodio sarà allora quindi
+
+\begin{equation*}
+    g_{\rm Na}=MM_{\rm Na} \cdot n_{\rm Na}
+    =1.8656 \cdot 10^{-1} \cdot 22.9898
+    =4.2890 \; \rm grammi
+\end{equation*}
+
+Passiamo all'anodo: qui avviene l'ossidazione dello ione $\rm OH^-$, i cui prodotti sono ossigeno e acqua. La reazione che avviene è
+
+\begin{equation*}
+    \ce{4OH^- -> O_2 + 2H_2O + 4e^-}
+\end{equation*}
+
+Noi vogliamo calcolare il volume di ossigeno prodotto, e per calcolarlo ci servono le moli. Poiché ogni molecola di $\rm O_2$ consuma 4 elettroni, le moli saranno pari ad un quarto degli equivalenti della sostanza che si ossida. Dunque:
+
+\begin{equation*}
+    n_{\rm O_2}
+    =\frac{1.8656 \cdot 10^{-1}}{4}
+    =0.4664 \cdot 10^{-1} \; \rm mol
+\end{equation*}
+
+A questo punto per ricavare il volume basterà applicare la legge dei gas perfetti:
+
+\begin{equation*}
+    PV=nRT
+    \implies
+    V=\frac{nRT}{P}
+    \implies
+    V_{\rm O_2}=\frac{0.4664 \cdot 10^{-1} \cdot 0.082 \cdot 273.15}{1}
+    =1.0446 \; \rm L
+\end{equation*}

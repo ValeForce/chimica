@@ -14,9 +14,9 @@ Le moli di HI sono in difetto, quindi questo sarà il reagente limitante. Scrivi
 
 \begin{center}
     \begin{tabular}{ccccccc}
-        $4 \cdot 10^{-3}$ &  & $1.5 \cdot 10^{-3}$ & & /\\
+        $4 \cdot 10^{-3}$ & & $1.5 \cdot 10^{-3}$ & & /\\
         $\rm NH_3$ & + & HI & \ce{->} & $\rm NH_4I$ \\
-        $2.5 \cdot 10^{-3}$ &  &  / & & $1.5 \cdot 10^{-3}$\\
+        $2.5 \cdot 10^{-3}$ & & / & & $1.5 \cdot 10^{-3}$\\
     \end{tabular}
 \end{center}
 
@@ -1087,3 +1087,114 @@ e dunque
 $$\rm pOH=\log\left(\frac{1}{[OH^-]}\right)=\log\left(\frac{1}{2.9483 \cdot 10^{-6}}\right)=5.53$$
 
 $$\implies \rm pH=14 - pOH=14 - 5.43=8.47$$
+
+\textbf{4.29} Calcolare il pH di una soluzione di 780 mL ottenuta sciogliendo 6.0000 grammi di acido acetico e 4.3000 grammi di idrossido di sodio.
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+Calcoliamo innanzitutto le moli:
+
+$$n_{\rm CH_3COOH}=\frac{g}{MM_{\rm CH_3COOH}}=\frac{6}{60.052}=9.9913 \cdot 10^{-2} \; \rm mol$$
+
+$$n_{\rm NaOH}=\frac{4.3}{39.997}=10.7508 \cdot 10^{-2} \; \rm mol$$
+
+Le moli di acido acetico sono in difetto, quindi sarà il reagente limitante.
+
+Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto:
+
+\begin{center}
+    \begin{tabular}{ccccccc}
+        $9.9913 \cdot 10^{-2}$ & & $10.7508 \cdot 10^{-2}$ & & / &&\\
+        $\rm CH_3COOH$ & + & NaOH & \ce{->} & $\rm CH_3COONa$ & + & $\rm H_2O$\\
+        / & & $0.7595 \cdot 10^{-2}$ & & $9.9913 \cdot 10^{-2}$&&\\
+    \end{tabular}
+\end{center}
+
+A fine reazione abbiamo una base forte che è l'idrossido di sodio e un sua sale che è l'acetato di sodio, ottenuto a partire da un acido debole.
+
+Analizziamo le singole specie.
+
+L'idrossido di sodio è una base forte, per cui si dissocia totalmente in $\rm Na^+$ e $\rm OH^-$:
+
+\begin{equation*}
+    \ce{NaOH -> Na^+ + OH^-}
+\end{equation*}
+
+L'acetato di sodio in acqua si dissocia in ione $\rm Na^+$ e ione acetato $\rm CH_3COO^-$; quest'ultimo dà luogo a una reazione di equilibrio di idrolisi basica:
+
+\begin{equation*}
+    \ce{CH_3COO^- + H_2O <--> CH_3COOH + OH^-}
+\end{equation*}
+
+Tuttavia, in soluzione sono già presenti parecchi ioni $\rm OH^-$ provenienti dalla dissociazione della base forte, per cui l'equilibrio sarà totalmente spostato a sinistra e di fatto tale reazione non avviene. Ne segue che il pOH sarà determinato soltanto dalla dissociazione della base forte.
+
+La concentrazione degli ioni $\rm OH^-$ proveniente dall'$\rm NaOH$ è pari a
+
+\begin{equation*}
+    [\rm OH^-]=\frac{0.7595 \cdot 10^{-2} \cdot 10^{-2} \cdot 1000}{780}=1.2820 \cdot 10^{-2} \; \rm mol/L
+\end{equation*}
+
+e quindi
+
+\begin{equation*}
+    \rm pOH=\log{\left(\frac{1}{1.2820 \cdot 10^{-2}}\right)}=1.89
+\end{equation*}
+
+\begin{equation*}
+    \implies \rm pH=14-pOH=14-1.89=12.11
+\end{equation*}
+
+\textbf{4.30} Calcolare la concentrazione di una soluzione di ipoclorito di sodio avente pH pari a 9.03, sapendo che l'acido ipocloroso ha una costante acida pari a $K_a=2.95 \cdot 10^{-8}$.
+
+\vspace{0.2cm}\large\textbf{Svolgimento}\normalsize
+
+\vspace{0.2cm}La soluzione è composta da NaClO il quale è un sale, dunque come tutti i sali è un elettrolita forte e in acqua si dissocerà totalmente secondo la reazione
+
+\begin{equation*}
+    \ce{NaClO -> Na^+ + ClO^-}
+\end{equation*}
+
+Mentre lo ione $\rm Na^+$ non subisce ulteriori reazione, lo ione ipoclorito $\rm ClO^-$, che è la base coniugata dell'acido ipocloroso il quale è un acido debole (ciò lo deduciamo dal valore della costante $K_a$), reagirà con l'acqua strappandole un protone per formare $\rm HClO$ e lasciando un eccesso di ioni $\rm OH^-$:
+
+\begin{equation*}
+    \ce{ClO^- + H_2O <--> HClO + OH^-}
+\end{equation*}
+
+Ci troviamo dunque in presenza di un'idrolisi basica, tant'è che il testo ci dice che il pH ha valore $9.03$. La concentrazione degli ioni $\rm OH^-$ sarà allora data da
+
+\begin{equation*}
+    [\text{OH}^-]
+    =\sqrt{\frac{K_w}{K_a}\cdot C_s}
+\end{equation*}
+
+da cui ricaviamo la formula per il calcolo della concentrazione del sale, che è quella che ci interessa. Infatti si ha
+
+\begin{equation*}
+    [\text{OH}^-]^2
+    =\frac{K_w}{K_a}\cdot C_s
+    \implies
+    C_s
+    =[\text{OH}^-]^2 \cdot \frac{K_a}{K_w}
+\end{equation*}
+
+La quantità $\rm [OH^-]$ la ricaviamo dalla formula del calcolo del pOH:
+
+\begin{equation*}
+    \rm pOH=\log \left( \frac{1}{[OH^-]} \right)
+    \implies
+    [OH^-]=10^{pOH}
+\end{equation*}
+
+Ricordiamo che il testo ci dice che la soluzione ha pH pari a 9.03, ciò significa che
+
+\begin{equation*}
+    \rm pOH=14-9.03=4.97
+\end{equation*}
+
+per cui in definitiva avremo
+
+\begin{equation*}
+    C_s
+    ={\big( 10^{4.97} \big)}^2 \cdot \frac{2.95 \cdot 10^{-8}}{1 \cdot 10^{-14}}
+    =3.39 \cdot 10^{-4} \; \rm mol/L
+\end{equation*}

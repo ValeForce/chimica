@@ -4,14 +4,61 @@ Osserviamo l'andamento di alcune quantità che dipendono dal riempimento con ele
 
 Questa grandezza è in teoria infinita, ma abbiamo deciso di assegnare un raggio ad ogni atomo e dire che il nucleo è sostanzialmente piccolissimo e le dimensioni dell'atomo sono dovute agli orbitali, quindi agli elettroni (in particolar modo a quelli più esterni, che poi sono quelli di valenza). Stiamo inoltre imponendo che la probabilità di trovare l'elettrone sia confinata entro un certo valore che riteniamo accettabile. Fare questo ragionamento ha senso, perché nell'istante in cui avessi una molecola, se essa è formata da due atomi a raggi infiniti, quale sarebbe la distanza di legame tra i due atomi? Sarebbe infinita, ma ciò non è vero, perché noi siamo in grado di misurare le distanze nucleari e le distanze interatomiche nelle molecole. Quindi l'assunzione di confinare le dimensioni dei raggi degli atomi e degli ioni ragionando sul concetto probabilistico è indispensabile, ed è ciò che i parametri metrici delle molecole ci suggeriscono, ossia possiamo fare misure di distanze interatomiche sia in solidi che in sistemi molecolari gassosi, e pertanto l'avere pensato che gli ioni abbiano dimensioni ben precise è più che ragionevole.
 
-\begin{figure}[htp]
+\vspace{-0.6cm}
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=9cm]{immagini/raggi-atomici.png}
+    %\includegraphics[width=9cm]{immagini/raggi-atomici.png}
+    \begin{tikzpicture}[scale=.3]
+        %prima riga
+        \shade[ball color=orange!60!yellow] (0,-1) circle (.37cm) node[below=0.1cm] {\scriptsize H, 37} node[above=0.15cm] {\scriptsize\textbf{1 A}};
+        %aseconda riga
+        \shade[ball color=blue!60!cyan!30!] (0,-6.3) circle (1.52cm) node[below=0.45cm] {\scriptsize Li, 152} node[above=0.45cm] {\scriptsize\textbf{1 A}};
+        \shade[ball color=blue!60!cyan!30!] (6,-6.3) circle (1.13cm) node[below=0.45cm] {\scriptsize Be, 113} node[above=0.45cm] {\scriptsize\textbf{2 A}};
+        \shade[ball color=green!20!olive!55] (11.5,-6.3) circle (0.83cm) node[below=0.45cm] {\scriptsize B, 83} node[above=0.45cm] {\scriptsize\textbf{3 A}};
+        \shade[ball color=orange!60!yellow] (16.5,-6.3) circle (0.77cm) node[below=0.45cm] {\scriptsize C, 77} node[above=0.45cm] {\scriptsize\textbf{4 A}};
+        \shade[ball color=orange!60!yellow] (21.5,-6.3) circle (0.71cm) node[below=0.45cm] {\scriptsize N, 71} node[above=0.45cm] {\scriptsize\textbf{5 A}};
+        \shade[ball color=orange!60!yellow] (26.5,-6.3) circle (0.66cm) node[below=0.45cm] {\scriptsize O, 66} node[above=0.45cm] {\scriptsize\textbf{6 A}};
+        \shade[ball color=orange!60!yellow] (31.5,-6.3) circle (0.71cm) node[below=0.45cm] {\scriptsize F, 71} node[above=0.45cm] {\scriptsize\textbf{7 A}};
+        %terza riga
+        \shade[ball color=blue!60!cyan!30!] (0,-12) circle (1.86cm) node[below=0.55cm] {\scriptsize Na, 186};
+        \shade[ball color=blue!60!cyan!30!] (6,-12) circle (1.6cm) node[below=0.55cm] {\scriptsize Mg, 160};
+        \shade[ball color=blue!60!cyan!30!] (11.5,-12) circle (1.43cm) node[below=0.55cm] {\scriptsize Al, 143};
+        \shade[ball color=green!20!olive!55] (16.5,-12) circle (1.17cm) node[below=0.55cm] {\scriptsize Si, 117};
+        \shade[ball color=orange!60!yellow] (21.5,-12) circle (1.15cm) node[below=0.55cm] {\scriptsize P, 115};
+        \shade[ball color=orange!60!yellow] (26.5,-12) circle (1.04cm) node[below=0.55cm] {\scriptsize S, 104};
+        \shade[ball color=orange!60!yellow] (31.5,-12) circle (0.99cm) node[below=0.55cm] {\scriptsize Cl, 99};
+        %quarta riga
+        \shade[ball color=blue!60!cyan!30!] (0,-18.5) circle (2.27cm) node[below=0.7cm] {\scriptsize K, 227};
+        \shade[ball color=blue!60!cyan!30!] (6,-18.5) circle (1.97cm) node[below=0.7cm] {\scriptsize Ca, 197};
+        \shade[ball color=blue!60!cyan!30!] (11.5,-18.5) circle (1.22cm) node[below=0.7cm] {\scriptsize Ga, 122};
+        \shade[ball color=green!20!olive!55] (16.5,-18.5) circle (1.23cm) node[below=0.7cm] {\scriptsize Ge, 123};
+        \shade[ball color=green!20!olive!55] (21.5,-18.5) circle (1.25cm) node[below=0.7cm] {\scriptsize As, 125};
+        \shade[ball color=orange!60!yellow] (26.5,-18.5) circle (1.17cm) node[below=0.7cm] {\scriptsize Se, 117};
+        \shade[ball color=orange!60!yellow] (31.5,-18.5) circle (1.14cm) node[below=0.7cm] {\scriptsize Br, 114};
+        %quinta riga
+        \shade[ball color=blue!60!cyan!30!] (0,-25.5) circle (2.48cm) node[below=0.75cm] {\scriptsize Rb, 248};
+        \shade[ball color=blue!60!cyan!30!] (6,-25.5) circle (2.15cm) node[below=0.75cm] {\scriptsize Sr, 215};
+        \shade[ball color=blue!60!cyan!30!] (11.5,-25.5) circle (1.63cm) node[below=0.75cm] {\scriptsize In, 163};
+        \shade[ball color=blue!60!cyan!30!] (16.5,-25.5) circle (1.41cm) node[below=0.75cm] {\scriptsize Sn, 141};
+        \shade[ball color=green!20!olive!55] (21.5,-25.5) circle (1.41cm) node[below=0.75cm] {\scriptsize Sb, 141};
+        \shade[ball color=green!20!olive!55] (26.5,-25.5) circle (1.43cm) node[below=0.75cm] {\scriptsize Te, 143};
+        \shade[ball color=orange!60!yellow] (31.5,-25.5) circle (1.33cm) node[below=0.75cm] {\scriptsize I, 133};
+        %sesta riga
+        \shade[ball color=blue!60!cyan!30!] (0,-33) circle (2.65cm) node[below=0.85cm] {\scriptsize Cs, 265};
+        \shade[ball color=blue!60!cyan!30!] (6,-33) circle (2.17cm) node[below=0.85cm] {\scriptsize Ba, 217};
+        \shade[ball color=blue!60!cyan!30!] (11.5,-33) circle (1.7cm) node[below=0.85cm] {\scriptsize Tl, 170};
+        \shade[ball color=blue!60!cyan!30!] (16.5,-33) circle (1.54cm) node[below=0.85cm] {\scriptsize Pb, 154};
+        \shade[ball color=blue!60!cyan!30!] (21.5,-33) circle (1.55cm) node[below=0.85cm] {\scriptsize Bi, 155};
+        \shade[ball color=blue!60!cyan!30!] (26.5,-33) circle (1.67cm) node[below=0.85cm] {\scriptsize Po, 167};
+        %caption
+        \node at (16,-39.5) {Raggio atomico in picometri ($10^{-12}$ m).};
+        \end{tikzpicture}
 \end{figure}
 
-(In figura: raggio atomico in picometri ($10^{-12}$ m))
+%(In figura: raggio atomico in picometri ($10^{-12}$ m))
 
-Si osserva che i raggi degli atomi crescono all'aumentare del numero quantico principale n, in quanto l'energia dell'elettrone cresce in valore assoluto e dunque aumenta la distanza elettrone-nucleo. Quindi scendendo lungo un gruppo il raggio atomico aumenta. Il motivo è che i livelli interni schermano molto gli elettroni esterni dalla carica nucleare, per cui questi ultimi non la sentono tutta ma solo una parte, col risultato di essere meno legati e quindi più distanti dal nucleo.
+\vspace{-0.1cm}Si osserva che i raggi degli atomi crescono all'aumentare del numero quantico principale n, in quanto l'energia dell'elettrone cresce in valore assoluto e dunque aumenta la distanza elettrone-nucleo. Quindi scendendo lungo un gruppo il raggio atomico aumenta. Il motivo è che i livelli interni schermano molto gli elettroni esterni dalla carica nucleare, per cui questi ultimi non la sentono tutta ma solo una parte, col risultato di essere meno legati e quindi più distanti dal nucleo.
 
 Alcuni elementi non rispettano questa regola, come ad esempio il gallio, la cui anomalia è causata dal fatto che esso è un metallo allo stato liquido a temperatura ambiente, per cui entrano in gioco altri fattori.
 
@@ -25,12 +72,13 @@ Quindi la carica nucleare:
 \subsection{Raggio degli ioni}
 Quanto osservato per i raggi atomici in larga misura vale anche per i raggi degli ioni: crescono lungo un gruppo perché cresce il valore di n, mentre per quello che succede lungo un periodo bisogna ragionare in termini di stato d'ossidazione dato che abbiamo a che fare con ioni, e non ha senso confrontare ad esempio uno ione +1 con uno +2 o +3: dobbiamo confrontare ioni con la stessa carica. Infatti non avrebbe senso confrontare ad esempio l'$\rm N^{3-}$ con l'N: il primo ha acquistato elettroni, e risulta quindi più grande.
 
-\begin{figure}[htp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=13cm]{immagini/raggi-ionici.png}
+    \caption*{Dimensioni di alcuni ioni comuni in picometri.}
 \end{figure}
 
-(In figura: Dimensioni di alcuni ioni comuni in picometri.)
+%(In figura: Dimensioni di alcuni ioni comuni in picometri.)
 
 Quindi quando si va lungo un periodo, per i raggi ionici bisogna fare ragionamenti che tengano conto della carica, mentre per un gruppo il ragionamento è più immediato: lungo esso le dimensioni aumentano così come aumentavano per gli atomi, perché all'interno di un gruppo si ha la stessa carica (Es 1° gruppo $\rightarrow$ un solo elettrone esterno. Se diventano ioni hanno tutti perso l'unico elettrone esterno, quindi sono tutti nella stessa situazione, avranno la configurazione elettronica del gas nobile che li precede, perché avevano un elettrone 2s, 3s, 4s ecc. da atomo, lo hanno perso e quindi hanno acquisito la configurazione dell'atomo che li precede, simile al gas nobile. Quindi ciò che osserviamo nel gas nobile lo riosserviamo nella sequenza. Analogamente si ragiona per gli elementi del secondo gruppo se perdono 2 elettroni, i quali avranno configurazione elettronica del gas nobile che li precede. Infine per gli elementi del terzo gruppo, se hanno stato di ossidazione +3 dobbiamo osservare lo stesso fenomeno. Se invece lo stato di ossidazione cambia la situazione si complica). Quindi quando si parla di raggi ionici si devono confrontare ioni con la stessa carica.
 \subsubsection{I lantanidi}
@@ -53,7 +101,7 @@ E così a crescere: terza, quarta ecc.
 
 \E da notare che nei composti è più facile da ottenere una seconda ionizzazione, infatti si conoscono alcuni di questi che cedono anche 3 elettroni (soprattutto nei composti ionici).
 
-\textbf{ES 1}
+\vspace{0.2cm}\textbf{ES 1}
 
 \vspace{0.2cm}\begin{tabular}{ m{4cm} m{4cm} }
 \ce{Li -> Li+ + e-} & \ce{PI_1}\text{=5.39 eV} \\ 
@@ -71,7 +119,7 @@ Se volessimo strappare anche il terzo ed ultimo elettrone del litio, l'energia r
 
 È quindi ragionevole pensare che, nei suoi composti, la reattività del litio sia confinata all'esistenza dello ione $\rm Li^+$, cioè nelle reazioni chimiche lavoriamo con gli elettroni di valenza, non riusciremo mai a coinvolgere così attivamente gli elettroni interni: essi sentiranno l'intorno chimico, ma non avremo stati di ossidazione che dipendono dal mettere in gioco anche elettroni a numero quantico inferiore, ossia elettroni interni.
 
-\textbf{ES 2}
+\vspace{0.2cm}\textbf{ES 2}
 
 \vspace{0.2cm}\begin{tabular}{ m{4cm} m{4cm} }
  \ce{Na -> Na+ + e-} & \ce{PI_1}\text{=5.12 eV} \\ 
@@ -79,19 +127,165 @@ Se volessimo strappare anche il terzo ed ultimo elettrone del litio, l'energia r
  \ce{Na^{2+} -> Na^{3+} + e-} & \ce{PI_3}\text{=70.70 eV}
 \end{tabular}
 
-\vspace{0.2cm}Il sodio sta sotto al litio, quindi ha esattamente la stessa configurazione elettronica esterna, con la differenza che il singolo elettrone esterno sta nell'orbitale 3s invece del 2s. Quindi l'energia di prima ionizzazione del sodio è minore di quella del litio perché questo elettrone è più esterno. Na$^+$ ha la configurazione elettronica del gas nobile che lo precede, il neon. Se volessimo strappare il secondo elettrone al sodio, dovremmo strappare elettroni appartenenti ad un orbitale relativo ad un numero quantico inferiore e l'energia di ionizzazione aumenterebbe, stessa cosa per un terzo elettrone. 
+\vspace{0.2cm}Il sodio sta sotto al litio, quindi ha esattamente la stessa configurazione elettronica esterna, con la differenza che il singolo elettrone esterno sta nell'orbitale 3s invece del 2s. Quindi l'energia di prima ionizzazione del sodio è minore di quella del litio perché questo elettrone è più esterno. Na$^+$ ha la configurazione elettronica del gas nobile che lo precede, il neon. Se volessimo strappare il secondo elettrone al sodio, dovremmo strappare elettroni appartenenti ad un orbitale relativo ad un numero quantico inferiore e l'energia di ionizzazione aumenterebbe, stessa cosa per un terzo elettrone.
 
-\vspace{0.2cm}Risulta allora chiaro che, quando c'è un salto di numero quantico principale, le energie in gioco cambiano drasticamente e quando si fa reattività chimica si lavora sempre ed esclusivamente con gli elettroni di valenza, cioè quelli più esterni.
+Risulta allora chiaro che, quando c'è un salto di numero quantico principale, le energie in gioco cambiano drasticamente e quando si fa reattività chimica si lavora sempre ed esclusivamente con gli elettroni di valenza, cioè quelli più esterni.
 
 \vspace{0.2cm}Osserviamo ora come vari, atomo per atomo, il potenziale di ionizzazione:
 
-\begin{figure}[htp]
+\vspace{-0.3cm}
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{immagini/potenziale-di-ionizzazione.png}
+    %\includegraphics[width=12cm]{immagini/potenziale-di-ionizzazione.png}
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=.23]
+        %periodi
+        \filldraw[yellow!35!] (0,0) -- (2.5,0) -- (2.5,28) -- (0,28) -- cycle;%primo periodo
+        \filldraw[cyan!30!] (2.5,0) -- (10.5,0) -- (10.5,28) -- (2.5,28) -- cycle;%secondo periodo
+        \node at (6.5,27) {\footnotesize 2° Periodo};
+        \filldraw[yellow!35!] (10.5,0) -- (18.5,0) -- (18.5,28) -- (10.5,28) -- cycle; %terzo periodo
+        \node at (14.5,27) {\footnotesize 3° Periodo};
+        \filldraw[cyan!30!] (18.5,0) -- (36.5,0) -- (36.5,28) -- (18.5,28) -- cycle;%quarto periodo
+        \node at (27.5,27) {\footnotesize 4° Periodo};
+        \filldraw[yellow!35!] (36.5,0) -- (42,0) -- (42,28) -- (36.5,28) -- cycle; %quinto periodo
+        %nodi degli atomi
+        \node (H) at (1,13.12) {};
+        \node (He) at (2,23.72) {};
+        \node (Li) at (3,5.20) {};
+        \node (Be) at (4,9) {};
+        \node (B) at (5,8.01) {};
+        \node (C) at (6,10.86) {};
+        \node (N) at (7,14.02) {};
+        \node (O) at (8,13.14) {};
+        \node (F) at (9,16.81) {};
+        \node (Ne) at (10,20.81) {};
+        \node (Na) at (11,4.96) {};
+        \node (Mg) at (12,7.38) {};
+        \node (Al) at (13,5.78) {};
+        \node (Si) at (14,7.86) {};
+        \node (P) at (15,10.12) {};
+        \node (S) at (16,10) {};
+        \node (Cl) at (17,12.51) {};
+        \node (Ar) at (18,15.21) {};
+        \node (K) at (19,4.19) {};
+        \node (Ca) at (20,5.90) {};
+        \node (Sc) at (21,6.31) {};
+        \node (Ti) at (22,6.58) {};
+        \node (V) at (23,6.50) {};
+        \node (Cr) at (24,6.53) {};
+        \node (Mn)at (25,7.17) {};
+        \node (Fe) at (26,7.59) {};
+        \node (Co) at (27,7.58) {};
+        \node (Ni) at (28,7.37) {};
+        \node (Cu) at (29,7.45) {};
+        \node (Zn) at (30,9.06) {};
+        \node (Ga) at (31,5.79) {};
+        \node (Ge) at (32,7.62) {};
+        \node (As) at (33,9.47) {};
+        \node (Se) at (34,9.41) {};
+        \node (Br) at (35,11.40) {};
+        \node (Kr) at (36,13.51) {};
+        \node (Rb) at (37,4.03) {};
+        \node (Sr) at (38,5.49) {};       
+        %collegamento tra atomi
+        \draw[red,thick,join=round] (1,13.12) --
+        (2,23.72) --
+        (3,5.20) --
+        (4,9) --
+        (5,8.01) -- 
+        (6,10.86) -- 
+        (7,14.02) -- 
+        (8,13.14) -- 
+        (9,16.81) -- 
+        (10,20.81) -- 
+        (11,4.96) -- 
+        (12,7.38) -- 
+        (13,5.78) --
+        (14,7.86) --
+        (15,10.12) --
+        (16,10) -- 
+        (17,12.51) -- 
+        (18,15.21) -- 
+        (19,4.19) -- 
+        (20,5.90) -- 
+        (21,6.31) -- 
+        (22,6.58) -- 
+        (23,6.50) -- 
+        (24,6.53) -- 
+        (25,7.17) -- 
+        (26,7.59) -- 
+        (27,7.58) -- 
+        (28,7.37) -- 
+        (29,7.45) -- 
+        (30,9.06) -- 
+        (31,5.79) -- 
+        (32,7.62) -- 
+        (33,9.47) -- 
+        (34,9.41) -- 
+        (35,11.40) -- 
+        (36,13.51) -- 
+        (37,4.03) -- 
+        (38,5.49);
+        %punti degli atomi
+        \filldraw (H) circle (0.18) node[below] {\scriptsize H};
+        \filldraw (He) circle (0.18) node[above] {\scriptsize He};
+        \filldraw (Li) circle (0.18) node[below] {\scriptsize Li};
+        \filldraw (Be) circle (0.18) node[above] {\scriptsize Be};
+        \filldraw (B) circle (0.18) node[below] {\scriptsize B};
+        \filldraw (C) circle (0.18) node[right] {\scriptsize C};
+        \filldraw (N) circle (0.18) node[above] {\scriptsize N};
+        \filldraw (O) circle (0.18) node[below right=-0.1cm] {\scriptsize O};
+        \filldraw (F) circle (0.18) node[above left=-0.1cm] {\scriptsize F};
+        \filldraw (Ne) circle (0.18) node[above] {\scriptsize Ne};
+        \filldraw (Na) circle (0.18) node[below] {\scriptsize Na};
+        \filldraw (Mg) circle (0.18) node[above] {\scriptsize Mg};
+        \filldraw (Al) circle (0.18) node[below] {\scriptsize Al};
+        \filldraw (Si) circle (0.18) node[below right=-0.1cm] {\scriptsize Si};
+        \filldraw (P) circle (0.18) node[above] {\scriptsize P};
+        \filldraw (S) circle (0.18) node[below] {\scriptsize S};
+        \filldraw (Cl) circle (0.18) node[above left=-0.05cm] {\scriptsize Cl};
+        \filldraw (Ar) circle (0.18) node[above] {\scriptsize Ar};
+        \filldraw (K) circle (0.18) node[below] {\scriptsize K};
+        \filldraw (Ca) circle (0.18) node[above] {\scriptsize \hspace{-1mm}Ca};
+        \filldraw (Sc) circle (0.18) node[below] {\scriptsize \hspace{0.5mm}Sc};
+        \filldraw (Ti) circle (0.18) node[above] {\scriptsize Ti};
+        \filldraw (V) circle (0.18) node[below] {\scriptsize V};
+        \filldraw (Cr) circle (0.18) node[above] {\scriptsize Cr};
+        \filldraw (Mn) circle (0.18) node[below] {\scriptsize \hspace{1.2mm}Mn};
+        \filldraw (Fe) circle (0.18) node[above] {\scriptsize Fe};
+        \filldraw (Co) circle (0.18) node[below] {\scriptsize Co};
+        \filldraw (Ni) circle (0.18) node[above] {\scriptsize Ni};
+        \filldraw (Cu) circle (0.18) node[below] {\scriptsize Cu};
+        \filldraw (Zn) circle (0.18) node[above] {\scriptsize Zn};
+        \filldraw (Ga) circle (0.18) node[below] {\scriptsize Ga};
+        \filldraw (Ge) circle (0.18) node[below right=-0.1cm] {\scriptsize Ge};
+        \filldraw (As) circle (0.18) node[above] {\scriptsize \hspace{-0.1cm}As};
+        \filldraw (Se) circle (0.18) node[below] {\scriptsize \hspace{0.1cm}Se};
+        \filldraw (Br) circle (0.18) node[above left=-0.1cm] {\scriptsize Br};
+        \filldraw (Kr) circle (0.18) node[above] {\scriptsize Kr};
+        \filldraw (Rb) circle (0.18) node[below] {\scriptsize Rb};
+        \filldraw (Sr) circle (0.18) node[above] {\scriptsize Sr};
+        %assi
+        \draw[thick] (0,28) -- (0,0) -- (42,0);
+        %punti su asse x
+        \foreach \x in {0,5,10,15,20,25,30,35,40}
+            \draw[thick] (\x,0) node[below] {\footnotesize \x} -- (\x,0.8);
+        %punti su asse y
+        \foreach \y in {5,10,15,20,25}
+            \draw[thick] (0,\y) node[left] {\footnotesize \y00} -- (0.8,\y);
+        %scritte
+        \node at (21,-3.5) {\footnotesize Numero atomico};
+        \node[rotate=90] at (-6,14) {\footnotesize Energia di prima ionizzazione (kJ/mol)};
+    \end{tikzpicture}
+    \end{figure}
 \end{figure}
 
+\vspace{-0.9cm}
+
 \begin{itemize}
-    \item L'idrogeno ha potenziale di prima ionizzazione di circa 1500  kJ/mol.
+    \item L'idrogeno ha potenziale di prima ionizzazione di circa 1500 kJ/mol.
     \item L'elio richiede circa 2400 kJ/mol perché è aumentata di una unità il suo numero atomico (due protoni invece di uno che attraggono gli elettroni) per cui, pur essendo 2 gli elettroni 1s, si ha un aumento in energia.
     \item Il litio richiede circa 500 kJ/mol: l'energia richiesta crolla perché l'elettrone da ionizzare sta nell'orbitale 2s e gli elettroni nell'orbitale 1s schermano l'elettrone più esterno (nel 2s) dalla carica nucleare.
     \item Il berillio richiede invece più energia perché aumenta di una unità la carica nucleare ma l'elettrone più esterno si trova comunque nell'orbitale 2s, cioè stesso numero quantico principale del litio. 
@@ -142,12 +336,122 @@ $$\rm [Ne]3s^23p^5 \ce{->} [Ne]3s^23p^6=[Ar]$$
 
 Risulta quindi chiaro quali siano gli elementi che preferiscono perdere elettroni o acquistarli: il fluoro ha 7 elettroni esterni, la configurazione elettronica del gas nobile che lo segue è ad otto elettroni e quindi ne vuole acquistare uno. Ecco perché il valore di affinità elettronica del fluoro è elevatissimo. Lo stesso dicesi per il cloro, ossia si tratta di numeri molto grandi perché giustificati dalla forte tendenza di questi atomi ad assumere la configurazione elettronica esterna del gas nobile che li segue con l'acquisto di un unico elettrone.
 
-\vspace{0.2cm}Se dovessimo invece ragionare con l'affinità elettronica del sodio o del potassio, essi non hanno molta tendenza ad acquistare elettroni: il sodio vorrebbe raggiungere la configurazione elettronica del gas nobile che lo precede cedendo un elettrone, non acquistandone 7. Quindi l'affinità elettronica del sodio, che è l'energia che esso emette quando acquista un elettrone, non ce la aspettiamo così grande. Quelli che hanno il valore maggiore sono infatti fluoro e cloro, ossia gli alogeni, perché con un elettrone raggiungono la configurazione elettronica esterna completa, mentre gli elementi a valori più bassi sono litio, berillio, sodio, magnesio ... ossia sono quegli elementi che preferiscono perdere elettroni piuttosto che acquistarli.
+\vspace{0.2cm}Se dovessimo invece ragionare con l'affinità elettronica del sodio o del potassio, essi non hanno molta tendenza ad acquistare elettroni: il sodio vorrebbe raggiungere la configurazione elettronica del gas nobile che lo precede cedendo un elettrone, non acquistandone 7. Quindi l'affinità elettronica del sodio, che è l'energia che esso emette quando acquista un elettrone, non ce la aspettiamo così grande. Quelli che hanno il valore maggiore sono infatti fluoro e cloro, ossia gli alogeni, perché con un elettrone raggiungono la configurazione elettronica esterna completa, mentre gli elementi a valori più bassi sono litio, berillio, sodio, magnesio... ossia sono quegli elementi che preferiscono perdere elettroni piuttosto che acquistarli.
+
+\vspace{-1cm}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{immagini/affinità-elettronica.png}
+    %\includegraphics[width=12cm]{immagini/affinità-elettronica.png}
+    \begin{figure}[H]
+        \centering
+        %\includegraphics[width=12cm]{immagini/potenziale-di-ionizzazione.png}
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}[scale=.23]
+            %periodi
+            \filldraw[yellow!35!] (0,0) -- (3.75,0) -- (3.75,28) -- (0,28) -- cycle;%primo periodo
+            \node at (1.875,27) {\footnotesize 1};
+            \filldraw[cyan!30!] (3.75,0) -- (15.75,0) -- (15.75,28) -- (3.75,28) -- cycle;%secondo periodo
+            \node at (9.75,27) {\footnotesize 2};
+            \filldraw[yellow!35!] (15.75,0) -- (27.75,0) -- (27.75,28) -- (15.75,28) -- cycle; %terzo periodo
+            \node at (21.75,27) {\footnotesize 3};
+            \filldraw[cyan!30!] (27.75,0) -- (37.5,0) -- (37.5,28) -- (27.5,28) -- cycle;%quarto periodo
+            \node at (32.625,27) {\footnotesize 4};
+            %nodi degli atomi
+            \node (H) at (1.5,16.35) {};
+            \node (He) at (3,21.05) {};
+            \node (Li) at (4.5,17) {};
+            \node (Be) at (6,20.95) {};
+            \node (B) at (7.5,18.65) {};
+            \node (C) at (9,13.9) {};
+            \node (N) at (10.5,20.35) {};
+            \node (O) at (12,12.95) {};
+            \node (F) at (13.5,3.75) {};
+            \node (Ne) at (15,21.45) {};
+            \node (Na) at (16.5,17.35) {};
+            \node (Mg) at (18,20.95) {};
+            \node (Al) at (19.5,17.85) {};
+            \node (Si) at (21,12.85) {};
+            \node (P) at (22.5,16.4) {};
+            \node (S) at (24,10) {};
+            \node (Cl) at (25.5,2.55) {};
+            \node (Ar) at (27,21.75) {};
+            \node (K) at (28.5,17.6) {};
+            \node (Ca) at (30,20.5) {};
+            %collegamento tra atomi
+            \draw[red,thick,join=round]
+            (1.5,16.35) --
+            (3,21.05) --
+            (4.5,17) --
+            (6,20.95) --
+            (7.5,18.65) -- 
+            (9,13.9) -- 
+            (10.5,20.35) -- 
+            (12,12.95) -- 
+            (13.5,3.75) -- 
+            (15,21.45) -- 
+            (16.5,17.35) -- 
+            (18,20.95) -- 
+            (19.5,17.85) --
+            (21,12.85) --
+            (22.5,16.4) --
+            (24,10) -- 
+            (25.5,2.55) -- 
+            (27,21.75) -- 
+            (28.5,17.6) -- 
+            (30,20.5);
+            %punti degli atomi
+            \filldraw (H) circle (0.18) node[below] {\footnotesize H};
+            \filldraw (He) circle (0.18) node[above] {\footnotesize He};
+            \filldraw (Li) circle (0.18) node[below] {\footnotesize Li};
+            \filldraw (Be) circle (0.18) node[above] {\footnotesize Be};
+            \filldraw (B) circle (0.18) node[above right=-0.1cm] {\footnotesize B};
+            \filldraw (C) circle (0.18) node[below] {\footnotesize C};
+            \filldraw (N) circle (0.18) node[above] {\footnotesize N};
+            \filldraw (O) circle (0.18) node[below left=-0.1cm] {\footnotesize O};
+            \filldraw (F) circle (0.18) node[below] {\footnotesize F};
+            \filldraw (Ne) circle (0.18) node[above] {\footnotesize Ne};
+            \filldraw (Na) circle (0.18) node[below] {\footnotesize Na};
+            \filldraw (Mg) circle (0.18) node[above] {\footnotesize Mg};
+            \filldraw (Al) circle (0.18) node[above right=-0.1cm] {\footnotesize Al};
+            \filldraw (Si) circle (0.18) node[below] {\footnotesize Si};
+            \filldraw (P) circle (0.18) node[above] {\footnotesize \hspace{2mm}P};
+            \filldraw (S) circle (0.18) node[left] {\footnotesize S};
+            \filldraw (Cl) circle (0.18) node[below] {\footnotesize Cl};
+            \filldraw (Ar) circle (0.18) node[above] {\footnotesize Ar};
+            \filldraw (K) circle (0.18) node[below] {\footnotesize K};
+            \filldraw (Ca) circle (0.18) node[above] {\footnotesize \hspace{-1mm}Ca};
+            %assi
+            \draw[thick] (0,28) -- (0,0) -- (37.5,0) -- (37.5,28) -- cycle;
+            %punti su asse x
+            \foreach \x in {0,7.5,15,22.5,30,37.5}
+                \draw[thick] (\x,0) -- (\x,0.8);
+            \node[below] at (0,0) {\footnotesize 0};
+            \node[below] at (7.5,0) {\footnotesize 5};
+            \node[below] at (15,0) {\footnotesize 10};
+            \node[below] at (22.5,0) {\footnotesize 15};
+            \node[below] at (30,0) {\footnotesize 20};
+            \node[below] at (37.5,0) {\footnotesize 25};
+            %punti su asse y
+            \foreach \y in {5,10,15,20,25}
+                \draw[thick] (0,\y) -- (0.8,\y);
+            \node[left] at (0,0) {\footnotesize $-400$};
+            \node[left] at (0,5) {\footnotesize $-330$};
+            \node[left] at (0,10) {\footnotesize $-330$};
+            \node[left] at (0,15) {\footnotesize $-100$};
+            \node[left] at (0,20) {\footnotesize $0$};
+            \node[left] at (0,25) {\footnotesize $100$};
+            %scritte
+            \node at (18.575,-3.5) {\footnotesize Numero atomico};
+            \node at (18.575,29.5) {\footnotesize Periodo};
+            \node[rotate=90] at (-5.5,14) {\footnotesize Affinità elettronica (kJ/mol)};
+        \end{tikzpicture}
+        \end{figure}
+    \end{figure}
 \end{figure}
+
+\vspace{-1cm}
 
 Abbiamo detto che con l'acquisto di elettroni di norma viene ceduta energia, ma non è sempre così. Ad esempio; 
 \begin{itemize}
@@ -207,8 +511,8 @@ Essendo una tendenza, l'elettronegatività è una quantità che non ha una unit�
 Consideriamo due atomi A e B diversi. Immaginiamo che si formi un legame tra essi (parliamo di legame covalente, per evitare sistemi ionici). Ciò che si nota è che in genere il legame tra A e B è più forte dei legami che si formano tra due atomi di tipo A o due atomi di tipo B, ciò le molecole omonucleari AA e BB hanno energie in genere inferiori a quella osservata nella molecola AB. Si è allora pensato che questa differenza di energia (chiamiamola "eccesso di energia") sia dovuta al fatto che intervengono scambi di elettroni, ossia qualche atomo preferisce attrarre su di sé più dell'altro gli elettroni in gioco nel legame chimico tra A e B, cioè A o B è più propenso ad attrarre su di sé la carica degli elettroni di legame. Si parla di "forme ioniche", non in senso totale, cioè non c'è cessione totale dell'elettrone ma solo parziale dislocamento della carica di legame.
 
 Pauling allora fece questa assunzione: chiamata $\rchi$ l'elettronegatività, $\rchi_A$ sarà l'elettronegatività relativa all'atomo A e $\rchi_B$ quella relativa all'atomo B. Consideriamone la differenza in valore assoluto: essa sarà uguale alla radice quadrata dell'energia di dissociazione della molecola AB meno la media tra l'energia di dissociazione della molecola AA e quella della molecola BB. Poiché Pauling esprimeva i valori di energia in elettronvolt, per ottenere un numero adimensionale si divide per un elettronvolt:
-$$|\rchi_A - \rchi_B| = (eV)^{-\frac{1}{2}}\sqrt{E_d(AB)-\frac{E_d(AA) + E_d(BB)}{2}}$$
-A questo punto Pauling prese l'idrogeno come riferimento, assegnandogli arbitrariamente valore di elettronegatività pari a 2.1 (in modo tale da avere come valore del fluoro un numero intero). Avendo un riferimento si può calcolare l'elettronegatività per tutti gli altri atomi, ottenendo così una scala di elettronegatività che vede il fluoro come elemento più elettronegativo (il suo valore è 4). Infatti elevatissima affinità elettronica implica elevatissima elettronegatività: quell'elemento che cede tantissima energia quando acquista un elettrone è l'elemento che tende di più ad attrarre su di sé la carica degli elettroni di legame, spostandola sul suo nucleo.\\
+$$|\rchi_A - \rchi_B| = (\text{eV})^{-\frac{1}{2}}\sqrt{E_d(AB)-\frac{E_d(AA) + E_d(BB)}{2}}$$
+A questo punto Pauling prese l'idrogeno come riferimento, assegnandogli arbitrariamente valore di elettronegatività pari a 2.1 (in modo tale da avere come valore del fluoro un numero intero). Avendo un riferimento si può calcolare l'elettronegatività per tutti gli altri atomi, ottenendo così una scala di elettronegatività che vede il fluoro come elemento più elettronegativo (il suo valore è 4). Infatti elevatissima affinità elettronica implica elevatissima elettronegatività: quell'elemento che cede tantissima energia quando acquista un elettrone è l'elemento che tende di più ad attrarre su di sé la carica degli elettroni di legame, spostandola sul suo nucleo.
 
-La scala di Pauling è la più usata. Vi è poi la \textbf{scala di Mulliken}, definita come la media aritmetica tra il potenziale di ionizzazione $I$ e l'affinità elettronica $E_A$:
+\vspace{0.2cm}La scala di Pauling è la più usata. Vi è poi la \textbf{scala di Mulliken}, definita come la media aritmetica tra il potenziale di ionizzazione $I$ e l'affinità elettronica $E_A$:
 $$\rchi_M=\frac{1}{2}(E_A + I)$$
