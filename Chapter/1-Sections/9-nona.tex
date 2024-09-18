@@ -6,7 +6,7 @@ $$\ce{H_2O} \rightarrow \text{un ossigeno legato a due idrogeni} \rightarrow \te
 $$\ce{NH_3} \rightarrow \text{un azoto legato a tre idrogeni} \rightarrow \text{l'azoto è trivalente}$$
 $$\ce{CH_4} \rightarrow \text{un carbonio legato a quattro idrogeni} \rightarrow \text{il carbonio è tetravalente}$$
 
-\textbf{DEF} Si dice \textbf{stato} o \textbf{numero di ossidazione} la carica elettrica reale o formale di un atomo nei suoi composti (+1,+2,+3 o -1,-2,-3 ecc...)
+\textbf{DEF} Si dice \textbf{stato} o \textbf{numero di ossidazione} la carica elettrica reale o formale di un atomo nei suoi composti ($+1,+2,+3$ o $-1,-2,-3$ ecc.)
 
 \vspace{0.2cm}I numeri di ossidazione sono veri solo per i composti ionici, cioè questi possono effettivamente essere descritti in termini di cessione e acquisto di elettroni tra gli atomi che li compongono, ovvero all'interno di tali composti troviamo ioni. Nei composti molecolari invece sono solo una formalità, un artificio che usiamo per fare i bilanciamenti, dato che in essi avviene solo una parziale separazione di carica dovuta alla differenza di elettronegatività.
 
@@ -17,13 +17,16 @@ Nei composti ionici il numero di ossidazione coincide con la carica degli ioni:
 \begin{center}
   \begin{tabular}{|l|ll|ll|}
     \hline
-    composto & numero (stato) & \hspace{-0.4cm} di ossidazione  & numero (stato) & \hspace{-0.4cm} di ossidazione\\
+    composto & numero (stato) & \hspace{-0.4cm} di ossidazione & numero (stato) & \hspace{-0.4cm} di ossidazione\\
     ionico & del catione & & dell'anione & \\
     \hline
+    &&&&\\[-0.4cm]
     NaCl & \hspace{1cm}Na$^+$ & $\boldsymbol{+1}$ & \hspace{1cm}Cl$^-$ & $\boldsymbol{-1}$\\
     \hline
+    &&&&\\[-0.4cm]
     CaCl$_2$ & \hspace{1cm}Ca$^{2+}$ & $\boldsymbol{+2}$ & \hspace{1cm}Cl$^-$ & $\boldsymbol{-1}$\\
     \hline
+    &&&&\\[-0.4cm]
     AlCl$_3$ & \hspace{1cm}Al$^{3+}$ & $\boldsymbol{+3}$ & \hspace{1cm}Cl$^-$ & $\boldsymbol{-1}$\\
     \hline
   \end{tabular}
@@ -36,13 +39,16 @@ formale e non una realtà fisica:
 \begin{center}
   \begin{tabular}{|l|ll|ll|}
     \hline
-    composto & numero (stato) & \hspace{-0.4cm} di ossidazione  & numero (stato) & \hspace{-0.4cm} di ossidazione\\
+    composto & numero (stato) & \hspace{-0.4cm} di ossidazione & numero (stato) & \hspace{-0.4cm} di ossidazione\\
     molecolare & del catione & & dell'anione & \\
     \hline
+    &&&&\\[-0.4cm]
     HCl & \hspace{1cm}H$^+$ & $\boldsymbol{+1}$ & \hspace{1cm}Cl$^-$ & $\boldsymbol{-1}$\\
     \hline
+    &&&&\\[-0.4cm]
     H$_2$O & \hspace{1cm}H$^+$ & $\boldsymbol{+1}$ & \hspace{1cm}O$^{2-}$ & $\boldsymbol{-2}$\\
     \hline
+    &&&&\\[-0.4cm]
     ClO$_3^-$ & \hspace{1cm}Cl$^{5+}$ & $\boldsymbol{+5}$ & \hspace{1cm}O$^{2-}$ & $\boldsymbol{-2}$\\
     \hline
   \end{tabular}
@@ -58,61 +64,73 @@ In queste reazioni avvengono scambi di elettroni, per cui se un elemento cede el
 
 \vspace{0.2cm}Consideriamo un atomo A inizialmente zerovalente
 
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node at (0,0) {$\rm A^0$};
+    %stato ossidato
+    \draw[-stealth,rotate=30] (0.4,0) -- (2,0) node[above=0.1cm,right] {A$^{n+}$ \qquad \textbf{ossidazione}} node[midway, above,rotate=30] {$- n\rm e^-$};
+    %stato ridotto
+    \draw[-stealth,rotate=-30] (0.4,0) -- (2,0) node[below=0.1cm, right] {A$^{m-}$ \qquad \textbf{riduzione}} node[midway, below,rotate=-30] {$+ m\rm e^-$};
+  \end{tikzpicture}
+\end{figure}
+
+\comment{
 \begin{center}
 \schemestart
 $\ce{A^0}$\arrow(aa--){->[$\ce{-\;ne^-}$]}[25]$\qquad \qquad \qquad \; \; \ce{A^{n+} \qquad \textbf{ossidazione}}$ 
 \arrow(@aa--){->[\hspace{0.1cm}][$\ce{+\;me^-}$]}[-25]$ \qquad \qquad \qquad \ce{A^{m-} \; \; \quad \textbf{riduzione}}$
 \schemestop
-\end{center}
+\end{center}}
 
-%\vspace{0.2cm}
-$\bullet$ Se ad esso strappiamo un certo numero $n$ di elettroni, esso si caricherà positivamente di una carica $n^+$, in quanto il numero di elettroni non sarà più uguale a quello dei protoni. Allora A si è ossidato ed è diventato catione A$^{n+}$.
+\begin{itemize}[leftmargin=0.5cm]
+  \item Se ad esso strappiamo un certo numero $n$ di elettroni, esso si caricherà positivamente di una carica $n^+$, in quanto il numero di elettroni non sarà più uguale a quello dei protoni. Allora A si è ossidato ed è diventato catione A$^{n+}$.
+  \item Se invece acquista un certo numero $m$ di elettroni, esso si caricherà negativamente di una carica $m^-$. Allora A si è ridotto ed è diventato anione A$^{m-}$.
+\end{itemize}
 
-\vspace{0.2cm}$\bullet$ Se invece acquista un certo numero $m$ di elettroni, esso si caricherà negativamente di una carica $m^-$. Allora A si è ridotto ed è diventato anione A$^{m-}$.
-
-\vspace{0.2cm}È chiaro che sia catione che anione possono tornare indietro ad A$^0$: il catione può riacquistare gli stessi elettroni ceduti (stavolta si sta riducendo) e l'anione può cedere gli stessi elettroni acquistati (stavolta si sta ossidando):
+È chiaro che sia catione che anione possono tornare indietro ad A$^0$: il catione può riacquistare gli stessi elettroni ceduti (stavolta si sta riducendo) e l'anione può cedere gli stessi elettroni acquistati (stavolta si sta ossidando):
 $$\ce{A^{n+} + ne^- -> A^0} \quad \text{riduzione}$$
 $$\ce{A^{m-} - me^- -> A^0} \quad \text{ossidazione}$$
 \subsection{Come calcolare il numero di ossidazione?}
 Il numero di ossidazione (n.o.) va calcolato per ogni atomo di ogni formula.
 
-\begin{itemize}
+\begin{itemize}[leftmargin=0.5cm]
   \item \textbf{Atomi o molecole omonucleari (tipo O$_2$)}
   
   Essi avranno numero di ossidazione pari a zero sempre.
   \begin{center}
-    Fe, Zn, $\rm Cl_2$, $\rm O_2$, $\rm N_2$, $\rm P_4$, $\rm S_8$  n.o.=0
+    Fe, Zn, $\rm Cl_2$, $\rm O_2$, $\rm N_2$, $\rm P_4$, $\rm S_8$ $\rm n.o.=0$
   \end{center}
 
   \item \textbf{L'idrogeno (H$_2$ molecola omonucleare)}
 
-  Esso nei suoi composti avrà sempre numero di ossidazione pari a +1, tranne nei composti binari con un metallo (\ce{NaH, CaH_2}) in cui ha stato di ossidazione pari a -1.
+  Esso nei suoi composti avrà sempre numero di ossidazione pari a +1, tranne nei composti binari con un metallo (\ce{NaH, CaH_2}) in cui ha stato di ossidazione pari a $-1$.
   \item \textbf{L'ossigeno}
 
-  Esso nei suoi composti avrà sempre numero di ossidazione pari a -2, tranne nei perossidi (composti in cui è presente il gruppo O-O in cui due ossigeni sono legati da un legame covalente, ad esempio l'acqua ossigenata $\rm H_2O_2$) in cui ha numero di ossidazione pari a -1.
+  Esso nei suoi composti avrà sempre numero di ossidazione pari a -2, tranne nei perossidi (composti in cui è presente il gruppo O-O in cui due ossigeni sono legati da un legame covalente, ad esempio l'acqua ossigenata $\rm H_2O_2$) in cui ha numero di ossidazione pari a $-1$.
   \item \textbf{Molecole neutre e ioni}
 
   Nelle molecole la sommatoria dei numeri di ossidazioni degli atomi che lo compongono deve essere uguale a zero, negli ioni il tale sommatoria è pari alla carica.
 
   \item \textbf{Fluoro}
 
-  Quando si combina con un altro elemento, il fluoro ha sempre n.o. pari a -1.
+  Quando si combina con un altro elemento, il fluoro ha sempre n.o. pari a $-1$.
   \item \textbf{Cloro, bromo e ioduro}
 
-  Hanno n.o. pari a -1, tranne quando combinati con ossigeno o fluoro.
+  Hanno n.o. pari a $-1$, tranne quando combinati con ossigeno o fluoro.
 
   \textbf{ES} $\rm H_2O$
 
   Mostriamo che $\sum \rm n.o.=0$:
 
-  L'ossigeno ha n.o. pari a -2, mentre l'idrogeno ha n.o. pari a +1 ma essendocene 2 sarà $2 \times 1$. Sommando si ha
+  L'ossigeno ha n.o. pari a $-2$, mentre l'idrogeno ha n.o. pari a $+1$ ma essendocene 2 sarà $2 \times 1$. Sommando si ha
   \begin{center}
     $\sum \rm n.o. = 2\times 1+(-2)=0$
   \end{center}
 
   \textbf{ES} $\rm H_2O_2$
 
-  Si tratta di un perossido, quindi in questo caso l'ossigeno ha n.o. pari a -1. La somma dei numeri di ossidazione è data da
+  Si tratta di un perossido, quindi in questo caso l'ossigeno ha n.o. pari a $-1$. La somma dei numeri di ossidazione è data da
   \begin{center}
     $\sum \rm n.o.=2 \times \text{1+2} \times (-1)=0$
   \end{center}
@@ -164,19 +182,21 @@ Il ferro ha acquisito un elettrone passando da ione ferrico +3 a ione ferroso +2
 
 \vspace{0.2cm}Quindi in una reazione redox
 
-\vspace{0.2cm}$\bullet$ la specie che si ossida è il riducente
+\begin{itemize}[leftmargin=0.5cm]
+  \item la specie che si ossida è il riducente;
+  \item la specie che si riduce è l'ossidante.
+\end{itemize}
 
-\vspace{0.2cm}$\bullet$ la specie che si riduce è l'ossidante
-
-\vspace{0.2cm}Ricorda: a meno che non si agisca con metodi elettro-chimici, nelle reazioni redox è indispensabile che ci siano sia ossidante che riducente. Non può esserci solo una tra le due specie, altrimenti la reazione non avverrà. Questo equivale a dire che le specie chimiche non devono trovarsi tutte al più alto o al più basso stato di ossidazione.
+Ricorda: a meno che non si agisca con metodi elettro-chimici, nelle reazioni redox è indispensabile che ci siano sia ossidante che riducente. Non può esserci solo una tra le due specie, altrimenti la reazione non avverrà. Questo equivale a dire che le specie chimiche non devono trovarsi tutte al più alto o al più basso stato di ossidazione.
 
 Vediamo perché con degli esempi:
 
-\vspace{0.2cm}$\bullet$ Se mettiamo a reagire cloruro ferrico $\rm FeCl_3$ e cloruro stannico $\rm SnCl_4$ non si avrà nessun tipo di reazione, né di scambio perché in entrambi i composti l'anione è il cloruro, né redox perché il ferro è nel suo più alto stato di ossidazione in cui può solo ricevere elettroni e altrettanto vale per lo stagno, quindi non c'è nessuno che cede elettroni:
-$$\ce{FeCl_3 +  SnCl_4 ->}\text{nessuna reazione}$$
-
-\vspace{0.2cm}$\bullet$ Se invece mettiamo a reagire cloruro ferroso $\rm FeCl_2$ e cloruro stannoso $\rm SnCl_2$ anche in questo caso non si avrà alcuna reazione, perché il ferro è nel suo più basso stato di ossidazione in cui può solo cedere elettroni e altrettanto vale per lo stagno, quindi non c'è nessuno che acquista elettroni.
+\begin{itemize}[leftmargin=0.5cm]
+  \item Se mettiamo a reagire cloruro ferrico $\rm FeCl_3$ e cloruro stannico $\rm SnCl_4$ non si avrà nessun tipo di reazione, né di scambio perché in entrambi i composti l'anione è il cloruro, né redox perché il ferro è nel suo più alto stato di ossidazione in cui può solo ricevere elettroni e altrettanto vale per lo stagno, quindi non c'è nessuno che cede elettroni:
+  $$\ce{FeCl_3 + SnCl_4 ->}\text{nessuna reazione}$$
+  \item Se invece mettiamo a reagire cloruro ferroso $\rm FeCl_2$ e cloruro stannoso $\rm SnCl_2$ anche in questo caso non si avrà alcuna reazione, perché il ferro è nel suo più basso stato di ossidazione in cui può solo cedere elettroni e altrettanto vale per lo stagno, quindi non c'è nessuno che acquista elettroni.
 $$\ce{FeCl_2 + SnCl_2 ->}\text{nessuna reazione}$$
+\end{itemize}
 \subsubsection{\textbf{ES.2}}
 $$\ce{KMnO_4 + FeSO_4 + H_2SO_4 -> MnSO_4 + Fe_2(SO_4)_3 + K_2SO_4 + H_2O}$$
 $$\text{permanganato di potassio + solfato ferroso + acido solforico \ce{->}}$$
@@ -195,7 +215,7 @@ Lo ione $\rm K^+$ resta tale anche al secondo membro, quindi non partecipa all'o
 $$\ce{MnO_4- + 2Fe^2+ + H+ -> Mn^2+ + 2Fe^3+ + H_2O}$$
 Iniziamo a ragionare sui numeri di ossidazione.
 
-Al primo membro il manganese si trova nello ione permanganato $\rm MnO_4^-$. L'ossigeno ha stato di ossidazione -2, per 4 atomi in totale -8. Affinché lo ione abbia carica totale -1 il manganese deve avere stato di ossidazione +7 (4$\times$(-2) + 7 = -1). Al secondo membro invece ha n.o. pari a +2, ciò significa che ha acquistato 5 elettroni e quindi si è ridotto:
+Al primo membro il manganese si trova nello ione permanganato $\rm MnO_4^-$. L'ossigeno ha stato di ossidazione $-2$, per 4 atomi in totale -8. Affinché lo ione abbia carica totale -1 il manganese deve avere stato di ossidazione $+7$ ($4\times(-2) + 7 = -1$). Al secondo membro invece ha n.o. pari a +2, ciò significa che ha acquistato 5 elettroni e quindi si è ridotto:
 $$\ce{Mn^7+ -> Mn^2+ \; \text{(+5e)}}$$
 Per il ferro dobbiamo innanzitutto notare che al secondo membro ci sono 2 atomi, per cui dobbiamo moltiplicare per 2 il ferro al primo membro (ecco perché nella reazione semplificata c'è $\rm 2Fe^{2+}$). Al primo membro è ione ferroso $\rm Fe^{2+}$, al secondo ione ferrico $\rm Fe^{3+}$, ciò significa che ha ceduto 1 elettrone e quindi si sta ossidando
 $$\ce{2Fe^2+ -> 2Fe^3+ \; \text{(-2e)}}$$
@@ -223,7 +243,7 @@ $$\ce{Cr_2(SO_4)_3 -> 2Cr^3+ + 3SO_4^2-}$$
 $$\ce{I_2 -> 2I^{(0)}}$$
 $$\ce{K_2SO_4 -> 2K+ + SO_4^2-}$$
 Il cromo nello ione bicromato mostra n.o. +6, mentre a secondo membro +3. Ha quindi acquistato 3 elettroni, riducendosi.
-Lo iodio mostra n.o. pari a -1 nel primo membro perché si trova in un idruro, pari a 0 nel secondo perché è in forma molecolare. Ha quindi perso un elettrone, ossidandosi. 
+Lo iodio mostra n.o. pari a $-1$ nel primo membro perché si trova in un idruro, pari a 0 nel secondo perché è in forma molecolare. Ha quindi perso un elettrone, ossidandosi.
 
 Gli ioni $\rm K^+$ e $\rm SO_4^2-$ invece hanno stesso n.o. sia a primo che a secondo membro.
 
@@ -317,7 +337,7 @@ $$\ce{Cl_2 + OH- -> Cl- + ClO_3- + H_2O}$$
 Ragioniamo sugli elettroni scambiati.
 $$\ce{Cl^{(0)} ->Cl-} \; \text{(+1e)}$$
 $$\ce{Cl^{(0)} ->Cl^5+} \; \text{(-5e)}$$
-Dobbiamo quindi moltiplicare per 5 la specie cloruro e per 1 la specie clorato. Per ottenere il numero di atomi di cloro a primo membro basta fare la somma degli atomi totali di cloro a destra: 5+1=6
+Dobbiamo quindi moltiplicare per 5 la specie cloruro e per 1 la specie clorato. Per ottenere il numero di atomi di cloro a primo membro basta fare la somma degli atomi totali di cloro a destra: $5+1=6$
 $$\ce{3Cl_2 + OH- -> 5Cl- + ClO_3- + H_2O}$$
 (Il cloro è moltiplicato per 3 perché ogni molecola contiene 2 atomi)
 

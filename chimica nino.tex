@@ -1,4 +1,4 @@
-\documentclass[openany,12pt]{book}%openany toglie la pagine bianche tra i capitoli
+\documentclass[12pt]{book}%openany toglie la pagine bianche tra i capitoli
 
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
@@ -27,7 +27,7 @@
     \newpage}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage[psdextra, colorlinks=true, allcolors=black]{hyperref}
 \usepackage{array}% only needed for injecting commands at the beginning of columns in the tabular below
 \usepackage{electrons}
 \usepackage[version=4]{mhchem}
@@ -36,7 +36,7 @@
 \newcommand\myline[1][]{%
   \,\tikz[baseline]\draw[very thick,#1](0,-\dp\strutbox)--(0,\ht\strutbox);\,%
 }
-
+\usepackage{enumitem}
 \usepackage{float}
 \usepackage{mathtools}
 \usepackage{tikz}
@@ -47,10 +47,11 @@
 \usepackage{chemfig}
 \usepackage{amsmath}
 \usepackage{array}
-\setlength\parindent{0pt}%e si gode, toglie lo spostmento a destra di una nuova riga
+\setlength\parindent{0pt}%e si gode, toglie lo spostamento a destra di una nuova riga
 \usepackage{textgreek}
 \usepackage[open]{bookmark}
-\input{puenc-greekbasic.def}
+\ProvidesFile{puenc-greek.def}
+%\input{puenc-greekbasic.def}
 \usepackage{caption}
 \usepackage{float}
 \pgfdeclaredecoration{ddbond}{initial}{
@@ -79,6 +80,9 @@
   \tikz[baseline=(math.base)] \node[draw,ellipse,inner sep=1pt] (math) {$\m@th#1#2$};%
 }
 \makeatother
+
+%impaginazione
+\usepackage{fancyhdr}
 
 \begin{document}
 
@@ -124,9 +128,34 @@
 
 \afterpage{\blankpage}
 
-\frontmatter
+%\frontmatter
 
-\tableofcontents
+\clearpage                       % Otherwise \pagestyle affects the previous page.
+{                                % Enclosed in braces so that re-definition is temporary.
+  \pagestyle{empty}              % Removes numbers from middle pages.
+  \fancypagestyle{plain}         % Re-definition removes numbers from first page.
+  {
+    \fancyhf{}%                       % Clear all header and footer fields.
+    \renewcommand{\headrulewidth}{0pt}% Clear rules (remove these two lines if not desired).
+    \renewcommand{\footrulewidth}{0pt}%
+  }
+  \tableofcontents
+  \thispagestyle{empty}          % Removes numbers from last page.
+} %roba per mettere l'indice senza numero di pagina ne marks
+
+\newpage
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase{\textbf{\thepage}\hfill\leftmark}}
+\fancyhead[RO]{\nouppercase{\rightmark\hfill\textbf{\thepage}}}
+\fancypagestyle{plain}{%
+\fancyhf{} % cancella tutti i campi di intestazione e pi\‘e di pagina
+%\fancyfoot[C]{\bfseries \thepage} % tranne il centro
+\renewcommand{\headrulewidth}{0pt}
+}
+
+%\tableofcontents
 
 \thispagestyle{empty}
 \chapter*{Introduzione}
@@ -184,8 +213,7 @@ il seguente link:
 \afterpage{\blankpage}
 \newpage
 
-\mainmatter
-
+%\mainmatter
 \chapter{Composizione materia e reazioni chimiche}
 
   \section{Prime nozioni base}
@@ -340,7 +368,6 @@ il seguente link:
 
     \afterpage{\blankpage}
     \newpage
-
 \appendix
 
 \chapter{Esercizi}
@@ -369,7 +396,5 @@ Nel seguente capitolo sono riportati sia esercizi svolti a lezione dal professor
 
   \section{Elettrochimica}
     \import{./Chapter/9-Sections}{5-quinto}
-
-%}
 
 \end{document}
