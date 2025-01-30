@@ -30,6 +30,7 @@
 \usepackage[psdextra, colorlinks=true, allcolors=black]{hyperref}
 \usepackage{array}% only needed for injecting commands at the beginning of columns in the tabular below
 \usepackage{electrons}
+\usepackage{ambienti} %per gli esercizi
 \usepackage[version=4]{mhchem}
 \newcommand{\comment}[1]{}
 
@@ -213,7 +214,7 @@ il seguente link:
 \afterpage{\blankpage}
 \newpage
 
-%\mainmatter
+%\comment{%inizio commento
 \chapter{Composizione materia e reazioni chimiche}
 
   \section{Prime nozioni base}
@@ -365,6 +366,7 @@ il seguente link:
 
   \section{Elettrolisi}
     \import{./Chapter/8-Sections}{3-terzo}
+%}%fine commento
 
     \afterpage{\blankpage}
     \newpage

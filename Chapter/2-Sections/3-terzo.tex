@@ -12,7 +12,7 @@ Questa grandezza è in teoria infinita, ma abbiamo deciso di assegnare un raggio
     \begin{tikzpicture}[scale=.3]
         %prima riga
         \shade[ball color=orange!60!yellow] (0,-1) circle (.37cm) node[below=0.1cm] {\scriptsize H, 37} node[above=0.15cm] {\scriptsize\textbf{1 A}};
-        %aseconda riga
+        %seconda riga
         \shade[ball color=blue!60!cyan!30!] (0,-6.3) circle (1.52cm) node[below=0.45cm] {\scriptsize Li, 152} node[above=0.45cm] {\scriptsize\textbf{1 A}};
         \shade[ball color=blue!60!cyan!30!] (6,-6.3) circle (1.13cm) node[below=0.45cm] {\scriptsize Be, 113} node[above=0.45cm] {\scriptsize\textbf{2 A}};
         \shade[ball color=green!20!olive!55] (11.5,-6.3) circle (0.83cm) node[below=0.45cm] {\scriptsize B, 83} node[above=0.45cm] {\scriptsize\textbf{3 A}};
@@ -316,16 +316,16 @@ Riprendiamo l'esempio del fluoro: cedendogli un elettrone otteniamo uno ione neg
 Scendendo lungo un gruppo il valore di affinità elettronica diminuisce, cioè diventa meno negativo, mentre lungo un periodo diventa più negativo.
 \begin{center}
     \begin{tabular}{ m{1cm}|m{2cm} } 
-     F & -3.45 eV \\ 
-     \hline
-     Cl & -3.61 eV \\
-     \hline
-     Br & -3.36 eV \\ 
-     \hline
-     I & -3.06 eV \\
-     \hline
+        F & $-3.45$ eV \\
+        \hline
+        Cl & $-3.61$ eV \\
+        \hline
+        Br & $-3.36$ eV \\
+        \hline
+        I & $-3.06$ eV \\
+        \hline
     \end{tabular}
-    \end{center}
+\end{center}
 Fluoro, cloro, bromo e iodio sono tutti alogeni, fanno quindi parte dello stesso gruppo. Per tutti eccetto il fluoro, si osserva che il valore di affinità elettronica diminuisce. Il motivo per cui il fluoro fa eccezione è perché lo ione fluoruro è piccolo rispetto agli ioni cloruro, bromuro e ioduro, e quindi a causa delle sue dimensioni le repulsioni elettroniche dovute agli elettroni sono incisive tanto che il suo valore scarta da quello che è l'andamento. Nello specifico il fluoro ha 7 elettroni esterni, 2s$^2$2p$^5$, più gli elettroni interni che possiamo dire (1s$^2$) o dire che ha la configurazione elettronica del gas nobile che lo precede, più gli altri. Quando diventa negativo acquista un ultimo (e non può acquistarne di più) elettrone per completare il riempimento dei suoi orbitali di valenza: 2s e 2p pieni adesso (2 elettroni nel 2s e 6 nel 2p). Così assume la configurazione elettronica del gas nobile che lo segue:
 $$\ce{F + e^- -> F^-}$$
 $$\rm 1s^22s^22p^5= [He]2s^22p^5\ce{->}1s^22s^22p^6=[Ne]$$
@@ -437,8 +437,8 @@ Risulta quindi chiaro quali siano gli elementi che preferiscono perdere elettron
             \foreach \y in {5,10,15,20,25}
                 \draw[thick] (0,\y) -- (0.8,\y);
             \node[left] at (0,0) {\footnotesize $-400$};
-            \node[left] at (0,5) {\footnotesize $-330$};
-            \node[left] at (0,10) {\footnotesize $-330$};
+            \node[left] at (0,5) {\footnotesize $-300$};
+            \node[left] at (0,10) {\footnotesize $-200$};
             \node[left] at (0,15) {\footnotesize $-100$};
             \node[left] at (0,20) {\footnotesize $0$};
             \node[left] at (0,25) {\footnotesize $100$};
@@ -510,9 +510,14 @@ Essendo una tendenza, l'elettronegatività è una quantità che non ha una unit�
 
 Consideriamo due atomi A e B diversi. Immaginiamo che si formi un legame tra essi (parliamo di legame covalente, per evitare sistemi ionici). Ciò che si nota è che in genere il legame tra A e B è più forte dei legami che si formano tra due atomi di tipo A o due atomi di tipo B, ciò le molecole omonucleari AA e BB hanno energie in genere inferiori a quella osservata nella molecola AB. Si è allora pensato che questa differenza di energia (chiamiamola "eccesso di energia") sia dovuta al fatto che intervengono scambi di elettroni, ossia qualche atomo preferisce attrarre su di sé più dell'altro gli elettroni in gioco nel legame chimico tra A e B, cioè A o B è più propenso ad attrarre su di sé la carica degli elettroni di legame. Si parla di "forme ioniche", non in senso totale, cioè non c'è cessione totale dell'elettrone ma solo parziale dislocamento della carica di legame.
 
-Pauling allora fece questa assunzione: chiamata $\rchi$ l'elettronegatività, $\rchi_A$ sarà l'elettronegatività relativa all'atomo A e $\rchi_B$ quella relativa all'atomo B. Consideriamone la differenza in valore assoluto: essa sarà uguale alla radice quadrata dell'energia di dissociazione della molecola AB meno la media tra l'energia di dissociazione della molecola AA e quella della molecola BB. Poiché Pauling esprimeva i valori di energia in elettronvolt, per ottenere un numero adimensionale si divide per un elettronvolt:
-$$|\rchi_A - \rchi_B| = (\text{eV})^{-\frac{1}{2}}\sqrt{E_d(AB)-\frac{E_d(AA) + E_d(BB)}{2}}$$
+Pauling allora fece questa assunzione: chiamata $\rchi$ l'elettronegatività, $\rchi_{\rm A}$ sarà l'elettronegatività relativa all'atomo A e $\rchi_{\rm B}$ quella relativa all'atomo B. Consideriamone la differenza in valore assoluto: essa sarà uguale alla radice quadrata dell'energia di dissociazione della molecola AB meno la media tra l'energia di dissociazione della molecola AA e quella della molecola BB. Poiché Pauling esprimeva i valori di energia in elettronvolt, per ottenere un numero adimensionale si divide per un elettronvolt:
+\begin{equation*}
+    |\rchi_{\rm A} - \rchi_{\rm B}|
+    =(\text{eV})^{-\frac{1}{2}}\sqrt{E_d(\text{AB}) - \frac{E_d(\text{AA}) + E_d(\text{BB})}{2}}
+\end{equation*}
 A questo punto Pauling prese l'idrogeno come riferimento, assegnandogli arbitrariamente valore di elettronegatività pari a 2.1 (in modo tale da avere come valore del fluoro un numero intero). Avendo un riferimento si può calcolare l'elettronegatività per tutti gli altri atomi, ottenendo così una scala di elettronegatività che vede il fluoro come elemento più elettronegativo (il suo valore è 4). Infatti elevatissima affinità elettronica implica elevatissima elettronegatività: quell'elemento che cede tantissima energia quando acquista un elettrone è l'elemento che tende di più ad attrarre su di sé la carica degli elettroni di legame, spostandola sul suo nucleo.
 
 \vspace{0.2cm}La scala di Pauling è la più usata. Vi è poi la \textbf{scala di Mulliken}, definita come la media aritmetica tra il potenziale di ionizzazione $I$ e l'affinità elettronica $E_A$:
-$$\rchi_M=\frac{1}{2}(E_A + I)$$
+\begin{equation*}
+    \rchi_M=\frac{1}{2}(E_A + I)
+\end{equation*}
