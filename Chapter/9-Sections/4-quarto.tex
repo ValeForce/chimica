@@ -1294,3 +1294,42 @@ per cui in definitiva avremo
     =3.39 \cdot 10^{-4} \; \rm mol/L
 \end{equation*}
 \end{soluzione}
+
+\newpage
+
+\begin{esercizio}
+    A 5.2 g di acetato di sodio furono aggiunti 2 mL di HCl 3 N e la soluzione venne portata al volume di 500 mL. Calcolare il pH della soluzione risultante. (La $K_a$ dell'acido acetico è $1.8 \times 10^{-5}$ )
+\end{esercizio}
+\begin{soluzione}
+    Calcoliamo innanzitutto le moli di acetato di sodio, che per semplicità indichiamo come AcNa:
+    \begin{equation*}
+        n_{\rm AcNa}
+        =\frac{g_{\rm AcNa}}{MM_{\rm AcNa}}
+        =\frac{5.2}{82.03}=6.3391 \cdot 10^{-2} \; \rm mol
+    \end{equation*}
+    Per quanto riguarda le moli di HCl, dato che la normalità coincide con la molarità per gli acidi forti, si ha:
+    \begin{equation*}
+        n_{\rm HCl}
+        =C \cdot V(\text{L})=3 \cdot 2 \cdot 10^{-3}
+        =6 \cdot 10^{-3} \; \rm mol
+    \end{equation*}
+    Scriviamo la reazione con le concentrazioni iniziali sopra e quelle finali sotto:
+    \begin{center}
+        \begin{tabular}{ccccccc}
+            $6.3391 \cdot 10^{-2}$ &  & $6 \cdot 10^{-3}$ & & / &&\\
+            $\rm AcNa$ & + & HCl & \ce{->} & $\rm HAc$ & + & $\rm NaCl$\\
+            $5.7391 \cdot 10^{-2}$ &  & / & & $6 \cdot 10^{-3}$ &&\\
+        \end{tabular}
+    \end{center}
+    A fine reazione abbiamo un acido debole che è l'acido acetico e un suo sale che è l'acetato di sodio, pertanto ci troviamo davanti ad una soluzione tampone del primo tipo. La concentrazione degli ioni $\rm H_3O^+$ sarà allora data da
+    \begin{equation*}
+        [\ce{H_3O^+}]
+        =K_a \frac{C_a}{C_s}
+        =1.8 \cdot 10^{-5} \cdot \frac{6 \cdot 10^{-3}}{5.7391 \cdot 10^{-2}}
+        =1.8804 \cdot 10^{-6} \; \rm mol/L
+    \end{equation*}
+    e quindi
+    \begin{equation*}
+        \rm pH=\log{\left(\frac{1}{1.8804 \cdot 10^{-6}}\right)}=5.73
+    \end{equation*}
+\end{soluzione}

@@ -1048,3 +1048,138 @@ Le percentuali in massa saranno date dal rapporto del singolo addendo diviso la 
 \end{gather*}
 
 \end{soluzione}
+
+\newpage
+
+\begin{esercizio}
+    Una miscela di perossido e carbonato di bario, dal peso di 14.53 g, venne riscaldata fino a decomposizione completa. Per riscaldamento del perossido di bario si ottiene ossido di bario e ossigeno. Per riscaldamento del carbonato di bario si ottiene ossido di bario e anidride carbonica. Il residuo solido pesava 12.365 g. Calcolare:
+    \begin{enumerate}[label=\alph*),leftmargin=0.6cm]
+    \item La composizione della miscela iniziale (come percentuale in massa).
+    \item Il volume di gas sviluppato (se misurato a $0 \; \rm ^{\circ}C$ e $1$ atm).
+    \item La composizione in volume del gas sviluppato.
+    \end{enumerate}
+\end{esercizio}
+\begin{soluzione}
+    Le reazioni che avvengono sono delle reazioni di decomposizione, in cui fornendo calore un composto si scompone in due o più prodotti. Nel nostro caso ciò che avviene è che
+    \begin{equation*}
+        \ce{BaO_2 + BaCO_3 ->[\; \text{ad alta temperatura} \;] BaO + CO_2}
+    \end{equation*}
+    In particolare, le reazioni che avvengono sono:
+    \begin{equation*}
+        \ce{BaO_2 ->[\Delta] BaO + \frac{1}{2}O_2}
+        \quad;\quad
+        \ce{BaCO_3 ->[\Delta] BaO + CO_2}
+    \end{equation*}
+    Le reazioni avvengono completamente, per cui tutto il perossido e tutto il carbonato si trasformano in ossido di bario e gas. Allora, dette $x$ le moli di perossido e $y$ quelle di carbonato, dalla prima reazione avremo $x$ moli di ossido di bario e $\frac{x}{2}$ moli di ossigeno, mentre dalla seconda reazione avremo $y$ moli di ossido di bario e $y$ moli di anidride carbonica. Pertanto, il numero totale di moli di ossido di bario prodotte sarà $x+y$, il numero di moli di ossigeno sarà $\frac{x}{2}$ e quello di anidride carbonica sarà $y$. Conoscendo ciò, possiamo impostare il sistema per calcolare $x$ e $y$.\\
+    Il testo ci dice che la miscela iniziale pesa 14.53 grammi, per cui la prima equazione del sistema sarà
+    \begin{equation*}
+        g_{\rm BaO_2} + g_{\rm BaCO_3}=14.53
+    \end{equation*}
+    Ricordando che i grammi sono legati alle moli tramite la relazione $g=n \cdot MM$ e sapendo che $MM_{\rm BaO_2}=169.33$ e che $MM_{\rm BaCO_3}=197.34$ grammi/mol, possiamo riscrivere la prima equazione come
+    \begin{equation*}
+        169.33x + 197.34y=14.53
+    \end{equation*}
+    Sappiamo poi che il residuo solido pesa 12.365 grammi, e tale residuo è costituito dall'ossido di bario prodotto dalle due reazioni. Ricordando che $MM_{\rm BaO}=153.33$, la seconda equazione del sistema sarà
+    \begin{equation*}
+        153.33 (x + y)=12.365
+    \end{equation*}
+    In definitiva dobbiamo risolvere il sistema
+    \begin{equation*}
+        \begin{dcases}
+            169.33x + 197.34y=14.53\\
+            153.33 (x + y)=12.365
+        \end{dcases}
+    \end{equation*}
+    da cui ricaviamo
+    \begin{equation*}
+        x=4.9414 \cdot 10^{-2} \; \text{mol}
+        \quad,\quad
+        y=3.1223 \; \text{mol}
+    \end{equation*}
+    da cui si ricavano i grammi iniziali e quindi le percentuali di ciascun composto:
+    \begin{gather*}
+        g_{\rm BaO_2}=169.33 \cdot 4.9414 \cdot 10^{-2}
+        =8.3663 \; \text{grammi}
+        \\
+        \implies
+        \%_{\rm BaO_2}=\frac{8.3663}{14.53} \cdot 100
+        =57.56 \%
+        \\[0.2cm]
+        g_{\rm BaCO_3}=197.34 \cdot 3.1223 \cdot 10^{-2}
+        =6.1637 \; \text{grammi}
+        \\
+        \implies
+        \%_{\rm BaCO_3}=\frac{6.1637}{14.53} \cdot 100
+        =42.44 \%
+    \end{gather*}
+    Per calcolare il volume di gas sviluppato, dobbiamo sommare le moli di ossigeno e di anidride carbonica prodotte:
+    \begin{equation*}
+        n_{\rm gas}
+        =\frac{x}{2} + y
+        =\frac{4.9414 \cdot 10^{-2}}{2} + 3.1223 \cdot 10^{-2}
+        =5.5930 \cdot 10^{-2} \; \text{mol}
+    \end{equation*}
+    A questo punto ricordiamo che ci troviamo in condizioni normali, per cui una mole di gas occupa 22.414 litri. Il volume totale sarà quindi
+    \begin{equation*}
+        V_{\rm gas}
+        =n_{\rm gas} \cdot 22.414
+        =5.5930 \cdot 10^{-2} \cdot 22.414
+        =1.2536 \; \text{L}
+    \end{equation*}
+    Infine, per calcolare la composizione in volume del gas sviluppato, dobbiamo calcolare il volume di ciascun gas. Per l'ossigeno avremo
+    \begin{equation*}
+        V_{\rm O_2}
+        =\frac{x}{2} \cdot 22.414
+        =\frac{4.9414 \cdot 10^{-2}}{2} \cdot 22.414
+        =0.5539 \; \text{L}
+    \end{equation*}
+    mentre per l'anidride carbonica
+    \begin{equation*}
+        V_{\rm CO_2}
+        =y \cdot 22.414
+        =3.1223 \cdot 10^{-2} \cdot 22.414
+        =0.6997 \; \text{L}
+    \end{equation*}
+    La composizione percentuale in volume sarà quindi
+    \begin{gather*}
+        \%_{\rm O_2}
+        =\frac{0.5539}{1.2536} \cdot 100
+        =44.18 \%
+        \\[0.2cm]
+        \%_{\rm CO_2}
+        =\frac{0.6997}{1.2536} \cdot 100
+        =55.82 \%
+    \end{gather*}
+\end{soluzione}
+
+\newpage
+
+\begin{esercizio}
+    2.0 grammi di una miscela di cloruro di sodio e cloruro di bario biidrato sono riscaldati a $200 \; \rm ^{\circ}C$ per disidratare il cloruro di bario. Si ottengono 1.9 grammi di prodotto anidro. Calcolare la composizione della miscela.
+\end{esercizio}
+\begin{soluzione}
+    Per prima cosa osserviamo che, riscaldando la miscela, l'unica sostanza che perde massa è il cloruro di bario biidrato, perché si disidrata secondo la reazione
+    \begin{equation*}
+        \ce{BaCl_2 \cdot 2H_2O -> BaCl_2 + 2H_2O}
+    \end{equation*}
+    La miscela iniziale pesa 2.0 g, mentre dopo il riscaldamento rimangono 1.9 g di prodotto anidro. Questo significa che durante la disidratazione sono stati persi 0.100 g di acqua. Poiché ad ogni mole di cloruro di bario biidrato corrispondo 2 moli di acqua, la perdita di massa ci permette di calcolare quante moli di diidrato erano presenti all'inizio. Calcoliamo innanzitutto le moli di acqua ottenute dalla perdita di massa:
+    \begin{equation*}
+        n_{\rm H_2O}
+        =\frac{0.100}{18.016}
+        =5.5506 \times 10^{-3} \; \text{mol}
+    \end{equation*}
+    Ad esse corrispondono la metà di moli di biidrato iniziali, ossia $n_{\rm BaCl_2 \cdot 2 H_2O}=2.7753 \times 10^{-3} \; \text{mol}$.\\
+    Ora che conosciamo le moli del diidrato, possiamo risalire alla sua massa iniziale. La massa molare del \ce{BaCl_2\cdot2H_2O} è $244.28 \text{ g/mol}$, quindi:
+    \begin{equation*}
+        m_{\rm BaCl_2 \cdot 2 H_2O}
+        =n_{\rm BaCl_2 \cdot 2 H_2O} \cdot MM_{\rm BaCl_2 \cdot 2 H_2O}
+        =2.7753 \times 10^{-3} \cdot 244.28
+        =0.678 \; \text{g}
+    \end{equation*}
+    Questa è la quantità di cloruro di bario biidrato presente nella miscela di partenza. La massa rimanente, fino ai 2.0 g totali, deve essere costituita da cloruro di sodio:
+    \begin{equation*}
+        m_{\rm NaCl}
+        = 2.00 - 0.678
+        = 1.322 \text{ g}
+    \end{equation*}
+\end{soluzione}
